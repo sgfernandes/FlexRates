@@ -4,60 +4,245 @@
     "CAISO": {
       "name": "California ISO",
       "type": "ISO",
-      "states": ["California", "Nevada (partial)"],
+      "states": [
+        "California",
+        "Nevada (partial)"
+      ],
       "numericRates": {
-        "energy_min_MWh": 25, "energy_max_MWh": 150,
-        "capacity_min_kW_month": null, "capacity_max_kW_month": null,
-        "emergency_min_MWh": 1000, "emergency_max_MWh": 2000,
-        "ancillary_min_MWh": 5, "ancillary_max_MWh": 50
+        "energy_min_MWh": 25,
+        "energy_max_MWh": 150,
+        "capacity_min_kW_month": null,
+        "capacity_max_kW_month": null,
+        "emergency_min_MWh": 1000,
+        "emergency_max_MWh": 2000,
+        "ancillary_min_MWh": 5,
+        "ancillary_max_MWh": 50
       },
       "rateHistory": {
         "energy_avg_MWh": [
-          {"year": 2020, "value": 35}, {"year": 2021, "value": 42},
-          {"year": 2022, "value": 78}, {"year": 2023, "value": 55},
-          {"year": 2024, "value": 62}, {"year": 2025, "value": 68}
+          {
+            "year": 2020,
+            "value": 35
+          },
+          {
+            "year": 2021,
+            "value": 42
+          },
+          {
+            "year": 2022,
+            "value": 78
+          },
+          {
+            "year": 2023,
+            "value": 55
+          },
+          {
+            "year": 2024,
+            "value": 62
+          },
+          {
+            "year": 2025,
+            "value": 68
+          }
         ],
         "emergency_avg_MWh": [
-          {"year": 2020, "value": 800}, {"year": 2021, "value": 850},
-          {"year": 2022, "value": 1000}, {"year": 2023, "value": 1000},
-          {"year": 2024, "value": 1200}, {"year": 2025, "value": 1500}
+          {
+            "year": 2020,
+            "value": 800
+          },
+          {
+            "year": 2021,
+            "value": 850
+          },
+          {
+            "year": 2022,
+            "value": 1000
+          },
+          {
+            "year": 2023,
+            "value": 1000
+          },
+          {
+            "year": 2024,
+            "value": 1200
+          },
+          {
+            "year": 2025,
+            "value": 1500
+          }
         ],
         "capacity_avg_kW_month": [
-          {"year": 2020, "value": null}, {"year": 2021, "value": null},
-          {"year": 2022, "value": null}, {"year": 2023, "value": null},
-          {"year": 2024, "value": null}, {"year": 2025, "value": null}
+          {
+            "year": 2020,
+            "value": null
+          },
+          {
+            "year": 2021,
+            "value": null
+          },
+          {
+            "year": 2022,
+            "value": null
+          },
+          {
+            "year": 2023,
+            "value": null
+          },
+          {
+            "year": 2024,
+            "value": null
+          },
+          {
+            "year": 2025,
+            "value": null
+          }
         ]
       },
       "programs": [
         {
-          "name": "Proxy Demand Resource (PDR)", "compensation": "LMP-based",
-          "rateRange": "Varies by LMP node", "market": "Day-Ahead & Real-Time Energy",
-          "marketCategory": "energy", "minSize_kW": 100, "notificationTime": "Market-scheduled",
-          "rate_min": 25, "rate_max": 150, "rate_unit": "$/MWh"
+          "name": "Proxy Demand Resource (PDR)",
+          "compensation": "LMP-based",
+          "rateRange": "Varies by LMP node",
+          "market": "Day-Ahead & Real-Time Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 100,
+          "notificationTime": "Market-scheduled",
+          "rate_min": 25,
+          "rate_max": 150,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 1,
+              "label": "Scheduled",
+              "notes": "Best for loads that can plan shifts into market schedules."
+            },
+            "programmatic": {
+              "score": 3,
+              "label": "Moderate complexity",
+              "notes": "Expect regular metering, baseline, or aggregation administration."
+            }
+          }
         },
         {
-          "name": "Reliability Demand Response (RDRR)", "compensation": "Market clearing price",
-          "rateRange": "Market price during emergency", "market": "Emergency / Reliability",
-          "marketCategory": "emergency", "minSize_kW": 500, "notificationTime": "Event-based",
-          "rate_min": 200, "rate_max": 2000, "rate_unit": "$/MWh"
+          "name": "Reliability Demand Response (RDRR)",
+          "compensation": "Market clearing price",
+          "rateRange": "Market price during emergency",
+          "market": "Emergency / Reliability",
+          "marketCategory": "emergency",
+          "minSize_kW": 500,
+          "notificationTime": "Event-based",
+          "rate_min": 200,
+          "rate_max": 2000,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 5,
+              "label": "High upside",
+              "notes": "Scarcity or emergency settlements can be very large but volatile."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 3,
+              "label": "Moderate complexity",
+              "notes": "Expect regular metering, baseline, or aggregation administration."
+            }
+          }
         },
         {
-          "name": "PDR-LSR (Load Shift Resource)", "compensation": "LMP-based (bidirectional)",
-          "rateRange": "Net benefits test threshold to bid cap", "market": "Day-Ahead & Real-Time Energy",
-          "marketCategory": "energy", "minSize_kW": 100, "notificationTime": "Market-scheduled",
-          "rate_min": 25, "rate_max": 150, "rate_unit": "$/MWh"
+          "name": "PDR-LSR (Load Shift Resource)",
+          "compensation": "LMP-based (bidirectional)",
+          "rateRange": "Net benefits test threshold to bid cap",
+          "market": "Day-Ahead & Real-Time Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 100,
+          "notificationTime": "Market-scheduled",
+          "rate_min": 25,
+          "rate_max": 150,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 1,
+              "label": "Scheduled",
+              "notes": "Best for loads that can plan shifts into market schedules."
+            },
+            "programmatic": {
+              "score": 3,
+              "label": "Moderate complexity",
+              "notes": "Expect regular metering, baseline, or aggregation administration."
+            }
+          }
         },
         {
-          "name": "Emergency Load Reduction Program (ELRP)", "compensation": "Fixed rate",
-          "rateRange": "$1,000/MWh", "market": "State emergency program",
-          "marketCategory": "emergency", "minSize_kW": 100, "notificationTime": "Day-of notification",
-          "rate_min": 1000, "rate_max": 1000, "rate_unit": "$/MWh"
+          "name": "Emergency Load Reduction Program (ELRP)",
+          "compensation": "Fixed rate",
+          "rateRange": "$1,000/MWh",
+          "market": "State emergency program",
+          "marketCategory": "emergency",
+          "minSize_kW": 100,
+          "notificationTime": "Day-of notification",
+          "rate_min": 1000,
+          "rate_max": 1000,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 5,
+              "label": "High upside",
+              "notes": "Scarcity or emergency settlements can be very large but volatile."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 1,
+              "label": "Low complexity",
+              "notes": "Enrollment and settlement requirements are relatively light."
+            }
+          }
         },
         {
-          "name": "Demand Side Grid Support (DSGS)", "compensation": "Fixed rate",
-          "rateRange": "$850-$2,000/MWh", "market": "State emergency program",
-          "marketCategory": "emergency", "minSize_kW": 50, "notificationTime": "Day-of notification",
-          "rate_min": 850, "rate_max": 2000, "rate_unit": "$/MWh"
+          "name": "Demand Side Grid Support (DSGS)",
+          "compensation": "Fixed rate",
+          "rateRange": "$850-$2,000/MWh",
+          "market": "State emergency program",
+          "marketCategory": "emergency",
+          "minSize_kW": 50,
+          "notificationTime": "Day-of notification",
+          "rate_min": 850,
+          "rate_max": 2000,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 5,
+              "label": "High upside",
+              "notes": "Scarcity or emergency settlements can be very large but volatile."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 1,
+              "label": "Low complexity",
+              "notes": "Enrollment and settlement requirements are relatively light."
+            }
+          }
         }
       ],
       "summary": {
@@ -70,54 +255,228 @@
     "PJM": {
       "name": "PJM Interconnection",
       "type": "RTO",
-      "states": ["PA","NJ","MD","DE","VA","WV","OH","IN (partial)","IL (partial)","MI (partial)","KY (partial)","NC (partial)","TN (partial)","DC"],
+      "states": [
+        "PA",
+        "NJ",
+        "MD",
+        "DE",
+        "VA",
+        "WV",
+        "OH",
+        "IN (partial)",
+        "IL (partial)",
+        "MI (partial)",
+        "KY (partial)",
+        "NC (partial)",
+        "TN (partial)",
+        "DC"
+      ],
       "numericRates": {
-        "energy_min_MWh": 20, "energy_max_MWh": 100,
-        "capacity_min_kW_month": 1.5, "capacity_max_kW_month": 8.1,
-        "emergency_min_MWh": 100, "emergency_max_MWh": 3700,
-        "ancillary_min_MWh": 5, "ancillary_max_MWh": 40
+        "energy_min_MWh": 20,
+        "energy_max_MWh": 100,
+        "capacity_min_kW_month": 1.5,
+        "capacity_max_kW_month": 8.1,
+        "emergency_min_MWh": 100,
+        "emergency_max_MWh": 3700,
+        "ancillary_min_MWh": 5,
+        "ancillary_max_MWh": 40
       },
       "rateHistory": {
         "energy_avg_MWh": [
-          {"year": 2020, "value": 22}, {"year": 2021, "value": 30},
-          {"year": 2022, "value": 65}, {"year": 2023, "value": 38},
-          {"year": 2024, "value": 42}, {"year": 2025, "value": 48}
+          {
+            "year": 2020,
+            "value": 22
+          },
+          {
+            "year": 2021,
+            "value": 30
+          },
+          {
+            "year": 2022,
+            "value": 65
+          },
+          {
+            "year": 2023,
+            "value": 38
+          },
+          {
+            "year": 2024,
+            "value": 42
+          },
+          {
+            "year": 2025,
+            "value": 48
+          }
         ],
         "emergency_avg_MWh": [
-          {"year": 2020, "value": 200}, {"year": 2021, "value": 250},
-          {"year": 2022, "value": 500}, {"year": 2023, "value": 400},
-          {"year": 2024, "value": 600}, {"year": 2025, "value": 800}
+          {
+            "year": 2020,
+            "value": 200
+          },
+          {
+            "year": 2021,
+            "value": 250
+          },
+          {
+            "year": 2022,
+            "value": 500
+          },
+          {
+            "year": 2023,
+            "value": 400
+          },
+          {
+            "year": 2024,
+            "value": 600
+          },
+          {
+            "year": 2025,
+            "value": 800
+          }
         ],
         "capacity_avg_kW_month": [
-          {"year": 2020, "value": 3.8}, {"year": 2021, "value": 4.2},
-          {"year": 2022, "value": 5.0}, {"year": 2023, "value": 5.5},
-          {"year": 2024, "value": 6.8}, {"year": 2025, "value": 8.1}
+          {
+            "year": 2020,
+            "value": 3.8
+          },
+          {
+            "year": 2021,
+            "value": 4.2
+          },
+          {
+            "year": 2022,
+            "value": 5.0
+          },
+          {
+            "year": 2023,
+            "value": 5.5
+          },
+          {
+            "year": 2024,
+            "value": 6.8
+          },
+          {
+            "year": 2025,
+            "value": 8.1
+          }
         ]
       },
       "programs": [
         {
-          "name": "Economic Demand Response", "compensation": "LMP-based",
-          "rateRange": "Full LMP (net benefits test applies)", "market": "Day-Ahead & Real-Time Energy",
-          "marketCategory": "energy", "minSize_kW": 100, "notificationTime": "Market-scheduled",
-          "rate_min": 20, "rate_max": 100, "rate_unit": "$/MWh"
+          "name": "Economic Demand Response",
+          "compensation": "LMP-based",
+          "rateRange": "Full LMP (net benefits test applies)",
+          "market": "Day-Ahead & Real-Time Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 100,
+          "notificationTime": "Market-scheduled",
+          "rate_min": 20,
+          "rate_max": 100,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 1,
+              "label": "Scheduled",
+              "notes": "Best for loads that can plan shifts into market schedules."
+            },
+            "programmatic": {
+              "score": 3,
+              "label": "Moderate complexity",
+              "notes": "Expect regular metering, baseline, or aggregation administration."
+            }
+          }
         },
         {
-          "name": "Capacity Performance (RPM)", "compensation": "Auction clearing price",
-          "rateRange": "$50-$269+/MW-day", "market": "Forward Capacity Market",
-          "marketCategory": "capacity", "minSize_kW": 100, "notificationTime": "30 min (performance events)",
-          "rate_min": 50, "rate_max": 269, "rate_unit": "$/MW-day"
+          "name": "Capacity Performance (RPM)",
+          "compensation": "Auction clearing price",
+          "rateRange": "$50-$269+/MW-day",
+          "market": "Forward Capacity Market",
+          "marketCategory": "capacity",
+          "minSize_kW": 100,
+          "notificationTime": "30 min (performance events)",
+          "rate_min": 50,
+          "rate_max": 269,
+          "rate_unit": "$/MW-day",
+          "typology": {
+            "economic": {
+              "score": 4,
+              "label": "Strong upside",
+              "notes": "Meaningful revenue potential with market or event variability."
+            },
+            "flexibility": {
+              "score": 3,
+              "label": "Short notice",
+              "notes": "Program expects sub-hour operational flexibility."
+            },
+            "programmatic": {
+              "score": 3,
+              "label": "Moderate complexity",
+              "notes": "Expect regular metering, baseline, or aggregation administration."
+            }
+          }
         },
         {
-          "name": "Synchronized Reserves", "compensation": "Market clearing price",
-          "rateRange": "Reserve MCPC (varies)", "market": "Ancillary Services",
-          "marketCategory": "ancillary", "minSize_kW": 1000, "notificationTime": "10 minutes",
-          "rate_min": 5, "rate_max": 40, "rate_unit": "$/MWh"
+          "name": "Synchronized Reserves",
+          "compensation": "Market clearing price",
+          "rateRange": "Reserve MCPC (varies)",
+          "market": "Ancillary Services",
+          "marketCategory": "ancillary",
+          "minSize_kW": 1000,
+          "notificationTime": "10 minutes",
+          "rate_min": 5,
+          "rate_max": 40,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 2,
+              "label": "Moderate upside",
+              "notes": "Moderate settlement range or capacity value."
+            },
+            "flexibility": {
+              "score": 4,
+              "label": "Fast response",
+              "notes": "Suitable only for loads that can move on short notice."
+            },
+            "programmatic": {
+              "score": 4,
+              "label": "High complexity",
+              "notes": "Program likely needs telemetry, aggregation discipline, or market operations support."
+            }
+          }
         },
         {
-          "name": "Non-Synchronized Reserves", "compensation": "Market clearing price",
-          "rateRange": "Reserve MCPC (varies)", "market": "Ancillary Services",
-          "marketCategory": "ancillary", "minSize_kW": 1000, "notificationTime": "10 minutes",
-          "rate_min": 3, "rate_max": 30, "rate_unit": "$/MWh"
+          "name": "Non-Synchronized Reserves",
+          "compensation": "Market clearing price",
+          "rateRange": "Reserve MCPC (varies)",
+          "market": "Ancillary Services",
+          "marketCategory": "ancillary",
+          "minSize_kW": 1000,
+          "notificationTime": "10 minutes",
+          "rate_min": 3,
+          "rate_max": 30,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 2,
+              "label": "Moderate upside",
+              "notes": "Moderate settlement range or capacity value."
+            },
+            "flexibility": {
+              "score": 4,
+              "label": "Fast response",
+              "notes": "Suitable only for loads that can move on short notice."
+            },
+            "programmatic": {
+              "score": 4,
+              "label": "High complexity",
+              "notes": "Program likely needs telemetry, aggregation discipline, or market operations support."
+            }
+          }
         }
       ],
       "summary": {
@@ -130,60 +489,244 @@
     "ERCOT": {
       "name": "Electric Reliability Council of Texas",
       "type": "ISO",
-      "states": ["Texas (most)"],
+      "states": [
+        "Texas (most)"
+      ],
       "numericRates": {
-        "energy_min_MWh": 25, "energy_max_MWh": 80,
-        "capacity_min_kW_month": null, "capacity_max_kW_month": null,
-        "emergency_min_MWh": 3, "emergency_max_MWh": 15,
-        "ancillary_min_MWh": 3, "ancillary_max_MWh": 25
+        "energy_min_MWh": 25,
+        "energy_max_MWh": 80,
+        "capacity_min_kW_month": null,
+        "capacity_max_kW_month": null,
+        "emergency_min_MWh": 3,
+        "emergency_max_MWh": 15,
+        "ancillary_min_MWh": 3,
+        "ancillary_max_MWh": 25
       },
       "rateHistory": {
         "energy_avg_MWh": [
-          {"year": 2020, "value": 22}, {"year": 2021, "value": 180},
-          {"year": 2022, "value": 68}, {"year": 2023, "value": 42},
-          {"year": 2024, "value": 38}, {"year": 2025, "value": 45}
+          {
+            "year": 2020,
+            "value": 22
+          },
+          {
+            "year": 2021,
+            "value": 180
+          },
+          {
+            "year": 2022,
+            "value": 68
+          },
+          {
+            "year": 2023,
+            "value": 42
+          },
+          {
+            "year": 2024,
+            "value": 38
+          },
+          {
+            "year": 2025,
+            "value": 45
+          }
         ],
         "emergency_avg_MWh": [
-          {"year": 2020, "value": 5}, {"year": 2021, "value": 12},
-          {"year": 2022, "value": 10}, {"year": 2023, "value": 8},
-          {"year": 2024, "value": 9}, {"year": 2025, "value": 11}
+          {
+            "year": 2020,
+            "value": 5
+          },
+          {
+            "year": 2021,
+            "value": 12
+          },
+          {
+            "year": 2022,
+            "value": 10
+          },
+          {
+            "year": 2023,
+            "value": 8
+          },
+          {
+            "year": 2024,
+            "value": 9
+          },
+          {
+            "year": 2025,
+            "value": 11
+          }
         ],
         "capacity_avg_kW_month": [
-          {"year": 2020, "value": null}, {"year": 2021, "value": null},
-          {"year": 2022, "value": null}, {"year": 2023, "value": null},
-          {"year": 2024, "value": null}, {"year": 2025, "value": null}
+          {
+            "year": 2020,
+            "value": null
+          },
+          {
+            "year": 2021,
+            "value": null
+          },
+          {
+            "year": 2022,
+            "value": null
+          },
+          {
+            "year": 2023,
+            "value": null
+          },
+          {
+            "year": 2024,
+            "value": null
+          },
+          {
+            "year": 2025,
+            "value": null
+          }
         ]
       },
       "programs": [
         {
-          "name": "Load Resource - Responsive Reserve (RRS)", "compensation": "Ancillary Services MCPC",
-          "rateRange": "MCPC (avg $10-$25/MW-hr)", "market": "Ancillary Services",
-          "marketCategory": "ancillary", "minSize_kW": 1000, "notificationTime": "10 minutes",
-          "rate_min": 10, "rate_max": 25, "rate_unit": "$/MW-hr"
+          "name": "Load Resource - Responsive Reserve (RRS)",
+          "compensation": "Ancillary Services MCPC",
+          "rateRange": "MCPC (avg $10-$25/MW-hr)",
+          "market": "Ancillary Services",
+          "marketCategory": "ancillary",
+          "minSize_kW": 1000,
+          "notificationTime": "10 minutes",
+          "rate_min": 10,
+          "rate_max": 25,
+          "rate_unit": "$/MW-hr",
+          "typology": {
+            "economic": {
+              "score": 2,
+              "label": "Moderate upside",
+              "notes": "Moderate settlement range or capacity value."
+            },
+            "flexibility": {
+              "score": 4,
+              "label": "Fast response",
+              "notes": "Suitable only for loads that can move on short notice."
+            },
+            "programmatic": {
+              "score": 4,
+              "label": "High complexity",
+              "notes": "Program likely needs telemetry, aggregation discipline, or market operations support."
+            }
+          }
         },
         {
-          "name": "Load Resource - Non-Spinning Reserve", "compensation": "Ancillary Services MCPC",
-          "rateRange": "MCPC (avg $3-$15/MW-hr)", "market": "Ancillary Services",
-          "marketCategory": "ancillary", "minSize_kW": 1000, "notificationTime": "30 minutes",
-          "rate_min": 3, "rate_max": 15, "rate_unit": "$/MW-hr"
+          "name": "Load Resource - Non-Spinning Reserve",
+          "compensation": "Ancillary Services MCPC",
+          "rateRange": "MCPC (avg $3-$15/MW-hr)",
+          "market": "Ancillary Services",
+          "marketCategory": "ancillary",
+          "minSize_kW": 1000,
+          "notificationTime": "30 minutes",
+          "rate_min": 3,
+          "rate_max": 15,
+          "rate_unit": "$/MW-hr",
+          "typology": {
+            "economic": {
+              "score": 2,
+              "label": "Moderate upside",
+              "notes": "Moderate settlement range or capacity value."
+            },
+            "flexibility": {
+              "score": 3,
+              "label": "Short notice",
+              "notes": "Program expects sub-hour operational flexibility."
+            },
+            "programmatic": {
+              "score": 4,
+              "label": "High complexity",
+              "notes": "Program likely needs telemetry, aggregation discipline, or market operations support."
+            }
+          }
         },
         {
-          "name": "Load Resource - Regulation Service", "compensation": "Regulation MCPC",
-          "rateRange": "Regulation MCPC (varies)", "market": "Ancillary Services",
-          "marketCategory": "ancillary", "minSize_kW": 1000, "notificationTime": "Real-time dispatch",
-          "rate_min": 5, "rate_max": 35, "rate_unit": "$/MW-hr"
+          "name": "Load Resource - Regulation Service",
+          "compensation": "Regulation MCPC",
+          "rateRange": "Regulation MCPC (varies)",
+          "market": "Ancillary Services",
+          "marketCategory": "ancillary",
+          "minSize_kW": 1000,
+          "notificationTime": "Real-time dispatch",
+          "rate_min": 5,
+          "rate_max": 35,
+          "rate_unit": "$/MW-hr",
+          "typology": {
+            "economic": {
+              "score": 2,
+              "label": "Moderate upside",
+              "notes": "Moderate settlement range or capacity value."
+            },
+            "flexibility": {
+              "score": 5,
+              "label": "Real-time",
+              "notes": "Requires near-continuous dispatchability or very fast response."
+            },
+            "programmatic": {
+              "score": 4,
+              "label": "High complexity",
+              "notes": "Program likely needs telemetry, aggregation discipline, or market operations support."
+            }
+          }
         },
         {
-          "name": "Emergency Response Service (ERS)", "compensation": "Competitive procurement",
-          "rateRange": "$3-$15/MW per hour", "market": "Emergency / Reliability",
-          "marketCategory": "emergency", "minSize_kW": 100, "notificationTime": "10-30 minutes",
-          "rate_min": 3, "rate_max": 15, "rate_unit": "$/MW-hr"
+          "name": "Emergency Response Service (ERS)",
+          "compensation": "Competitive procurement",
+          "rateRange": "$3-$15/MW per hour",
+          "market": "Emergency / Reliability",
+          "marketCategory": "emergency",
+          "minSize_kW": 100,
+          "notificationTime": "10-30 minutes",
+          "rate_min": 3,
+          "rate_max": 15,
+          "rate_unit": "$/MW-hr",
+          "typology": {
+            "economic": {
+              "score": 2,
+              "label": "Moderate upside",
+              "notes": "Moderate settlement range or capacity value."
+            },
+            "flexibility": {
+              "score": 4,
+              "label": "Fast response",
+              "notes": "Suitable only for loads that can move on short notice."
+            },
+            "programmatic": {
+              "score": 1,
+              "label": "Low complexity",
+              "notes": "Enrollment and settlement requirements are relatively light."
+            }
+          }
         },
         {
-          "name": "SCED Economic Dispatch", "compensation": "Settlement Point Price",
-          "rateRange": "Real-time SPP (avg $25-$80/MWh)", "market": "Real-Time Energy",
-          "marketCategory": "energy", "minSize_kW": 1000, "notificationTime": "5-minute dispatch",
-          "rate_min": 25, "rate_max": 80, "rate_unit": "$/MWh"
+          "name": "SCED Economic Dispatch",
+          "compensation": "Settlement Point Price",
+          "rateRange": "Real-time SPP (avg $25-$80/MWh)",
+          "market": "Real-Time Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 1000,
+          "notificationTime": "5-minute dispatch",
+          "rate_min": 25,
+          "rate_max": 80,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 5,
+              "label": "Real-time",
+              "notes": "Requires near-continuous dispatchability or very fast response."
+            },
+            "programmatic": {
+              "score": 4,
+              "label": "High complexity",
+              "notes": "Program likely needs telemetry, aggregation discipline, or market operations support."
+            }
+          }
         }
       ],
       "summary": {
@@ -196,54 +739,228 @@
     "MISO": {
       "name": "Midcontinent ISO",
       "type": "RTO",
-      "states": ["MT (partial)","ND","SD","MN","WI","IA","IL (partial)","IN (partial)","MI (partial)","MO (partial)","AR","LA","MS","TX (partial)"],
+      "states": [
+        "MT (partial)",
+        "ND",
+        "SD",
+        "MN",
+        "WI",
+        "IA",
+        "IL (partial)",
+        "IN (partial)",
+        "MI (partial)",
+        "MO (partial)",
+        "AR",
+        "LA",
+        "MS",
+        "TX (partial)"
+      ],
       "numericRates": {
-        "energy_min_MWh": 20, "energy_max_MWh": 60,
-        "capacity_min_kW_month": 0.15, "capacity_max_kW_month": 7.1,
-        "emergency_min_MWh": 200, "emergency_max_MWh": 3500,
-        "ancillary_min_MWh": 3, "ancillary_max_MWh": 30
+        "energy_min_MWh": 20,
+        "energy_max_MWh": 60,
+        "capacity_min_kW_month": 0.15,
+        "capacity_max_kW_month": 7.1,
+        "emergency_min_MWh": 200,
+        "emergency_max_MWh": 3500,
+        "ancillary_min_MWh": 3,
+        "ancillary_max_MWh": 30
       },
       "rateHistory": {
         "energy_avg_MWh": [
-          {"year": 2020, "value": 20}, {"year": 2021, "value": 32},
-          {"year": 2022, "value": 55}, {"year": 2023, "value": 30},
-          {"year": 2024, "value": 28}, {"year": 2025, "value": 35}
+          {
+            "year": 2020,
+            "value": 20
+          },
+          {
+            "year": 2021,
+            "value": 32
+          },
+          {
+            "year": 2022,
+            "value": 55
+          },
+          {
+            "year": 2023,
+            "value": 30
+          },
+          {
+            "year": 2024,
+            "value": 28
+          },
+          {
+            "year": 2025,
+            "value": 35
+          }
         ],
         "emergency_avg_MWh": [
-          {"year": 2020, "value": 300}, {"year": 2021, "value": 500},
-          {"year": 2022, "value": 1200}, {"year": 2023, "value": 800},
-          {"year": 2024, "value": 1500}, {"year": 2025, "value": 2000}
+          {
+            "year": 2020,
+            "value": 300
+          },
+          {
+            "year": 2021,
+            "value": 500
+          },
+          {
+            "year": 2022,
+            "value": 1200
+          },
+          {
+            "year": 2023,
+            "value": 800
+          },
+          {
+            "year": 2024,
+            "value": 1500
+          },
+          {
+            "year": 2025,
+            "value": 2000
+          }
         ],
         "capacity_avg_kW_month": [
-          {"year": 2020, "value": 0.15}, {"year": 2021, "value": 0.5},
-          {"year": 2022, "value": 2.5}, {"year": 2023, "value": 3.8},
-          {"year": 2024, "value": 5.2}, {"year": 2025, "value": 7.1}
+          {
+            "year": 2020,
+            "value": 0.15
+          },
+          {
+            "year": 2021,
+            "value": 0.5
+          },
+          {
+            "year": 2022,
+            "value": 2.5
+          },
+          {
+            "year": 2023,
+            "value": 3.8
+          },
+          {
+            "year": 2024,
+            "value": 5.2
+          },
+          {
+            "year": 2025,
+            "value": 7.1
+          }
         ]
       },
       "programs": [
         {
-          "name": "Load Modifying Resource (LMR)", "compensation": "Capacity credit via PRA",
-          "rateRange": "$5-$236/MW-day (PRA clearing)", "market": "Planning Resource Auction",
-          "marketCategory": "capacity", "minSize_kW": 100, "notificationTime": "Max Gen event notification",
-          "rate_min": 5, "rate_max": 236, "rate_unit": "$/MW-day"
+          "name": "Load Modifying Resource (LMR)",
+          "compensation": "Capacity credit via PRA",
+          "rateRange": "$5-$236/MW-day (PRA clearing)",
+          "market": "Planning Resource Auction",
+          "marketCategory": "capacity",
+          "minSize_kW": 100,
+          "notificationTime": "Max Gen event notification",
+          "rate_min": 5,
+          "rate_max": 236,
+          "rate_unit": "$/MW-day",
+          "typology": {
+            "economic": {
+              "score": 4,
+              "label": "Strong upside",
+              "notes": "Meaningful revenue potential with market or event variability."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 1,
+              "label": "Low complexity",
+              "notes": "Enrollment and settlement requirements are relatively light."
+            }
+          }
         },
         {
-          "name": "Demand Response Resource Type I (BTM Gen)", "compensation": "LMP-based",
-          "rateRange": "LMP at dispatch node", "market": "Day-Ahead & Real-Time Energy",
-          "marketCategory": "energy", "minSize_kW": 1000, "notificationTime": "Market-scheduled",
-          "rate_min": 20, "rate_max": 60, "rate_unit": "$/MWh"
+          "name": "Demand Response Resource Type I (BTM Gen)",
+          "compensation": "LMP-based",
+          "rateRange": "LMP at dispatch node",
+          "market": "Day-Ahead & Real-Time Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 1000,
+          "notificationTime": "Market-scheduled",
+          "rate_min": 20,
+          "rate_max": 60,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 1,
+              "label": "Scheduled",
+              "notes": "Best for loads that can plan shifts into market schedules."
+            },
+            "programmatic": {
+              "score": 5,
+              "label": "Very high complexity",
+              "notes": "Operational and compliance burden is significant for direct participation."
+            }
+          }
         },
         {
-          "name": "Demand Response Resource Type II (Load Curtailment)", "compensation": "LMP-based",
-          "rateRange": "LMP at dispatch node", "market": "Day-Ahead & Real-Time Energy",
-          "marketCategory": "energy", "minSize_kW": 1000, "notificationTime": "Market-scheduled",
-          "rate_min": 20, "rate_max": 60, "rate_unit": "$/MWh"
+          "name": "Demand Response Resource Type II (Load Curtailment)",
+          "compensation": "LMP-based",
+          "rateRange": "LMP at dispatch node",
+          "market": "Day-Ahead & Real-Time Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 1000,
+          "notificationTime": "Market-scheduled",
+          "rate_min": 20,
+          "rate_max": 60,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 1,
+              "label": "Scheduled",
+              "notes": "Best for loads that can plan shifts into market schedules."
+            },
+            "programmatic": {
+              "score": 5,
+              "label": "Very high complexity",
+              "notes": "Operational and compliance burden is significant for direct participation."
+            }
+          }
         },
         {
-          "name": "Emergency Demand Response", "compensation": "Greater of LMP or VOLL",
-          "rateRange": "Up to $3,500/MWh (VOLL cap)", "market": "Emergency / Reliability",
-          "marketCategory": "emergency", "minSize_kW": 100, "notificationTime": "Max Gen event",
-          "rate_min": 200, "rate_max": 3500, "rate_unit": "$/MWh"
+          "name": "Emergency Demand Response",
+          "compensation": "Greater of LMP or VOLL",
+          "rateRange": "Up to $3,500/MWh (VOLL cap)",
+          "market": "Emergency / Reliability",
+          "marketCategory": "emergency",
+          "minSize_kW": 100,
+          "notificationTime": "Max Gen event",
+          "rate_min": 200,
+          "rate_max": 3500,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 5,
+              "label": "High upside",
+              "notes": "Scarcity or emergency settlements can be very large but volatile."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 2,
+              "label": "Light complexity",
+              "notes": "Some qualification and settlement requirements apply."
+            }
+          }
         }
       ],
       "summary": {
@@ -256,54 +973,220 @@
     "ISONE": {
       "name": "ISO New England",
       "type": "RTO",
-      "states": ["CT","ME","MA","NH","RI","VT"],
+      "states": [
+        "CT",
+        "ME",
+        "MA",
+        "NH",
+        "RI",
+        "VT"
+      ],
       "numericRates": {
-        "energy_min_MWh": 30, "energy_max_MWh": 80,
-        "capacity_min_kW_month": 2.0, "capacity_max_kW_month": 3.98,
-        "emergency_min_MWh": 100, "emergency_max_MWh": 2000,
-        "ancillary_min_MWh": 5, "ancillary_max_MWh": 35
+        "energy_min_MWh": 30,
+        "energy_max_MWh": 80,
+        "capacity_min_kW_month": 2.0,
+        "capacity_max_kW_month": 3.98,
+        "emergency_min_MWh": 100,
+        "emergency_max_MWh": 2000,
+        "ancillary_min_MWh": 5,
+        "ancillary_max_MWh": 35
       },
       "rateHistory": {
         "energy_avg_MWh": [
-          {"year": 2020, "value": 28}, {"year": 2021, "value": 45},
-          {"year": 2022, "value": 72}, {"year": 2023, "value": 42},
-          {"year": 2024, "value": 48}, {"year": 2025, "value": 55}
+          {
+            "year": 2020,
+            "value": 28
+          },
+          {
+            "year": 2021,
+            "value": 45
+          },
+          {
+            "year": 2022,
+            "value": 72
+          },
+          {
+            "year": 2023,
+            "value": 42
+          },
+          {
+            "year": 2024,
+            "value": 48
+          },
+          {
+            "year": 2025,
+            "value": 55
+          }
         ],
         "emergency_avg_MWh": [
-          {"year": 2020, "value": 200}, {"year": 2021, "value": 350},
-          {"year": 2022, "value": 800}, {"year": 2023, "value": 500},
-          {"year": 2024, "value": 700}, {"year": 2025, "value": 900}
+          {
+            "year": 2020,
+            "value": 200
+          },
+          {
+            "year": 2021,
+            "value": 350
+          },
+          {
+            "year": 2022,
+            "value": 800
+          },
+          {
+            "year": 2023,
+            "value": 500
+          },
+          {
+            "year": 2024,
+            "value": 700
+          },
+          {
+            "year": 2025,
+            "value": 900
+          }
         ],
         "capacity_avg_kW_month": [
-          {"year": 2020, "value": 3.8}, {"year": 2021, "value": 3.6},
-          {"year": 2022, "value": 2.6}, {"year": 2023, "value": 2.0},
-          {"year": 2024, "value": 2.5}, {"year": 2025, "value": 3.98}
+          {
+            "year": 2020,
+            "value": 3.8
+          },
+          {
+            "year": 2021,
+            "value": 3.6
+          },
+          {
+            "year": 2022,
+            "value": 2.6
+          },
+          {
+            "year": 2023,
+            "value": 2.0
+          },
+          {
+            "year": 2024,
+            "value": 2.5
+          },
+          {
+            "year": 2025,
+            "value": 3.98
+          }
         ]
       },
       "programs": [
         {
-          "name": "Forward Capacity Market (FCM)", "compensation": "FCA clearing price",
-          "rateRange": "$2.00-$3.98/kW-month", "market": "Forward Capacity Market",
-          "marketCategory": "capacity", "minSize_kW": 100, "notificationTime": "Seasonal commitment",
-          "rate_min": 2.0, "rate_max": 3.98, "rate_unit": "$/kW-month"
+          "name": "Forward Capacity Market (FCM)",
+          "compensation": "FCA clearing price",
+          "rateRange": "$2.00-$3.98/kW-month",
+          "market": "Forward Capacity Market",
+          "marketCategory": "capacity",
+          "minSize_kW": 100,
+          "notificationTime": "Seasonal commitment",
+          "rate_min": 2.0,
+          "rate_max": 3.98,
+          "rate_unit": "$/kW-month",
+          "typology": {
+            "economic": {
+              "score": 1,
+              "label": "Limited upside",
+              "notes": "Payments are generally modest relative to emergency products."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 2,
+              "label": "Light complexity",
+              "notes": "Some qualification and settlement requirements apply."
+            }
+          }
         },
         {
-          "name": "Price-Responsive Demand (PRD)", "compensation": "LMP-based",
-          "rateRange": "Real-time LMP for reductions", "market": "Day-Ahead & Real-Time Energy",
-          "marketCategory": "energy", "minSize_kW": 100, "notificationTime": "Market-scheduled",
-          "rate_min": 30, "rate_max": 80, "rate_unit": "$/MWh"
+          "name": "Price-Responsive Demand (PRD)",
+          "compensation": "LMP-based",
+          "rateRange": "Real-time LMP for reductions",
+          "market": "Day-Ahead & Real-Time Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 100,
+          "notificationTime": "Market-scheduled",
+          "rate_min": 30,
+          "rate_max": 80,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 1,
+              "label": "Scheduled",
+              "notes": "Best for loads that can plan shifts into market schedules."
+            },
+            "programmatic": {
+              "score": 3,
+              "label": "Moderate complexity",
+              "notes": "Expect regular metering, baseline, or aggregation administration."
+            }
+          }
         },
         {
-          "name": "Day-Ahead DR Energy", "compensation": "LMP-based",
-          "rateRange": "DA LMP (threshold price applies)", "market": "Day-Ahead Energy",
-          "marketCategory": "energy", "minSize_kW": 100, "notificationTime": "Day-ahead schedule",
-          "rate_min": 30, "rate_max": 80, "rate_unit": "$/MWh"
+          "name": "Day-Ahead DR Energy",
+          "compensation": "LMP-based",
+          "rateRange": "DA LMP (threshold price applies)",
+          "market": "Day-Ahead Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 100,
+          "notificationTime": "Day-ahead schedule",
+          "rate_min": 30,
+          "rate_max": 80,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 2,
+              "label": "Light complexity",
+              "notes": "Some qualification and settlement requirements apply."
+            }
+          }
         },
         {
-          "name": "Real-Time DR Reserves", "compensation": "Reserve clearing price",
-          "rateRange": "Varies by reserve product", "market": "Ancillary Services",
-          "marketCategory": "ancillary", "minSize_kW": 100, "notificationTime": "10-30 minutes",
-          "rate_min": 5, "rate_max": 35, "rate_unit": "$/MWh"
+          "name": "Real-Time DR Reserves",
+          "compensation": "Reserve clearing price",
+          "rateRange": "Varies by reserve product",
+          "market": "Ancillary Services",
+          "marketCategory": "ancillary",
+          "minSize_kW": 100,
+          "notificationTime": "10-30 minutes",
+          "rate_min": 5,
+          "rate_max": 35,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 2,
+              "label": "Moderate upside",
+              "notes": "Moderate settlement range or capacity value."
+            },
+            "flexibility": {
+              "score": 4,
+              "label": "Fast response",
+              "notes": "Suitable only for loads that can move on short notice."
+            },
+            "programmatic": {
+              "score": 2,
+              "label": "Light complexity",
+              "notes": "Some qualification and settlement requirements apply."
+            }
+          }
         }
       ],
       "summary": {
@@ -316,102 +1199,391 @@
     "NYISO": {
       "name": "New York ISO",
       "type": "RTO",
-      "states": ["New York"],
+      "states": [
+        "New York"
+      ],
       "numericRates": {
-        "energy_min_MWh": 25, "energy_max_MWh": 80,
-        "capacity_min_kW_month": 5.0, "capacity_max_kW_month": 15.0,
-        "emergency_min_MWh": 500, "emergency_max_MWh": 1000,
-        "ancillary_min_MWh": 5, "ancillary_max_MWh": 45
+        "energy_min_MWh": 25,
+        "energy_max_MWh": 80,
+        "capacity_min_kW_month": 5.0,
+        "capacity_max_kW_month": 15.0,
+        "emergency_min_MWh": 500,
+        "emergency_max_MWh": 1000,
+        "ancillary_min_MWh": 5,
+        "ancillary_max_MWh": 45
       },
       "rateHistory": {
         "energy_avg_MWh": [
-          {"year": 2020, "value": 22}, {"year": 2021, "value": 38},
-          {"year": 2022, "value": 62}, {"year": 2023, "value": 35},
-          {"year": 2024, "value": 40}, {"year": 2025, "value": 50}
+          {
+            "year": 2020,
+            "value": 22
+          },
+          {
+            "year": 2021,
+            "value": 38
+          },
+          {
+            "year": 2022,
+            "value": 62
+          },
+          {
+            "year": 2023,
+            "value": 35
+          },
+          {
+            "year": 2024,
+            "value": 40
+          },
+          {
+            "year": 2025,
+            "value": 50
+          }
         ],
         "emergency_avg_MWh": [
-          {"year": 2020, "value": 500}, {"year": 2021, "value": 500},
-          {"year": 2022, "value": 700}, {"year": 2023, "value": 600},
-          {"year": 2024, "value": 750}, {"year": 2025, "value": 800}
+          {
+            "year": 2020,
+            "value": 500
+          },
+          {
+            "year": 2021,
+            "value": 500
+          },
+          {
+            "year": 2022,
+            "value": 700
+          },
+          {
+            "year": 2023,
+            "value": 600
+          },
+          {
+            "year": 2024,
+            "value": 750
+          },
+          {
+            "year": 2025,
+            "value": 800
+          }
         ],
         "capacity_avg_kW_month": [
-          {"year": 2020, "value": 5.5}, {"year": 2021, "value": 6.2},
-          {"year": 2022, "value": 8.0}, {"year": 2023, "value": 9.5},
-          {"year": 2024, "value": 11.0}, {"year": 2025, "value": 14.0}
+          {
+            "year": 2020,
+            "value": 5.5
+          },
+          {
+            "year": 2021,
+            "value": 6.2
+          },
+          {
+            "year": 2022,
+            "value": 8.0
+          },
+          {
+            "year": 2023,
+            "value": 9.5
+          },
+          {
+            "year": 2024,
+            "value": 11.0
+          },
+          {
+            "year": 2025,
+            "value": 14.0
+          }
         ]
       },
       "programs": [
         {
-          "name": "Special Case Resource (SCR) - ICAP", "compensation": "Monthly ICAP payments",
-          "rateRange": "$5-$15+/kW-month", "market": "Installed Capacity Market",
-          "marketCategory": "capacity", "minSize_kW": 100, "notificationTime": "2 hours (21-hour max)",
-          "rate_min": 5, "rate_max": 15, "rate_unit": "$/kW-month"
+          "name": "Special Case Resource (SCR) - ICAP",
+          "compensation": "Monthly ICAP payments",
+          "rateRange": "$5-$15+/kW-month",
+          "market": "Installed Capacity Market",
+          "marketCategory": "capacity",
+          "minSize_kW": 100,
+          "notificationTime": "2 hours (21-hour max)",
+          "rate_min": 5,
+          "rate_max": 15,
+          "rate_unit": "$/kW-month",
+          "typology": {
+            "economic": {
+              "score": 2,
+              "label": "Moderate upside",
+              "notes": "Moderate settlement range or capacity value."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 2,
+              "label": "Light complexity",
+              "notes": "Some qualification and settlement requirements apply."
+            }
+          }
         },
         {
-          "name": "Emergency Demand Response Program (EDRP)", "compensation": "Greater of $500/MWh or RT LMP",
-          "rateRange": "≥$500/MWh", "market": "Emergency / Reliability",
-          "marketCategory": "emergency", "minSize_kW": 100, "notificationTime": "2 hours",
-          "rate_min": 500, "rate_max": 1000, "rate_unit": "$/MWh"
+          "name": "Emergency Demand Response Program (EDRP)",
+          "compensation": "Greater of $500/MWh or RT LMP",
+          "rateRange": "\u2265$500/MWh",
+          "market": "Emergency / Reliability",
+          "marketCategory": "emergency",
+          "minSize_kW": 100,
+          "notificationTime": "2 hours",
+          "rate_min": 500,
+          "rate_max": 1000,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 5,
+              "label": "High upside",
+              "notes": "Scarcity or emergency settlements can be very large but volatile."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 2,
+              "label": "Light complexity",
+              "notes": "Some qualification and settlement requirements apply."
+            }
+          }
         },
         {
-          "name": "DER Aggregation (Economic)", "compensation": "LMP-based",
-          "rateRange": "Zonal LMP", "market": "Energy, Capacity, Ancillary",
-          "marketCategory": "energy", "minSize_kW": 100, "notificationTime": "Market-scheduled",
-          "rate_min": 25, "rate_max": 80, "rate_unit": "$/MWh"
+          "name": "DER Aggregation (Economic)",
+          "compensation": "LMP-based",
+          "rateRange": "Zonal LMP",
+          "market": "Energy, Capacity, Ancillary",
+          "marketCategory": "energy",
+          "minSize_kW": 100,
+          "notificationTime": "Market-scheduled",
+          "rate_min": 25,
+          "rate_max": 80,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 1,
+              "label": "Scheduled",
+              "notes": "Best for loads that can plan shifts into market schedules."
+            },
+            "programmatic": {
+              "score": 3,
+              "label": "Moderate complexity",
+              "notes": "Expect regular metering, baseline, or aggregation administration."
+            }
+          }
         }
       ],
       "summary": {
         "energyRate": "LMP ($25-$80/MWh typical; NYC higher)",
         "capacityRate": "$5-$15+/kW-month (ICAP spot)",
-        "emergencyRate": "≥$500/MWh (EDRP)",
+        "emergencyRate": "\u2265$500/MWh (EDRP)",
         "ancillaryRate": "AS MCPC (varies by zone)"
       }
     },
     "SPP": {
       "name": "Southwest Power Pool",
       "type": "RTO",
-      "states": ["KS","OK","NE","NM (partial)","TX (partial)","AR (partial)","MO (partial)","LA (partial)","MT (partial)","SD (partial)","ND (partial)","WY (partial)","CO (partial)","IA (partial)"],
+      "states": [
+        "KS",
+        "OK",
+        "NE",
+        "NM (partial)",
+        "TX (partial)",
+        "AR (partial)",
+        "MO (partial)",
+        "LA (partial)",
+        "MT (partial)",
+        "SD (partial)",
+        "ND (partial)",
+        "WY (partial)",
+        "CO (partial)",
+        "IA (partial)"
+      ],
       "numericRates": {
-        "energy_min_MWh": 15, "energy_max_MWh": 50,
-        "capacity_min_kW_month": 0.5, "capacity_max_kW_month": 3.0,
-        "emergency_min_MWh": 50, "emergency_max_MWh": 500,
-        "ancillary_min_MWh": 3, "ancillary_max_MWh": 20
+        "energy_min_MWh": 15,
+        "energy_max_MWh": 50,
+        "capacity_min_kW_month": 0.5,
+        "capacity_max_kW_month": 3.0,
+        "emergency_min_MWh": 50,
+        "emergency_max_MWh": 500,
+        "ancillary_min_MWh": 3,
+        "ancillary_max_MWh": 20
       },
       "rateHistory": {
         "energy_avg_MWh": [
-          {"year": 2020, "value": 18}, {"year": 2021, "value": 42},
-          {"year": 2022, "value": 48}, {"year": 2023, "value": 25},
-          {"year": 2024, "value": 22}, {"year": 2025, "value": 30}
+          {
+            "year": 2020,
+            "value": 18
+          },
+          {
+            "year": 2021,
+            "value": 42
+          },
+          {
+            "year": 2022,
+            "value": 48
+          },
+          {
+            "year": 2023,
+            "value": 25
+          },
+          {
+            "year": 2024,
+            "value": 22
+          },
+          {
+            "year": 2025,
+            "value": 30
+          }
         ],
         "emergency_avg_MWh": [
-          {"year": 2020, "value": 50}, {"year": 2021, "value": 120},
-          {"year": 2022, "value": 200}, {"year": 2023, "value": 150},
-          {"year": 2024, "value": 180}, {"year": 2025, "value": 250}
+          {
+            "year": 2020,
+            "value": 50
+          },
+          {
+            "year": 2021,
+            "value": 120
+          },
+          {
+            "year": 2022,
+            "value": 200
+          },
+          {
+            "year": 2023,
+            "value": 150
+          },
+          {
+            "year": 2024,
+            "value": 180
+          },
+          {
+            "year": 2025,
+            "value": 250
+          }
         ],
         "capacity_avg_kW_month": [
-          {"year": 2020, "value": 0.5}, {"year": 2021, "value": 0.8},
-          {"year": 2022, "value": 1.2}, {"year": 2023, "value": 1.5},
-          {"year": 2024, "value": 2.0}, {"year": 2025, "value": 2.8}
+          {
+            "year": 2020,
+            "value": 0.5
+          },
+          {
+            "year": 2021,
+            "value": 0.8
+          },
+          {
+            "year": 2022,
+            "value": 1.2
+          },
+          {
+            "year": 2023,
+            "value": 1.5
+          },
+          {
+            "year": 2024,
+            "value": 2.0
+          },
+          {
+            "year": 2025,
+            "value": 2.8
+          }
         ]
       },
       "programs": [
         {
-          "name": "Integrated Marketplace DR", "compensation": "LMP-based",
-          "rateRange": "DA/RT LMP at settlement location", "market": "Day-Ahead & Real-Time Energy",
-          "marketCategory": "energy", "minSize_kW": 1000, "notificationTime": "Market-scheduled",
-          "rate_min": 15, "rate_max": 50, "rate_unit": "$/MWh"
+          "name": "Integrated Marketplace DR",
+          "compensation": "LMP-based",
+          "rateRange": "DA/RT LMP at settlement location",
+          "market": "Day-Ahead & Real-Time Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 1000,
+          "notificationTime": "Market-scheduled",
+          "rate_min": 15,
+          "rate_max": 50,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 1,
+              "label": "Scheduled",
+              "notes": "Best for loads that can plan shifts into market schedules."
+            },
+            "programmatic": {
+              "score": 5,
+              "label": "Very high complexity",
+              "notes": "Operational and compliance burden is significant for direct participation."
+            }
+          }
         },
         {
-          "name": "Block Demand Response", "compensation": "LMP-based",
-          "rateRange": "LMP (fixed block quantity)", "market": "Day-Ahead & Real-Time Energy",
-          "marketCategory": "energy", "minSize_kW": 1000, "notificationTime": "Market-scheduled",
-          "rate_min": 15, "rate_max": 50, "rate_unit": "$/MWh"
+          "name": "Block Demand Response",
+          "compensation": "LMP-based",
+          "rateRange": "LMP (fixed block quantity)",
+          "market": "Day-Ahead & Real-Time Energy",
+          "marketCategory": "energy",
+          "minSize_kW": 1000,
+          "notificationTime": "Market-scheduled",
+          "rate_min": 15,
+          "rate_max": 50,
+          "rate_unit": "$/MWh",
+          "typology": {
+            "economic": {
+              "score": 3,
+              "label": "Market-linked",
+              "notes": "Revenue tracks clearing price or LMP and can move materially."
+            },
+            "flexibility": {
+              "score": 1,
+              "label": "Scheduled",
+              "notes": "Best for loads that can plan shifts into market schedules."
+            },
+            "programmatic": {
+              "score": 5,
+              "label": "Very high complexity",
+              "notes": "Operational and compliance burden is significant for direct participation."
+            }
+          }
         },
         {
-          "name": "Resource Adequacy Capacity Credit", "compensation": "Capacity value",
-          "rateRange": "Varies by member utility", "market": "Resource Adequacy",
-          "marketCategory": "capacity", "minSize_kW": 1000, "notificationTime": "Planning horizon",
-          "rate_min": 0.5, "rate_max": 3.0, "rate_unit": "$/kW-month"
+          "name": "Resource Adequacy Capacity Credit",
+          "compensation": "Capacity value",
+          "rateRange": "Varies by member utility",
+          "market": "Resource Adequacy",
+          "marketCategory": "capacity",
+          "minSize_kW": 1000,
+          "notificationTime": "Planning horizon",
+          "rate_min": 0.5,
+          "rate_max": 3.0,
+          "rate_unit": "$/kW-month",
+          "typology": {
+            "economic": {
+              "score": 1,
+              "label": "Limited upside",
+              "notes": "Payments are generally modest relative to emergency products."
+            },
+            "flexibility": {
+              "score": 2,
+              "label": "Day-ahead / event",
+              "notes": "Operational response is planned or relatively slow."
+            },
+            "programmatic": {
+              "score": 3,
+              "label": "Moderate complexity",
+              "notes": "Expect regular metering, baseline, or aggregation administration."
+            }
+          }
         }
       ],
       "summary": {
@@ -421,5 +1593,11 @@
         "ancillaryRate": "Reserve MCPC (varies)"
       }
     }
+  },
+  "schemaVersion": "0.6",
+  "typologySchema": {
+    "economic": "Higher score means stronger upside or volatility in compensation.",
+    "flexibility": "Higher score means faster or more demanding operational response from load.",
+    "programmatic": "Higher score means more complex telemetry, baseline, aggregation, or compliance burden."
   }
 }

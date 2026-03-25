@@ -76,6 +76,8 @@ async function init() {
         ]);
     }
 
+    normalizeRatesData(ratesData);
+
     document.getElementById('last-updated').textContent = 'Last updated: ' + ratesData.lastUpdated;
 
     // URL hash state
@@ -255,6 +257,7 @@ function showRegionDetail(regionId) {
 
     const s = region.summary;
     const nr = region.numericRates;
+    const regionTypology = summarizeRegionTypology(region);
     const search = document.getElementById('search-input').value.toLowerCase();
     const filterMarket = document.getElementById('filter-market').value;
     const filterKw = parseInt(document.getElementById('filter-kw').value) || 0;
@@ -296,6 +299,15 @@ function showRegionDetail(regionId) {
             <button class="btn btn-primary" onclick="openEditSummary('${regionId}')" style="width:100%;margin-bottom:12px;">
                 ✏️ Edit Summary Rates
             </button>
+            <div>
+                <h3 style="font-size:13px;color:#94a3b8;text-transform:uppercase;letter-spacing:0.5px;">Typology Snapshot</h3>
+                <div class="typology-grid">
+                    ${renderTypologyBox('Economic', regionTypology.economic)}
+                    ${renderTypologyBox('Flexibility', regionTypology.flexibility)}
+                    ${renderTypologyBox('Programmatic', regionTypology.programmatic)}
+                </div>
+                <p class="section-caption">Average program-level typology scores for this market. Higher economic means stronger upside; higher flexibility and programmatic mean more demanding operationally or administratively.</p>
+            </div>
         </div>
 
         <div class="programs-section">
@@ -307,7 +319,12 @@ function showRegionDetail(regionId) {
                     <div class="pname">${escapeHtml(p.name)}</div>
                     <div class="pdetails">${escapeHtml(p.market)} · Min ${p.minSize_kW} kW · ${escapeHtml(p.notificationTime)}</div>
                     <div class="prate">${escapeHtml(p.rateRange)}${p.rate_min != null ? ` <span style="color:#94a3b8;font-weight:400;">(${p.rate_min}–${p.rate_max} ${escapeHtml(p.rate_unit)})</span>` : ''}</div>
-                    <span class="pcategory ${CATEGORY_CLASSES[p.marketCategory] || ''}">${escapeHtml(p.marketCategory || 'other')}</span>
+                    <div class="program-meta">
+                        <div class="program-type-col">
+                            <span class="pcategory ${CATEGORY_CLASSES[p.marketCategory] || ''}">${escapeHtml(p.marketCategory || 'other')}</span>
+                            ${renderProgramTypologyPills(p)}
+                        </div>
+                    </div>
                 </div>`;
             }).join('')}
             <button class="btn-add" onclick="openAddProgram('${regionId}')">+ Add Program</button>
@@ -588,6 +605,7 @@ function openEditProgram(regionId, idx) {
             <div class="form-group"><label>Min Size (kW)</label><input id="ep-minsize" type="number" value="${p.minSize_kW}"></div>
             <div class="form-group"><label>Notification Time</label><input id="ep-notif" value="${escapeAttr(p.notificationTime)}"></div>
         </div>
+        ${renderTypologyFields(p.typology)}
         <div class="btn-row">
             <button class="btn btn-primary" onclick="saveProgram('${regionId}', ${idx})">Save</button>
             <button class="btn btn-danger" onclick="deleteProgram('${regionId}', ${idx})">Delete</button>
@@ -607,7 +625,8 @@ function buildProgramFromForm() {
         notificationTime: document.getElementById('ep-notif').value,
         rate_min: parseNum('ep-rmin'),
         rate_max: parseNum('ep-rmax'),
-        rate_unit: document.getElementById('ep-runit')?.value || ''
+        rate_unit: document.getElementById('ep-runit')?.value || '',
+        typology: readTypologyFields('ep')
     };
 }
 
@@ -656,6 +675,7 @@ function openAddProgram(regionId) {
             <div class="form-group"><label>Min Size (kW)</label><input id="ep-minsize" type="number" placeholder="100"></div>
             <div class="form-group"><label>Notification Time</label><input id="ep-notif" placeholder="e.g., 30 minutes"></div>
         </div>
+        ${renderTypologyFields(getDefaultTypology())}
         <div class="btn-row">
             <button class="btn btn-primary" onclick="addProgram('${regionId}')">Add Program</button>
             <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
@@ -682,13 +702,23 @@ function exportJSON() {
 }
 
 function exportCSV() {
-    const rows = [['Region', 'Program', 'Market', 'Category', 'Compensation', 'RateRange', 'RateMin', 'RateMax', 'Unit', 'MinSize_kW', 'NotificationTime']];
+    const rows = [[
+        'Region', 'Program', 'Market', 'Category', 'Compensation', 'RateRange', 'RateMin', 'RateMax', 'Unit',
+        'MinSize_kW', 'NotificationTime',
+        'EconomicScore', 'EconomicLabel', 'EconomicNotes',
+        'FlexibilityScore', 'FlexibilityLabel', 'FlexibilityNotes',
+        'ProgrammaticScore', 'ProgrammaticLabel', 'ProgrammaticNotes'
+    ]];
     for (const [id, region] of Object.entries(ratesData.regions)) {
         for (const p of region.programs) {
+            const typology = ensureProgramTypology(p);
             rows.push([
                 id, p.name, p.market, p.marketCategory || '', p.compensation,
                 p.rateRange, p.rate_min ?? '', p.rate_max ?? '', p.rate_unit || '',
-                p.minSize_kW, p.notificationTime
+                p.minSize_kW, p.notificationTime,
+                typology.economic.score, typology.economic.label, typology.economic.notes,
+                typology.flexibility.score, typology.flexibility.label, typology.flexibility.notes,
+                typology.programmatic.score, typology.programmatic.label, typology.programmatic.notes
             ]);
         }
     }
@@ -778,6 +808,185 @@ function parseNum(id) {
 
 function todayStr() {
     return new Date().toISOString().split('T')[0];
+}
+
+function normalizeRatesData(data) {
+    data.schemaVersion = data.schemaVersion || '0.6';
+    if (!data.typologySchema) {
+        data.typologySchema = {
+            economic: 'Higher score means stronger upside or volatility in compensation.',
+            flexibility: 'Higher score means faster or more demanding operational response from load.',
+            programmatic: 'Higher score means more complex telemetry, baseline, aggregation, or compliance burden.'
+        };
+    }
+    for (const region of Object.values(data.regions || {})) {
+        region.programs = (region.programs || []).map(program => ({
+            ...program,
+            typology: ensureProgramTypology(program)
+        }));
+    }
+}
+
+function ensureProgramTypology(program) {
+    const fallback = inferTypologyFromProgram(program);
+    const existing = program.typology || {};
+    return {
+        economic: normalizeTypologyDimension(existing.economic, fallback.economic),
+        flexibility: normalizeTypologyDimension(existing.flexibility, fallback.flexibility),
+        programmatic: normalizeTypologyDimension(existing.programmatic, fallback.programmatic)
+    };
+}
+
+function normalizeTypologyDimension(existing, fallback) {
+    return {
+        score: Number.isFinite(existing?.score) ? existing.score : fallback.score,
+        label: existing?.label || fallback.label,
+        notes: existing?.notes || fallback.notes
+    };
+}
+
+function inferTypologyFromProgram(program = {}) {
+    const rateMax = Number(program.rate_max) || 0;
+    const notification = String(program.notificationTime || '').toLowerCase();
+    const market = String(program.market || '').toLowerCase();
+    const compensation = String(program.compensation || '').toLowerCase();
+    const minSize = Number(program.minSize_kW) || 0;
+
+    let economic = { score: 2, label: 'Moderate upside', notes: 'Moderate settlement range or capacity value.' };
+    if (rateMax >= 1000) economic = { score: 5, label: 'High upside', notes: 'Scarcity or emergency settlements can be very large but volatile.' };
+    else if (rateMax >= 200) economic = { score: 4, label: 'Strong upside', notes: 'Meaningful revenue potential with market or event variability.' };
+    else if (rateMax >= 50) economic = { score: 3, label: 'Market-linked', notes: 'Revenue tracks clearing price or LMP and can move materially.' };
+    else if (rateMax > 0 && rateMax < 15) economic = { score: 1, label: 'Limited upside', notes: 'Payments are generally modest relative to emergency products.' };
+
+    let flexibility = { score: 2, label: 'Day-ahead / event', notes: 'Operational response is planned or relatively slow.' };
+    if (notification.includes('5-minute') || notification.includes('real-time')) flexibility = { score: 5, label: 'Real-time', notes: 'Requires near-continuous dispatchability or very fast response.' };
+    else if (notification.includes('10')) flexibility = { score: 4, label: 'Fast response', notes: 'Suitable only for loads that can move on short notice.' };
+    else if (notification.includes('30')) flexibility = { score: 3, label: 'Short notice', notes: 'Program expects sub-hour operational flexibility.' };
+    else if (notification.includes('market-scheduled') || notification.includes('scheduled')) flexibility = { score: 1, label: 'Scheduled', notes: 'Best for loads that can plan shifts into market schedules.' };
+
+    let complexityScore = 1;
+    if (minSize >= 500) complexityScore += 1;
+    if (minSize >= 1000) complexityScore += 1;
+    if (market.includes('ancillary') || compensation.includes('lmp') || compensation.includes('auction') || compensation.includes('market clearing')) complexityScore += 1;
+    if (market.includes('capacity') || market.includes('real-time')) complexityScore += 1;
+    complexityScore = Math.max(1, Math.min(complexityScore, 5));
+    const complexityLabels = {
+        1: ['Low complexity', 'Enrollment and settlement requirements are relatively light.'],
+        2: ['Light complexity', 'Some qualification and settlement requirements apply.'],
+        3: ['Moderate complexity', 'Expect regular metering, baseline, or aggregation administration.'],
+        4: ['High complexity', 'Program likely needs telemetry, aggregation discipline, or market operations support.'],
+        5: ['Very high complexity', 'Operational and compliance burden is significant for direct participation.']
+    };
+
+    return {
+        economic,
+        flexibility,
+        programmatic: {
+            score: complexityScore,
+            label: complexityLabels[complexityScore][0],
+            notes: complexityLabels[complexityScore][1]
+        }
+    };
+}
+
+function getDefaultTypology() {
+    return {
+        economic: { score: 3, label: 'Market-linked', notes: 'Revenue follows the underlying market or procurement signal.' },
+        flexibility: { score: 2, label: 'Day-ahead / event', notes: 'Operational response is planned or relatively slow.' },
+        programmatic: { score: 3, label: 'Moderate complexity', notes: 'Program requires some settlement, metering, or registration effort.' }
+    };
+}
+
+function summarizeRegionTypology(region) {
+    const dimensions = ['economic', 'flexibility', 'programmatic'];
+    const summary = {};
+    for (const dimension of dimensions) {
+        const scores = region.programs
+            .map(program => ensureProgramTypology(program)[dimension]?.score)
+            .filter(score => Number.isFinite(score));
+        const avg = scores.length ? Math.round((scores.reduce((total, score) => total + score, 0) / scores.length) * 10) / 10 : null;
+        const exemplar = region.programs.length ? ensureProgramTypology(region.programs[0])[dimension] : getDefaultTypology()[dimension];
+        summary[dimension] = {
+            score: avg ?? exemplar.score,
+            label: exemplar.label,
+            notes: exemplar.notes
+        };
+    }
+    return summary;
+}
+
+function renderTypologyBox(title, dimension) {
+    return `
+        <div class="typology-box">
+            <div class="label">${escapeHtml(title)}</div>
+            <div class="value">${escapeHtml(String(dimension.score ?? 'N/A'))}/5</div>
+            <div class="meta">${escapeHtml(dimension.label || 'Unclassified')}</div>
+            <div class="notes">${escapeHtml(dimension.notes || '')}</div>
+        </div>
+    `;
+}
+
+function renderProgramTypologyPills(program) {
+    const typology = ensureProgramTypology(program);
+    const dimensions = [
+        ['economic', 'E', typology.economic],
+        ['flexibility', 'F', typology.flexibility],
+        ['programmatic', 'P', typology.programmatic]
+    ];
+    return `
+        <div class="typology-pills">
+            ${dimensions.map(([key, shortLabel, dimension]) => `
+                <span class="typology-pill ${key}" title="${escapeAttr(dimension.notes || '')}">${shortLabel} ${escapeHtml(String(dimension.score))}/5 · ${escapeHtml(dimension.label)}</span>
+            `).join('')}
+        </div>
+    `;
+}
+
+function renderTypologyFields(typology) {
+    const safeTypology = {
+        economic: typology?.economic || getDefaultTypology().economic,
+        flexibility: typology?.flexibility || getDefaultTypology().flexibility,
+        programmatic: typology?.programmatic || getDefaultTypology().programmatic
+    };
+    return `
+        <div class="form-group" style="margin-top:18px;">
+            <label style="font-size:13px;color:#f8fafc;">Typology</label>
+            <p class="section-caption">Use 1-5 scores. Higher economic means more upside; higher flexibility and programmatic mean more demanding operating and compliance requirements.</p>
+        </div>
+        ${renderTypologyFieldGroup('Economic', 'eco', safeTypology.economic)}
+        ${renderTypologyFieldGroup('Flexibility', 'flex', safeTypology.flexibility)}
+        ${renderTypologyFieldGroup('Programmatic', 'prog', safeTypology.programmatic)}
+    `;
+}
+
+function renderTypologyFieldGroup(title, prefix, dimension) {
+    return `
+        <div class="form-group">
+            <label>${escapeHtml(title)}</label>
+            <div class="form-row">
+                <div class="form-group"><label>Score</label><input id="ep-${prefix}-score" type="number" min="1" max="5" value="${dimension.score ?? ''}"></div>
+                <div class="form-group"><label>Label</label><input id="ep-${prefix}-label" value="${escapeAttr(dimension.label || '')}"></div>
+            </div>
+            <div class="form-group"><label>Notes</label><input id="ep-${prefix}-notes" value="${escapeAttr(dimension.notes || '')}"></div>
+        </div>
+    `;
+}
+
+function readTypologyFields(prefix) {
+    return {
+        economic: readTypologyDimension(prefix, 'eco', getDefaultTypology().economic),
+        flexibility: readTypologyDimension(prefix, 'flex', getDefaultTypology().flexibility),
+        programmatic: readTypologyDimension(prefix, 'prog', getDefaultTypology().programmatic)
+    };
+}
+
+function readTypologyDimension(prefix, shortPrefix, fallback) {
+    const scoreValue = parseInt(document.getElementById(`${prefix}-${shortPrefix}-score`)?.value, 10);
+    return {
+        score: Number.isFinite(scoreValue) ? Math.max(1, Math.min(scoreValue, 5)) : fallback.score,
+        label: document.getElementById(`${prefix}-${shortPrefix}-label`)?.value || fallback.label,
+        notes: document.getElementById(`${prefix}-${shortPrefix}-notes`)?.value || fallback.notes
+    };
 }
 
 // ── Init ──────────────────────────────────────────────
