@@ -1594,10 +1594,44 @@
       }
     }
   },
-  "schemaVersion": "0.6",
+  "schemaVersion": "0.7",
   "typologySchema": {
     "economic": "Higher score means stronger upside or volatility in compensation.",
     "flexibility": "Higher score means faster or more demanding operational response from load.",
     "programmatic": "Higher score means more complex telemetry, baseline, aggregation, or compliance burden."
+  },
+  "sectorProfiles": {
+    "dataCenters": {
+      "name": "Data Centers",
+      "description": "Default profile for a battery-backed large data center with flexible cooling, limited emergency generation use, and strict uptime obligations for core compute load.",
+      "portfolioMW": {
+        "battery": 3,
+        "cooling": 2,
+        "generator": 5
+      },
+      "annualHours": {
+        "ancillary": 120,
+        "energy": 80,
+        "emergency": 10,
+        "capacityDays": 20,
+        "capacityMonths": 6
+      },
+      "targets": {
+        "flexibility": 4,
+        "programmaticTolerance": 2
+      },
+      "weights": {
+        "economic": 0.4,
+        "flexibility": 0.35,
+        "programmatic": 0.25
+      },
+      "stackabilityFactor": 0.65,
+      "marketMultipliers": {
+        "ancillary": 1,
+        "energy": 0.75,
+        "emergency": 0.55,
+        "capacity": 0.85
+      }
+    }
   }
 }

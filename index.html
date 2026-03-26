@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>US Industrial Load Flexibility Rates – GIS Dashboard v0.6</title>
+    <title>US Industrial Load Flexibility Rates – GIS Dashboard v0.7</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <style>
@@ -148,6 +148,32 @@
         }
         .compare-chart-container canvas { width: 100% !important; max-height: 280px; }
 
+        .sector-profile-card {
+            background: linear-gradient(180deg, #111c33, #0f172a); border: 1px solid #334155;
+            border-radius: 12px; padding: 16px; margin-bottom: 16px;
+        }
+        .sector-profile-card h3 { font-size: 14px; color: #f8fafc; margin-bottom: 6px; }
+        .sector-profile-card p { font-size: 12px; color: #cbd5e1; line-height: 1.45; }
+        .assumption-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+        .assumption-box {
+            background: rgba(30,41,59,0.7); border: 1px solid #334155; border-radius: 10px; padding: 10px;
+        }
+        .assumption-box .label { font-size: 10px; color: #94a3b8; text-transform: uppercase; }
+        .assumption-box .value { font-size: 14px; color: #f8fafc; font-weight: 700; margin-top: 3px; }
+        .sector-rank-card {
+            background: #0f172a; border: 1px solid #334155; border-radius: 12px; padding: 14px; margin-bottom: 10px;
+        }
+        .sector-rank-card.active { border-color: #38bdf8; box-shadow: 0 0 0 1px rgba(56,189,248,0.25) inset; }
+        .sector-rank-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+        .sector-rank-head h4 { font-size: 14px; color: #f8fafc; }
+        .sector-rank-score { font-size: 16px; font-weight: 800; color: #38bdf8; }
+        .sector-rank-meta { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+        .sector-rank-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+        .sector-mini-box { background: #111c33; border: 1px solid #334155; border-radius: 8px; padding: 8px; }
+        .sector-mini-box .label { font-size: 10px; color: #94a3b8; text-transform: uppercase; }
+        .sector-mini-box .value { font-size: 14px; color: #f8fafc; font-weight: 700; margin-top: 2px; }
+        .sector-best-program { margin-top: 10px; font-size: 12px; color: #cbd5e1; line-height: 1.4; }
+
         /* ── Modal ──────────────────────────── */
         #edit-modal {
             display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7);
@@ -248,7 +274,7 @@
         <div id="sidebar">
             <div id="sidebar-header">
                 <h1>⚡ US Industrial Load Flexibility Rates</h1>
-                <p>GIS Dashboard v0.6 — Choropleth · Compare · Time-Series · Typology · API-Backed</p>
+                <p>GIS Dashboard v0.7 — Choropleth · Compare · Time-Series · Typology · Data Center Lens · API-Backed</p>
             </div>
 
             <!-- Toolbar: Choropleth + Search + Filter -->
@@ -283,6 +309,7 @@
                 <button class="tab-btn active" data-tab="detail">Detail</button>
                 <button class="tab-btn" data-tab="compare">Compare</button>
                 <button class="tab-btn" data-tab="trends">Trends</button>
+                <button class="tab-btn" data-tab="data-centers">Data Centers</button>
             </div>
 
             <div id="sidebar-content">
@@ -327,6 +354,14 @@
                             <canvas id="chart-capacity"></canvas>
                         </div>
                     </div>
+                </div>
+
+                <div class="tab-panel" id="panel-data-centers">
+                    <div class="sector-profile-card" id="data-center-profile"></div>
+                    <div class="compare-chart-container" id="data-center-chart-wrap">
+                        <canvas id="chart-data-centers"></canvas>
+                    </div>
+                    <div id="data-center-content"></div>
                 </div>
             </div>
 

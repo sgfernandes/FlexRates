@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════
-//  Energy Rates GIS Dashboard — app.js (v0.5)
-//  Choropleth · Compare · Time-Series · Search · API
+//  Energy Rates GIS Dashboard — app.js (v0.7)
+//  Choropleth · Compare · Time-Series · Typology · Sector Analysis · API
 // ══════════════════════════════════════════════════════
 
 // ── Configuration ─────────────────────────────────────
@@ -32,6 +32,7 @@ let chartEnergy = null;
 let chartEmergency = null;
 let chartCapacity = null;
 let compareChart = null;
+let chartDataCenters = null;
 
 // ── Map setup ─────────────────────────────────────────
 const map = L.map('map', {
@@ -88,6 +89,7 @@ async function init() {
 
     renderMap();
     setupEventListeners();
+    renderDataCenterAnalysis();
 
     if (selectedRegion) {
         showRegionDetail(selectedRegion);
@@ -235,6 +237,7 @@ function handleRegionClick(id) {
     renderMap();
     showRegionDetail(id);
     showTrends(id);
+    renderDataCenterAnalysis();
 
     // Switch to detail tab
     activateTab('detail');
@@ -576,6 +579,7 @@ async function saveSummary(regionId) {
     closeModal();
     showRegionDetail(regionId);
     renderMap();
+    renderDataCenterAnalysis();
     showToast('Summary rates updated');
 }
 
@@ -637,6 +641,7 @@ async function saveProgram(regionId, idx) {
     await apiPut(`/rates/regions/${regionId}/programs/${idx}`, prog);
     closeModal();
     showRegionDetail(regionId);
+    renderDataCenterAnalysis();
     showToast('Program updated');
 }
 
@@ -647,6 +652,7 @@ async function deleteProgram(regionId, idx) {
     await apiDelete(`/rates/regions/${regionId}/programs/${idx}`);
     closeModal();
     showRegionDetail(regionId);
+    renderDataCenterAnalysis();
     showToast('Program removed');
 }
 
@@ -692,6 +698,7 @@ async function addProgram(regionId) {
     await apiPost(`/rates/regions/${regionId}/programs`, prog);
     closeModal();
     showRegionDetail(regionId);
+    renderDataCenterAnalysis();
     showToast('Program added');
 }
 
@@ -811,7 +818,7 @@ function todayStr() {
 }
 
 function normalizeRatesData(data) {
-    data.schemaVersion = data.schemaVersion || '0.6';
+    data.schemaVersion = data.schemaVersion || '0.7';
     if (!data.typologySchema) {
         data.typologySchema = {
             economic: 'Higher score means stronger upside or volatility in compensation.',
@@ -819,6 +826,7 @@ function normalizeRatesData(data) {
             programmatic: 'Higher score means more complex telemetry, baseline, aggregation, or compliance burden.'
         };
     }
+    data.sectorProfiles = normalizeSectorProfiles(data.sectorProfiles);
     for (const region of Object.values(data.regions || {})) {
         region.programs = (region.programs || []).map(program => ({
             ...program,
@@ -897,6 +905,80 @@ function getDefaultTypology() {
     };
 }
 
+function getDefaultSectorProfiles() {
+    return {
+        dataCenters: {
+            name: 'Data Centers',
+            description: 'Default profile for a battery-backed large data center with flexible cooling, limited emergency generation use, and strict uptime obligations for core compute load.',
+            portfolioMW: {
+                battery: 3,
+                cooling: 2,
+                generator: 5
+            },
+            annualHours: {
+                ancillary: 120,
+                energy: 80,
+                emergency: 10,
+                capacityDays: 20,
+                capacityMonths: 6
+            },
+            targets: {
+                flexibility: 4,
+                programmaticTolerance: 2
+            },
+            weights: {
+                economic: 0.4,
+                flexibility: 0.35,
+                programmatic: 0.25
+            },
+            stackabilityFactor: 0.65,
+            marketMultipliers: {
+                ancillary: 1,
+                energy: 0.75,
+                emergency: 0.55,
+                capacity: 0.85
+            }
+        }
+    };
+}
+
+function normalizeSectorProfiles(existingProfiles = {}) {
+    const defaults = getDefaultSectorProfiles();
+    const dataCenters = existingProfiles.dataCenters || {};
+    return {
+        ...defaults,
+        ...existingProfiles,
+        dataCenters: {
+            ...defaults.dataCenters,
+            ...dataCenters,
+            portfolioMW: {
+                ...defaults.dataCenters.portfolioMW,
+                ...(dataCenters.portfolioMW || {})
+            },
+            annualHours: {
+                ...defaults.dataCenters.annualHours,
+                ...(dataCenters.annualHours || {})
+            },
+            targets: {
+                ...defaults.dataCenters.targets,
+                ...(dataCenters.targets || {})
+            },
+            weights: {
+                ...defaults.dataCenters.weights,
+                ...(dataCenters.weights || {})
+            },
+            marketMultipliers: {
+                ...defaults.dataCenters.marketMultipliers,
+                ...(dataCenters.marketMultipliers || {})
+            }
+        }
+    };
+}
+
+function getDataCenterProfile() {
+    return ratesData?.sectorProfiles?.dataCenters || getDefaultSectorProfiles().dataCenters;
+}
+
 function summarizeRegionTypology(region) {
     const dimensions = ['economic', 'flexibility', 'programmatic'];
     const summary = {};
@@ -913,6 +995,201 @@ function summarizeRegionTypology(region) {
         };
     }
     return summary;
+}
+
+function renderDataCenterAnalysis() {
+    if (!ratesData?.regions) return;
+    const profile = getDataCenterProfile();
+    const analyses = Object.entries(ratesData.regions)
+        .map(([id, region]) => ({ id, region, ...computeDataCenterRegionAnalysis(id, region, profile) }))
+        .sort((a, b) => b.overallScore - a.overallScore);
+
+    const profileEl = document.getElementById('data-center-profile');
+    const contentEl = document.getElementById('data-center-content');
+    if (!profileEl || !contentEl) return;
+
+    profileEl.innerHTML = `
+        <h3>${escapeHtml(profile.name)} Flexibility Lens</h3>
+        <p>${escapeHtml(profile.description)}</p>
+        <div class="assumption-grid">
+            <div class="assumption-box"><div class="label">Battery / UPS</div><div class="value">${formatMw(profile.portfolioMW.battery)}</div></div>
+            <div class="assumption-box"><div class="label">Cooling Flex</div><div class="value">${formatMw(profile.portfolioMW.cooling)}</div></div>
+            <div class="assumption-box"><div class="label">Generator-backed MW</div><div class="value">${formatMw(profile.portfolioMW.generator)}</div></div>
+            <div class="assumption-box"><div class="label">Annual Hours Assumed</div><div class="value">A:${profile.annualHours.ancillary} E:${profile.annualHours.energy} X:${profile.annualHours.emergency}</div></div>
+        </div>
+        <p class="section-caption">Scores reflect market attractiveness for a default battery-backed data center portfolio. Estimated annual value is a scenario-based gross range, not a market guarantee.</p>
+    `;
+
+    contentEl.innerHTML = analyses.map((analysis, index) => `
+        <div class="sector-rank-card ${selectedRegion === analysis.id ? 'active' : ''}">
+            <div class="sector-rank-head">
+                <h4>${index + 1}. ${escapeHtml(analysis.region.name)} <span style="font-size:11px;color:#94a3b8;">(${analysis.id})</span></h4>
+                <div class="sector-rank-score">${analysis.overallScore.toFixed(1)}/5</div>
+            </div>
+            <div class="sector-rank-meta">Estimated gross annual value: ${formatCurrencyRange(analysis.annualValueLow, analysis.annualValueHigh)} · Best category: ${escapeHtml(analysis.bestCategoryLabel)}</div>
+            <div class="sector-rank-grid">
+                <div class="sector-mini-box"><div class="label">Economic Fit</div><div class="value">${analysis.economicFit.toFixed(1)}/5</div></div>
+                <div class="sector-mini-box"><div class="label">Flexibility Fit</div><div class="value">${analysis.flexibilityFit.toFixed(1)}/5</div></div>
+                <div class="sector-mini-box"><div class="label">Programmatic Fit</div><div class="value">${analysis.programmaticFit.toFixed(1)}/5</div></div>
+            </div>
+            <div class="sector-best-program"><strong>Best programs:</strong> ${escapeHtml(analysis.bestProgramsSummary)}</div>
+        </div>
+    `).join('');
+
+    renderDataCenterChart(analyses);
+}
+
+function computeDataCenterRegionAnalysis(regionId, region, profile) {
+    const programAnalyses = region.programs.map(program => computeDataCenterProgramAnalysis(program, profile));
+    const dimensionAverage = key => average(programAnalyses.map(item => item[key]));
+    const economicFit = dimensionAverage('economicFit');
+    const flexibilityFit = dimensionAverage('flexibilityFit');
+    const programmaticFit = dimensionAverage('programmaticFit');
+    const overallScore = (
+        economicFit * profile.weights.economic +
+        flexibilityFit * profile.weights.flexibility +
+        programmaticFit * profile.weights.programmatic
+    );
+
+    const bestByCategory = {};
+    for (const item of programAnalyses) {
+        const key = item.program.marketCategory || 'other';
+        if (!bestByCategory[key] || item.score > bestByCategory[key].score) {
+            bestByCategory[key] = item;
+        }
+    }
+
+    const selectedPrograms = Object.values(bestByCategory);
+    const annualValueLow = selectedPrograms.reduce((sum, item) => sum + item.annualLow, 0) * profile.stackabilityFactor;
+    const annualValueHigh = selectedPrograms.reduce((sum, item) => sum + item.annualHigh, 0) * profile.stackabilityFactor;
+    const bestOverallProgram = [...programAnalyses].sort((a, b) => b.score - a.score)[0];
+    const bestCategory = bestOverallProgram?.program.marketCategory || 'energy';
+    const bestProgramsSummary = selectedPrograms
+        .sort((a, b) => b.score - a.score)
+        .map(item => `${capitalize(item.program.marketCategory || 'other')}: ${item.program.name}`)
+        .join(' · ');
+
+    return {
+        regionId,
+        economicFit,
+        flexibilityFit,
+        programmaticFit,
+        overallScore,
+        annualValueLow,
+        annualValueHigh,
+        bestCategoryLabel: capitalize(bestCategory),
+        bestProgramsSummary: bestProgramsSummary || 'No program data',
+        topProgram: bestOverallProgram?.program?.name || 'N/A'
+    };
+}
+
+function computeDataCenterProgramAnalysis(program, profile) {
+    const typology = ensureProgramTypology(program);
+    const economicFit = typology.economic.score;
+    const flexibilityFit = clamp(5 - Math.abs(typology.flexibility.score - profile.targets.flexibility), 1, 5);
+    const programmaticFit = clamp(5 - Math.max(0, typology.programmatic.score - profile.targets.programmaticTolerance), 1, 5);
+    const score = (
+        economicFit * profile.weights.economic +
+        flexibilityFit * profile.weights.flexibility +
+        programmaticFit * profile.weights.programmatic
+    );
+    const { low, high } = estimateProgramAnnualValue(program, profile);
+    return {
+        program,
+        economicFit,
+        flexibilityFit,
+        programmaticFit,
+        score,
+        annualLow: low,
+        annualHigh: high
+    };
+}
+
+function estimateProgramAnnualValue(program, profile) {
+    const category = program.marketCategory || 'energy';
+    const rateMin = Number(program.rate_min) || 0;
+    const rateMax = Number(program.rate_max) || rateMin;
+    const unit = String(program.rate_unit || '').toLowerCase();
+    const flexibleMw = getFlexibleMwForCategory(category, profile);
+    const multiplier = profile.marketMultipliers[category] ?? 1;
+    let low = 0;
+    let high = 0;
+
+    if (!flexibleMw || (!rateMin && !rateMax)) {
+        return { low: 0, high: 0 };
+    }
+
+    if (unit.includes('/mwh') || unit.includes('/mw-hr') || unit.includes('/mw per hour')) {
+        const hours = profile.annualHours[category] || 0;
+        low = rateMin * flexibleMw * hours * multiplier;
+        high = rateMax * flexibleMw * hours * multiplier;
+    } else if (unit.includes('/mw-day')) {
+        const days = profile.annualHours.capacityDays || 0;
+        low = rateMin * flexibleMw * days * multiplier;
+        high = rateMax * flexibleMw * days * multiplier;
+    } else if (unit.includes('/kw-month')) {
+        const months = profile.annualHours.capacityMonths || 0;
+        low = rateMin * flexibleMw * 1000 * months * multiplier;
+        high = rateMax * flexibleMw * 1000 * months * multiplier;
+    }
+
+    return { low, high };
+}
+
+function getFlexibleMwForCategory(category, profile) {
+    const battery = Number(profile.portfolioMW.battery) || 0;
+    const cooling = Number(profile.portfolioMW.cooling) || 0;
+    const generator = Number(profile.portfolioMW.generator) || 0;
+    if (category === 'ancillary') return battery + cooling * 0.25;
+    if (category === 'energy') return battery * 0.5 + cooling;
+    if (category === 'emergency') return battery + generator * 0.6;
+    if (category === 'capacity') return battery + cooling + generator * 0.4;
+    return battery + cooling;
+}
+
+function renderDataCenterChart(analyses) {
+    const canvas = document.getElementById('chart-data-centers');
+    if (!canvas) return;
+    if (chartDataCenters) chartDataCenters.destroy();
+    chartDataCenters = new Chart(canvas, {
+        type: 'bar',
+        data: {
+            labels: analyses.map(item => item.id),
+            datasets: [
+                {
+                    label: 'Data center fit score',
+                    data: analyses.map(item => Number(item.overallScore.toFixed(2))),
+                    backgroundColor: analyses.map(item => (REGION_COLORS[item.id] || '#38bdf8') + 'cc'),
+                    borderColor: analyses.map(item => REGION_COLORS[item.id] || '#38bdf8'),
+                    borderWidth: 1,
+                    yAxisID: 'y'
+                },
+                {
+                    label: 'Annual value high ($k)',
+                    data: analyses.map(item => Math.round(item.annualValueHigh / 1000)),
+                    type: 'line',
+                    borderColor: '#f8fafc',
+                    backgroundColor: '#f8fafc',
+                    pointRadius: 4,
+                    tension: 0.25,
+                    yAxisID: 'y1'
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { labels: { color: '#e2e8f0' } } },
+            scales: {
+                x: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+                y: { min: 0, max: 5, ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+                y1: {
+                    position: 'right',
+                    ticks: { color: '#cbd5e1', callback: value => '$' + value + 'k' },
+                    grid: { drawOnChartArea: false }
+                }
+            }
+        }
+    });
 }
 
 function renderTypologyBox(title, dimension) {
@@ -987,6 +1264,36 @@ function readTypologyDimension(prefix, shortPrefix, fallback) {
         label: document.getElementById(`${prefix}-${shortPrefix}-label`)?.value || fallback.label,
         notes: document.getElementById(`${prefix}-${shortPrefix}-notes`)?.value || fallback.notes
     };
+}
+
+function average(values) {
+    const filtered = values.filter(value => Number.isFinite(value));
+    if (!filtered.length) return 0;
+    return filtered.reduce((sum, value) => sum + value, 0) / filtered.length;
+}
+
+function clamp(value, min, max) {
+    return Math.max(min, Math.min(value, max));
+}
+
+function capitalize(value) {
+    return String(value || '').charAt(0).toUpperCase() + String(value || '').slice(1);
+}
+
+function formatMw(value) {
+    return `${Number(value || 0).toFixed(1)} MW`;
+}
+
+function formatCurrencyRange(low, high) {
+    return `${formatCurrency(low)}-${formatCurrency(high)}`;
+}
+
+function formatCurrency(value) {
+    return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 0
+    }).format(Number(value || 0));
 }
 
 // ── Init ──────────────────────────────────────────────
