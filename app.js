@@ -26,6 +26,8 @@ let selectedRegion = null;
 let choroplethMetric = 'none';
 let compareMode = false;
 let compareRegions = []; // max 3
+let dataCenterAnalysisMode = 'calibrated';
+let selectedFlexScenario = 'baseline';
 
 // Chart instances
 let chartEnergy = null;
@@ -78,6 +80,11 @@ async function init() {
     }
 
     normalizeRatesData(ratesData);
+
+    const scenarios = ratesData.analysis?.flexdcSim?.scenarios || {};
+    const hasScenarios = Object.keys(scenarios).length > 0;
+    if (!hasScenarios) dataCenterAnalysisMode = 'heuristic';
+    selectedFlexScenario = ratesData.analysis?.flexdcSim?.currentScenario || Object.keys(scenarios)[0] || 'baseline';
 
     document.getElementById('last-updated').textContent = 'Last updated: ' + ratesData.lastUpdated;
 
@@ -773,6 +780,22 @@ function setupEventListeners() {
     document.getElementById('filter-market').addEventListener('change', () => { if (selectedRegion) showRegionDetail(selectedRegion); });
     document.getElementById('filter-kw').addEventListener('input', () => { if (selectedRegion) showRegionDetail(selectedRegion); });
 
+    // Data center analysis mode + scenario
+    const modeSelect = document.getElementById('dc-analysis-mode');
+    const scenarioSelect = document.getElementById('dc-scenario-select');
+    if (modeSelect) {
+        modeSelect.addEventListener('change', e => {
+            dataCenterAnalysisMode = e.target.value;
+            renderDataCenterAnalysis();
+        });
+    }
+    if (scenarioSelect) {
+        scenarioSelect.addEventListener('change', e => {
+            selectedFlexScenario = e.target.value;
+            renderDataCenterAnalysis();
+        });
+    }
+
     // Modal backdrop
     document.getElementById('edit-modal').addEventListener('click', e => { if (e.target.id === 'edit-modal') closeModal(); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
@@ -997,16 +1020,65 @@ function summarizeRegionTypology(region) {
     return summary;
 }
 
+function getSelectedCalibratedScenario() {
+    const flexdc = ratesData?.analysis?.flexdcSim;
+    if (!flexdc?.scenarios) return null;
+    if (selectedFlexScenario && flexdc.scenarios[selectedFlexScenario]) return selectedFlexScenario;
+    return flexdc.currentScenario || Object.keys(flexdc.scenarios)[0] || null;
+}
+
 function renderDataCenterAnalysis() {
     if (!ratesData?.regions) return;
     const profile = getDataCenterProfile();
-    const analyses = Object.entries(ratesData.regions)
-        .map(([id, region]) => ({ id, region, ...computeDataCenterRegionAnalysis(id, region, profile) }))
-        .sort((a, b) => b.overallScore - a.overallScore);
+    const flexdc = ratesData.analysis?.flexdcSim || null;
+    const scenarioName = getSelectedCalibratedScenario();
+    const selectedScenario = scenarioName ? flexdc?.scenarios?.[scenarioName] : null;
+    const useCalibrated = dataCenterAnalysisMode === 'calibrated' && !!selectedScenario;
+    const calibratedResults = useCalibrated ? selectedScenario.regions : null;
+
+    const analyses = calibratedResults
+        ? Object.entries(calibratedResults)
+            .map(([id, result]) => ({
+                id,
+                region: ratesData.regions[id],
+                ...result
+            }))
+            .sort((a, b) => b.overallScore - a.overallScore)
+        : Object.entries(ratesData.regions)
+            .map(([id, region]) => ({ id, region, ...computeDataCenterRegionAnalysis(id, region, profile) }))
+            .sort((a, b) => b.overallScore - a.overallScore);
 
     const profileEl = document.getElementById('data-center-profile');
     const contentEl = document.getElementById('data-center-content');
+    const modeSelect = document.getElementById('dc-analysis-mode');
+    const scenarioSelect = document.getElementById('dc-scenario-select');
+    const metricsEl = document.getElementById('dc-sim-metrics');
     if (!profileEl || !contentEl) return;
+
+    if (modeSelect) {
+        modeSelect.value = useCalibrated ? 'calibrated' : 'heuristic';
+    }
+    if (scenarioSelect) {
+        const options = Object.keys(flexdc?.scenarios || {});
+        scenarioSelect.innerHTML = options.map(name => `<option value="${escapeAttr(name)}">${escapeHtml(name)}</option>`).join('');
+        scenarioSelect.disabled = !options.length || !useCalibrated;
+        if (options.length && scenarioName) scenarioSelect.value = scenarioName;
+    }
+    if (metricsEl) {
+        if (useCalibrated && selectedScenario?.simMetrics) {
+            const m = selectedScenario.simMetrics;
+            metricsEl.style.display = 'block';
+            metricsEl.innerHTML = `
+                <strong>Scenario:</strong> ${escapeHtml(scenarioName)} ·
+                <strong>Deliverability:</strong> ${(Number(m.deliverabilityFactor) * 100).toFixed(1)}% ·
+                <strong>Tracking p90:</strong> ${Number(m.trackingError90).toFixed(3)} ·
+                <strong>QoS violation ratio:</strong> ${(Number(m.qosViolationRateByType) * 100).toFixed(1)}%
+            `;
+        } else {
+            metricsEl.style.display = 'none';
+            metricsEl.textContent = '';
+        }
+    }
 
     profileEl.innerHTML = `
         <h3>${escapeHtml(profile.name)} Flexibility Lens</h3>
@@ -1017,7 +1089,7 @@ function renderDataCenterAnalysis() {
             <div class="assumption-box"><div class="label">Generator-backed MW</div><div class="value">${formatMw(profile.portfolioMW.generator)}</div></div>
             <div class="assumption-box"><div class="label">Annual Hours Assumed</div><div class="value">A:${profile.annualHours.ancillary} E:${profile.annualHours.energy} X:${profile.annualHours.emergency}</div></div>
         </div>
-        <p class="section-caption">Scores reflect market attractiveness for a default battery-backed data center portfolio. Estimated annual value is a scenario-based gross range, not a market guarantee.</p>
+        <p class="section-caption">Scores reflect market attractiveness for a default battery-backed data center portfolio. Estimated annual value is a scenario-based gross range, not a market guarantee.${useCalibrated ? ' Results are calibrated by FlexDC-Sim outputs for the selected scenario.' : ''}</p>
     `;
 
     contentEl.innerHTML = analyses.map((analysis, index) => `

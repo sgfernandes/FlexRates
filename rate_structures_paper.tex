@@ -15,15 +15,19 @@
 \maketitle
 
 \begin{abstract}
-Industrial load flexibility---the ability of large electricity consumers to adjust their consumption in response to grid conditions, price signals, or reliability events---is an increasingly important component of US wholesale electricity markets. This paper surveys the demand response and load flexibility rate structures and programs offered by the seven major Regional Transmission Organizations (RTOs) and Independent System Operators (ISOs) in the United States, focusing on developments from 2020 onwards. We document the market participation models, compensation mechanisms, and program designs across CAISO, PJM, ERCOT, MISO, ISO-NE, NYISO, and SPP, and discuss implications for industrial participants. In addition, the paper now describes a companion GIS dashboard implementation that operationalizes the dataset through choropleth mapping, time-series visualization, typology-based program classification, and a sector-specific data center flexibility lens.
+Industrial load flexibility---the ability of large electricity consumers to adjust their consumption in response to grid conditions, price signals, or reliability events---is an increasingly important component of US wholesale electricity markets. This paper surveys the demand response and load flexibility rate structures and programs offered by the seven major Regional Transmission Organizations (RTOs) and Independent System Operators (ISOs) in the United States, focusing on developments from 2020 onwards. We document the market participation models, compensation mechanisms, and program designs across CAISO, PJM, ERCOT, MISO, ISO-NE, NYISO, and SPP, and discuss implications for industrial participants. In addition, the paper describes a companion GIS dashboard implementation that operationalizes the dataset through choropleth mapping, time-series visualization, typology-based program classification, and a sector-specific data center flexibility lens. The data center extension is motivated by the rapid growth of AI-oriented computing load, the mismatch between data center construction timelines and the slower pace of generation and transmission expansion, and the need to align digital infrastructure growth with grid decarbonization and reliability goals.
 \end{abstract}
 
 \section{Introduction}
 The US electricity grid is undergoing a fundamental transformation driven by the growth of renewable energy, electrification of transportation and heating, and the emergence of new large loads such as data centers. In this context, demand-side flexibility---particularly from large industrial consumers---has become a critical resource for maintaining grid reliability and economic efficiency.
 
+The growth of data centers adds urgency to this issue. In several states, data centers already represent a material share of total electricity demand, and the pace of new facility development is often faster than the timelines required to add new generation and transmission capacity. This creates a structural tension: the digital economy is expanding rapidly, but the physical power system is slower and more capital intensive to scale. At the same time, much of the existing generation fleet remains fossil-fuel-based, which raises concerns about the long-run environmental footprint of large computing loads.
+
+This challenge also creates an opportunity. If data centers can participate as flexible, grid-interactive loads---rather than only as passive sources of demand growth---they could help absorb variable renewable generation, support reliability during stressed conditions, and reduce the need for the most carbon-intensive and expensive marginal resources. In that sense, the question is not simply whether data centers increase electricity demand, but whether they can be designed and operated in ways that make the broader power system more adaptable and more compatible with decarbonization.
+
 Industrial load flexibility encompasses a range of actions: curtailing production during peak periods, shifting energy-intensive processes to off-peak hours, and providing ancillary services such as frequency regulation and operating reserves. RTOs and ISOs have developed a variety of programs and market mechanisms to compensate participants for providing these services.
 
-This survey examines the rate structures and program designs across the seven US-based ISOs and RTOs, with a focus on the period from 2020 to the present. The seven grid operators collectively serve approximately two-thirds of total US electricity demand.
+This survey examines the rate structures and program designs across the seven US-based ISOs and RTOs, with a focus on the period from 2020 to the present. The seven grid operators collectively serve approximately two-thirds of total US electricity demand. A related objective of the present work is to connect these market structures to an implementation-oriented research agenda for flexible computing in AI data centers: one that can regulate power consumption in response to grid or aggregator requests while still respecting application constraints, quality-of-service objectives, and the operational realities of modern clustered computing systems.
 
 \section{RTOs and ISOs in the United States}
 The US electricity grid is managed by seven ISOs and RTOs operating within the continental United States:
@@ -281,7 +285,7 @@ Each program is scored on a 1--5 scale along these dimensions and also carries s
 
 \subsection{Data Center Flexibility Lens}
 
-The latest extension adds an explicit sector profile for large data centers. Rather than assuming a special ``data center tariff,'' the model evaluates how a default battery-backed data center portfolio would perform across each market. The profile assumes a combination of UPS or battery flexibility, cooling-system flexibility, and limited standby generation support. It then estimates two outputs for each region:
+The latest extension adds an explicit sector profile for large data centers. Rather than assuming a special ``data center tariff,'' the model evaluates how a default battery-backed data center portfolio would perform across each market. The broader research motivation is to support a data center management framework that can (i) regulate power consumption in response to grid or market signals, (ii) coordinate interactions among data centers, aggregators, and power providers, and (iii) respect the characteristics of real computing systems and AI workloads, including parallel execution, job preemption, and performance-versus-accuracy tradeoffs. The current profile assumes a combination of UPS or battery flexibility, cooling-system flexibility, and limited standby generation support. It then estimates two outputs for each region:
 \begin{enumerate}
     \item an overall \textbf{market fit score} based on economic attractiveness, flexibility compatibility, and programmatic burden; and
     \item a scenario-based \textbf{gross annual value range} derived from program compensation ranges, assumed flexible MW, and assumed annual participation hours.
@@ -299,9 +303,66 @@ The annual value estimate is scenario-based rather than deterministic, and is in
 \]
 where $r_k$ is the relevant compensation rate for program category $k$, $MW_k$ is the portion of the data center portfolio assumed to be flexible for that category, and $H_k$ is the assumed annual participation duration. This framing is particularly relevant for data centers, where flexibility often comes from batteries, thermal storage, cooling optimization, and backup generation rather than curtailment of core compute load.
 
+\subsection{FlexDC-Sim-Calibrated Regional Analysis}
+
+To move beyond a purely heuristic lens, we calibrated the regional data center analysis with simulation outputs generated using the open-source FlexDC-Sim framework \citep{flexdc_sim}. A one-hour baseline run was executed using the reference low-utilization experiment setup with an AQA runtime policy and AI-inference workload mix. The resulting performance metrics were then used as a calibration layer over all RTO/ISO market valuations.
+
+The simulation run produced a 90th-percentile tracking error of approximately 0.301, a job-type QoS violation ratio of approximately 0.75, and a mean execution slowdown of approximately 0.063. We convert these into a composite deliverability factor that scales scenario value estimates to reflect practical power-tracking and service-quality limits:
+\[
+\text{Deliverability} = 0.55(1-\epsilon_{90}) + 0.35(1-v_{qos}) + 0.10(1-s),
+\]
+where $\epsilon_{90}$ is the 90th-percentile tracking error, $v_{qos}$ is the job-type QoS violation ratio, and $s$ is mean execution slowdown. For this run, the derived deliverability factor is approximately 0.566.
+
+Table~\ref{tab:flexdc_results} summarizes the resulting simulator-calibrated rankings and annual gross value ranges for a default data center flexibility portfolio across all seven US RTO/ISO regions.
+
+\begin{longtable}{p{1.2cm}p{1.8cm}p{2.8cm}p{4cm}p{4.2cm}}
+\caption{FlexDC-Sim-Calibrated Regional Data Center Flexibility Results}\label{tab:flexdc_results}\\
+\toprule
+\textbf{Rank} & \textbf{Region} & \textbf{Fit Score (1--5)} & \textbf{Estimated Annual Gross Value} & \textbf{Indicative Best Program Category} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Rank} & \textbf{Region} & \textbf{Fit Score (1--5)} & \textbf{Estimated Annual Gross Value} & \textbf{Indicative Best Program Category} \\
+\midrule
+\endhead
+1 & CAISO & 3.05 & \$4.1k--\$33.7k & Emergency-oriented participation (RDRR/ELRP class) \\
+\midrule
+2 & NYISO & 2.84 & \$67.4k--\$196.9k & Emergency and ICAP-linked participation \\
+\midrule
+3 & PJM & 2.79 & \$3.9k--\$22.0k & Capacity-linked participation (RPM class) \\
+\midrule
+4 & ERCOT & 2.70 & \$1.8k--\$7.7k & ERS and ancillary-oriented participation \\
+\midrule
+5 & MISO & 2.69 & \$4.0k--\$52.8k & Emergency plus PRA-linked participation \\
+\midrule
+6 & ISO-NE & 2.67 & \$26.8k--\$57.8k & Ancillary and FCM-linked participation \\
+\midrule
+7 & SPP & 2.00 & \$7.1k--\$39.8k & Capacity-credit plus day-ahead/real-time DR \\
+\bottomrule
+\end{longtable}
+
+These values should be interpreted as screening-level estimates rather than audited forecasts. Their purpose is to compare relative opportunity under a common technical-operational constraint set, not to provide binding revenue projections for specific facilities.
+
+To test scenario sensitivity, we also ran a second NoDR-style configuration (high $P$ ratio and near-zero $R$). This reduced QoS violations but materially worsened tracking behavior under the FlexDC-Sim cost/signal setup. Table~\ref{tab:flexdc_scenarios} summarizes the resulting calibration inputs.
+
+\begin{table}[h]
+\centering
+\caption{FlexDC-Sim Scenario Comparison Inputs}\label{tab:flexdc_scenarios}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Scenario} & \textbf{Tracking Error p90} & \textbf{QoS Violation Ratio} & \textbf{Deliverability Factor} \\
+\midrule
+Baseline AQA & 0.301 & 0.75 & 0.566 \\
+NoDR-style AQA & very high (signal mismatch) & 0.00 & 0.445 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Under this two-scenario comparison, the regional rank ordering remained stable, but calibrated gross annual value estimates in the NoDR-style scenario were approximately 21.3\% lower on average than the baseline calibrated case. This is consistent with the interpretation that for flexible AI-oriented data centers, preserving tracking capability is at least as important as minimizing direct QoS violations when the objective is market participation value capture.
+
 \subsection{Implications for Future Research}
 
-These implementation updates make the dataset more suitable for sector-specific analysis. The same framework can be extended beyond data centers to industrial subsectors classified by NAICS code, including food processing, chemicals, paper, primary metals, refrigerated warehousing, and water-intensive industrial facilities. The typology plus sector-profile approach provides a structured path to evaluating not just ``what the market pays,'' but which facilities are operationally and administratively capable of capturing those payments.
+These implementation updates make the dataset more suitable for sector-specific analysis. The same framework can be extended beyond data centers to industrial subsectors classified by NAICS code, including food processing, chemicals, paper, primary metals, refrigerated warehousing, and water-intensive industrial facilities. For data centers specifically, the next research step is to move from a stylized sector profile to a full operating framework that co-optimizes computational scheduling and grid participation under realistic constraints. The typology plus sector-profile approach therefore provides a structured path to evaluating not just ``what the market pays,'' but which facilities are operationally and administratively capable of capturing those payments while preserving service quality.
 
 \section{Conclusion}
 
@@ -332,6 +393,8 @@ Industrial participants considering load flexibility should evaluate programs ba
 \bibitem{spp_im} Southwest Power Pool, ``Integrated Marketplace,'' \url{https://www.spp.org/markets-operations/}, accessed March 2026.
 
 \bibitem{wiki_rto} Wikipedia, ``Regional transmission organization (North America),'' \url{https://en.wikipedia.org/wiki/Regional_transmission_organization_(North_America)}, accessed March 2026.
+
+\bibitem{flexdc_sim} S. G. Fernandes et al., ``FlexDC-Sim: An Open-Source Data Center Demand Response Simulator,'' GitHub repository, \url{https://github.com/sgfernandes/flexdc-sim}, accessed March 2026.
 
 \end{thebibliography}
 

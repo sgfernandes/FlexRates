@@ -116,3 +116,62 @@ For full editing support, deploy the Flask backend on a Python host such as Rend
 - typology filters in the toolbar
 - typology comparison charts by region
 - scheduled data refresh via GitHub Actions
+
+## FlexDC-Sim Regional Analysis Workflow
+
+This repo now includes a simulator-calibrated regional analysis path using:
+
+- https://github.com/sgfernandes/flexdc-sim
+
+### What was added
+
+- `analysis/policy_flexdc_w2.ini`: policy config used for the baseline simulator run
+- `analysis/policy_flexdc_w2_nodr.ini`: policy config used for the NoDR-style comparison scenario
+- `analysis/run_flexdc_region_analysis.py`: script that converts FlexDC-Sim output into all-region calibrated scores/value ranges
+- `analysis/flexdc_region_results.json`: generated results snapshot
+- `data/rates.json`: now stores simulator-derived analysis under `analysis.flexdcSim`
+
+### Reproduce the analysis
+
+1. Clone FlexDC-Sim into this workspace (already done in `external/flexdc-sim`).
+2. Run a baseline simulation:
+
+```bash
+cd external/flexdc-sim/src/peacsim
+source ../../../venv/bin/activate
+export PYTHONPATH=..
+python run_simulator.py \
+  --experiment-config ../../configs/experiment/exp_low_util.ini \
+  --cluster-config ../../configs/cluster/cluster.ini \
+  --policy-config /absolute/path/to/analysis/policy_flexdc_w2.ini \
+  --job-config ../../configs/workload/W2-short-qos3445.ini \
+  --output-dir energy_rates_regional_baseline \
+  --convert-from-normalized-PR
+```
+
+2b. Run a NoDR-style comparison scenario:
+
+```bash
+python run_simulator.py \
+  --experiment-config ../../configs/experiment/exp_low_util.ini \
+  --cluster-config ../../configs/cluster/cluster.ini \
+  --policy-config /absolute/path/to/analysis/policy_flexdc_w2_nodr.ini \
+  --job-config ../../configs/workload/W2-short-qos3445.ini \
+  --output-dir energy_rates_regional_nodr \
+  --convert-from-normalized-PR
+```
+
+3. Calibrate all regions and update the dashboard dataset:
+
+```bash
+cd /path/to/energy-rates-gis
+source venv/bin/activate
+python analysis/run_flexdc_region_analysis.py \
+  --scenario baseline=external/flexdc-sim/src/peacsim/output/simulation/<baseline_output_dir> \
+  --scenario nodr=external/flexdc-sim/src/peacsim/output/simulation/<nodr_output_dir>
+```
+
+After this, the app uses `analysis.flexdcSim` from `data/rates.json` in the Data Center analysis panel. The panel now includes:
+
+- mode selector: `Calibrated (FlexDC-Sim)` vs `Heuristic (Local)`
+- scenario selector: choose among calibrated scenarios (e.g., `baseline`, `nodr`)

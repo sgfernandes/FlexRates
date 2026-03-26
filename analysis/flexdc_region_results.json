@@ -1,0 +1,375 @@
+{
+  "generatedAt": "2026-03-26T21:15:33.039143+00:00",
+  "sourceRepo": "https://github.com/sgfernandes/flexdc-sim",
+  "simulationRun": "external/flexdc-sim/src/peacsim/output/simulation/energy_rates_regional_baseline_20260326140538",
+  "method": "FlexDC-Sim calibrated regional valuation",
+  "currentScenario": "baseline",
+  "simMetrics": {
+    "trackingError90": 0.301,
+    "qosViolationRateByType": 0.75,
+    "meanExecSlowdown": 0.0626,
+    "deliverabilityFactor": 0.5657
+  },
+  "regions": {
+    "CAISO": {
+      "regionId": "CAISO",
+      "economicFit": 4.2,
+      "flexibilityFit": 2.6,
+      "programmaticFit": 4.4,
+      "overallScore": 3.049,
+      "annualValueLow": 4144.88,
+      "annualValueHigh": 33727.15,
+      "bestCategoryLabel": "Emergency",
+      "bestProgramsSummary": "Emergency: Reliability Demand Response (RDRR) | Energy: Proxy Demand Resource (PDR)",
+      "topProgram": "Emergency Load Reduction Program (ELRP)",
+      "simDeliverabilityFactor": 0.5657
+    },
+    "PJM": {
+      "regionId": "PJM",
+      "economicFit": 2.75,
+      "flexibilityFit": 4.0,
+      "programmaticFit": 3.5,
+      "overallScore": 2.789,
+      "annualValueLow": 3918.75,
+      "annualValueHigh": 21988.03,
+      "bestCategoryLabel": "Capacity",
+      "bestProgramsSummary": "Capacity: Capacity Performance (RPM) | Energy: Economic Demand Response | Ancillary: Synchronized Reserves",
+      "topProgram": "Capacity Performance (RPM)",
+      "simDeliverabilityFactor": 0.5657
+    },
+    "ERCOT": {
+      "regionId": "ERCOT",
+      "economicFit": 2.2,
+      "flexibilityFit": 4.4,
+      "programmaticFit": 3.4,
+      "overallScore": 2.702,
+      "annualValueLow": 1783.53,
+      "annualValueHigh": 7662.86,
+      "bestCategoryLabel": "Emergency",
+      "bestProgramsSummary": "Energy: SCED Economic Dispatch | Ancillary: Load Resource - Regulation Service | Emergency: Emergency Response Service (ERS)",
+      "topProgram": "Emergency Response Service (ERS)",
+      "simDeliverabilityFactor": 0.5657
+    },
+    "MISO": {
+      "regionId": "MISO",
+      "economicFit": 3.75,
+      "flexibilityFit": 2.5,
+      "programmaticFit": 3.5,
+      "overallScore": 2.685,
+      "annualValueLow": 3958.44,
+      "annualValueHigh": 52809.02,
+      "bestCategoryLabel": "Emergency",
+      "bestProgramsSummary": "Emergency: Emergency Demand Response | Capacity: Load Modifying Resource (LMR) | Energy: Demand Response Resource Type I (BTM Gen)",
+      "topProgram": "Emergency Demand Response",
+      "simDeliverabilityFactor": 0.5657
+    },
+    "ISONE": {
+      "regionId": "ISONE",
+      "economicFit": 2.25,
+      "flexibilityFit": 3.25,
+      "programmaticFit": 4.75,
+      "overallScore": 2.665,
+      "annualValueLow": 26842.45,
+      "annualValueHigh": 57837.04,
+      "bestCategoryLabel": "Ancillary",
+      "bestProgramsSummary": "Capacity: Forward Capacity Market (FCM) | Energy: Price-Responsive Demand (PRD) | Ancillary: Real-Time DR Reserves",
+      "topProgram": "Real-Time DR Reserves",
+      "simDeliverabilityFactor": 0.5657
+    },
+    "NYISO": {
+      "regionId": "NYISO",
+      "economicFit": 3.333,
+      "flexibilityFit": 2.667,
+      "programmaticFit": 4.667,
+      "overallScore": 2.837,
+      "annualValueLow": 67357.78,
+      "annualValueHigh": 196923.27,
+      "bestCategoryLabel": "Emergency",
+      "bestProgramsSummary": "Capacity: Special Case Resource (SCR) - ICAP | Emergency: Emergency Demand Response Program (EDRP) | Energy: DER Aggregation (Economic)",
+      "topProgram": "Emergency Demand Response Program (EDRP)",
+      "simDeliverabilityFactor": 0.5657
+    },
+    "SPP": {
+      "regionId": "SPP",
+      "economicFit": 2.333,
+      "flexibilityFit": 2.333,
+      "programmaticFit": 2.667,
+      "overallScore": 1.997,
+      "annualValueLow": 7147.37,
+      "annualValueHigh": 39795.56,
+      "bestCategoryLabel": "Capacity",
+      "bestProgramsSummary": "Capacity: Resource Adequacy Capacity Credit | Energy: Integrated Marketplace DR",
+      "topProgram": "Resource Adequacy Capacity Credit",
+      "simDeliverabilityFactor": 0.5657
+    }
+  },
+  "ranking": [
+    "CAISO",
+    "NYISO",
+    "PJM",
+    "ERCOT",
+    "MISO",
+    "ISONE",
+    "SPP"
+  ],
+  "scenarios": {
+    "baseline": {
+      "simulationRun": "external/flexdc-sim/src/peacsim/output/simulation/energy_rates_regional_baseline_20260326140538",
+      "simMetrics": {
+        "trackingError90": 0.301,
+        "qosViolationRateByType": 0.75,
+        "meanExecSlowdown": 0.0626,
+        "deliverabilityFactor": 0.5657
+      },
+      "regions": {
+        "CAISO": {
+          "regionId": "CAISO",
+          "economicFit": 4.2,
+          "flexibilityFit": 2.6,
+          "programmaticFit": 4.4,
+          "overallScore": 3.049,
+          "annualValueLow": 4144.88,
+          "annualValueHigh": 33727.15,
+          "bestCategoryLabel": "Emergency",
+          "bestProgramsSummary": "Emergency: Reliability Demand Response (RDRR) | Energy: Proxy Demand Resource (PDR)",
+          "topProgram": "Emergency Load Reduction Program (ELRP)",
+          "simDeliverabilityFactor": 0.5657
+        },
+        "PJM": {
+          "regionId": "PJM",
+          "economicFit": 2.75,
+          "flexibilityFit": 4.0,
+          "programmaticFit": 3.5,
+          "overallScore": 2.789,
+          "annualValueLow": 3918.75,
+          "annualValueHigh": 21988.03,
+          "bestCategoryLabel": "Capacity",
+          "bestProgramsSummary": "Capacity: Capacity Performance (RPM) | Energy: Economic Demand Response | Ancillary: Synchronized Reserves",
+          "topProgram": "Capacity Performance (RPM)",
+          "simDeliverabilityFactor": 0.5657
+        },
+        "ERCOT": {
+          "regionId": "ERCOT",
+          "economicFit": 2.2,
+          "flexibilityFit": 4.4,
+          "programmaticFit": 3.4,
+          "overallScore": 2.702,
+          "annualValueLow": 1783.53,
+          "annualValueHigh": 7662.86,
+          "bestCategoryLabel": "Emergency",
+          "bestProgramsSummary": "Energy: SCED Economic Dispatch | Ancillary: Load Resource - Regulation Service | Emergency: Emergency Response Service (ERS)",
+          "topProgram": "Emergency Response Service (ERS)",
+          "simDeliverabilityFactor": 0.5657
+        },
+        "MISO": {
+          "regionId": "MISO",
+          "economicFit": 3.75,
+          "flexibilityFit": 2.5,
+          "programmaticFit": 3.5,
+          "overallScore": 2.685,
+          "annualValueLow": 3958.44,
+          "annualValueHigh": 52809.02,
+          "bestCategoryLabel": "Emergency",
+          "bestProgramsSummary": "Emergency: Emergency Demand Response | Capacity: Load Modifying Resource (LMR) | Energy: Demand Response Resource Type I (BTM Gen)",
+          "topProgram": "Emergency Demand Response",
+          "simDeliverabilityFactor": 0.5657
+        },
+        "ISONE": {
+          "regionId": "ISONE",
+          "economicFit": 2.25,
+          "flexibilityFit": 3.25,
+          "programmaticFit": 4.75,
+          "overallScore": 2.665,
+          "annualValueLow": 26842.45,
+          "annualValueHigh": 57837.04,
+          "bestCategoryLabel": "Ancillary",
+          "bestProgramsSummary": "Capacity: Forward Capacity Market (FCM) | Energy: Price-Responsive Demand (PRD) | Ancillary: Real-Time DR Reserves",
+          "topProgram": "Real-Time DR Reserves",
+          "simDeliverabilityFactor": 0.5657
+        },
+        "NYISO": {
+          "regionId": "NYISO",
+          "economicFit": 3.333,
+          "flexibilityFit": 2.667,
+          "programmaticFit": 4.667,
+          "overallScore": 2.837,
+          "annualValueLow": 67357.78,
+          "annualValueHigh": 196923.27,
+          "bestCategoryLabel": "Emergency",
+          "bestProgramsSummary": "Capacity: Special Case Resource (SCR) - ICAP | Emergency: Emergency Demand Response Program (EDRP) | Energy: DER Aggregation (Economic)",
+          "topProgram": "Emergency Demand Response Program (EDRP)",
+          "simDeliverabilityFactor": 0.5657
+        },
+        "SPP": {
+          "regionId": "SPP",
+          "economicFit": 2.333,
+          "flexibilityFit": 2.333,
+          "programmaticFit": 2.667,
+          "overallScore": 1.997,
+          "annualValueLow": 7147.37,
+          "annualValueHigh": 39795.56,
+          "bestCategoryLabel": "Capacity",
+          "bestProgramsSummary": "Capacity: Resource Adequacy Capacity Credit | Energy: Integrated Marketplace DR",
+          "topProgram": "Resource Adequacy Capacity Credit",
+          "simDeliverabilityFactor": 0.5657
+        }
+      },
+      "ranking": [
+        "CAISO",
+        "NYISO",
+        "PJM",
+        "ERCOT",
+        "MISO",
+        "ISONE",
+        "SPP"
+      ]
+    },
+    "nodr": {
+      "simulationRun": "external/flexdc-sim/src/peacsim/output/simulation/energy_rates_regional_nodr_20260326141456",
+      "simMetrics": {
+        "trackingError90": 262940000.0,
+        "qosViolationRateByType": 0.0,
+        "meanExecSlowdown": 0.0462,
+        "deliverabilityFactor": 0.4454
+      },
+      "regions": {
+        "CAISO": {
+          "regionId": "CAISO",
+          "economicFit": 4.2,
+          "flexibilityFit": 2.6,
+          "programmaticFit": 4.4,
+          "overallScore": 2.871,
+          "annualValueLow": 3263.38,
+          "annualValueHigh": 26554.32,
+          "bestCategoryLabel": "Emergency",
+          "bestProgramsSummary": "Emergency: Reliability Demand Response (RDRR) | Energy: Proxy Demand Resource (PDR)",
+          "topProgram": "Emergency Load Reduction Program (ELRP)",
+          "simDeliverabilityFactor": 0.4454
+        },
+        "PJM": {
+          "regionId": "PJM",
+          "economicFit": 2.75,
+          "flexibilityFit": 4.0,
+          "programmaticFit": 3.5,
+          "overallScore": 2.626,
+          "annualValueLow": 3085.34,
+          "annualValueHigh": 17311.79,
+          "bestCategoryLabel": "Capacity",
+          "bestProgramsSummary": "Capacity: Capacity Performance (RPM) | Energy: Economic Demand Response | Ancillary: Synchronized Reserves",
+          "topProgram": "Capacity Performance (RPM)",
+          "simDeliverabilityFactor": 0.4454
+        },
+        "ERCOT": {
+          "regionId": "ERCOT",
+          "economicFit": 2.2,
+          "flexibilityFit": 4.4,
+          "programmaticFit": 3.4,
+          "overallScore": 2.545,
+          "annualValueLow": 1404.22,
+          "annualValueHigh": 6033.18,
+          "bestCategoryLabel": "Emergency",
+          "bestProgramsSummary": "Energy: SCED Economic Dispatch | Ancillary: Load Resource - Regulation Service | Emergency: Emergency Response Service (ERS)",
+          "topProgram": "Emergency Response Service (ERS)",
+          "simDeliverabilityFactor": 0.4454
+        },
+        "MISO": {
+          "regionId": "MISO",
+          "economicFit": 3.75,
+          "flexibilityFit": 2.5,
+          "programmaticFit": 3.5,
+          "overallScore": 2.529,
+          "annualValueLow": 3116.59,
+          "annualValueHigh": 41578.0,
+          "bestCategoryLabel": "Emergency",
+          "bestProgramsSummary": "Emergency: Emergency Demand Response | Capacity: Load Modifying Resource (LMR) | Energy: Demand Response Resource Type I (BTM Gen)",
+          "topProgram": "Emergency Demand Response",
+          "simDeliverabilityFactor": 0.4454
+        },
+        "ISONE": {
+          "regionId": "ISONE",
+          "economicFit": 2.25,
+          "flexibilityFit": 3.25,
+          "programmaticFit": 4.75,
+          "overallScore": 2.51,
+          "annualValueLow": 21133.81,
+          "annualValueHigh": 45536.71,
+          "bestCategoryLabel": "Ancillary",
+          "bestProgramsSummary": "Capacity: Forward Capacity Market (FCM) | Energy: Price-Responsive Demand (PRD) | Ancillary: Real-Time DR Reserves",
+          "topProgram": "Real-Time DR Reserves",
+          "simDeliverabilityFactor": 0.4454
+        },
+        "NYISO": {
+          "regionId": "NYISO",
+          "economicFit": 3.333,
+          "flexibilityFit": 2.667,
+          "programmaticFit": 4.667,
+          "overallScore": 2.672,
+          "annualValueLow": 53032.65,
+          "annualValueHigh": 155043.14,
+          "bestCategoryLabel": "Emergency",
+          "bestProgramsSummary": "Capacity: Special Case Resource (SCR) - ICAP | Emergency: Emergency Demand Response Program (EDRP) | Energy: DER Aggregation (Economic)",
+          "topProgram": "Emergency Demand Response Program (EDRP)",
+          "simDeliverabilityFactor": 0.4454
+        },
+        "SPP": {
+          "regionId": "SPP",
+          "economicFit": 2.333,
+          "flexibilityFit": 2.333,
+          "programmaticFit": 2.667,
+          "overallScore": 1.881,
+          "annualValueLow": 5627.32,
+          "annualValueHigh": 31332.14,
+          "bestCategoryLabel": "Capacity",
+          "bestProgramsSummary": "Capacity: Resource Adequacy Capacity Credit | Energy: Integrated Marketplace DR",
+          "topProgram": "Resource Adequacy Capacity Credit",
+          "simDeliverabilityFactor": 0.4454
+        }
+      },
+      "ranking": [
+        "CAISO",
+        "NYISO",
+        "PJM",
+        "ERCOT",
+        "MISO",
+        "ISONE",
+        "SPP"
+      ]
+    }
+  },
+  "comparisons": {
+    "baseline_vs_nodr": {
+      "leftScenario": "baseline",
+      "rightScenario": "nodr",
+      "regionDeltas": {
+        "CAISO": {
+          "overallScoreDelta": 0.178,
+          "annualValueHighDelta": 7172.83
+        },
+        "PJM": {
+          "overallScoreDelta": 0.163,
+          "annualValueHighDelta": 4676.24
+        },
+        "ERCOT": {
+          "overallScoreDelta": 0.157,
+          "annualValueHighDelta": 1629.68
+        },
+        "MISO": {
+          "overallScoreDelta": 0.156,
+          "annualValueHighDelta": 11231.02
+        },
+        "ISONE": {
+          "overallScoreDelta": 0.155,
+          "annualValueHighDelta": 12300.33
+        },
+        "NYISO": {
+          "overallScoreDelta": 0.165,
+          "annualValueHighDelta": 41880.13
+        },
+        "SPP": {
+          "overallScoreDelta": 0.116,
+          "annualValueHighDelta": 8463.42
+        }
+      }
+    }
+  }
+}

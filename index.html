@@ -173,6 +173,19 @@
         .sector-mini-box .label { font-size: 10px; color: #94a3b8; text-transform: uppercase; }
         .sector-mini-box .value { font-size: 14px; color: #f8fafc; font-weight: 700; margin-top: 2px; }
         .sector-best-program { margin-top: 10px; font-size: 12px; color: #cbd5e1; line-height: 1.4; }
+        .dc-controls {
+            display: flex; gap: 8px; align-items: center; margin-bottom: 10px;
+            padding: 10px; background: #0f172a; border: 1px solid #334155; border-radius: 10px;
+        }
+        .dc-controls label { font-size: 11px; color: #94a3b8; }
+        .dc-controls select {
+            padding: 6px 10px; border-radius: 6px; border: 1px solid #334155;
+            background: #1e293b; color: #e2e8f0; font-size: 12px;
+        }
+        .dc-metrics {
+            font-size: 11px; color: #94a3b8; margin-bottom: 10px;
+            padding: 8px 10px; background: #0f172a; border: 1px solid #334155; border-radius: 10px;
+        }
 
         /* ── Modal ──────────────────────────── */
         #edit-modal {
@@ -357,6 +370,16 @@
                 </div>
 
                 <div class="tab-panel" id="panel-data-centers">
+                    <div class="dc-controls">
+                        <label for="dc-analysis-mode">Mode</label>
+                        <select id="dc-analysis-mode">
+                            <option value="calibrated">Calibrated (FlexDC-Sim)</option>
+                            <option value="heuristic">Heuristic (Local)</option>
+                        </select>
+                        <label for="dc-scenario-select">Scenario</label>
+                        <select id="dc-scenario-select"></select>
+                    </div>
+                    <div class="dc-metrics" id="dc-sim-metrics" style="display:none;"></div>
                     <div class="sector-profile-card" id="data-center-profile"></div>
                     <div class="compare-chart-container" id="data-center-chart-wrap">
                         <canvas id="chart-data-centers"></canvas>
