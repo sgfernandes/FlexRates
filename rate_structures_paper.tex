@@ -392,6 +392,97 @@ NoDR-style AQA & very high (signal mismatch) & 0.00 & 0.445 \\
 
 Under this two-scenario comparison, the regional rank ordering remained stable, but calibrated gross annual value estimates in the NoDR-style scenario were approximately 21.3\% lower on average than the baseline calibrated case. This is consistent with the interpretation that for flexible AI-oriented data centers, preserving tracking capability is at least as important as minimizing direct QoS violations when the objective is market participation value capture.
 
+\subsection{NAICS-Based Large-Load Shortlist Screening}
+
+To extend the analysis beyond a single data center archetype, we constructed a 24-code large-load NAICS shortlist covering data centers, primary metals, chemicals, pulp and paper, transportation equipment, cold chain, and water/environmental infrastructure \citep{naics_census}. For each shortlisted NAICS code, we assign a representative facility load ($MW_{typ}$), a flexibility factor ($f_{flex}$), and a participation factor ($f_{part}$). We then compute an effective flexible load:
+\[
+MW_{eff} = MW_{typ} \times f_{flex} \times f_{part}.
+\]
+
+Regional earnings are estimated by multiplying $MW_{eff}$ by the calibrated regional midpoint value-per-MW from the baseline FlexDC-Sim scenario. This produces a screening-level annual midpoint earning estimate for each NAICS-region pair.
+
+Table~\ref{tab:naics_top10} reports the top-10 opportunities from this shortlist by best-region annual midpoint value.
+
+\begin{longtable}{p{0.9cm}p{1.6cm}p{4.8cm}p{1.8cm}p{1.8cm}p{2cm}p{2.3cm}}
+\caption{Top-10 NAICS Large-Load Opportunities from Screening Analysis}\label{tab:naics_top10}\\
+\toprule
+\textbf{Rank} & \textbf{NAICS} & \textbf{Industry} & \textbf{Typical MW} & \textbf{Eff. Flex MW} & \textbf{Best Region} & \textbf{Annual Midpoint} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Rank} & \textbf{NAICS} & \textbf{Industry} & \textbf{Typical MW} & \textbf{Eff. Flex MW} & \textbf{Best Region} & \textbf{Annual Midpoint} \\
+\midrule
+\endhead
+1 & 518210 & Data Processing, Hosting, and Related Services & 20.0 & 10.50 & NYISO & \$138.7k \\
+\midrule
+2 & 336111 & Automobile Manufacturing & 18.0 & 6.14 & NYISO & \$81.1k \\
+\midrule
+3 & 331110 & Iron and Steel Mills and Ferroalloy Manufacturing & 30.0 & 6.00 & NYISO & \$79.3k \\
+\midrule
+4 & 325120 & Industrial Gas Manufacturing & 15.0 & 4.68 & NYISO & \$61.8k \\
+\midrule
+5 & 334413 & Semiconductor and Related Device Manufacturing & 18.0 & 4.46 & NYISO & \$58.9k \\
+\midrule
+6 & 322121 & Paper (except Newsprint) Mills & 16.0 & 4.38 & NYISO & \$57.8k \\
+\midrule
+7 & 322122 & Newsprint Mills & 14.0 & 4.06 & NYISO & \$53.6k \\
+\midrule
+8 & 324110 & Petroleum Refineries & 25.0 & 3.94 & NYISO & \$52.0k \\
+\midrule
+9 & 493120 & Refrigerated Warehousing and Storage & 8.0 & 3.64 & NYISO & \$48.1k \\
+\midrule
+10 & 327310 & Cement Manufacturing & 12.0 & 3.60 & NYISO & \$47.6k \\
+\bottomrule
+\end{longtable}
+
+This shortlist is intentionally a screening instrument rather than a definitive ranking of all establishments. The key insight is that both (i) regional market economics and (ii) code-specific operational flexibility strongly shape expected value capture. The same NAICS code can materially shift rank under different regional price structures and participation constraints.
+
+\subsection{Analysis Figures}
+
+Figures~\ref{fig:regional_midpoint}--\ref{fig:naics_scatter} visualize the calibrated regional earnings and NAICS shortlist screening results.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\linewidth]{analysis/figures/fig1_regional_midpoint_bar.png}
+\caption{Baseline calibrated annual midpoint earnings by region.}
+\label{fig:regional_midpoint}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\linewidth]{analysis/figures/fig2_regional_range_lh.png}
+\caption{Regional annual low-high earnings ranges with midpoint markers.}
+\label{fig:regional_ranges}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.84\linewidth]{analysis/figures/fig3_scenario_metrics.png}
+\caption{FlexDC-Sim scenario calibration metrics (deliverability and QoS violation ratio).}
+\label{fig:scenario_metrics}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.96\linewidth]{analysis/figures/fig4_top10_naics.png}
+\caption{Top-10 NAICS large-load opportunities by best-region annual midpoint estimate.}
+\label{fig:top10_naics}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.96\linewidth]{analysis/figures/fig5_segment_avg.png}
+\caption{Average best-region annual midpoint earnings by NAICS segment.}
+\label{fig:segment_avg}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.86\linewidth]{analysis/figures/fig6_flexible_mw_scatter.png}
+\caption{Scaling relationship between effective flexible MW and best-region annual midpoint earnings across shortlisted NAICS codes.}
+\label{fig:naics_scatter}
+\end{figure}
+
 \subsection{Implications for Future Research}
 
 These implementation updates make the dataset more suitable for sector-specific analysis. The same framework can be extended beyond data centers to industrial subsectors classified by NAICS code, including food processing, chemicals, paper, primary metals, refrigerated warehousing, and water-intensive industrial facilities. For data centers specifically, the next research step is to move from a stylized sector profile to a full operating framework that co-optimizes computational scheduling and grid participation under realistic constraints. The typology plus sector-profile approach therefore provides a structured path to evaluating not just ``what the market pays,'' but which facilities are operationally and administratively capable of capturing those payments while preserving service quality.
@@ -427,6 +518,8 @@ Industrial participants considering load flexibility should evaluate programs ba
 \bibitem{wiki_rto} Wikipedia, ``Regional transmission organization (North America),'' \url{https://en.wikipedia.org/wiki/Regional_transmission_organization_(North_America)}, accessed March 2026.
 
 \bibitem{flexdc_sim} S. G. Fernandes et al., ``FlexDC-Sim: An Open-Source Data Center Demand Response Simulator,'' GitHub repository, \url{https://github.com/sgfernandes/flexdc-sim}, accessed March 2026.
+
+\bibitem{naics_census} U.S. Census Bureau, ``North American Industry Classification System (NAICS),'' \url{https://www.census.gov/naics/}, accessed March 2026.
 
 \end{thebibliography}
 

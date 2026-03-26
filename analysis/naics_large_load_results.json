@@ -1,0 +1,659 @@
+{
+  "method": "NAICS large-load shortlist screening using FlexDC-calibrated regional midpoint earnings",
+  "scenario": "baseline",
+  "shortlistCount": 24,
+  "assumptions": {
+    "regionalMidpointPerMWDerivedFrom": "analysis/flexdc_region_results.json earningsSummary (baseline calibrated)",
+    "effectiveFlexibleMW": "typical_load_mw * flexibility_factor * participation_factor"
+  },
+  "top10": [
+    {
+      "naics": "518210",
+      "title": "Data Processing, Hosting, and Related Services",
+      "segment": "Data Centers",
+      "typicalLoadMW": 20.0,
+      "effectiveFlexibleMW": 10.5,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 138747.55,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 19882.82,
+        "PJM": 13601.06,
+        "ERCOT": 4959.35,
+        "MISO": 29802.92,
+        "ISONE": 44456.73,
+        "NYISO": 138747.55,
+        "SPP": 24645.04
+      },
+      "rank": 1
+    },
+    {
+      "naics": "336111",
+      "title": "Automobile Manufacturing",
+      "segment": "Transportation Equipment",
+      "typicalLoadMW": 18.0,
+      "effectiveFlexibleMW": 6.138,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 81107.85,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 11622.93,
+        "PJM": 7950.79,
+        "ERCOT": 2899.1,
+        "MISO": 17421.93,
+        "ISONE": 25988.14,
+        "NYISO": 81107.85,
+        "SPP": 14406.79
+      },
+      "rank": 2
+    },
+    {
+      "naics": "331110",
+      "title": "Iron and Steel Mills and Ferroalloy Manufacturing",
+      "segment": "Primary Metals",
+      "typicalLoadMW": 30.0,
+      "effectiveFlexibleMW": 6.0,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 79284.32,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 11361.61,
+        "PJM": 7772.03,
+        "ERCOT": 2833.92,
+        "MISO": 17030.24,
+        "ISONE": 25403.85,
+        "NYISO": 79284.32,
+        "SPP": 14082.88
+      },
+      "rank": 3
+    },
+    {
+      "naics": "325120",
+      "title": "Industrial Gas Manufacturing",
+      "segment": "Chemicals",
+      "typicalLoadMW": 15.0,
+      "effectiveFlexibleMW": 4.68,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 61841.77,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 8862.06,
+        "PJM": 6062.19,
+        "ERCOT": 2210.46,
+        "MISO": 13283.59,
+        "ISONE": 19815.0,
+        "NYISO": 61841.77,
+        "SPP": 10984.65
+      },
+      "rank": 4
+    },
+    {
+      "naics": "334413",
+      "title": "Semiconductor and Related Device Manufacturing",
+      "segment": "Electronics",
+      "typicalLoadMW": 18.0,
+      "effectiveFlexibleMW": 4.455,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 58868.6,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 8435.99,
+        "PJM": 5770.74,
+        "ERCOT": 2104.18,
+        "MISO": 12644.95,
+        "ISONE": 18862.36,
+        "NYISO": 58868.6,
+        "SPP": 10456.54
+      },
+      "rank": 5
+    },
+    {
+      "naics": "322121",
+      "title": "Paper (except Newsprint) Mills",
+      "segment": "Pulp and Paper",
+      "typicalLoadMW": 16.0,
+      "effectiveFlexibleMW": 4.378,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 57845.84,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 8289.43,
+        "PJM": 5670.48,
+        "ERCOT": 2067.63,
+        "MISO": 12425.26,
+        "ISONE": 18534.65,
+        "NYISO": 57845.84,
+        "SPP": 10274.87
+      },
+      "rank": 6
+    },
+    {
+      "naics": "322122",
+      "title": "Newsprint Mills",
+      "segment": "Pulp and Paper",
+      "typicalLoadMW": 14.0,
+      "effectiveFlexibleMW": 4.06,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 53649.05,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 7688.02,
+        "PJM": 5259.08,
+        "ERCOT": 1917.62,
+        "MISO": 11523.79,
+        "ISONE": 17189.94,
+        "NYISO": 53649.05,
+        "SPP": 9529.41
+      },
+      "rank": 7
+    },
+    {
+      "naics": "324110",
+      "title": "Petroleum Refineries",
+      "segment": "Refining",
+      "typicalLoadMW": 25.0,
+      "effectiveFlexibleMW": 3.938,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 52030.33,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 7456.06,
+        "PJM": 5100.4,
+        "ERCOT": 1859.76,
+        "MISO": 11176.09,
+        "ISONE": 16671.27,
+        "NYISO": 52030.33,
+        "SPP": 9241.89
+      },
+      "rank": 8
+    },
+    {
+      "naics": "493120",
+      "title": "Refrigerated Warehousing and Storage",
+      "segment": "Cold Chain",
+      "typicalLoadMW": 8.0,
+      "effectiveFlexibleMW": 3.64,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 48099.15,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 6892.71,
+        "PJM": 4715.03,
+        "ERCOT": 1719.24,
+        "MISO": 10331.68,
+        "ISONE": 15411.67,
+        "NYISO": 48099.15,
+        "SPP": 8543.61
+      },
+      "rank": 9
+    },
+    {
+      "naics": "327310",
+      "title": "Cement Manufacturing",
+      "segment": "Minerals",
+      "typicalLoadMW": 12.0,
+      "effectiveFlexibleMW": 3.6,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 47570.59,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 6816.97,
+        "PJM": 4663.22,
+        "ERCOT": 1700.35,
+        "MISO": 10218.14,
+        "ISONE": 15242.31,
+        "NYISO": 47570.59,
+        "SPP": 8449.73
+      },
+      "rank": 10
+    }
+  ],
+  "allRows": [
+    {
+      "naics": "518210",
+      "title": "Data Processing, Hosting, and Related Services",
+      "segment": "Data Centers",
+      "typicalLoadMW": 20.0,
+      "effectiveFlexibleMW": 10.5,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 138747.55,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 19882.82,
+        "PJM": 13601.06,
+        "ERCOT": 4959.35,
+        "MISO": 29802.92,
+        "ISONE": 44456.73,
+        "NYISO": 138747.55,
+        "SPP": 24645.04
+      },
+      "rank": 1
+    },
+    {
+      "naics": "336111",
+      "title": "Automobile Manufacturing",
+      "segment": "Transportation Equipment",
+      "typicalLoadMW": 18.0,
+      "effectiveFlexibleMW": 6.138,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 81107.85,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 11622.93,
+        "PJM": 7950.79,
+        "ERCOT": 2899.1,
+        "MISO": 17421.93,
+        "ISONE": 25988.14,
+        "NYISO": 81107.85,
+        "SPP": 14406.79
+      },
+      "rank": 2
+    },
+    {
+      "naics": "331110",
+      "title": "Iron and Steel Mills and Ferroalloy Manufacturing",
+      "segment": "Primary Metals",
+      "typicalLoadMW": 30.0,
+      "effectiveFlexibleMW": 6.0,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 79284.32,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 11361.61,
+        "PJM": 7772.03,
+        "ERCOT": 2833.92,
+        "MISO": 17030.24,
+        "ISONE": 25403.85,
+        "NYISO": 79284.32,
+        "SPP": 14082.88
+      },
+      "rank": 3
+    },
+    {
+      "naics": "325120",
+      "title": "Industrial Gas Manufacturing",
+      "segment": "Chemicals",
+      "typicalLoadMW": 15.0,
+      "effectiveFlexibleMW": 4.68,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 61841.77,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 8862.06,
+        "PJM": 6062.19,
+        "ERCOT": 2210.46,
+        "MISO": 13283.59,
+        "ISONE": 19815.0,
+        "NYISO": 61841.77,
+        "SPP": 10984.65
+      },
+      "rank": 4
+    },
+    {
+      "naics": "334413",
+      "title": "Semiconductor and Related Device Manufacturing",
+      "segment": "Electronics",
+      "typicalLoadMW": 18.0,
+      "effectiveFlexibleMW": 4.455,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 58868.6,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 8435.99,
+        "PJM": 5770.74,
+        "ERCOT": 2104.18,
+        "MISO": 12644.95,
+        "ISONE": 18862.36,
+        "NYISO": 58868.6,
+        "SPP": 10456.54
+      },
+      "rank": 5
+    },
+    {
+      "naics": "322121",
+      "title": "Paper (except Newsprint) Mills",
+      "segment": "Pulp and Paper",
+      "typicalLoadMW": 16.0,
+      "effectiveFlexibleMW": 4.378,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 57845.84,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 8289.43,
+        "PJM": 5670.48,
+        "ERCOT": 2067.63,
+        "MISO": 12425.26,
+        "ISONE": 18534.65,
+        "NYISO": 57845.84,
+        "SPP": 10274.87
+      },
+      "rank": 6
+    },
+    {
+      "naics": "322122",
+      "title": "Newsprint Mills",
+      "segment": "Pulp and Paper",
+      "typicalLoadMW": 14.0,
+      "effectiveFlexibleMW": 4.06,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 53649.05,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 7688.02,
+        "PJM": 5259.08,
+        "ERCOT": 1917.62,
+        "MISO": 11523.79,
+        "ISONE": 17189.94,
+        "NYISO": 53649.05,
+        "SPP": 9529.41
+      },
+      "rank": 7
+    },
+    {
+      "naics": "324110",
+      "title": "Petroleum Refineries",
+      "segment": "Refining",
+      "typicalLoadMW": 25.0,
+      "effectiveFlexibleMW": 3.938,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 52030.33,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 7456.06,
+        "PJM": 5100.4,
+        "ERCOT": 1859.76,
+        "MISO": 11176.09,
+        "ISONE": 16671.27,
+        "NYISO": 52030.33,
+        "SPP": 9241.89
+      },
+      "rank": 8
+    },
+    {
+      "naics": "493120",
+      "title": "Refrigerated Warehousing and Storage",
+      "segment": "Cold Chain",
+      "typicalLoadMW": 8.0,
+      "effectiveFlexibleMW": 3.64,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 48099.15,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 6892.71,
+        "PJM": 4715.03,
+        "ERCOT": 1719.24,
+        "MISO": 10331.68,
+        "ISONE": 15411.67,
+        "NYISO": 48099.15,
+        "SPP": 8543.61
+      },
+      "rank": 9
+    },
+    {
+      "naics": "327310",
+      "title": "Cement Manufacturing",
+      "segment": "Minerals",
+      "typicalLoadMW": 12.0,
+      "effectiveFlexibleMW": 3.6,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 47570.59,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 6816.97,
+        "PJM": 4663.22,
+        "ERCOT": 1700.35,
+        "MISO": 10218.14,
+        "ISONE": 15242.31,
+        "NYISO": 47570.59,
+        "SPP": 8449.73
+      },
+      "rank": 10
+    },
+    {
+      "naics": "336120",
+      "title": "Heavy Duty Truck Manufacturing",
+      "segment": "Transportation Equipment",
+      "typicalLoadMW": 10.0,
+      "effectiveFlexibleMW": 3.472,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 45879.19,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 6574.58,
+        "PJM": 4497.42,
+        "ERCOT": 1639.89,
+        "MISO": 9854.83,
+        "ISONE": 14700.36,
+        "NYISO": 45879.19,
+        "SPP": 8149.29
+      },
+      "rank": 11
+    },
+    {
+      "naics": "325180",
+      "title": "Other Basic Inorganic Chemical Manufacturing",
+      "segment": "Chemicals",
+      "typicalLoadMW": 14.0,
+      "effectiveFlexibleMW": 3.465,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 45786.69,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 6561.33,
+        "PJM": 4488.35,
+        "ERCOT": 1636.59,
+        "MISO": 9834.96,
+        "ISONE": 14670.72,
+        "NYISO": 45786.69,
+        "SPP": 8132.86
+      },
+      "rank": 12
+    },
+    {
+      "naics": "331314",
+      "title": "Secondary Smelting and Alloying of Aluminum",
+      "segment": "Primary Metals",
+      "typicalLoadMW": 12.0,
+      "effectiveFlexibleMW": 2.97,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 39245.74,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 5624.0,
+        "PJM": 3847.16,
+        "ERCOT": 1402.79,
+        "MISO": 8429.97,
+        "ISONE": 12574.9,
+        "NYISO": 39245.74,
+        "SPP": 6971.03
+      },
+      "rank": 13
+    },
+    {
+      "naics": "331491",
+      "title": "Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding",
+      "segment": "Primary Metals",
+      "typicalLoadMW": 10.0,
+      "effectiveFlexibleMW": 2.9,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 38320.75,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 5491.44,
+        "PJM": 3756.48,
+        "ERCOT": 1369.73,
+        "MISO": 8231.28,
+        "ISONE": 12278.53,
+        "NYISO": 38320.75,
+        "SPP": 6806.72
+      },
+      "rank": 14
+    },
+    {
+      "naics": "336411",
+      "title": "Aircraft Manufacturing",
+      "segment": "Aerospace",
+      "typicalLoadMW": 12.0,
+      "effectiveFlexibleMW": 2.52,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 33299.41,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 4771.88,
+        "PJM": 3264.25,
+        "ERCOT": 1190.25,
+        "MISO": 7152.7,
+        "ISONE": 10669.62,
+        "NYISO": 33299.41,
+        "SPP": 5914.81
+      },
+      "rank": 15
+    },
+    {
+      "naics": "221320",
+      "title": "Sewage Treatment Facilities",
+      "segment": "Power and Water",
+      "typicalLoadMW": 6.0,
+      "effectiveFlexibleMW": 2.448,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 32348.0,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 4635.54,
+        "PJM": 3170.99,
+        "ERCOT": 1156.24,
+        "MISO": 6948.34,
+        "ISONE": 10364.77,
+        "NYISO": 32348.0,
+        "SPP": 5745.81
+      },
+      "rank": 16
+    },
+    {
+      "naics": "333611",
+      "title": "Turbine and Turbine Generator Set Units Manufacturing",
+      "segment": "Machinery",
+      "typicalLoadMW": 7.0,
+      "effectiveFlexibleMW": 2.184,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 28859.49,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 4135.63,
+        "PJM": 2829.02,
+        "ERCOT": 1031.55,
+        "MISO": 6199.01,
+        "ISONE": 9247.0,
+        "NYISO": 28859.49,
+        "SPP": 5126.17
+      },
+      "rank": 17
+    },
+    {
+      "naics": "325193",
+      "title": "Ethyl Alcohol Manufacturing",
+      "segment": "Chemicals",
+      "typicalLoadMW": 7.0,
+      "effectiveFlexibleMW": 2.03,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 26824.53,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 3844.01,
+        "PJM": 2629.54,
+        "ERCOT": 958.81,
+        "MISO": 5761.9,
+        "ISONE": 8594.97,
+        "NYISO": 26824.53,
+        "SPP": 4764.71
+      },
+      "rank": 18
+    },
+    {
+      "naics": "562920",
+      "title": "Materials Recovery Facilities",
+      "segment": "Environmental Services",
+      "typicalLoadMW": 5.0,
+      "effectiveFlexibleMW": 2.01,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 26560.25,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 3806.14,
+        "PJM": 2603.63,
+        "ERCOT": 949.36,
+        "MISO": 5705.13,
+        "ISONE": 8510.29,
+        "NYISO": 26560.25,
+        "SPP": 4717.76
+      },
+      "rank": 19
+    },
+    {
+      "naics": "562211",
+      "title": "Hazardous Waste Treatment and Disposal",
+      "segment": "Environmental Services",
+      "typicalLoadMW": 8.0,
+      "effectiveFlexibleMW": 1.987,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 26258.97,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 3762.96,
+        "PJM": 2574.1,
+        "ERCOT": 938.59,
+        "MISO": 5640.41,
+        "ISONE": 8413.75,
+        "NYISO": 26258.97,
+        "SPP": 4664.25
+      },
+      "rank": 20
+    },
+    {
+      "naics": "311615",
+      "title": "Poultry Processing",
+      "segment": "Food Processing",
+      "typicalLoadMW": 6.0,
+      "effectiveFlexibleMW": 1.8,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 23785.29,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 3408.48,
+        "PJM": 2331.61,
+        "ERCOT": 850.18,
+        "MISO": 5109.07,
+        "ISONE": 7621.15,
+        "NYISO": 23785.29,
+        "SPP": 4224.86
+      },
+      "rank": 21
+    },
+    {
+      "naics": "311513",
+      "title": "Cheese Manufacturing",
+      "segment": "Food Processing",
+      "typicalLoadMW": 5.0,
+      "effectiveFlexibleMW": 1.705,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 22529.96,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 3228.59,
+        "PJM": 2208.55,
+        "ERCOT": 805.3,
+        "MISO": 4839.43,
+        "ISONE": 7218.93,
+        "NYISO": 22529.96,
+        "SPP": 4001.88
+      },
+      "rank": 22
+    },
+    {
+      "naics": "562112",
+      "title": "Hazardous Waste Collection",
+      "segment": "Environmental Services",
+      "typicalLoadMW": 4.0,
+      "effectiveFlexibleMW": 1.1,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 14535.46,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 2082.96,
+        "PJM": 1424.87,
+        "ERCOT": 519.55,
+        "MISO": 3122.21,
+        "ISONE": 4657.37,
+        "NYISO": 14535.46,
+        "SPP": 2581.86
+      },
+      "rank": 23
+    },
+    {
+      "naics": "221111",
+      "title": "Hydroelectric Power Generation",
+      "segment": "Power and Water",
+      "typicalLoadMW": 5.0,
+      "effectiveFlexibleMW": 0.875,
+      "bestRegion": "NYISO",
+      "bestRegionAnnualMidpointUSD": 11562.3,
+      "regionalAnnualMidpointUSD": {
+        "CAISO": 1656.9,
+        "PJM": 1133.42,
+        "ERCOT": 413.28,
+        "MISO": 2483.58,
+        "ISONE": 3704.73,
+        "NYISO": 11562.3,
+        "SPP": 2053.75
+      },
+      "rank": 24
+    }
+  ]
+}

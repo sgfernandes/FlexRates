@@ -1,0 +1,222 @@
+{
+  "version": "2022-screening-v1",
+  "description": "Large-load NAICS shortlist for flexibility participation screening using region-level calibrated earnings.",
+  "codes": [
+    {
+      "naics": "518210",
+      "title": "Data Processing, Hosting, and Related Services",
+      "segment": "Data Centers",
+      "typical_load_mw": 20,
+      "flexibility_factor": 0.7,
+      "participation_factor": 0.75,
+      "notes": "High continuous load; flexibility mainly from batteries, cooling, and non-critical workload shifting."
+    },
+    {
+      "naics": "334413",
+      "title": "Semiconductor and Related Device Manufacturing",
+      "segment": "Electronics",
+      "typical_load_mw": 18,
+      "flexibility_factor": 0.45,
+      "participation_factor": 0.55,
+      "notes": "Very high process criticality; limited but valuable DR windows."
+    },
+    {
+      "naics": "493120",
+      "title": "Refrigerated Warehousing and Storage",
+      "segment": "Cold Chain",
+      "typical_load_mw": 8,
+      "flexibility_factor": 0.65,
+      "participation_factor": 0.7,
+      "notes": "Thermal storage characteristics support meaningful shifting/curtailment."
+    },
+    {
+      "naics": "311615",
+      "title": "Poultry Processing",
+      "segment": "Food Processing",
+      "typical_load_mw": 6,
+      "flexibility_factor": 0.5,
+      "participation_factor": 0.6,
+      "notes": "Large refrigeration and motor loads with moderate scheduling flexibility."
+    },
+    {
+      "naics": "311513",
+      "title": "Cheese Manufacturing",
+      "segment": "Food Processing",
+      "typical_load_mw": 5,
+      "flexibility_factor": 0.55,
+      "participation_factor": 0.62,
+      "notes": "Cold storage and process batch operations provide moderate flexibility."
+    },
+    {
+      "naics": "325120",
+      "title": "Industrial Gas Manufacturing",
+      "segment": "Chemicals",
+      "typical_load_mw": 15,
+      "flexibility_factor": 0.52,
+      "participation_factor": 0.6,
+      "notes": "Compression-intensive loads with some dispatchability under constraints."
+    },
+    {
+      "naics": "325180",
+      "title": "Other Basic Inorganic Chemical Manufacturing",
+      "segment": "Chemicals",
+      "typical_load_mw": 14,
+      "flexibility_factor": 0.45,
+      "participation_factor": 0.55,
+      "notes": "Continuous process operation limits deep curtailment but allows limited flexibility."
+    },
+    {
+      "naics": "325193",
+      "title": "Ethyl Alcohol Manufacturing",
+      "segment": "Chemicals",
+      "typical_load_mw": 7,
+      "flexibility_factor": 0.5,
+      "participation_factor": 0.58,
+      "notes": "Fermentation and separation steps permit some operational shifting."
+    },
+    {
+      "naics": "324110",
+      "title": "Petroleum Refineries",
+      "segment": "Refining",
+      "typical_load_mw": 25,
+      "flexibility_factor": 0.35,
+      "participation_factor": 0.45,
+      "notes": "Very high load but tight process constraints reduce practical DR depth."
+    },
+    {
+      "naics": "327310",
+      "title": "Cement Manufacturing",
+      "segment": "Minerals",
+      "typical_load_mw": 12,
+      "flexibility_factor": 0.5,
+      "participation_factor": 0.6,
+      "notes": "Grinding and kiln support systems can provide event-based flexibility."
+    },
+    {
+      "naics": "322121",
+      "title": "Paper (except Newsprint) Mills",
+      "segment": "Pulp and Paper",
+      "typical_load_mw": 16,
+      "flexibility_factor": 0.48,
+      "participation_factor": 0.57,
+      "notes": "Steam-electric coupling and continuous process constraints moderate flexibility."
+    },
+    {
+      "naics": "322122",
+      "title": "Newsprint Mills",
+      "segment": "Pulp and Paper",
+      "typical_load_mw": 14,
+      "flexibility_factor": 0.5,
+      "participation_factor": 0.58,
+      "notes": "Large motors and thermal systems can participate in some DR products."
+    },
+    {
+      "naics": "331110",
+      "title": "Iron and Steel Mills and Ferroalloy Manufacturing",
+      "segment": "Primary Metals",
+      "typical_load_mw": 30,
+      "flexibility_factor": 0.4,
+      "participation_factor": 0.5,
+      "notes": "High electric arc and process loads with constrained response windows."
+    },
+    {
+      "naics": "331314",
+      "title": "Secondary Smelting and Alloying of Aluminum",
+      "segment": "Primary Metals",
+      "typical_load_mw": 12,
+      "flexibility_factor": 0.45,
+      "participation_factor": 0.55,
+      "notes": "Electro-thermal loads provide limited but potentially valuable DR options."
+    },
+    {
+      "naics": "331491",
+      "title": "Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding",
+      "segment": "Primary Metals",
+      "typical_load_mw": 10,
+      "flexibility_factor": 0.5,
+      "participation_factor": 0.58,
+      "notes": "Batch and line balancing can support moderate participation."
+    },
+    {
+      "naics": "336111",
+      "title": "Automobile Manufacturing",
+      "segment": "Transportation Equipment",
+      "typical_load_mw": 18,
+      "flexibility_factor": 0.55,
+      "participation_factor": 0.62,
+      "notes": "Shift scheduling and paint/body shop loads can provide flexibility."
+    },
+    {
+      "naics": "336120",
+      "title": "Heavy Duty Truck Manufacturing",
+      "segment": "Transportation Equipment",
+      "typical_load_mw": 10,
+      "flexibility_factor": 0.56,
+      "participation_factor": 0.62,
+      "notes": "Assembly-line scheduling can support selected DR products."
+    },
+    {
+      "naics": "333611",
+      "title": "Turbine and Turbine Generator Set Units Manufacturing",
+      "segment": "Machinery",
+      "typical_load_mw": 7,
+      "flexibility_factor": 0.52,
+      "participation_factor": 0.6,
+      "notes": "Machining and test loads may be shifted with production planning."
+    },
+    {
+      "naics": "336411",
+      "title": "Aircraft Manufacturing",
+      "segment": "Aerospace",
+      "typical_load_mw": 12,
+      "flexibility_factor": 0.42,
+      "participation_factor": 0.5,
+      "notes": "Mission-critical operations constrain deep curtailment."
+    },
+    {
+      "naics": "221111",
+      "title": "Hydroelectric Power Generation",
+      "segment": "Power and Water",
+      "typical_load_mw": 5,
+      "flexibility_factor": 0.35,
+      "participation_factor": 0.5,
+      "notes": "Included for completeness but often participates as supply-side resource."
+    },
+    {
+      "naics": "221320",
+      "title": "Sewage Treatment Facilities",
+      "segment": "Power and Water",
+      "typical_load_mw": 6,
+      "flexibility_factor": 0.6,
+      "participation_factor": 0.68,
+      "notes": "Pumping and aeration loads are often shiftable within compliance limits."
+    },
+    {
+      "naics": "562112",
+      "title": "Hazardous Waste Collection",
+      "segment": "Environmental Services",
+      "typical_load_mw": 4,
+      "flexibility_factor": 0.5,
+      "participation_factor": 0.55,
+      "notes": "Facility-level operations can contribute limited DR value."
+    },
+    {
+      "naics": "562211",
+      "title": "Hazardous Waste Treatment and Disposal",
+      "segment": "Environmental Services",
+      "typical_load_mw": 8,
+      "flexibility_factor": 0.46,
+      "participation_factor": 0.54,
+      "notes": "Thermal and treatment loads have constrained but usable flexibility."
+    },
+    {
+      "naics": "562920",
+      "title": "Materials Recovery Facilities",
+      "segment": "Environmental Services",
+      "typical_load_mw": 5,
+      "flexibility_factor": 0.6,
+      "participation_factor": 0.67,
+      "notes": "Sorting and processing can be shifted under event windows."
+    }
+  ]
+}
