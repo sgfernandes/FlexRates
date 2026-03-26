@@ -205,6 +205,72 @@ def compute_region_result(region_id: str, region: dict[str, Any], profile: dict[
     }
 
 
+def build_earnings_summary(scenario_name: str, scenario_payload: dict[str, Any], profile: dict[str, Any]) -> dict[str, Any]:
+    total_portfolio_mw = float(profile.get("portfolioMW", {}).get("battery", 0)) + float(
+        profile.get("portfolioMW", {}).get("cooling", 0)
+    ) + float(profile.get("portfolioMW", {}).get("generator", 0))
+    total_portfolio_mw = max(total_portfolio_mw, 0.001)
+
+    rows = []
+    for region_id, result in scenario_payload["regions"].items():
+        low = float(result["annualValueLow"])
+        high = float(result["annualValueHigh"])
+        midpoint = (low + high) / 2.0
+        rows.append(
+            {
+                "regionId": region_id,
+                "annualValueLow": round(low, 2),
+                "annualValueHigh": round(high, 2),
+                "annualValueMidpoint": round(midpoint, 2),
+                "annualMidpointPerPortfolioMW": round(midpoint / total_portfolio_mw, 2),
+                "overallScore": float(result["overallScore"]),
+                "bestCategoryLabel": result["bestCategoryLabel"],
+            }
+        )
+    rows.sort(key=lambda item: item["annualValueMidpoint"], reverse=True)
+    for idx, row in enumerate(rows, start=1):
+        row["earningsRank"] = idx
+
+    return {
+        "scenario": scenario_name,
+        "assumedPortfolioMW": round(total_portfolio_mw, 3),
+        "rows": rows,
+    }
+
+
+def write_earnings_csv(path: Path, summary: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(
+            [
+                "scenario",
+                "rank",
+                "region",
+                "annual_low_usd",
+                "annual_high_usd",
+                "annual_midpoint_usd",
+                "midpoint_usd_per_portfolio_mw",
+                "overall_score",
+                "best_category",
+            ]
+        )
+        for row in summary["rows"]:
+            writer.writerow(
+                [
+                    summary["scenario"],
+                    row["earningsRank"],
+                    row["regionId"],
+                    row["annualValueLow"],
+                    row["annualValueHigh"],
+                    row["annualValueMidpoint"],
+                    row["annualMidpointPerPortfolioMW"],
+                    row["overallScore"],
+                    row["bestCategoryLabel"],
+                ]
+            )
+
+
 def main() -> None:
     args = parse_args()
     rates_path = Path(args.rates)
@@ -264,6 +330,7 @@ def main() -> None:
 
     primary_name = scenarios[0][0]
     primary = scenario_payloads[primary_name]
+    earnings_summary = build_earnings_summary(primary_name, primary, profile)
 
     comparisons = {}
     if len(scenarios) >= 2:
@@ -293,6 +360,7 @@ def main() -> None:
         "ranking": primary["ranking"],
         "scenarios": scenario_payloads,
         "comparisons": comparisons,
+        "earningsSummary": earnings_summary,
     }
 
     rates.setdefault("analysis", {})["flexdcSim"] = analysis_payload
@@ -307,7 +375,15 @@ def main() -> None:
         json.dump(analysis_payload, handle, indent=2)
         handle.write("\n")
 
+    earnings_json_path = output_path.parent / "data_center_earnings_summary.json"
+    with earnings_json_path.open("w", encoding="utf-8") as handle:
+        json.dump(earnings_summary, handle, indent=2)
+        handle.write("\n")
+
+    write_earnings_csv(output_path.parent / "data_center_earnings_by_region.csv", earnings_summary)
+
     print(f"Wrote analysis to {output_path}")
+    print(f"Wrote earnings summary to {earnings_json_path}")
     for scenario_name, scenario in scenario_payloads.items():
         print(f"Regional ranking ({scenario_name}):")
         ranking_rows = sorted(scenario["regions"].values(), key=lambda item: item["overallScore"], reverse=True)

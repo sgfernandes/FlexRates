@@ -343,6 +343,38 @@ Table~\ref{tab:flexdc_results} summarizes the resulting simulator-calibrated ran
 
 These values should be interpreted as screening-level estimates rather than audited forecasts. Their purpose is to compare relative opportunity under a common technical-operational constraint set, not to provide binding revenue projections for specific facilities.
 
+\subsection{What Can a Data Center Earn by Region?}
+
+Using the baseline calibrated scenario and the default 10 MW flexible portfolio assumption (battery + cooling + generator-enabled flexibility), Table~\ref{tab:earnings_region} reports estimated annual gross earnings by region. We report a low/high range and a midpoint for easier screening.
+
+\begin{longtable}{p{1.6cm}p{2.2cm}p{3.4cm}p{3.2cm}p{3cm}}
+\caption{Estimated Annual Data Center Gross Earnings by Region (Baseline Calibrated Scenario)}\label{tab:earnings_region}\\
+\toprule
+\textbf{Rank} & \textbf{Region} & \textbf{Annual Gross Range} & \textbf{Midpoint} & \textbf{Midpoint per MW-year} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Rank} & \textbf{Region} & \textbf{Annual Gross Range} & \textbf{Midpoint} & \textbf{Midpoint per MW-year} \\
+\midrule
+\endhead
+1 & NYISO & \$67.4k--\$196.9k & \$132.1k & \$13.2k/MW-year \\
+\midrule
+2 & ISO-NE & \$26.8k--\$57.8k & \$42.3k & \$4.2k/MW-year \\
+\midrule
+3 & MISO & \$4.0k--\$52.8k & \$28.4k & \$2.8k/MW-year \\
+\midrule
+4 & SPP & \$7.1k--\$39.8k & \$23.5k & \$2.3k/MW-year \\
+\midrule
+5 & CAISO & \$4.1k--\$33.7k & \$18.9k & \$1.9k/MW-year \\
+\midrule
+6 & PJM & \$3.9k--\$22.0k & \$13.0k & \$1.3k/MW-year \\
+\midrule
+7 & ERCOT & \$1.8k--\$7.7k & \$4.7k & \$0.47k/MW-year \\
+\bottomrule
+\end{longtable}
+
+These estimates are most useful for regional screening and relative prioritization. Actual realized earnings will depend on telemetry readiness, aggregator strategy, event frequency, baseline methodology, and local interconnection and market participation constraints.
+
 To test scenario sensitivity, we also ran a second NoDR-style configuration (high $P$ ratio and near-zero $R$). This reduced QoS violations but materially worsened tracking behavior under the FlexDC-Sim cost/signal setup. Table~\ref{tab:flexdc_scenarios} summarizes the resulting calibration inputs.
 
 \begin{table}[h]

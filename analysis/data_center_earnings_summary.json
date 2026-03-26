@@ -1,0 +1,76 @@
+{
+  "scenario": "baseline",
+  "assumedPortfolioMW": 10.0,
+  "rows": [
+    {
+      "regionId": "NYISO",
+      "annualValueLow": 67357.78,
+      "annualValueHigh": 196923.27,
+      "annualValueMidpoint": 132140.52,
+      "annualMidpointPerPortfolioMW": 13214.05,
+      "overallScore": 2.837,
+      "bestCategoryLabel": "Emergency",
+      "earningsRank": 1
+    },
+    {
+      "regionId": "ISONE",
+      "annualValueLow": 26842.45,
+      "annualValueHigh": 57837.04,
+      "annualValueMidpoint": 42339.75,
+      "annualMidpointPerPortfolioMW": 4233.97,
+      "overallScore": 2.665,
+      "bestCategoryLabel": "Ancillary",
+      "earningsRank": 2
+    },
+    {
+      "regionId": "MISO",
+      "annualValueLow": 3958.44,
+      "annualValueHigh": 52809.02,
+      "annualValueMidpoint": 28383.73,
+      "annualMidpointPerPortfolioMW": 2838.37,
+      "overallScore": 2.685,
+      "bestCategoryLabel": "Emergency",
+      "earningsRank": 3
+    },
+    {
+      "regionId": "SPP",
+      "annualValueLow": 7147.37,
+      "annualValueHigh": 39795.56,
+      "annualValueMidpoint": 23471.47,
+      "annualMidpointPerPortfolioMW": 2347.15,
+      "overallScore": 1.997,
+      "bestCategoryLabel": "Capacity",
+      "earningsRank": 4
+    },
+    {
+      "regionId": "CAISO",
+      "annualValueLow": 4144.88,
+      "annualValueHigh": 33727.15,
+      "annualValueMidpoint": 18936.01,
+      "annualMidpointPerPortfolioMW": 1893.6,
+      "overallScore": 3.049,
+      "bestCategoryLabel": "Emergency",
+      "earningsRank": 5
+    },
+    {
+      "regionId": "PJM",
+      "annualValueLow": 3918.75,
+      "annualValueHigh": 21988.03,
+      "annualValueMidpoint": 12953.39,
+      "annualMidpointPerPortfolioMW": 1295.34,
+      "overallScore": 2.789,
+      "bestCategoryLabel": "Capacity",
+      "earningsRank": 6
+    },
+    {
+      "regionId": "ERCOT",
+      "annualValueLow": 1783.53,
+      "annualValueHigh": 7662.86,
+      "annualValueMidpoint": 4723.19,
+      "annualMidpointPerPortfolioMW": 472.32,
+      "overallScore": 2.702,
+      "bestCategoryLabel": "Emergency",
+      "earningsRank": 7
+    }
+  ]
+}

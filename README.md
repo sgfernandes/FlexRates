@@ -129,6 +129,8 @@ This repo now includes a simulator-calibrated regional analysis path using:
 - `analysis/policy_flexdc_w2_nodr.ini`: policy config used for the NoDR-style comparison scenario
 - `analysis/run_flexdc_region_analysis.py`: script that converts FlexDC-Sim output into all-region calibrated scores/value ranges
 - `analysis/flexdc_region_results.json`: generated results snapshot
+- `analysis/data_center_earnings_summary.json`: ranked earnings summary for the active calibrated scenario
+- `analysis/data_center_earnings_by_region.csv`: tabular earnings export by region
 - `data/rates.json`: now stores simulator-derived analysis under `analysis.flexdcSim`
 
 ### Reproduce the analysis

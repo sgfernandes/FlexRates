@@ -1,0 +1,8 @@
+scenario,rank,region,annual_low_usd,annual_high_usd,annual_midpoint_usd,midpoint_usd_per_portfolio_mw,overall_score,best_category
+baseline,1,NYISO,67357.78,196923.27,132140.52,13214.05,2.837,Emergency
+baseline,2,ISONE,26842.45,57837.04,42339.75,4233.97,2.665,Ancillary
+baseline,3,MISO,3958.44,52809.02,28383.73,2838.37,2.685,Emergency
+baseline,4,SPP,7147.37,39795.56,23471.47,2347.15,1.997,Capacity
+baseline,5,CAISO,4144.88,33727.15,18936.01,1893.6,3.049,Emergency
+baseline,6,PJM,3918.75,21988.03,12953.39,1295.34,2.789,Capacity
+baseline,7,ERCOT,1783.53,7662.86,4723.19,472.32,2.702,Emergency
