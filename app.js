@@ -891,6 +891,7 @@ function getFilteredPolicyRows() {
 function renderPolicyIntelligence() {
     const kpiEl = document.getElementById('policy-kpis');
     const tableEl = document.getElementById('policy-table-body');
+    const emptyEl = document.getElementById('policy-empty-state');
     if (!kpiEl || !tableEl) return;
 
     if (!deltaPolicyData?.rows?.length) {
@@ -898,10 +899,71 @@ function renderPolicyIntelligence() {
         tableEl.innerHTML = '<tr><td colspan="6" style="color:#94a3b8;">No DELTa records loaded.</td></tr>';
         if (chartPolicyStatus) chartPolicyStatus.destroy();
         if (chartPolicyRegion) chartPolicyRegion.destroy();
+        if (emptyEl) {
+            emptyEl.style.display = 'block';
+            emptyEl.textContent = 'DELTa summary data is unavailable.';
+        }
         return;
     }
 
     const filtered = getFilteredPolicyRows();
+    const statusFilter = document.getElementById('policy-status-filter')?.value || 'all';
+    const scopeFilter = document.getElementById('policy-scope-filter')?.value || 'all';
+
+    if (!filtered.length) {
+        kpiEl.innerHTML = `
+            <div class="policy-kpi"><div class="label">Records</div><div class="value">0</div><div class="meta">No rows match current filters</div></div>
+            <div class="policy-kpi"><div class="label">Approval Rate</div><div class="value">N/A</div><div class="meta">Try broader filters</div></div>
+            <div class="policy-kpi"><div class="label">Median Min Demand</div><div class="value">N/A</div><div class="meta">No comparable rows</div></div>
+        `;
+        tableEl.innerHTML = '<tr><td colspan="6" style="color:#94a3b8;">No records match current filters. Try Status=All and Scope=All regions.</td></tr>';
+
+        if (chartPolicyStatus) chartPolicyStatus.destroy();
+        if (chartPolicyRegion) chartPolicyRegion.destroy();
+
+        const statusCanvas = document.getElementById('chart-policy-status');
+        const regionCanvas = document.getElementById('chart-policy-region');
+        if (statusCanvas) {
+            chartPolicyStatus = new Chart(statusCanvas, {
+                type: 'bar',
+                data: { labels: ['No data'], datasets: [{ label: 'Records', data: [0], backgroundColor: ['#334155'] }] },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+                        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } }
+                    }
+                }
+            });
+        }
+        if (regionCanvas) {
+            chartPolicyRegion = new Chart(regionCanvas, {
+                type: 'bar',
+                data: { labels: ['No data'], datasets: [{ label: 'DELTa entries', data: [0], backgroundColor: ['#334155'] }] },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+                        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } }
+                    }
+                }
+            });
+        }
+
+        if (emptyEl) {
+            emptyEl.style.display = 'block';
+            emptyEl.textContent = `No DELTa rows for Status=${statusFilter} and Scope=${scopeFilter === 'selected' ? 'Selected map region' : 'All regions'}.`;
+        }
+        return;
+    }
+
+    if (emptyEl) {
+        emptyEl.style.display = 'none';
+        emptyEl.textContent = '';
+    }
+
     const minDemandValues = filtered.map(row => Number(row.minimumDemandMw)).filter(v => Number.isFinite(v));
     const approved = filtered.filter(row => row.status === 'Approved').length;
     const pending = filtered.filter(row => row.status === 'Proposed / Pending').length;
