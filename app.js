@@ -28,6 +28,7 @@ let compareMode = false;
 let compareRegions = []; // max 3
 let dataCenterAnalysisMode = 'calibrated';
 let selectedFlexScenario = 'baseline';
+let deltaPolicyData = null;
 
 // Chart instances
 let chartEnergy = null;
@@ -35,6 +36,8 @@ let chartEmergency = null;
 let chartCapacity = null;
 let compareChart = null;
 let chartDataCenters = null;
+let chartPolicyStatus = null;
+let chartPolicyRegion = null;
 
 // ── Map setup ─────────────────────────────────────────
 const map = L.map('map', {
@@ -79,6 +82,12 @@ async function init() {
         ]);
     }
 
+    try {
+        deltaPolicyData = await fetchJSON('data/delta_summary.json');
+    } catch {
+        deltaPolicyData = null;
+    }
+
     normalizeRatesData(ratesData);
 
     const scenarios = ratesData.analysis?.flexdcSim?.scenarios || {};
@@ -97,6 +106,7 @@ async function init() {
     renderMap();
     setupEventListeners();
     renderDataCenterAnalysis();
+    renderPolicyIntelligence();
 
     if (selectedRegion) {
         showRegionDetail(selectedRegion);
@@ -245,6 +255,7 @@ function handleRegionClick(id) {
     showRegionDetail(id);
     showTrends(id);
     renderDataCenterAnalysis();
+    renderPolicyIntelligence();
 
     // Switch to detail tab
     activateTab('detail');
@@ -796,6 +807,11 @@ function setupEventListeners() {
         });
     }
 
+    const policyStatus = document.getElementById('policy-status-filter');
+    const policyScope = document.getElementById('policy-scope-filter');
+    if (policyStatus) policyStatus.addEventListener('change', renderPolicyIntelligence);
+    if (policyScope) policyScope.addEventListener('change', renderPolicyIntelligence);
+
     // Modal backdrop
     document.getElementById('edit-modal').addEventListener('click', e => { if (e.target.id === 'edit-modal') closeModal(); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
@@ -856,6 +872,136 @@ function normalizeRatesData(data) {
             typology: ensureProgramTypology(program)
         }));
     }
+}
+
+function getFilteredPolicyRows() {
+    if (!deltaPolicyData?.rows?.length) return [];
+    const statusFilter = document.getElementById('policy-status-filter')?.value || 'all';
+    const scopeFilter = document.getElementById('policy-scope-filter')?.value || 'all';
+    return deltaPolicyData.rows.filter(row => {
+        if (statusFilter !== 'all' && row.status !== statusFilter) return false;
+        if (scopeFilter === 'selected' && selectedRegion) {
+            return Array.isArray(row.regions) && row.regions.includes(selectedRegion);
+        }
+        if (scopeFilter === 'selected' && !selectedRegion) return false;
+        return true;
+    });
+}
+
+function renderPolicyIntelligence() {
+    const kpiEl = document.getElementById('policy-kpis');
+    const tableEl = document.getElementById('policy-table-body');
+    if (!kpiEl || !tableEl) return;
+
+    if (!deltaPolicyData?.rows?.length) {
+        kpiEl.innerHTML = '<div class="policy-kpi"><div class="label">DELTa</div><div class="value">Unavailable</div><div class="meta">Run analysis/build_delta_dashboard_data.py</div></div>';
+        tableEl.innerHTML = '<tr><td colspan="6" style="color:#94a3b8;">No DELTa records loaded.</td></tr>';
+        if (chartPolicyStatus) chartPolicyStatus.destroy();
+        if (chartPolicyRegion) chartPolicyRegion.destroy();
+        return;
+    }
+
+    const filtered = getFilteredPolicyRows();
+    const minDemandValues = filtered.map(row => Number(row.minimumDemandMw)).filter(v => Number.isFinite(v));
+    const approved = filtered.filter(row => row.status === 'Approved').length;
+    const pending = filtered.filter(row => row.status === 'Proposed / Pending').length;
+    const medianDemand = medianNumber(minDemandValues);
+
+    kpiEl.innerHTML = `
+        <div class="policy-kpi"><div class="label">Records</div><div class="value">${filtered.length}</div><div class="meta">Filtered DELTa entries</div></div>
+        <div class="policy-kpi"><div class="label">Approval Rate</div><div class="value">${filtered.length ? ((approved / filtered.length) * 100).toFixed(1) : '0.0'}%</div><div class="meta">Approved ${approved} · Pending ${pending}</div></div>
+        <div class="policy-kpi"><div class="label">Median Min Demand</div><div class="value">${medianDemand === null ? 'N/A' : medianDemand.toFixed(1) + ' MW'}</div><div class="meta">From rows with specified threshold</div></div>
+    `;
+
+    const topRows = filtered.slice(0, 80);
+    tableEl.innerHTML = topRows.map(row => {
+        const statusClass = row.status === 'Approved' ? 'approved' : 'pending';
+        return `
+            <tr>
+                <td>${escapeHtml(row.state || 'N/A')}</td>
+                <td>${escapeHtml(row.utility || 'N/A')}</td>
+                <td>${escapeHtml(row.tariff || 'N/A')}</td>
+                <td><span class="policy-tag ${statusClass}">${escapeHtml(row.status || 'Unknown')}</span></td>
+                <td>${row.minimumDemandMw === null || row.minimumDemandMw === undefined ? 'N/S' : Number(row.minimumDemandMw).toFixed(1)}</td>
+                <td>${escapeHtml(row.isoRto || 'N/A')}</td>
+            </tr>
+        `;
+    }).join('') || '<tr><td colspan="6" style="color:#94a3b8;">No records match current filter.</td></tr>';
+
+    const statusAgg = new Map();
+    for (const row of filtered) {
+        const key = row.status || 'Unknown';
+        statusAgg.set(key, (statusAgg.get(key) || 0) + 1);
+    }
+
+    const regionAgg = new Map();
+    for (const row of filtered) {
+        const rowRegions = Array.isArray(row.regions) ? row.regions : [];
+        if (!rowRegions.length) {
+            regionAgg.set('Other', (regionAgg.get('Other') || 0) + 1);
+            continue;
+        }
+        for (const regionId of rowRegions) {
+            regionAgg.set(regionId, (regionAgg.get(regionId) || 0) + 1);
+        }
+    }
+
+    const statusCanvas = document.getElementById('chart-policy-status');
+    const regionCanvas = document.getElementById('chart-policy-region');
+    if (statusCanvas) {
+        if (chartPolicyStatus) chartPolicyStatus.destroy();
+        chartPolicyStatus = new Chart(statusCanvas, {
+            type: 'bar',
+            data: {
+                labels: Array.from(statusAgg.keys()),
+                datasets: [{
+                    label: 'Records',
+                    data: Array.from(statusAgg.values()),
+                    backgroundColor: ['#4ade80', '#fbbf24', '#94a3b8']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+                    y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } }
+                }
+            }
+        });
+    }
+
+    if (regionCanvas) {
+        if (chartPolicyRegion) chartPolicyRegion.destroy();
+        const regionLabels = Array.from(regionAgg.keys());
+        chartPolicyRegion = new Chart(regionCanvas, {
+            type: 'bar',
+            data: {
+                labels: regionLabels,
+                datasets: [{
+                    label: 'DELTa entries',
+                    data: Array.from(regionAgg.values()),
+                    backgroundColor: regionLabels.map(label => REGION_COLORS[label] || '#64748b')
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } },
+                    y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } }
+                }
+            }
+        });
+    }
+}
+
+function medianNumber(values) {
+    if (!values.length) return null;
+    const sorted = [...values].sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    if (sorted.length % 2) return sorted[mid];
+    return (sorted[mid - 1] + sorted[mid]) / 2;
 }
 
 function ensureProgramTypology(program) {

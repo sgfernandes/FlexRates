@@ -1,0 +1,1511 @@
+{
+  "generatedAt": "2026-06-02T04:46:11.192339+00:00",
+  "sourceCsv": "DELTa_2026-03-31-Public-Update.csv",
+  "totals": {
+    "rows": 77,
+    "approved": 51,
+    "pending": 26
+  },
+  "byStatus": [
+    {
+      "status": "Approved",
+      "count": 51
+    },
+    {
+      "status": "Proposed / Pending",
+      "count": 26
+    }
+  ],
+  "byYear": [
+    {
+      "year": 2018,
+      "count": 2
+    },
+    {
+      "year": 2019,
+      "count": 2
+    },
+    {
+      "year": 2022,
+      "count": 2
+    },
+    {
+      "year": 2023,
+      "count": 5
+    },
+    {
+      "year": 2024,
+      "count": 6
+    },
+    {
+      "year": 2025,
+      "count": 50
+    },
+    {
+      "year": 2026,
+      "count": 10
+    }
+  ],
+  "topStates": [
+    {
+      "state": "Virginia",
+      "count": 7
+    },
+    {
+      "state": "Missouri",
+      "count": 5
+    },
+    {
+      "state": "Arkansas",
+      "count": 4
+    },
+    {
+      "state": "Minnesota",
+      "count": 4
+    },
+    {
+      "state": "Texas",
+      "count": 4
+    },
+    {
+      "state": "Florida",
+      "count": 3
+    },
+    {
+      "state": "Kansas",
+      "count": 3
+    },
+    {
+      "state": "Kentucky",
+      "count": 3
+    },
+    {
+      "state": "Michigan",
+      "count": 3
+    },
+    {
+      "state": "Oregon",
+      "count": 3
+    },
+    {
+      "state": "Pennsylvania",
+      "count": 3
+    },
+    {
+      "state": "Wyoming",
+      "count": 3
+    }
+  ],
+  "byRegion": [
+    {
+      "regionId": "CAISO",
+      "count": 14,
+      "approved": 11,
+      "pending": 3,
+      "medianMinimumDemandMw": 10.0
+    },
+    {
+      "regionId": "ERCOT",
+      "count": 1,
+      "approved": 0,
+      "pending": 1,
+      "medianMinimumDemandMw": null
+    },
+    {
+      "regionId": "MISO",
+      "count": 14,
+      "approved": 9,
+      "pending": 5,
+      "medianMinimumDemandMw": 50.0
+    },
+    {
+      "regionId": "NYISO",
+      "count": 1,
+      "approved": 1,
+      "pending": 0,
+      "medianMinimumDemandMw": 0.3
+    },
+    {
+      "regionId": "PJM",
+      "count": 19,
+      "approved": 7,
+      "pending": 12,
+      "medianMinimumDemandMw": 50.0
+    },
+    {
+      "regionId": "SPP",
+      "count": 19,
+      "approved": 16,
+      "pending": 3,
+      "medianMinimumDemandMw": 50.0
+    }
+  ],
+  "rows": [
+    {
+      "state": "Alabama",
+      "utility": "Alabama Power",
+      "tariff": "Rate BTAL: Business Time Advantage \u2013 Large",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 0.5,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is part of SEEM as a subsidiary of Southern Co.",
+      "regions": [],
+      "contractTerm": "5 Years",
+      "energyTransitionProvisions": "TOU Pricing"
+    },
+    {
+      "state": "Arizona",
+      "utility": "Arizona Public Service",
+      "tariff": "Extra High Load Factor (XHLF) Rate",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 5.0,
+      "minimumLoadFactorPct": 92.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "Specified in Electric Supply Agreement (ESA)",
+      "energyTransitionProvisions": "Optional ESA Terms"
+    },
+    {
+      "state": "Arizona",
+      "utility": "Salt River Project",
+      "tariff": "E-67 Price Plan for Large Extra High Load Factor Substation Large General Service",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 20.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Public Power",
+      "isoRto": "No, but is part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "TOU Pricing\nOptional Clean Energy Riders\nOptional Interruptible Load Rider"
+    },
+    {
+      "state": "Arkansas",
+      "utility": "Arkansas Electric Cooperative Corporation",
+      "tariff": "Transmission Extension of Facilities Tariff (TEOF)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Cooperative",
+      "isoRto": "SPP, MISO",
+      "regions": [
+        "MISO",
+        "SPP"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Arkansas",
+      "utility": "Entergy Arkansas",
+      "tariff": "Rate Schedule No. 69: Large Power High Density Service (LPHDS)",
+      "status": "Proposed / Pending",
+      "year": 2023,
+      "lastUpdated": "2026-03 March",
+      "sector": "Cryptocurrency Customers",
+      "minimumDemandMw": null,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "1 Year",
+      "energyTransitionProvisions": "Separate Interruptible Service Agreement"
+    },
+    {
+      "state": "Arkansas",
+      "utility": "Southwest Arkansas Electric Cooperative",
+      "tariff": "Industrial Power (IP-4)",
+      "status": "Approved",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "General Commercial & Industrial Customers",
+      "minimumDemandMw": 10.0,
+      "minimumLoadFactorPct": 98.0,
+      "utilityType": "Cooperative",
+      "isoRto": "SPP, MISO",
+      "regions": [
+        "MISO",
+        "SPP"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Arkansas",
+      "utility": "Southwestern Electric Power Company",
+      "tariff": "Large Load Service Option",
+      "status": "Approved",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 0.5,
+      "minimumLoadFactorPct": 40.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "5 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "California",
+      "utility": "Pacific Gas & Electric",
+      "tariff": "Electric Rule No. 30: Retail Service Transmission Facilities",
+      "status": "Proposed / Pending",
+      "year": 2024,
+      "lastUpdated": "2025-07 July",
+      "sector": "General Commercial & Industrial Customers",
+      "minimumDemandMw": null,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "CAISO",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Colorado",
+      "utility": "Black Hills Energy",
+      "tariff": "Economic Development Rate (EDR)",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "General Commercial & Industrial Customers",
+      "minimumDemandMw": 3.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is joining SPP in 2026.",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "10 Years",
+      "energyTransitionProvisions": "Customer Agrees to Provide System Benefits"
+    },
+    {
+      "state": "Colorado",
+      "utility": "Colorado Springs Utilities",
+      "tariff": "Industrial Service - Large Load (ELL)",
+      "status": "Approved",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 10.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Public Power",
+      "isoRto": "No, but is joining SPP in 2026.",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "10 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Delaware",
+      "utility": "Delmarva Power",
+      "tariff": "General Service - Large Demand Rate",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 25.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "1 Year",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Delaware",
+      "utility": "Delmarva Power",
+      "tariff": "Rules and Regulations",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Florida",
+      "utility": "Duke Energy Florida",
+      "tariff": "Large Load Customer Policy including Large Load Customer Agreement",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 100.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No",
+      "regions": [],
+      "contractTerm": "15 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Florida",
+      "utility": "Duke Energy Florida",
+      "tariff": "Rate Schedule LLC-1: Large Load Customer General Service Optional High Load Factor Rate",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 1.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No",
+      "regions": [],
+      "contractTerm": "3 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Florida",
+      "utility": "Florida Power & Light",
+      "tariff": "Large Load Contract Service-1 (LLCS-1) and Large Load Contract Service-2 (LLCS-2)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": 85.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No",
+      "regions": [],
+      "contractTerm": "20 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Georgia",
+      "utility": "Georgia Power",
+      "tariff": "Rules and Regulations",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 100.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No",
+      "regions": [],
+      "contractTerm": "15 years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Idaho",
+      "utility": "Idaho Power",
+      "tariff": "Schedule 20: Speculative High-Density Load",
+      "status": "Approved",
+      "year": 2024,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 2.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "TOU Pricing\nInterruptible Load"
+    },
+    {
+      "state": "Illinois",
+      "utility": "Commonwealth Edison",
+      "tariff": "Revisions to General Terms & Conditions (GT&C)",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Illinois",
+      "utility": "Commonwealth Edison",
+      "tariff": "Rider DE -- Distribution System Extensions",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Indiana",
+      "utility": "Indiana Michigan Power",
+      "tariff": "Industrial Power \u2013 Tariff I.P.",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 70.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "12 Years",
+      "energyTransitionProvisions": "Settling Parties to Develop Separate Clean Transition Tariff"
+    },
+    {
+      "state": "Iowa",
+      "utility": "Alliant Energy",
+      "tariff": "Rider ICR - Individual Customer Rate",
+      "status": "Approved",
+      "year": 2024,
+      "lastUpdated": "2025-09 September",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 25.0,
+      "minimumLoadFactorPct": 80.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "5 Years",
+      "energyTransitionProvisions": "Optional Demand Response Rider"
+    },
+    {
+      "state": "Kansas",
+      "utility": "Evergy Kansas Central",
+      "tariff": "Large Load Power Service (LLPS)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 75.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "12 Years",
+      "energyTransitionProvisions": "Optional Clean Energy Rider\nOptional Demand Response Rider"
+    },
+    {
+      "state": "Kansas",
+      "utility": "Evergy Kansas Metro",
+      "tariff": "Large Load Power Service (LLPS)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 75.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "12 Years",
+      "energyTransitionProvisions": "Optional Clean Energy Rider\nOptional Demand Response Rider"
+    },
+    {
+      "state": "Kansas",
+      "utility": "Evergy Kansas South",
+      "tariff": "Large Load Power Service (LLPS)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 75.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "12 Years",
+      "energyTransitionProvisions": "Optional Clean Energy Rider\nOptional Demand Response Rider"
+    },
+    {
+      "state": "Kentucky",
+      "utility": "Kentucky Power",
+      "tariff": "Industrial General Service (I.G.S)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 150.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "20 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Kentucky",
+      "utility": "Kentucky Utilities Company",
+      "tariff": "Extremely High Load Factor Service (EHLF)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": 85.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No",
+      "regions": [],
+      "contractTerm": "15 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Kentucky",
+      "utility": "Louisville Gas & Electric",
+      "tariff": "Extremely High Load Factor Service (EHLF)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": 85.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No",
+      "regions": [],
+      "contractTerm": "15 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Michigan",
+      "utility": "Consumers Energy",
+      "tariff": "Large General Service Primary Demand (Rate GPD)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 100.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "15 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Michigan",
+      "utility": "DTE Electric",
+      "tariff": "XL High Load Factor Rate",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": 75.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "15 Years",
+      "energyTransitionProvisions": "Interruptible Load"
+    },
+    {
+      "state": "Michigan",
+      "utility": "Indiana Michigan Power",
+      "tariff": "Tariff LP (Large Power)",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "15 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Minnesota",
+      "utility": "Minnesota Power",
+      "tariff": "Large Power Service (LP Tariff)",
+      "status": "Proposed / Pending",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 10.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "10 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Minnesota",
+      "utility": "Otter Tail Power",
+      "tariff": "Super Large General Service",
+      "status": "Approved",
+      "year": 2022,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 25.0,
+      "minimumLoadFactorPct": 80.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "5 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Minnesota",
+      "utility": "Xcel Energy",
+      "tariff": "Large General Time of Day Service",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 100.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "15 years",
+      "energyTransitionProvisions": "Environmental Improvement Rider\nInterruptible Service Equipment\nTOU Pricing"
+    },
+    {
+      "state": "Minnesota",
+      "utility": "Xcel Energy",
+      "tariff": "Large Peak Controlled Time of Day Service",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 100.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "15 years",
+      "energyTransitionProvisions": "Environmental Improvement Rider\nInterruptible Service Equipment\nInterruptible Load\nTOU Pricing"
+    },
+    {
+      "state": "Missouri",
+      "utility": "Ameren Missouri",
+      "tariff": "Large Load Customer Service (\u201cLLCS\u201d) Rate",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 75.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "12 Years + Up to 5 Year Load Ramp Period",
+      "energyTransitionProvisions": "Optional Clean Energy Riders"
+    },
+    {
+      "state": "Missouri",
+      "utility": "Evergy Missouri Metro",
+      "tariff": "Large Load Power Service (LLPS) Rate Plan and Associated Tariffs",
+      "status": "Approved",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 75.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "12 Years + Up to 5 Year Load Ramp Period",
+      "energyTransitionProvisions": "Optional Clean Energy Riders"
+    },
+    {
+      "state": "Missouri",
+      "utility": "Evergy Missouri Metro",
+      "tariff": "Special High-Load Factor Market Rate Schedule (MKT)",
+      "status": "Approved",
+      "year": 2023,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 100.0,
+      "minimumLoadFactorPct": 85.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "5 Years (Max.)",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Missouri",
+      "utility": "Evergy Missouri West",
+      "tariff": "Large Load Power Service (LLPS) Rate Plan and Associated Tariffs",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 75.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "12 Years + Up to 5 Year Load Ramp Period",
+      "energyTransitionProvisions": "Optional Clean Energy Riders"
+    },
+    {
+      "state": "Missouri",
+      "utility": "Evergy Missouri West",
+      "tariff": "Special High-Load Factor Market Rate Schedule (MKT)",
+      "status": "Approved",
+      "year": 2023,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 100.0,
+      "minimumLoadFactorPct": 85.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "5 Years (Max.)",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Montana",
+      "utility": "Flathead Electric Cooperative",
+      "tariff": "Administrative Policy E&O 337 \u2013 High Density Loads",
+      "status": "Approved",
+      "year": 2024,
+      "lastUpdated": "2025-09 September",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": null,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Cooperative",
+      "isoRto": "No, but is within the balancing authority areas of BPA and WAPA",
+      "regions": [],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Montana",
+      "utility": "NorthWestern Energy",
+      "tariff": "General Service Substation/Transmission Level Electric Delivery Service",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 5.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Nebraska",
+      "utility": "Omaha Public Power District",
+      "tariff": "Rate Schedule No. 261M: Large Power -- High-Voltage Transmission Level -- Market Energy",
+      "status": "Approved",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 20.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Public Power",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Nevada",
+      "utility": "NV Energy",
+      "tariff": "Schedule No. CTT: Clean Transition Tariff",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 5.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "Currently part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "Term length to match lifetime of new clean energy facility",
+      "energyTransitionProvisions": "Clean Transition Tariff ESA"
+    },
+    {
+      "state": "New York",
+      "utility": "New York Municipal Power Agency",
+      "tariff": "Rider A - Rates and Charges for High Density Load (\"HDL\") Service",
+      "status": "Approved",
+      "year": 2022,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 0.3,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Joint Action Agency",
+      "isoRto": "NYMPA is a joint action agency formed by 35 municipalities, which participate in NYISO",
+      "regions": [
+        "NYISO"
+      ],
+      "contractTerm": "10 Years (Refund Period)",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "North Carolina",
+      "utility": "Duke Energy Carolinas",
+      "tariff": "Schedule HLF: High Load Factor",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 1.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is part of SEEM",
+      "regions": [],
+      "contractTerm": "1 Year",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "North Carolina",
+      "utility": "Duke Energy Progress",
+      "tariff": "Large General Service (High Load Factor) Schedule LGS-HLF",
+      "status": "Approved",
+      "year": 2024,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 1.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is part of SEEM",
+      "regions": [],
+      "contractTerm": "1 Year",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "North Dakota",
+      "utility": "Otter Tail Power",
+      "tariff": "Super Large General Service",
+      "status": "Approved",
+      "year": 2018,
+      "lastUpdated": "2025-09 September",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 25.0,
+      "minimumLoadFactorPct": 80.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "5 Years",
+      "energyTransitionProvisions": "Energy Efficiency Audit"
+    },
+    {
+      "state": "Ohio",
+      "utility": "AEP Ohio",
+      "tariff": "Schedule DCT (Data Center Tariff)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Data Center Customers",
+      "minimumDemandMw": 25.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "8 Years + Up to 4 Year Load Ramp Period",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Oklahoma",
+      "utility": "Public Service Company of Oklahoma",
+      "tariff": "Large Power and Light (LPL)",
+      "status": "Proposed / Pending",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "General Commercial & Industrial Customers",
+      "minimumDemandMw": 10.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "10 - 75 MW: 2 years\n75+ MW: 10 years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Oregon",
+      "utility": "Pacific Power",
+      "tariff": "Rule 13 (R13): Line Extensions-- Capacity Reservation Charge and Excess Demand Charge",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "Currently part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Oregon",
+      "utility": "Pacific Power",
+      "tariff": "Schedule 401 \u2013 Service to New Large Energy Use Facilities",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Data Center Customers",
+      "minimumDemandMw": 20.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "Currently part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "10 years",
+      "energyTransitionProvisions": "Service Cannot Preclude Utility Efforts to Meet Clean Energy Targets"
+    },
+    {
+      "state": "Oregon",
+      "utility": "Portland General Electric",
+      "tariff": "Schedule 55: Green Energy Affinity Rider",
+      "status": "Approved",
+      "year": 2019,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 10.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "Currently part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "5 to 20 Years",
+      "energyTransitionProvisions": "Clean Energy"
+    },
+    {
+      "state": "Pennsylvania",
+      "utility": "PPL Utilities",
+      "tariff": "Schedule LP-5: Large General Service at 69,000 Volts or Higher",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": null,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "1 Year",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Pennsylvania",
+      "utility": "PPL Utilities",
+      "tariff": "Schedule LP-6",
+      "status": "Proposed / Pending",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "10 Years",
+      "energyTransitionProvisions": "Interruptible Service Incentives"
+    },
+    {
+      "state": "Pennsylvania",
+      "utility": "Statewide",
+      "tariff": "Model Tariff for Customers at or Over 50 MW Individually or 100 MW in the Aggregate (Large Load Customer)",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "N/A",
+      "isoRto": "PJM (if utilities adopt the proposed model tariff)",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "5 Years",
+      "energyTransitionProvisions": "Interruptible Service Incentives\nOnsite Generation Incentives"
+    },
+    {
+      "state": "South Carolina",
+      "utility": "Duke Energy Carolinas",
+      "tariff": "Service Regulations",
+      "status": "Approved",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No",
+      "regions": [],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "South Dakota",
+      "utility": "Black Hills Power",
+      "tariff": "Blockchain Interruptible Service (BCIS)",
+      "status": "Approved",
+      "year": 2026,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 10.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is joining CAISO's WEIM in 2026",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "2 to 5 Years",
+      "energyTransitionProvisions": "Interruptible Load"
+    },
+    {
+      "state": "South Dakota",
+      "utility": "Otter Tail Power",
+      "tariff": "Super Large General Service",
+      "status": "Approved",
+      "year": 2019,
+      "lastUpdated": "2025-09 September",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 25.0,
+      "minimumLoadFactorPct": 80.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "5 Years",
+      "energyTransitionProvisions": "Energy Efficiency Audit"
+    },
+    {
+      "state": "Texas",
+      "utility": "El Paso Electric",
+      "tariff": "Economic Development Rate Riders for a New Data Center-- Rate Schedule No. 33A: Large Economic Development Rate",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Data Center Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": 90.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, joining SPP Markets+",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "5 Years (Max.)",
+      "energyTransitionProvisions": "Interruptible Load Option"
+    },
+    {
+      "state": "Texas",
+      "utility": "El Paso Electric",
+      "tariff": "Economic Development Rate Riders for a New Data Center-- Rate Schedule No. 33B: Medium Economic Development Rate",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Data Center Customers",
+      "minimumDemandMw": 0.6,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, joining SPP Markets+",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "5 Years (Max.)",
+      "energyTransitionProvisions": "Interruptible Load Option"
+    },
+    {
+      "state": "Texas",
+      "utility": "Southwestern Electric Power Company",
+      "tariff": "Electric Service \u2013 Large Load (ES-LL Contract)",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 75.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "SPP",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "12 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Texas",
+      "utility": "Texas-New Mexico Power",
+      "tariff": "Primary Service - Substation",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "General Commercial & Industrial Customers",
+      "minimumDemandMw": null,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "ERCOT",
+      "regions": [
+        "ERCOT"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Utah",
+      "utility": "Rocky Mountain Power",
+      "tariff": "Electric Service Regulation No. 12: Line Extensions",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 50.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "Currently part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "5 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Virginia",
+      "utility": "Appalachian Power",
+      "tariff": "Schedule L.P.S. (Large Power Service)",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 100.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "12 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Virginia",
+      "utility": "Dominion Energy Virginia",
+      "tariff": "Rate Schedule GS-5: High Load/Load Factor Service",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 25.0,
+      "minimumLoadFactorPct": 75.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "14 Years",
+      "energyTransitionProvisions": "TOU Pricing"
+    },
+    {
+      "state": "Virginia",
+      "utility": "Dominion Energy Virginia",
+      "tariff": "Schedule CFG: Carbon-Free or Renewable Generation Supply Service (Experimental)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "General Commercial & Industrial Customers",
+      "minimumDemandMw": null,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "To coincide with term of CFG Agreement",
+      "energyTransitionProvisions": "Renewable Generation\nCarbon-Free Generation"
+    },
+    {
+      "state": "Virginia",
+      "utility": "Mecklenburg Electric Cooperative",
+      "tariff": "Schedule LPS-U: Large Power Service",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 5.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Cooperative",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Virginia",
+      "utility": "Northern Virginia Electric Cooperative",
+      "tariff": "Schedule HV-2: Large Power Dedicated Facilities Contract Service",
+      "status": "Approved",
+      "year": 2023,
+      "lastUpdated": "2025-11 November",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": null,
+      "minimumLoadFactorPct": 85.0,
+      "utilityType": "Cooperative",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "Negotiable",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Virginia",
+      "utility": "Rappahannock Electric Cooperative",
+      "tariff": "Schedule LP-DF: Large Power Dedicated Facilities Rate Schedule",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-09 September",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 25.0,
+      "minimumLoadFactorPct": 75.0,
+      "utilityType": "Cooperative",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "Negotiable",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Virginia",
+      "utility": "Shenandoah Valley Electric Cooperative",
+      "tariff": "Schedule LPD-2: Large Power Dedicated Facilities Contract Service",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-11 November",
+      "sector": "General Commercial & Industrial Customers",
+      "minimumDemandMw": 40.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Cooperative",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "Negotiable",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Washington",
+      "utility": "Chelan County Public Utility District",
+      "tariff": "Rate Schedule 36: Data Centers and Similar Loads",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-09 September",
+      "sector": "Data Center Customers",
+      "minimumDemandMw": null,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Public Power",
+      "isoRto": "No, but are participating in Phase 2 of SPP's Markets+",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Interruptible Service"
+    },
+    {
+      "state": "Washington",
+      "utility": "Grant County Public Utility District",
+      "tariff": "Schedule No. 17 (Evolving Industries)",
+      "status": "Approved",
+      "year": 2018,
+      "lastUpdated": "2026-03 March",
+      "sector": "Cryptocurrency Customers",
+      "minimumDemandMw": 0.0,
+      "minimumLoadFactorPct": 75.0,
+      "utilityType": "Public Power",
+      "isoRto": "No, but are participating in Phase 2 of SPP's Markets+",
+      "regions": [
+        "SPP"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "West Virginia",
+      "utility": "Appalachian Power Company and Wheeling Power Company",
+      "tariff": "Schedule L.C.P. (Large Capacity Power Service) and Schedule I.P. (Industrial Power Service)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 100.0,
+      "minimumLoadFactorPct": 60.0,
+      "utilityType": "Investor-Owned",
+      "isoRto": "PJM",
+      "regions": [
+        "PJM"
+      ],
+      "contractTerm": "12 Years",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Wisconsin",
+      "utility": "We Energies",
+      "tariff": "Very Large Customer (VLC) Tariff and Bespoke Resources Tariff",
+      "status": "Proposed / Pending",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 500.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "MISO",
+      "regions": [
+        "MISO"
+      ],
+      "contractTerm": "10 Years (VLC tariff)\n\nAgreements under any associated Bespoke Resources Tariff would be effective for the depreciable life of the resource, with exceptions for wind and solar",
+      "energyTransitionProvisions": "Not Specified"
+    },
+    {
+      "state": "Wyoming",
+      "utility": "Cheyenne Light, Fuel and Power Company",
+      "tariff": "Schedule BCIS - Blockchain Interruptible Service",
+      "status": "Approved",
+      "year": 2023,
+      "lastUpdated": "2025-11 November",
+      "sector": "Cryptocurrency Customers",
+      "minimumDemandMw": 10.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is joining CAISO's WEIM in 2026",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "2 Years",
+      "energyTransitionProvisions": "Interruptible Service"
+    },
+    {
+      "state": "Wyoming",
+      "utility": "Cheyenne Light, Fuel and Power Company",
+      "tariff": "Schedule LPCS - Large Power Contract Service",
+      "status": "Approved",
+      "year": 2024,
+      "lastUpdated": "2026-03 March",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 18.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "No, but is joining CAISO's WEIM in 2026",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "Not Specified",
+      "energyTransitionProvisions": "Battery Storage (Capacity Resource)\nRenewable Generation PPA"
+    },
+    {
+      "state": "Wyoming",
+      "utility": "Rocky Mountain Power",
+      "tariff": "Schedule 33 (Partial Requirements Service: Large General Service - 1,000 kW and Over)",
+      "status": "Approved",
+      "year": 2025,
+      "lastUpdated": "2025-07 July",
+      "sector": "Large-Load Customers",
+      "minimumDemandMw": 1.0,
+      "minimumLoadFactorPct": null,
+      "utilityType": "Investor-Owned",
+      "isoRto": "Currently part of CAISO's WEIM",
+      "regions": [
+        "CAISO"
+      ],
+      "contractTerm": "3 Years",
+      "energyTransitionProvisions": "Not Specified"
+    }
+  ]
+}
