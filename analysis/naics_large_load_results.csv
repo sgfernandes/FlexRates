@@ -1,25 +1,25 @@
 rank,naics,title,segment,typical_load_mw,effective_flexible_mw,best_region,best_region_annual_midpoint_usd
-1,518210,"Data Processing, Hosting, and Related Services",Data Centers,20.0,10.5,NYISO,138747.55
-2,336111,Automobile Manufacturing,Transportation Equipment,18.0,6.138,NYISO,81107.85
-3,331110,Iron and Steel Mills and Ferroalloy Manufacturing,Primary Metals,30.0,6.0,NYISO,79284.32
-4,325120,Industrial Gas Manufacturing,Chemicals,15.0,4.68,NYISO,61841.77
-5,334413,Semiconductor and Related Device Manufacturing,Electronics,18.0,4.455,NYISO,58868.6
-6,322121,Paper (except Newsprint) Mills,Pulp and Paper,16.0,4.378,NYISO,57845.84
-7,322122,Newsprint Mills,Pulp and Paper,14.0,4.06,NYISO,53649.05
-8,324110,Petroleum Refineries,Refining,25.0,3.938,NYISO,52030.33
-9,493120,Refrigerated Warehousing and Storage,Cold Chain,8.0,3.64,NYISO,48099.15
-10,327310,Cement Manufacturing,Minerals,12.0,3.6,NYISO,47570.59
-11,336120,Heavy Duty Truck Manufacturing,Transportation Equipment,10.0,3.472,NYISO,45879.19
-12,325180,Other Basic Inorganic Chemical Manufacturing,Chemicals,14.0,3.465,NYISO,45786.69
-13,331314,Secondary Smelting and Alloying of Aluminum,Primary Metals,12.0,2.97,NYISO,39245.74
-14,331491,"Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding",Primary Metals,10.0,2.9,NYISO,38320.75
-15,336411,Aircraft Manufacturing,Aerospace,12.0,2.52,NYISO,33299.41
-16,221320,Sewage Treatment Facilities,Power and Water,6.0,2.448,NYISO,32348.0
-17,333611,Turbine and Turbine Generator Set Units Manufacturing,Machinery,7.0,2.184,NYISO,28859.49
-18,325193,Ethyl Alcohol Manufacturing,Chemicals,7.0,2.03,NYISO,26824.53
-19,562920,Materials Recovery Facilities,Environmental Services,5.0,2.01,NYISO,26560.25
-20,562211,Hazardous Waste Treatment and Disposal,Environmental Services,8.0,1.987,NYISO,26258.97
-21,311615,Poultry Processing,Food Processing,6.0,1.8,NYISO,23785.29
-22,311513,Cheese Manufacturing,Food Processing,5.0,1.705,NYISO,22529.96
-23,562112,Hazardous Waste Collection,Environmental Services,4.0,1.1,NYISO,14535.46
-24,221111,Hydroelectric Power Generation,Power and Water,5.0,0.875,NYISO,11562.3
+1,518210,"Data Processing, Hosting, and Related Services",Data Centers,20.0,10.5,NYISO,1323196.88
+2,336111,Automobile Manufacturing,Transportation Equipment,18.0,6.138,NYISO,773503.09
+3,331110,Iron and Steel Mills and Ferroalloy Manufacturing,Primary Metals,30.0,6.0,NYISO,756112.5
+4,325120,Industrial Gas Manufacturing,Chemicals,15.0,4.68,NYISO,589767.75
+5,334413,Semiconductor and Related Device Manufacturing,Electronics,18.0,4.455,NYISO,561413.53
+6,322121,Paper (except Newsprint) Mills,Pulp and Paper,16.0,4.378,NYISO,551659.68
+7,322122,Newsprint Mills,Pulp and Paper,14.0,4.06,NYISO,511636.12
+8,324110,Petroleum Refineries,Refining,25.0,3.938,NYISO,496198.83
+9,493120,Refrigerated Warehousing and Storage,Cold Chain,8.0,3.64,NYISO,458708.25
+10,327310,Cement Manufacturing,Minerals,12.0,3.6,NYISO,453667.5
+11,336120,Heavy Duty Truck Manufacturing,Transportation Equipment,10.0,3.472,NYISO,437537.1
+12,325180,Other Basic Inorganic Chemical Manufacturing,Chemicals,14.0,3.465,NYISO,436654.97
+13,331314,Secondary Smelting and Alloying of Aluminum,Primary Metals,12.0,2.97,NYISO,374275.69
+14,331491,"Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding",Primary Metals,10.0,2.9,NYISO,365454.38
+15,336411,Aircraft Manufacturing,Aerospace,12.0,2.52,NYISO,317567.25
+16,221320,Sewage Treatment Facilities,Power and Water,6.0,2.448,NYISO,308493.9
+17,333611,Turbine and Turbine Generator Set Units Manufacturing,Machinery,7.0,2.184,NYISO,275224.95
+18,325193,Ethyl Alcohol Manufacturing,Chemicals,7.0,2.03,NYISO,255818.06
+19,562920,Materials Recovery Facilities,Environmental Services,5.0,2.01,NYISO,253297.69
+20,562211,Hazardous Waste Treatment and Disposal,Environmental Services,8.0,1.987,NYISO,250424.46
+21,311615,Poultry Processing,Food Processing,6.0,1.8,NYISO,226833.75
+22,311513,Cheese Manufacturing,Food Processing,5.0,1.705,NYISO,214861.97
+23,562112,Hazardous Waste Collection,Environmental Services,4.0,1.1,NYISO,138620.62
+24,221111,Hydroelectric Power Generation,Power and Water,5.0,0.875,NYISO,110266.41
