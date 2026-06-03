@@ -138,21 +138,6 @@ This repository includes a reproducible analysis workflow for the 2026-03-31 DEL
 - [analysis/generate_methodology_pipeline.py](analysis/generate_methodology_pipeline.py): generates the methodology pipeline figure used in the ML/ranking paper.
 - [analysis/generate_third_paper_figures.py](analysis/generate_third_paper_figures.py): generates the four figures for the emerging industrial load flexibility practices paper: key design aspects, state distribution, participation/performance/scalability features, and actors/regions/customer segments.
 
-### Generated DELTa outputs
-
-- [analysis/delta_exploratory_summary.json](analysis/delta_exploratory_summary.json): machine-readable summary of totals, status counts, field coverage, themes, market-region linkage, and docket summaries.
-- [analysis/delta_exploratory_summary.md](analysis/delta_exploratory_summary.md): human-readable exploratory summary.
-- [analysis/delta_policy_question_stats.json](analysis/delta_policy_question_stats.json): statistics for the five DELTa policy questions.
-- [analysis/delta_state_risk_scores.csv](analysis/delta_state_risk_scores.csv): state-level risk-score export.
-- [analysis/delta_top15_dockets.csv](analysis/delta_top15_dockets.csv): ranked docket export.
-- [analysis/typology_predictions.csv](analysis/typology_predictions.csv) and [analysis/typology_summary.json](analysis/typology_summary.json): optional typology model outputs.
-- [analysis/figures/](analysis/figures/): generated PNG figures consumed by the LaTeX papers.
-
-### Papers
-
-- [papers/ml_delta_market_ranking/paper.tex](papers/ml_delta_market_ranking/paper.tex): paper focused on interpretable DELTa feature coding, typology/ranking, and policy-question outputs.
-- [papers/emerging_industrial_load_flexibility/paper.tex](papers/emerging_industrial_load_flexibility/paper.tex): descriptive paper identifying emerging industrial load flexibility practices in large-load rates and programs.
-
 ### Reproduce the DELTa analysis
 
 Create and activate a Python environment, then install dependencies:
@@ -186,8 +171,6 @@ Optionally run the typology classifier layer:
 ```bash
 python analysis/run_typology_classifier.py
 ```
-
-The LaTeX papers use relative `figures/` links inside each paper folder. Those folders are symlinked to [analysis/figures/](analysis/figures/) so the papers and figures remain connected to the generated analysis outputs.
 
 ## FlexDC-Sim Regional Analysis Workflow
 
