@@ -1,0 +1,78 @@
+record_idx,state,utility,tariff,status,rule_label,model_pred,p_T1,p_T2,p_T3,p_T4
+0,"Alabama","Alabama Power","Rate BTAL: Business Time Advantage – Large","Approved",T4,T4,0.000,0.000,0.000,1.000
+1,"Arizona","Arizona Public Service","Extra High Load Factor (XHLF) Rate","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+2,"Arizona","Salt River Project","E-67 Price Plan for Large Extra High Load Factor Substation Large General Service","Approved",T4,T4,0.000,0.000,0.000,1.000
+3,"Arkansas","Arkansas Electric Cooperative Corporation","Transmission Extension of Facilities Tariff (TEOF)","Approved",T2,T2,0.000,1.000,0.000,0.000
+4,"Arkansas","Entergy Arkansas","Rate Schedule No. 69: Large Power High Density Service (LPHDS)","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+5,"Arkansas","Southwest Arkansas Electric Cooperative","Industrial Power (IP-4)","Approved",T2,T2,0.000,1.000,0.000,0.000
+6,"Arkansas","Southwestern Electric Power Company","Large Load Service Option","Approved",T4,T4,0.000,0.000,0.000,1.000
+7,"California","Pacific Gas & Electric","Electric Rule No. 30: Retail Service Transmission Facilities","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+8,"Colorado","Black Hills Energy","Economic Development Rate (EDR)","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+9,"Colorado","Colorado Springs Utilities","Industrial Service - Large Load (ELL)","Approved",T4,T4,0.000,0.000,0.000,1.000
+10,"Delaware","Delmarva Power","General Service - Large Demand Rate","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+11,"Delaware","Delmarva Power","Rules and Regulations","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+12,"Florida","Duke Energy Florida","Large Load Customer Policy including Large Load Customer Agreement","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+13,"Florida","Duke Energy Florida","Rate Schedule LLC-1: Large Load Customer General Service Optional High Load Factor Rate","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+14,"Florida","Florida Power & Light","Large Load Contract Service-1 (LLCS-1) and Large Load Contract Service-2 (LLCS-2)","Approved",T4,T4,0.000,0.000,0.000,1.000
+15,"Georgia","Georgia Power","Rules and Regulations","Approved",T4,T4,0.000,0.000,0.000,1.000
+16,"Idaho","Idaho Power","Schedule 20: Speculative High-Density Load","Approved",T4,T4,0.000,0.000,0.000,1.000
+17,"Illinois","Commonwealth Edison","Revisions to General Terms & Conditions (GT&C)","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+18,"Illinois","Commonwealth Edison","Rider DE -- Distribution System Extensions","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+19,"Indiana","Indiana Michigan Power","Industrial Power – Tariff I.P.","Approved",T4,T4,0.000,0.000,0.000,1.000
+20,"Iowa","Alliant Energy","Rider ICR - Individual Customer Rate","Approved",T4,T4,0.000,0.000,0.000,1.000
+21,"Kansas","Evergy Kansas Central","Large Load Power Service (LLPS)","Approved",T4,T4,0.000,0.000,0.000,1.000
+22,"Kansas","Evergy Kansas Metro","Large Load Power Service (LLPS)","Approved",T4,T4,0.000,0.000,0.000,1.000
+23,"Kansas","Evergy Kansas South","Large Load Power Service (LLPS)","Approved",T4,T4,0.000,0.000,0.000,1.000
+24,"Kentucky","Kentucky Power","Industrial General Service (I.G.S)","Approved",T4,T4,0.000,0.000,0.000,1.000
+25,"Kentucky","Kentucky Utilities Company","Extremely High Load Factor Service (EHLF)","Approved",T4,T4,0.000,0.000,0.000,1.000
+26,"Kentucky","Louisville Gas & Electric","Extremely High Load Factor Service (EHLF)","Approved",T4,T4,0.000,0.000,0.000,1.000
+27,"Michigan","Consumers Energy","Large General Service Primary Demand (Rate GPD)","Approved",T4,T4,0.000,0.000,0.000,1.000
+28,"Michigan","DTE Electric","XL High Load Factor Rate","Approved",T4,T4,0.000,0.000,0.000,1.000
+29,"Michigan","Indiana Michigan Power","Tariff LP (Large Power)","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+30,"Minnesota","Minnesota Power","Large Power Service (LP Tariff)","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+31,"Minnesota","Otter Tail Power","Super Large General Service","Approved",T3,T3,0.000,0.000,1.000,0.000
+32,"Minnesota","Xcel Energy","Large General Time of Day Service","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+33,"Minnesota","Xcel Energy","Large Peak Controlled Time of Day Service","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+34,"Missouri","Ameren Missouri","Large Load Customer Service (“LLCS”) Rate","Approved",T4,T4,0.000,0.000,0.000,1.000
+35,"Missouri","Evergy Missouri Metro","Large Load Power Service (LLPS) Rate Plan and Associated Tariffs","Approved",T4,T4,0.000,0.000,0.000,1.000
+36,"Missouri","Evergy Missouri Metro","Special High-Load Factor Market Rate Schedule (MKT)","Approved",T4,T4,0.000,0.000,0.000,1.000
+37,"Missouri","Evergy Missouri West","Large Load Power Service (LLPS) Rate Plan and Associated Tariffs","Approved",T4,T4,0.000,0.000,0.000,1.000
+38,"Missouri","Evergy Missouri West","Special High-Load Factor Market Rate Schedule (MKT)","Approved",T4,T4,0.000,0.000,0.000,1.000
+39,"Montana","Flathead Electric Cooperative","Administrative Policy E&O 337 – High Density Loads","Approved",T2,T2,0.000,1.000,0.000,0.000
+40,"Montana","NorthWestern Energy","General Service Substation/Transmission Level Electric Delivery Service","Approved",T3,T3,0.000,0.000,1.000,0.000
+41,"Nebraska","Omaha Public Power District","Rate Schedule No. 261M: Large Power -- High-Voltage Transmission Level -- Market Energy","Approved",T2,T2,0.000,1.000,0.000,0.000
+42,"Nevada","NV Energy","Schedule No. CTT: Clean Transition Tariff","Approved",T4,T4,0.000,0.000,0.000,1.000
+43,"New York","New York Municipal Power Agency","Rider A - Rates and Charges for High Density Load (HDL) Service","Approved",T2,T2,0.000,1.000,0.000,0.000
+44,"North Carolina","Duke Energy Carolinas","Schedule HLF: High Load Factor","Approved",T4,T4,0.000,0.000,0.000,1.000
+45,"North Carolina","Duke Energy Progress","Large General Service (High Load Factor) Schedule LGS-HLF","Approved",T3,T3,0.000,0.000,1.000,0.000
+46,"North Dakota","Otter Tail Power","Super Large General Service","Approved",T3,T3,0.000,0.000,1.000,0.000
+47,"Ohio","AEP Ohio","Schedule DCT (Data Center Tariff)","Approved",T4,T4,0.000,0.000,0.000,1.000
+48,"Oklahoma","Public Service Company of Oklahoma","Large Power and Light (LPL)","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+49,"Oregon","Pacific Power","Rule 13 (R13): Line Extensions-- Capacity Reservation Charge and Excess Demand Charge","Approved",T4,T4,0.000,0.000,0.000,1.000
+50,"Oregon","Pacific Power","Schedule 401 – Service to New Large Energy Use Facilities","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+51,"Oregon","Portland General Electric","Schedule 55: Green Energy Affinity Rider","Approved",T4,T4,0.000,0.000,0.000,1.000
+52,"Pennsylvania","PPL Utilities","Schedule LP-5: Large General Service at 69,000 Volts or Higher","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+53,"Pennsylvania","PPL Utilities","Schedule LP-6","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+54,"Pennsylvania","Statewide","Model Tariff for Customers at or Over 50 MW Individually or 100 MW in the Aggregate (Large Load Customer)","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+55,"South Carolina","Duke Energy Carolinas","Service Regulations","Approved",T3,T3,0.000,0.000,1.000,0.000
+56,"South Dakota","Black Hills Power","Blockchain Interruptible Service (BCIS)","Approved",T4,T4,0.000,0.000,0.000,1.000
+57,"South Dakota","Otter Tail Power","Super Large General Service","Approved",T3,T3,0.000,0.000,1.000,0.000
+58,"Texas","El Paso Electric","Economic Development Rate Riders for a New Data Center-- Rate Schedule No. 33A: Large Economic Development Rate","Approved",T4,T4,0.000,0.000,0.000,1.000
+59,"Texas","El Paso Electric","Economic Development Rate Riders for a New Data Center-- Rate Schedule No. 33B: Medium Economic Development Rate","Approved",T4,T4,0.000,0.000,0.000,1.000
+60,"Texas","Southwestern Electric Power Company","Electric Service – Large Load (ES-LL Contract)","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+61,"Texas","Texas-New Mexico Power","Primary Service - Substation","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+62,"Utah","Rocky Mountain Power","Electric Service Regulation No. 12: Line Extensions","Approved",T2,T2,0.000,1.000,0.000,0.000
+63,"Virginia","Appalachian Power","Schedule L.P.S. (Large Power Service)","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+64,"Virginia","Dominion Energy Virginia","Rate Schedule GS-5: High Load/Load Factor Service","Approved",T4,T4,0.000,0.000,0.000,1.000
+65,"Virginia","Dominion Energy Virginia","Schedule CFG: Carbon-Free or Renewable Generation Supply Service (Experimental)","Approved",T4,T4,0.000,0.000,0.000,1.000
+66,"Virginia","Mecklenburg Electric Cooperative","Schedule LPS-U: Large Power Service","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+67,"Virginia","Northern Virginia Electric Cooperative","Schedule HV-2: Large Power Dedicated Facilities Contract Service","Approved",T3,T3,0.000,0.000,1.000,0.000
+68,"Virginia","Rappahannock Electric Cooperative","Schedule LP-DF: Large Power Dedicated Facilities Rate Schedule","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+69,"Virginia","Shenandoah Valley Electric Cooperative","Schedule LPD-2: Large Power Dedicated Facilities Contract Service","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+70,"Washington","Chelan County Public Utility District","Rate Schedule 36: Data Centers and Similar Loads","Approved",T4,T4,0.000,0.000,0.000,1.000
+71,"Washington","Grant County Public Utility District","Schedule No. 17 (Evolving Industries)","Approved",T3,T3,0.000,0.000,1.000,0.000
+72,"West Virginia","Appalachian Power Company and Wheeling Power Company","Schedule L.C.P. (Large Capacity Power Service) and Schedule I.P. (Industrial Power Service)","Approved",T4,T4,0.000,0.000,0.000,1.000
+73,"Wisconsin","We Energies","Very Large Customer (VLC) Tariff and Bespoke Resources Tariff","Proposed / Pending",T1,T1,1.000,0.000,0.000,0.000
+74,"Wyoming","Cheyenne Light, Fuel and Power Company","Schedule BCIS - Blockchain Interruptible Service","Approved",T4,T4,0.000,0.000,0.000,1.000
+75,"Wyoming","Cheyenne Light, Fuel and Power Company","Schedule LPCS - Large Power Contract Service","Approved",T4,T4,0.000,0.000,0.000,1.000
+76,"Wyoming","Rocky Mountain Power","Schedule 33 (Partial Requirements Service: Large General Service - 1,000 kW and Over)","Approved",T3,T3,0.000,0.000,1.000,0.000

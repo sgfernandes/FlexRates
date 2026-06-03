@@ -1,0 +1,1182 @@
+{
+  "generatedAt": "2026-06-02T16:23:35.142947+00:00",
+  "source": "DELTa_2026-03-31-Public-Update.csv",
+  "totals": {
+    "rows": 77,
+    "approved": 51,
+    "proposedPending": 26,
+    "approvedPct": 66.2
+  },
+  "statusCounts": {
+    "Approved": 51,
+    "Proposed / Pending": 26
+  },
+  "sectorTop10": [
+    [
+      "Large-Load Customers",
+      62
+    ],
+    [
+      "General Commercial & Industrial Customers",
+      7
+    ],
+    [
+      "Data Center Customers",
+      5
+    ],
+    [
+      "Cryptocurrency Customers",
+      3
+    ]
+  ],
+  "utilityTypeCounts": {
+    "Investor-Owned": 63,
+    "Public Power": 5,
+    "Cooperative": 7,
+    "Joint Action Agency": 1,
+    "N/A": 1
+  },
+  "yearCounts": {
+    "2018": 2,
+    "2019": 2,
+    "2022": 2,
+    "2023": 5,
+    "2024": 6,
+    "2025": 50,
+    "2026": 10
+  },
+  "marketRegionCounts": {
+    "CAISO": 14,
+    "MISO": 14,
+    "SPP": 19,
+    "PJM": 19,
+    "NYISO": 1,
+    "ERCOT": 1
+  },
+  "numericStats": {
+    "minDemandMw": {
+      "count": 69,
+      "median": 40.0,
+      "min": 0.0,
+      "max": 500.0
+    },
+    "minLoadFactorPct": {
+      "count": 19,
+      "median": 80.0,
+      "min": 40.0,
+      "max": 98.0
+    }
+  },
+  "fieldCoverage": {
+    "contractTermSpecified": 59,
+    "loadRampSpecified": 34,
+    "minimumBillSpecified": 41,
+    "financialAssuranceSpecified": 59,
+    "studyCostRecoverySpecified": 15,
+    "contractModificationSpecified": 47,
+    "energyTransitionSpecified": 32
+  },
+  "themeCounts": {
+    "Exit and Modification": 40,
+    "Collateral or Credit": 38,
+    "Minimum Bill": 22,
+    "CIAC and Cost Recovery": 21,
+    "Load Ramp": 18,
+    "Clean Energy or Transition": 16,
+    "Interruptibility": 14,
+    "Study Cost Recovery": 12
+  },
+  "dockets": [
+    {
+      "docket": "Unspecified Docket",
+      "records": 13,
+      "states": [
+        "Arizona",
+        "Iowa",
+        "Montana",
+        "Nebraska",
+        "North Carolina",
+        "North Dakota",
+        "South Dakota",
+        "Washington",
+        "Wyoming"
+      ],
+      "utilities": [
+        "Alliant Energy",
+        "Chelan County Public Utility District",
+        "Cheyenne Light, Fuel and Power Company",
+        "Duke Energy Carolinas",
+        "Duke Energy Progress",
+        "Flathead Electric Cooperative",
+        "Grant County Public Utility District",
+        "NorthWestern Energy",
+        "Omaha Public Power District",
+        "Otter Tail Power",
+        "Rocky Mountain Power",
+        "Salt River Project"
+      ],
+      "statusBreakdown": {
+        "Approved": 13
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 10.0,
+      "keyThemes": [
+        "Interruptibility",
+        "Exit and Modification",
+        "Collateral or Credit"
+      ]
+    },
+    {
+      "docket": "Docket 25-EKME-315-TAR",
+      "records": 3,
+      "states": [
+        "Kansas"
+      ],
+      "utilities": [
+        "Evergy Kansas Central",
+        "Evergy Kansas Metro",
+        "Evergy Kansas South"
+      ],
+      "statusBreakdown": {
+        "Approved": 3
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 75.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. 20250113",
+      "records": 2,
+      "states": [
+        "Florida"
+      ],
+      "utilities": [
+        "Duke Energy Florida"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 2
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.5,
+      "keyThemes": [
+        "Exit and Modification",
+        "Minimum Bill",
+        "Collateral or Credit"
+      ]
+    },
+    {
+      "docket": "Docket No. 25-0826",
+      "records": 2,
+      "states": [
+        "Delaware"
+      ],
+      "utilities": [
+        "Delmarva Power"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 2
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 37.5,
+      "keyThemes": [
+        "Collateral or Credit",
+        "Study Cost Recovery",
+        "Load Ramp"
+      ]
+    },
+    {
+      "docket": "Docket No. 25-289",
+      "records": 2,
+      "states": [
+        "Minnesota"
+      ],
+      "utilities": [
+        "Xcel Energy"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 2
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 100.0,
+      "keyThemes": [
+        "Exit and Modification",
+        "Interruptibility",
+        "Load Ramp"
+      ]
+    },
+    {
+      "docket": "Docket No. 56903",
+      "records": 2,
+      "states": [
+        "Texas"
+      ],
+      "utilities": [
+        "El Paso Electric"
+      ],
+      "statusBreakdown": {
+        "Approved": 2
+      },
+      "topSector": "Data Center Customers",
+      "medianMinDemandMw": 25.3,
+      "keyThemes": [
+        "Interruptibility"
+      ]
+    },
+    {
+      "docket": "Docket No. EO-2022-0061",
+      "records": 2,
+      "states": [
+        "Missouri"
+      ],
+      "utilities": [
+        "Evergy Missouri Metro",
+        "Evergy Missouri West"
+      ],
+      "statusBreakdown": {
+        "Approved": 2
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 75.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. EO-2025-0154",
+      "records": 2,
+      "states": [
+        "Missouri"
+      ],
+      "utilities": [
+        "Evergy Missouri Metro",
+        "Evergy Missouri West"
+      ],
+      "statusBreakdown": {
+        "Approved": 2
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 100.0,
+      "keyThemes": [
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. R-2025-3057164",
+      "records": 2,
+      "states": [
+        "Pennsylvania"
+      ],
+      "utilities": [
+        "PPL Utilities"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 2
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "CIAC and Cost Recovery",
+        "Load Ramp"
+      ]
+    },
+    {
+      "docket": "Annual Operating Budget",
+      "records": 1,
+      "states": [
+        "Colorado"
+      ],
+      "utilities": [
+        "Colorado Springs Utilities"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 10.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Case 18-E-0126",
+      "records": 1,
+      "states": [
+        "New York"
+      ],
+      "utilities": [
+        "New York Municipal Power Agency"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 0.3,
+      "keyThemes": [
+        "Collateral or Credit",
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Case No. IPC-E-21-37",
+      "records": 1,
+      "states": [
+        "Idaho"
+      ],
+      "utilities": [
+        "Idaho Power"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 2.0,
+      "keyThemes": [
+        "Interruptibility"
+      ]
+    },
+    {
+      "docket": "Case No. PUR-2025-00048",
+      "records": 1,
+      "states": [
+        "Virginia"
+      ],
+      "utilities": [
+        "Rappahannock Electric Cooperative"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 25.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "CIAC and Cost Recovery",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Case No. PUR-2025-00058",
+      "records": 1,
+      "states": [
+        "Virginia"
+      ],
+      "utilities": [
+        "Dominion Energy Virginia"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "General Commercial & Industrial Customers",
+      "medianMinDemandMw": null,
+      "keyThemes": [
+        "Clean Energy or Transition"
+      ]
+    },
+    {
+      "docket": "Case No. PUR-2025-00160",
+      "records": 1,
+      "states": [
+        "Virginia"
+      ],
+      "utilities": [
+        "Mecklenburg Electric Cooperative"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 5.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. 14242",
+      "records": 1,
+      "states": [
+        "Wyoming"
+      ],
+      "utilities": [
+        "Cheyenne Light, Fuel and Power Company"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 18.0,
+      "keyThemes": [
+        "Exit and Modification",
+        "Clean Energy or Transition"
+      ]
+    },
+    {
+      "docket": "Docket No. 2024-00305",
+      "records": 1,
+      "states": [
+        "Kentucky"
+      ],
+      "utilities": [
+        "Kentucky Power"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 150.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. 2025-00113",
+      "records": 1,
+      "states": [
+        "Kentucky"
+      ],
+      "utilities": [
+        "Kentucky Utilities Company"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "Exit and Modification",
+        "Clean Energy or Transition"
+      ]
+    },
+    {
+      "docket": "Docket No. 2025-00114",
+      "records": 1,
+      "states": [
+        "Kentucky"
+      ],
+      "utilities": [
+        "Louisville Gas & Electric"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "Exit and Modification",
+        "Clean Energy or Transition"
+      ]
+    },
+    {
+      "docket": "Docket No. 2025-172-E",
+      "records": 1,
+      "states": [
+        "South Carolina"
+      ],
+      "utilities": [
+        "Duke Energy Carolinas"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Minimum Bill"
+      ]
+    },
+    {
+      "docket": "Docket No. 20250011",
+      "records": 1,
+      "states": [
+        "Florida"
+      ],
+      "utilities": [
+        "Florida Power & Light"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "CIAC and Cost Recovery",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. 24-035-04",
+      "records": 1,
+      "states": [
+        "Utah"
+      ],
+      "utilities": [
+        "Rocky Mountain Power"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Collateral or Credit"
+      ]
+    },
+    {
+      "docket": "Docket No. 24-05022 (Nevada Power)",
+      "records": 1,
+      "states": [
+        "Nevada"
+      ],
+      "utilities": [
+        "NV Energy"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 5.0,
+      "keyThemes": [
+        "Clean Energy or Transition"
+      ]
+    },
+    {
+      "docket": "Docket No. 24-0611-E-T-PW",
+      "records": 1,
+      "states": [
+        "West Virginia"
+      ],
+      "utilities": [
+        "Appalachian Power Company and Wheeling Power Company"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 100.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "Exit and Modification",
+        "Load Ramp"
+      ]
+    },
+    {
+      "docket": "Docket No. 25-003-U",
+      "records": 1,
+      "states": [
+        "Arkansas"
+      ],
+      "utilities": [
+        "Southwestern Electric Power Company"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 0.5,
+      "keyThemes": [
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. 25-031-TF",
+      "records": 1,
+      "states": [
+        "Arkansas"
+      ],
+      "utilities": [
+        "Arkansas Electric Cooperative Corporation"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. 25-0392-EL-AIR",
+      "records": 1,
+      "states": [
+        "Ohio"
+      ],
+      "utilities": [
+        "AEP Ohio"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Data Center Customers",
+      "medianMinDemandMw": 25.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. 25-076-TF",
+      "records": 1,
+      "states": [
+        "Arkansas"
+      ],
+      "utilities": [
+        "Southwest Arkansas Electric Cooperative"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "General Commercial & Industrial Customers",
+      "medianMinDemandMw": 10.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. 25A-0500E",
+      "records": 1,
+      "states": [
+        "Colorado"
+      ],
+      "utilities": [
+        "Black Hills Energy"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "General Commercial & Industrial Customers",
+      "medianMinDemandMw": 3.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "CIAC and Cost Recovery",
+        "Clean Energy or Transition"
+      ]
+    },
+    {
+      "docket": "Docket No. 26-001-U",
+      "records": 1,
+      "states": [
+        "Arkansas"
+      ],
+      "utilities": [
+        "Entergy Arkansas"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Cryptocurrency Customers",
+      "medianMinDemandMw": null,
+      "keyThemes": [
+        "Collateral or Credit",
+        "CIAC and Cost Recovery",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. 26-126",
+      "records": 1,
+      "states": [
+        "Minnesota"
+      ],
+      "utilities": [
+        "Minnesota Power"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 10.0,
+      "keyThemes": []
+    },
+    {
+      "docket": "Docket No. 44280",
+      "records": 1,
+      "states": [
+        "Georgia"
+      ],
+      "utilities": [
+        "Georgia Power"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 100.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "CIAC and Cost Recovery",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. 46097",
+      "records": 1,
+      "states": [
+        "Indiana"
+      ],
+      "utilities": [
+        "Indiana Michigan Power"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 70.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "Exit and Modification",
+        "Clean Energy or Transition"
+      ]
+    },
+    {
+      "docket": "Docket No. 58796",
+      "records": 1,
+      "states": [
+        "Texas"
+      ],
+      "utilities": [
+        "Texas-New Mexico Power"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "General Commercial & Industrial Customers",
+      "medianMinDemandMw": null,
+      "keyThemes": [
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. 58964",
+      "records": 1,
+      "states": [
+        "Texas"
+      ],
+      "utilities": [
+        "Southwestern Electric Power Company"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 75.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. 6630-TE-113",
+      "records": 1,
+      "states": [
+        "Wisconsin"
+      ],
+      "utilities": [
+        "We Energies"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 500.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. A-24-11-007",
+      "records": 1,
+      "states": [
+        "California"
+      ],
+      "utilities": [
+        "Pacific Gas & Electric"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "General Commercial & Industrial Customers",
+      "medianMinDemandMw": null,
+      "keyThemes": [
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. E-01345A-25-0105",
+      "records": 1,
+      "states": [
+        "Arizona"
+      ],
+      "utilities": [
+        "Arizona Public Service"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 5.0,
+      "keyThemes": [
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. E-017/GR-20-719",
+      "records": 1,
+      "states": [
+        "Minnesota"
+      ],
+      "utilities": [
+        "Otter Tail Power"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 25.0,
+      "keyThemes": []
+    },
+    {
+      "docket": "Docket No. EL25-019",
+      "records": 1,
+      "states": [
+        "South Dakota"
+      ],
+      "utilities": [
+        "Black Hills Power"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 10.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "Interruptibility"
+      ]
+    },
+    {
+      "docket": "Docket No. ET-2025-0184",
+      "records": 1,
+      "states": [
+        "Missouri"
+      ],
+      "utilities": [
+        "Ameren Missouri"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 75.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "Exit and Modification",
+        "Clean Energy or Transition"
+      ]
+    },
+    {
+      "docket": "Docket No. M-2025-3054271",
+      "records": 1,
+      "states": [
+        "Pennsylvania"
+      ],
+      "utilities": [
+        "Statewide"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. P2025-0677",
+      "records": 1,
+      "states": [
+        "Illinois"
+      ],
+      "utilities": [
+        "Commonwealth Edison"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "Study Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. P2025-0679",
+      "records": 1,
+      "states": [
+        "Illinois"
+      ],
+      "utilities": [
+        "Commonwealth Edison"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Collateral or Credit"
+      ]
+    },
+    {
+      "docket": "Docket No. PUD2025-000075",
+      "records": 1,
+      "states": [
+        "Oklahoma"
+      ],
+      "utilities": [
+        "Public Service Company of Oklahoma"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "General Commercial & Industrial Customers",
+      "medianMinDemandMw": 10.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. PUR-2018-00165",
+      "records": 1,
+      "states": [
+        "Virginia"
+      ],
+      "utilities": [
+        "Northern Virginia Electric Cooperative"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": null,
+      "keyThemes": []
+    },
+    {
+      "docket": "Docket No. PUR-2024-00114",
+      "records": 1,
+      "states": [
+        "Virginia"
+      ],
+      "utilities": [
+        "Dominion Energy Virginia"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 25.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. PUR-2025-00057",
+      "records": 1,
+      "states": [
+        "Virginia"
+      ],
+      "utilities": [
+        "Appalachian Power"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 100.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. PUR-2025-00190",
+      "records": 1,
+      "states": [
+        "Virginia"
+      ],
+      "utilities": [
+        "Shenandoah Valley Electric Cooperative"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "General Commercial & Industrial Customers",
+      "medianMinDemandMw": 40.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "CIAC and Cost Recovery"
+      ]
+    },
+    {
+      "docket": "Docket No. U-21534",
+      "records": 1,
+      "states": [
+        "Michigan"
+      ],
+      "utilities": [
+        "DTE Electric"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Exit and Modification",
+        "Interruptibility"
+      ]
+    },
+    {
+      "docket": "Docket No. U-21859",
+      "records": 1,
+      "states": [
+        "Michigan"
+      ],
+      "utilities": [
+        "Consumers Energy"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 100.0,
+      "keyThemes": [
+        "Minimum Bill",
+        "Collateral or Credit",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. U-21986",
+      "records": 1,
+      "states": [
+        "Michigan"
+      ],
+      "utilities": [
+        "Indiana Michigan Power"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "CIAC and Cost Recovery",
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. U-5024",
+      "records": 1,
+      "states": [
+        "Alabama"
+      ],
+      "utilities": [
+        "Alabama Power"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 0.5,
+      "keyThemes": [
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. UE 433",
+      "records": 1,
+      "states": [
+        "Oregon"
+      ],
+      "utilities": [
+        "Pacific Power"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 50.0,
+      "keyThemes": [
+        "Exit and Modification"
+      ]
+    },
+    {
+      "docket": "Docket No. UE 463",
+      "records": 1,
+      "states": [
+        "Oregon"
+      ],
+      "utilities": [
+        "Pacific Power"
+      ],
+      "statusBreakdown": {
+        "Proposed / Pending": 1
+      },
+      "topSector": "Data Center Customers",
+      "medianMinDemandMw": 20.0,
+      "keyThemes": [
+        "Collateral or Credit",
+        "CIAC and Cost Recovery",
+        "Clean Energy or Transition"
+      ]
+    },
+    {
+      "docket": "Docket No. UM 1953",
+      "records": 1,
+      "states": [
+        "Oregon"
+      ],
+      "utilities": [
+        "Portland General Electric"
+      ],
+      "statusBreakdown": {
+        "Approved": 1
+      },
+      "topSector": "Large-Load Customers",
+      "medianMinDemandMw": 10.0,
+      "keyThemes": [
+        "Clean Energy or Transition"
+      ]
+    }
+  ]
+}

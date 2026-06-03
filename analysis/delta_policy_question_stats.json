@@ -1,0 +1,325 @@
+{
+  "totalRows": 77,
+  "uniqueStates": 36,
+  "q1_topStatesByMedianMinDemand": [
+    {
+      "state": "Missouri",
+      "recordsWithThreshold": 5,
+      "medianMinDemandMw": 75.0,
+      "shareAtLeast50Pct": 100.0
+    },
+    {
+      "state": "Kansas",
+      "recordsWithThreshold": 3,
+      "medianMinDemandMw": 75.0,
+      "shareAtLeast50Pct": 100.0
+    },
+    {
+      "state": "Minnesota",
+      "recordsWithThreshold": 4,
+      "medianMinDemandMw": 62.5,
+      "shareAtLeast50Pct": 50.0
+    },
+    {
+      "state": "Florida",
+      "recordsWithThreshold": 3,
+      "medianMinDemandMw": 50.0,
+      "shareAtLeast50Pct": 66.7
+    },
+    {
+      "state": "Kentucky",
+      "recordsWithThreshold": 3,
+      "medianMinDemandMw": 50.0,
+      "shareAtLeast50Pct": 100.0
+    },
+    {
+      "state": "Michigan",
+      "recordsWithThreshold": 3,
+      "medianMinDemandMw": 50.0,
+      "shareAtLeast50Pct": 100.0
+    },
+    {
+      "state": "Texas",
+      "recordsWithThreshold": 3,
+      "medianMinDemandMw": 50.0,
+      "shareAtLeast50Pct": 66.7
+    },
+    {
+      "state": "Illinois",
+      "recordsWithThreshold": 2,
+      "medianMinDemandMw": 50.0,
+      "shareAtLeast50Pct": 100.0
+    },
+    {
+      "state": "Pennsylvania",
+      "recordsWithThreshold": 2,
+      "medianMinDemandMw": 50.0,
+      "shareAtLeast50Pct": 100.0
+    },
+    {
+      "state": "Delaware",
+      "recordsWithThreshold": 2,
+      "medianMinDemandMw": 37.5,
+      "shareAtLeast50Pct": 50.0
+    }
+  ],
+  "q2_financialProtection": {
+    "rowsWithProtectionN": 51,
+    "rowsWithProtectionPct": 66.2,
+    "topStatesByShare": [
+      {
+        "state": "Florida",
+        "records": 3,
+        "hits": 3,
+        "sharePct": 100.0
+      },
+      {
+        "state": "Kansas",
+        "records": 3,
+        "hits": 3,
+        "sharePct": 100.0
+      },
+      {
+        "state": "Kentucky",
+        "records": 3,
+        "hits": 3,
+        "sharePct": 100.0
+      },
+      {
+        "state": "Pennsylvania",
+        "records": 3,
+        "hits": 3,
+        "sharePct": 100.0
+      },
+      {
+        "state": "Illinois",
+        "records": 2,
+        "hits": 2,
+        "sharePct": 100.0
+      },
+      {
+        "state": "South Dakota",
+        "records": 2,
+        "hits": 2,
+        "sharePct": 100.0
+      },
+      {
+        "state": "Minnesota",
+        "records": 4,
+        "hits": 3,
+        "sharePct": 75.0
+      },
+      {
+        "state": "Virginia",
+        "records": 7,
+        "hits": 5,
+        "sharePct": 71.4
+      },
+      {
+        "state": "Michigan",
+        "records": 3,
+        "hits": 2,
+        "sharePct": 66.7
+      },
+      {
+        "state": "Wyoming",
+        "records": 3,
+        "hits": 2,
+        "sharePct": 66.7
+      },
+      {
+        "state": "Missouri",
+        "records": 5,
+        "hits": 3,
+        "sharePct": 60.0
+      },
+      {
+        "state": "Arkansas",
+        "records": 4,
+        "hits": 2,
+        "sharePct": 50.0
+      }
+    ]
+  },
+  "q3_longTermAndMinimumBill": {
+    "totalRows": 77,
+    "longTermPct": 39.0,
+    "minimumBillPct": 53.2,
+    "bothPct": 32.5,
+    "eitherPct": 59.7,
+    "longTermN": 30,
+    "minimumBillN": 41,
+    "bothN": 25,
+    "eitherN": 46
+  },
+  "q4_transitionAndClean": {
+    "rowsWithTransitionN": 28,
+    "rowsWithTransitionPct": 36.4,
+    "statesWithAtLeastOne": 13,
+    "topStatesByShare": [
+      {
+        "state": "Kansas",
+        "records": 3,
+        "hits": 3,
+        "sharePct": 100.0
+      },
+      {
+        "state": "Oregon",
+        "records": 3,
+        "hits": 2,
+        "sharePct": 66.7
+      },
+      {
+        "state": "Pennsylvania",
+        "records": 3,
+        "hits": 2,
+        "sharePct": 66.7
+      },
+      {
+        "state": "Wyoming",
+        "records": 3,
+        "hits": 2,
+        "sharePct": 66.7
+      },
+      {
+        "state": "Missouri",
+        "records": 5,
+        "hits": 3,
+        "sharePct": 60.0
+      },
+      {
+        "state": "Minnesota",
+        "records": 4,
+        "hits": 2,
+        "sharePct": 50.0
+      },
+      {
+        "state": "Texas",
+        "records": 4,
+        "hits": 2,
+        "sharePct": 50.0
+      },
+      {
+        "state": "Arizona",
+        "records": 2,
+        "hits": 1,
+        "sharePct": 50.0
+      },
+      {
+        "state": "South Dakota",
+        "records": 2,
+        "hits": 1,
+        "sharePct": 50.0
+      },
+      {
+        "state": "Washington",
+        "records": 2,
+        "hits": 1,
+        "sharePct": 50.0
+      },
+      {
+        "state": "Michigan",
+        "records": 3,
+        "hits": 1,
+        "sharePct": 33.3
+      },
+      {
+        "state": "Virginia",
+        "records": 7,
+        "hits": 2,
+        "sharePct": 28.6
+      }
+    ]
+  },
+  "q5_pendingDockets": {
+    "pendingRowsN": 26,
+    "pendingRowsPct": 33.8,
+    "docketsWithPendingN": 22,
+    "topPendingDockets": [
+      {
+        "docket": "Docket No. 20250113",
+        "total": 2,
+        "pending": 2,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Docket No. 25-0826",
+        "total": 2,
+        "pending": 2,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Docket No. 25-289",
+        "total": 2,
+        "pending": 2,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Docket No. R-2025-3057164",
+        "total": 2,
+        "pending": 2,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Case No. PUR-2025-00048",
+        "total": 1,
+        "pending": 1,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Case No. PUR-2025-00160",
+        "total": 1,
+        "pending": 1,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Docket No. 25A-0500E",
+        "total": 1,
+        "pending": 1,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Docket No. 26-001-U",
+        "total": 1,
+        "pending": 1,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Docket No. 26-126",
+        "total": 1,
+        "pending": 1,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Docket No. 58796",
+        "total": 1,
+        "pending": 1,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Docket No. 58964",
+        "total": 1,
+        "pending": 1,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      },
+      {
+        "docket": "Docket No. 6630-TE-113",
+        "total": 1,
+        "pending": 1,
+        "nonPending": 0,
+        "pendingSharePct": 100.0
+      }
+    ]
+  }
+}

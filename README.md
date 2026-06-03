@@ -20,6 +20,9 @@ Interactive GIS dashboard for industrial load flexibility and demand response ra
 - [server.py](server.py): Flask backend and REST API
 - [data/rates.json](data/rates.json): rate dataset and typology metadata
 - [data/regions.geojson](data/regions.geojson): GIS boundaries
+- [DELTa_2026-03-31-Public-Update.csv](DELTa_2026-03-31-Public-Update.csv): public DELTa large-load tariff and program update used by the DELTa analysis papers
+- [analysis/](analysis/): reproducible scripts and generated outputs for DELTa, FlexDC-Sim, and sector analyses
+- [papers/](papers/): LaTeX manuscripts generated from the analysis outputs
 - [requirements.txt](requirements.txt): Python dependencies
 
 ## Local Run
@@ -116,6 +119,75 @@ For full editing support, deploy the Flask backend on a Python host such as Rend
 - typology filters in the toolbar
 - typology comparison charts by region
 - scheduled data refresh via GitHub Actions
+
+## DELTa Large-Load Rate Analysis Workflow
+
+This repository includes a reproducible analysis workflow for the 2026-03-31 DELTa public update dataset. The workflow is designed so other researchers can trace every figure and table back to the source CSV and rerun the analysis after a future DELTa release.
+
+### Source data
+
+- [DELTa_2026-03-31-Public-Update.csv](DELTa_2026-03-31-Public-Update.csv): source large-load tariff, program, and service-rule records.
+- Rows cover 77 records across 36 states.
+- Core fields include state, utility, tariff or service rule, status, sector, minimum demand, load factor, utility type, ISO/RTO linkage, narrative highlights, docket reference, contract term, load-ramp provisions, minimum-bill provisions, financial assurance, study-cost responsibility, contract-modification provisions, and energy-transition provisions.
+
+### Analysis scripts
+
+- [analysis/analyze_delta_dataset.py](analysis/analyze_delta_dataset.py): parses the DELTa CSV, auto-detects the canonical header row, normalizes records, extracts themes from text fields, summarizes state/utility/sector/region coverage, and writes exploratory JSON/Markdown outputs.
+- [analysis/generate_scientific_plots.py](analysis/generate_scientific_plots.py): generates the main DELTa policy-question figures used by the ML/ranking paper, including threshold, financial-protection, long-term/minimum-bill, transition, and pending-docket charts.
+- [analysis/run_typology_classifier.py](analysis/run_typology_classifier.py): builds an optional interpretable typology layer over engineered DELTa features and exports typology predictions, summary metrics, and SHAP-style feature-importance figures.
+- [analysis/generate_methodology_pipeline.py](analysis/generate_methodology_pipeline.py): generates the methodology pipeline figure used in the ML/ranking paper.
+- [analysis/generate_third_paper_figures.py](analysis/generate_third_paper_figures.py): generates the four figures for the emerging industrial load flexibility practices paper: key design aspects, state distribution, participation/performance/scalability features, and actors/regions/customer segments.
+
+### Generated DELTa outputs
+
+- [analysis/delta_exploratory_summary.json](analysis/delta_exploratory_summary.json): machine-readable summary of totals, status counts, field coverage, themes, market-region linkage, and docket summaries.
+- [analysis/delta_exploratory_summary.md](analysis/delta_exploratory_summary.md): human-readable exploratory summary.
+- [analysis/delta_policy_question_stats.json](analysis/delta_policy_question_stats.json): statistics for the five DELTa policy questions.
+- [analysis/delta_state_risk_scores.csv](analysis/delta_state_risk_scores.csv): state-level risk-score export.
+- [analysis/delta_top15_dockets.csv](analysis/delta_top15_dockets.csv): ranked docket export.
+- [analysis/typology_predictions.csv](analysis/typology_predictions.csv) and [analysis/typology_summary.json](analysis/typology_summary.json): optional typology model outputs.
+- [analysis/figures/](analysis/figures/): generated PNG figures consumed by the LaTeX papers.
+
+### Papers
+
+- [papers/ml_delta_market_ranking/paper.tex](papers/ml_delta_market_ranking/paper.tex): paper focused on interpretable DELTa feature coding, typology/ranking, and policy-question outputs.
+- [papers/emerging_industrial_load_flexibility/paper.tex](papers/emerging_industrial_load_flexibility/paper.tex): descriptive paper identifying emerging industrial load flexibility practices in large-load rates and programs.
+
+### Reproduce the DELTa analysis
+
+Create and activate a Python environment, then install dependencies:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run the exploratory DELTa summary:
+
+```bash
+python analysis/analyze_delta_dataset.py
+```
+
+Generate the policy-question figures and statistics:
+
+```bash
+python analysis/generate_scientific_plots.py
+```
+
+Generate the emerging-practices paper figures:
+
+```bash
+python analysis/generate_third_paper_figures.py
+```
+
+Optionally run the typology classifier layer:
+
+```bash
+python analysis/run_typology_classifier.py
+```
+
+The LaTeX papers use relative `figures/` links inside each paper folder. Those folders are symlinked to [analysis/figures/](analysis/figures/) so the papers and figures remain connected to the generated analysis outputs.
 
 ## FlexDC-Sim Regional Analysis Workflow
 

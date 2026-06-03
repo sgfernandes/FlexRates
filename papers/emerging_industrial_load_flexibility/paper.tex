@@ -1,0 +1,333 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage[section]{placeins}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric}
+\usepackage{hyperref}
+
+\title{Identifying Emerging Industrial Load Flexibility Practices in Large-Load Rates and Programs}
+\author{Energy Rates GIS Project}
+\date{June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Large industrial loads, especially data centers and other high-load-factor customers, are changing the design problem faced by utilities and regulators. This paper identifies emerging industrial load flexibility practices using the 2026-03-31 DELTa public update dataset, which contains 77 records across 36 states. We examine four research questions: (1) what key aspects are emerging in large-load rates or programs, (2) how the overall dataset is distributed by state, (3) which rate-design features appear most relevant to industrial participation, performance, and scalability, and (4) which utilities, states, ISO/RTO linkages, aggregators, and industrial customer segments are represented. The analysis uses transparent column-level coding and descriptive statistics. Results show that exit and modification provisions, collateral or credit requirements, minimum bills, CIAC and cost-recovery provisions, load-ramp rules, clean-energy or transition options, interruptibility, and study-cost recovery are the dominant emerging design elements. Proposed or pending records cover 26 records (33.8\%), indicating that a substantial share of large-load rate design remains unsettled. The findings suggest that industrial flexibility is increasingly being bundled with cost-recovery safeguards rather than offered as a stand-alone demand-response product.
+\end{abstract}
+
+\noindent\textbf{Keywords:} industrial load flexibility, large-load tariffs, data centers, demand flexibility, rate design, DELTa, descriptive policy analytics.
+
+\section{Introduction}
+The growth of hyperscale data centers, electrified industrial processes, and other high-load-factor customers is forcing utilities and regulators to reconsider how large customers interconnect, pay for grid expansion, and contribute operational flexibility. National reliability and resource-planning assessments point to rising load-growth uncertainty and the need for flexible demand-side resources \cite{ml14,ml15,ml17}. At the same time, wholesale-market reforms and distributed-resource participation rules have increased interest in how flexible loads can be aggregated, compensated, or operationally coordinated \cite{ml16}.
+
+Demand flexibility has been studied extensively in residential and commercial settings, including dynamic rates, demand-response programs, grid-interactive efficient buildings, and customer-program portfolios \cite{lbnl_dfpr2024,goldenberg2018,satchwell2021,hledik2019,frick2021,stoll2017,zhoumai2021,hale2016}. Program evidence from utilities and public agencies further documents how efficiency, demand response, and dynamic pricing programs have been administered across jurisdictions \cite{aps2022,austin2022,entergy2022,pepco2018,pepco2022,smeco2022,xcel2022,cec2022,eia861,eiarecs2023,ferc2022,hronis2020}. However, large industrial loads differ from traditional mass-market demand flexibility. They may trigger dedicated facilities, long lead times, substantial credit exposure, high load factors, and tariff provisions negotiated through utility-specific or docket-specific processes.
+
+This paper focuses on emerging industrial load flexibility practices visible in DELTa records. The paper addresses four research questions:
+\begin{enumerate}
+    \item What are the key aspects of emerging industrial rates or programs?
+    \item What is the statistical distribution of the overall dataset by state?
+    \item What program or rate-design features are emerging for industrial participation, performance, and scalability?
+    \item Which utilities, states, ISO/RTOs, aggregators, and industrial customer segments are represented?
+\end{enumerate}
+
+The contribution is empirical and methodological. Empirically, the paper summarizes the design elements now appearing in large-load tariffs and service rules. Methodologically, it demonstrates a repeatable workflow that combines column-level feature coding, descriptive state-level analysis, and policy interpretation. The approach is intentionally transparent: each result traces back to observed DELTa fields rather than to inferred latent classes. This transparency is important because demand flexibility evidence is often used by regulators, utilities, customers, and public-interest stakeholders in contested proceedings \cite{lbnl_dfpr2024,ferc2022,hledik2019,satchwell2021}.
+
+\section{Method}
+The analysis uses the 2026-03-31 DELTa public update dataset, comprising 77 large-load tariff, rate, program, and service-rule records across 36 states. Each record includes state, utility, status, year, sector or segment, minimum demand, load factor, utility type, ISO/RTO linkage, narrative highlights, docket labels, contract term, load-ramp provisions, minimum-bill provisions, financial-assurance and contribution language, study-cost responsibility, modification terms, and energy-transition provisions.
+
+The workflow has five steps. First, the DELTa CSV is parsed with header auto-detection because the source file contains banner rows above the canonical column row. Second, records are normalized to a fixed schema, and common null values such as \texttt{Not Specified}, \texttt{N/A}, \texttt{Tariff Pending}, and \texttt{Service Rules Pending} are handled consistently. Third, structured indicators are extracted from numeric and text fields. These include minimum demand, load factor, contract term, minimum-bill presence, financial-assurance presence, modification or exit-control presence, transition or clean-energy presence, utility type, sector, status, state, and ISO/RTO linkage. Fourth, the coded indicators are summarized as counts, shares, and grouped comparisons by state, feature family, utility type, ISO/RTO linkage, and customer segment. Fifth, descriptive figures are generated for the four research questions.
+
+Figure~\ref{fig:methodology} shows the methodology used in this paper. The workflow is descriptive and auditable: every reported statistic is derived from an observed source column or from a documented keyword rule applied to a DELTa text field.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.98\textwidth}{!}{%
+\begin{tikzpicture}[
+    >=Latex,
+    node distance=10mm and 12mm,
+    every node/.style={font=\small},
+    step/.style={draw, rounded corners=2pt, align=center, text width=30mm, minimum height=11mm, fill=blue!6},
+    analysis/.style={draw, rounded corners=2pt, align=center, text width=31mm, minimum height=11mm, fill=orange!12},
+    output/.style={draw, rounded corners=2pt, align=center, text width=31mm, minimum height=11mm, fill=green!10},
+    review/.style={draw, rounded corners=2pt, align=center, text width=29mm, minimum height=11mm, fill=yellow!16},
+    arrow/.style={->, thick},
+    feedback/.style={->, thick, dashed, gray!70}
+]
+\node[step] (records) {DELTa records\\(n=77)};
+\node[step, right=of records] (schema) {Header detection\\and schema cleanup};
+\node[analysis, right=of schema] (coding) {Column-level\\feature coding};
+\node[analysis, right=of coding] (stats) {Counts, shares,\\and state groups};
+
+\node[output, below=14mm of coding] (figures) {Research-question\\figures};
+\node[output, left=of figures] (interpret) {Policy\\interpretation};
+\node[review, right=of figures] (audit) {Coding-rule\\audit};
+
+\draw[arrow] (records) -- (schema);
+\draw[arrow] (schema) -- (coding);
+\draw[arrow] (coding) -- (stats);
+\draw[arrow] (stats.south) -- (audit.north);
+\draw[arrow] (audit.west) -- (figures.east);
+\draw[arrow] (figures) -- (interpret);
+\draw[feedback] (audit.south) |- ++(0,-0.35) -| (coding.south);
+\end{tikzpicture}
+}
+\caption{Descriptive methodology for identifying emerging industrial load flexibility practices from DELTa records. The analysis proceeds from source-column normalization to documented feature coding, grouped statistics, research-question figures, and policy interpretation.}
+\label{fig:methodology}
+\end{figure}
+
+Table~\ref{tab:delta-columns} defines each DELTa source column used in the analysis. The table is included to make the coding process replicable and to clarify which fields support the descriptive figures.
+
+\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.42\textwidth}>{\raggedright\arraybackslash}p{0.23\textwidth}}
+\caption{DELTa source columns and their role in this paper.}\label{tab:delta-columns}\\
+\toprule
+\textbf{Column} & \textbf{Meaning} & \textbf{Use in analysis} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Column} & \textbf{Meaning} & \textbf{Use in analysis} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+State & U.S. state associated with the tariff, program, service rule, or docket record. & State distribution and state-level comparisons. \\
+Utility & Utility or public-power entity associated with the record. & Actor and utility-type analysis. \\
+Tariff or Service Rule & Name of the rate, tariff schedule, service rule, policy, or program entry. & Record identification and qualitative interpretation. \\
+Status & Regulatory status, usually approved or proposed/pending. & Approved versus pending statistics. \\
+Year & Year associated with the decision, filing, or DELTa record. & Temporal context for emerging practices. \\
+Last Updated in DELTa & DELTa release or update marker for the row. & Reproducibility and refresh tracking. \\
+Sector or Segment & Customer group targeted by the record, such as large-load, data center, cryptocurrency, or general C\&I customers. & Customer-segment figure. \\
+Minimum Demand (MW) & Demand threshold for eligibility or applicability, when specified. & Threshold and scalability analysis. \\
+Minimum Load Factor & Required or observed load-factor threshold, when specified. & Performance-feature analysis. \\
+Utility Type & Ownership or institutional category such as investor-owned, cooperative, public power, or joint action agency. & Utility-type figure. \\
+ISO/RTO & Market or regional linkage, including formal ISO/RTO participation or related market linkages. & ISO/RTO linkage figure. \\
+Narrative Highlights & Text summary of the tariff, program, filing, or rule. & Keyword coding and qualitative interpretation. \\
+Docket(s) Link & Docket identifier or docket-link text. & Pending-docket and record traceability. \\
+Final Decision Link & Label or link for the final regulatory decision, if available. & Source verification. \\
+Tariff or Service Rule Link & Label or link for the tariff, rate, service rule, or pending tariff material. & Source verification. \\
+Contract Term & Contract duration, electric service agreement term, or related commitment period. & Long-term commitment and scalability analysis. \\
+Load Ramp-Up Period & Schedule or timing provisions for how quickly load can reach full service level. & Performance-feature analysis. \\
+Minimum Bill as a \% of Contract Capacity & Minimum-bill obligation tied to contract capacity, when specified. & Cost-recovery and scalability analysis. \\
+Financial Assurance \& Contributions & Collateral, deposits, CIAC, letters of credit, guarantees, or related financial-protection provisions. & Financial-safeguard analysis. \\
+Customer Pays Utility Study Costs & Whether customers are responsible for study or engineering costs. & Study-cost recovery feature. \\
+Contract Modification Provisions & Rules for capacity changes, exit, notice, reassignment, or contract revisions. & Exit and modification theme. \\
+Energy Transition Provisions & Clean-energy, transition, interruptible, demand-response, time-of-use, renewable, or related provisions. & Participation and flexibility feature coding. \\
+\end{longtable}
+\normalsize
+
+\section{Findings}
+\subsection{Key aspects of emerging rates and programs}
+Figure~\ref{fig:keyaspects} summarizes the most frequent aspects of emerging industrial rates and programs. Exit and modification provisions appear most frequently, followed by collateral or credit requirements, minimum bills, CIAC and cost-recovery provisions, load-ramp rules, clean-energy or transition provisions, interruptibility, and study-cost recovery. This pattern indicates that utilities are not only creating flexibility mechanisms; they are pairing them with contractual and financial safeguards designed to allocate growth-related risk.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/third_paper_key_aspects.png}
+\caption{Key aspects of emerging industrial rates and programs in DELTa records. The most common themes combine operational controls, financial safeguards, and transition-oriented provisions.}
+\label{fig:keyaspects}
+\end{figure}
+
+\subsection{Statistical analysis of the dataset by state}
+The dataset contains 77 records across 36 states, with 51 approved records and 26 proposed or pending records. Figure~\ref{fig:state} reports the top 15 states by record count and separates approved from pending records. Virginia has the largest observed count, followed by Missouri, Arkansas, Minnesota, and several states with three records each. The distribution is uneven, which is important for interpretation: state-level findings should be read as descriptive evidence of observed tariff activity rather than as population-level estimates of all regulatory practice.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\textwidth]{figures/third_paper_state_distribution.png}
+\caption{Overall DELTa dataset distribution by state for the top 15 observed states, with approved and proposed/pending records shown separately.}
+\label{fig:state}
+\end{figure}
+
+\subsection{Design features for participation, performance, and scalability}
+Figure~\ref{fig:features} groups design features into three implementation functions. Participation features create routes for customers to enroll or operate flexibly, including transition or clean-energy options and interruptibility or demand-response language. Performance features define operational expectations, including minimum load factor and load-ramp periods. Scalability features protect the utility system and incumbent customers as large loads grow, including financial assurance, contract modification, minimum-bill, and study-cost provisions. Financial assurance and contract modification are especially prominent, suggesting that emerging industrial flexibility is being institutionalized through contract design rather than only through energy-price variation.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.94\textwidth]{figures/third_paper_design_features.png}
+\caption{Program and rate-design features associated with industrial participation, performance, and scalability. Percentages are shares of the 77 DELTa records.}
+\label{fig:features}
+\end{figure}
+
+\subsection{Utilities, states, ISO/RTOs, aggregators, and customer segments}
+Figure~\ref{fig:actors} summarizes the actor landscape represented in DELTa. Investor-owned utilities dominate the observed records, while public power and cooperatives are also present. ISO/RTO linkage is concentrated in PJM, SPP, MISO, and CAISO/WEIM-related records, with smaller counts for NYISO and ERCOT. The customer-segment field is dominated by large-load customers, followed by general commercial and industrial customers, data-center customers, and cryptocurrency customers. Explicit aggregator mentions are not a prominent structured field in this dataset; aggregator relevance is more often implicit through interruptibility, demand response, or participation language than through named aggregator provisions.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/third_paper_actor_segments.png}
+\caption{Utilities, ISO/RTO linkages, and industrial customer segments represented in DELTa. Aggregator mentions are counted from text fields because DELTa does not provide a dedicated aggregator variable.}
+\label{fig:actors}
+\end{figure}
+
+\section{Discussion}
+The findings point to a shift in how industrial load flexibility is being constructed. Earlier demand flexibility programs often emphasized customer response to dynamic rates or utility event calls \cite{lbnl_dfpr2024,hledik2019,goldenberg2018}. The DELTa evidence suggests that large-load flexibility is emerging through a broader contractual package: minimum bills, collateral or credit, CIAC, study-cost responsibility, ramp schedules, exit controls, and transition or clean-energy terms. This package reflects the scale and risk profile of large industrial customers. Utilities appear to be designing tariffs that protect against stranded cost and planning uncertainty while preserving some routes for operational flexibility.
+
+The state-level distribution also matters. A small number of states account for a relatively large share of observed records, and many records are pending or proposed. This means that the field is still actively forming. Pending dockets are not noise; they are an important part of the evidence because they identify where policy uncertainty and design experimentation are concentrated. The presence of 26 pending or proposed records suggests that large-load tariffs remain a moving target, especially for data centers and other high-load-factor customers.
+
+The feature groups in Figure~\ref{fig:features} imply that participation, performance, and scalability should be evaluated together. A tariff may invite participation through transition or interruptible provisions, but performance depends on enforceable load-factor, ramping, or curtailment expectations. Scalability depends on whether cost recovery, credit assurance, and modification rules can adapt as load forecasts change. For regulators, this suggests that flexibility programs should not be evaluated only by enrollment counts or nominal rate offerings. They should also be evaluated by whether contractual provisions make flexibility reliable, financeable, and administratively repeatable.
+
+Finally, the actor landscape shows that industrial flexibility is not only a customer-program problem. It spans utility types, state commissions, ISO/RTO regions, and customer segments. Aggregators are not yet prominent as explicit actors in the DELTa large-load records, but market reforms and distributed-resource participation rules suggest that aggregation may become more important as large flexible loads become dispatchable resources \cite{ml16,ferc2022}. Future DELTa releases should therefore track whether aggregator rights, telemetry requirements, baseline rules, and wholesale-market participation language become more explicit.
+
+\section{Conclusion}
+This paper identified emerging industrial load flexibility practices using the 2026-03-31 DELTa public update dataset. Four findings stand out. First, emerging large-load rates and programs combine operational controls with financial safeguards, especially exit and modification provisions, collateral or credit requirements, minimum bills, CIAC and cost recovery, load-ramp rules, transition provisions, interruptibility, and study-cost recovery. Second, the dataset is geographically uneven but broad, covering 77 records across 36 states, with 51 approved and 26 pending or proposed records. Third, the design features most relevant to participation, performance, and scalability are distributed across both flexibility-enabling provisions and risk-management provisions. Fourth, the actor landscape is dominated by investor-owned utilities, large-load customer segments, and records linked to PJM, SPP, MISO, and CAISO/WEIM-related regions, while aggregator participation is not yet commonly explicit in the structured DELTa fields.
+
+Overall, industrial load flexibility is emerging less as a single program type and more as a tariff-design bundle. The next research step is longitudinal: rerun the same feature schema on future DELTa releases to measure whether pending provisions are approved, whether transition and interruptibility language expands, and whether aggregator-enabled industrial flexibility becomes a more explicit part of large-load rate design.
+
+\begin{thebibliography}{99}
+
+\bibitem{ml1}
+L. Breiman, ``Random Forests,'' \textit{Machine Learning}, 2001.
+
+\bibitem{ml2}
+J. H. Friedman, ``Greedy Function Approximation: A Gradient Boosting Machine,'' \textit{Annals of Statistics}, 2001.
+
+\bibitem{ml3}
+T. Chen and C. Guestrin, ``XGBoost: A Scalable Tree Boosting System,'' KDD, 2016.
+
+\bibitem{ml4}
+G. Ke et al., ``LightGBM: A Highly Efficient Gradient Boosting Decision Tree,'' NeurIPS, 2017.
+
+\bibitem{ml5}
+L. Prokhorenkova et al., ``CatBoost: Unbiased Boosting with Categorical Features,'' NeurIPS, 2018.
+
+\bibitem{ml6}
+C. Burges et al., ``From RankNet to LambdaRank to LambdaMART: An Overview,'' Microsoft Research Technical Report, 2010.
+
+\bibitem{ml7}
+C. J. C. Burges, ``Learning to Rank with Nonsmooth Cost Functions,'' NeurIPS, 2007.
+
+\bibitem{ml8}
+K. Jarvelin and J. Kekalainen, ``Cumulated Gain-Based Evaluation of IR Techniques,'' \textit{ACM TOIS}, 2002.
+
+\bibitem{ml9}
+R. Kohavi, ``A Study of Cross-Validation and Bootstrap for Accuracy Estimation and Model Selection,'' IJCAI, 1995.
+
+\bibitem{ml10}
+B. Efron and R. Tibshirani, \textit{An Introduction to the Bootstrap}, Chapman and Hall, 1993.
+
+\bibitem{ml11}
+D. Chicco and G. Jurman, ``The Advantages of the Matthews Correlation Coefficient over F1 Score and Accuracy,'' \textit{BMC Genomics}, 2020.
+
+\bibitem{ml12}
+S. Lundberg and S.-I. Lee, ``A Unified Approach to Interpreting Model Predictions,'' NeurIPS, 2017.
+
+\bibitem{ml13}
+C. Molnar, \textit{Interpretable Machine Learning}, 2nd ed., 2022.
+
+\bibitem{ml14}
+U.S. Energy Information Administration, ``Annual Energy Outlook 2025,'' 2025.
+
+\bibitem{ml15}
+North American Electric Reliability Corporation, ``2025 Long-Term Reliability Assessment,'' 2025.
+
+\bibitem{ml16}
+Federal Energy Regulatory Commission, ``Order No. 2222,'' 2020.
+
+\bibitem{ml17}
+Lawrence Berkeley National Laboratory, ``Queued Up: Characteristics of Power Plants Seeking Transmission Interconnection,'' 2024.
+
+\bibitem{ml18}
+M. T. Ribeiro, S. Singh, and C. Guestrin, ``Why Should I Trust You?: Explaining the Predictions of Any Classifier,'' KDD, 2016.
+
+\bibitem{ml19}
+M. Sundararajan, A. Taly, and Q. Yan, ``Axiomatic Attribution for Deep Networks,'' ICML, 2017.
+
+\bibitem{ml20}
+A. Fisher, C. Rudin, and F. Dominici, ``All Models Are Wrong, but Many Are Useful: Learning a Variable's Importance,'' \textit{Journal of Machine Learning Research}, 2019.
+
+\bibitem{ml21}
+J. Davis and M. Goadrich, ``The Relationship Between Precision-Recall and ROC Curves,'' ICML, 2006.
+
+\bibitem{ml22}
+I. Guyon and A. Elisseeff, ``An Introduction to Variable and Feature Selection,'' \textit{Journal of Machine Learning Research}, 2003.
+
+\bibitem{ml23}
+L. Rokach and O. Maimon, ``Top-Down Induction of Decision Trees Classifiers: A Survey,'' \textit{IEEE Transactions on Systems, Man, and Cybernetics}, 2005.
+
+\bibitem{ml24}
+I. Goodfellow, Y. Bengio, and A. Courville, \textit{Deep Learning}, MIT Press, 2016.
+
+\bibitem{ml25}
+K. P. Murphy, \textit{Probabilistic Machine Learning: An Introduction}, MIT Press, 2022.
+
+\bibitem{ml26}
+J. Bergstra and Y. Bengio, ``Random Search for Hyper-Parameter Optimization,'' \textit{Journal of Machine Learning Research}, 2012.
+
+\bibitem{ml27}
+J. Snoek, H. Larochelle, and R. P. Adams, ``Practical Bayesian Optimization of Machine Learning Algorithms,'' NeurIPS, 2012.
+
+\bibitem{ml28}
+M. Kuhn and K. Johnson, \textit{Applied Predictive Modeling}, Springer, 2013.
+
+\bibitem{ml29}
+N. Meinshausen, ``Quantile Regression Forests,'' \textit{Journal of Machine Learning Research}, 2006.
+
+\bibitem{ml30}
+T. Hastie, R. Tibshirani, and J. Friedman, \textit{The Elements of Statistical Learning}, 2nd ed., Springer, 2009.
+
+\bibitem{lbnl_dfpr2024}
+S. Murphy, C. Miller, J. Deason, D. Dombrowski, and P. Awuah, ``The State of Demand Flexibility Programs and Rates,'' Lawrence Berkeley National Laboratory, LBNL Technical Report, August 2024. DOI: 10.2172/2429694.
+
+\bibitem{aps2022}
+Arizona Public Service Company, ``2021 Demand Side Management Annual Progress Report,'' 2022.
+
+\bibitem{austin2022}
+Austin Energy, ``Fiscal Year 2021 Customer Energy Solutions Program Progress Report,'' 2022.
+
+\bibitem{cec2022}
+California Energy Commission, ``2022 Building Energy Efficiency Standards for Residential and Nonresidential Buildings,'' 2022.
+
+\bibitem{eia861}
+U.S. Energy Information Administration, ``Form EIA-861 Annual Electric Power Industry Report, 2020,'' 2021. \url{https://www.eia.gov/electricity/data/eia861/}.
+
+\bibitem{eiarecs2023}
+U.S. Energy Information Administration, ``Residential Energy Consumption Survey Table HC6.7,'' 2023. \url{https://www.eia.gov/consumption/residential/data/2020/hc/pdf/HC\%206.7.pdf}.
+
+\bibitem{entergy2022}
+Entergy Arkansas, ``Arkansas Energy Efficiency Program Portfolio Annual Report,'' 2022.
+
+\bibitem{ferc2022}
+Federal Energy Regulatory Commission, ``2022 Assessment of Demand Response and Advanced Metering,'' December 2022. \url{https://www.ferc.gov/news-events/news/ferc-staff-issues-report-2022-assessment-demand-response-and-advanced-metering}.
+
+\bibitem{frick2021}
+N. M. Frick, S. Murphy, C. Miller, and M. Pigman, ``Still the One: Efficiency Remains a Cost-Effective Electricity Resource,'' Lawrence Berkeley National Laboratory, 2021. \url{https://emp.lbl.gov/publications/still-one-efficiency-remains-cost}.
+
+\bibitem{goldenberg2018}
+C. Goldenberg, M. Dyson, and H. Masters, ``Demand Flexibility: The Key to Enabling a Low-Cost, Low-Carbon Grid,'' Rocky Mountain Institute, 2018. \url{https://rmi.org/wp-content/uploads/2018/02/Insight_Brief_Demand_Flexibility_2018.pdf}.
+
+\bibitem{hale2016}
+E. Hale, B. Stoll, and T. Mai, ``Capturing the Impact of Storage and Other Flexible Technologies on Electric System Planning,'' National Renewable Energy Laboratory, 2016. \url{https://www.nrel.gov/docs/fy16osti/65726.pdf}.
+
+\bibitem{hledik2019}
+R. Hledik, A. Faruqui, T. Lee, and J. Higham, ``The National Potential for Load Flexibility: Value and Market Potential Through 2030,'' The Brattle Group, 2019. \url{https://www.brattle.com/wp-content/uploads/2021/05/16639_national_potential_for_load_flexibility_-_final.pdf}.
+
+\bibitem{hronis2020}
+C. Hronis and D. R. Beall, ``Housing Characteristics Overview from the 2020 Residential Energy Consumption Survey (RECS),'' U.S. Energy Information Administration, 2020. \url{https://www.eia.gov/consumption/residential/status/pdf/RECS\%202020\%20Webinar.pdf}.
+
+\bibitem{pepco2018}
+Potomac Electric Power Company, ``Pepco's EmPower Maryland Report 2017,'' 2018.
+
+\bibitem{pepco2022}
+Potomac Electric Power Company, ``Pepco's EmPower Maryland Report 2021,'' 2022.
+
+\bibitem{satchwell2021}
+A. Satchwell, M. A. Piette, A. Khandekar, J. Granderson, N. M. Frick, R. Hledik, A. Faruqui, et al., ``A National Roadmap for Grid-Interactive Efficient Buildings,'' 2021. DOI: 10.2172/1784302.
+
+\bibitem{smeco2022}
+Southern Maryland Electric Cooperative, ``Q4 2021 Semi-Annual EMPOWER Maryland Report,'' 2022.
+
+\bibitem{stoll2017}
+B. Stoll, E. Buechler, and E. Hale, ``The Value of Demand Response in Florida,'' \textit{The Electricity Journal}, vol. 30, no. 9, pp. 57--64, 2017. DOI: 10.1016/j.tej.2017.10.004.
+
+\bibitem{xcel2022}
+Xcel Energy, ``2021 Energy Efficiency Annual Report,'' 2022.
+
+\bibitem{zhoumai2021}
+E. Zhou and T. Mai, ``Electrification Futures Study: Operational Analysis of U.S. Power Systems with Increased Electrification and Demand-Side Flexibility,'' NREL/TP-6A20-79094, 2021. DOI: 10.2172/1785329.
+
+\end{thebibliography}
+
+\end{document}
