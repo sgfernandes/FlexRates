@@ -30,9 +30,9 @@ def save_methodology_flow():
         ("Header detection\nand schema cleanup", 0.30, 0.67, "#e8f1fb"),
         ("Column-level\nfeature coding", 0.50, 0.67, "#fff1dd"),
         ("Counts, shares,\nand state groups", 0.70, 0.67, "#fff1dd"),
-        ("Coding-rule\naudit", 0.30, 0.28, "#fff8d8"),
+        ("Source check\nand coding review", 0.30, 0.28, "#fff8d8"),
         ("Research-question\nfigures", 0.50, 0.28, "#e4f7e4"),
-        ("Policy\ninterpretation", 0.70, 0.28, "#e4f7e4"),
+        ("Findings /\nDiscussion", 0.70, 0.28, "#e4f7e4"),
     ]
     box_width = 0.17
     box_height = 0.18
