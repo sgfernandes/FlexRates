@@ -19,6 +19,58 @@ OUT = ROOT / "analysis" / "figures"
 OUT.mkdir(exist_ok=True)
 
 
+def save_methodology_flow():
+    fig, ax = plt.subplots(figsize=(8.8, 2.9))
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.axis("off")
+
+    boxes = [
+        ("DELTa records\n(n=77)", 0.10, 0.67, "#e8f1fb"),
+        ("Header detection\nand schema cleanup", 0.30, 0.67, "#e8f1fb"),
+        ("Column-level\nfeature coding", 0.50, 0.67, "#fff1dd"),
+        ("Counts, shares,\nand state groups", 0.70, 0.67, "#fff1dd"),
+        ("Coding-rule\naudit", 0.30, 0.28, "#fff8d8"),
+        ("Research-question\nfigures", 0.50, 0.28, "#e4f7e4"),
+        ("Policy\ninterpretation", 0.70, 0.28, "#e4f7e4"),
+    ]
+    box_width = 0.17
+    box_height = 0.18
+    for text, x, y, color in boxes:
+        rect = plt.Rectangle(
+            (x - box_width / 2, y - box_height / 2),
+            box_width,
+            box_height,
+            facecolor=color,
+            edgecolor="#222222",
+            linewidth=0.9,
+            joinstyle="round",
+        )
+        ax.add_patch(rect)
+        ax.text(x, y, text, ha="center", va="center", fontsize=9.5)
+
+    arrows = [
+        ((0.185, 0.67), (0.215, 0.67)),
+        ((0.385, 0.67), (0.415, 0.67)),
+        ((0.585, 0.67), (0.615, 0.67)),
+        ((0.70, 0.58), (0.53, 0.37)),
+        ((0.585, 0.28), (0.615, 0.28)),
+        ((0.415, 0.28), (0.385, 0.28)),
+        ((0.30, 0.37), (0.30, 0.58)),
+    ]
+    for start, end in arrows:
+        ax.annotate(
+            "",
+            xy=end,
+            xytext=start,
+            arrowprops={"arrowstyle": "-|>", "lw": 1.3, "color": "#222222", "shrinkA": 0, "shrinkB": 0},
+        )
+
+    fig.tight_layout(pad=0.2)
+    fig.savefig(OUT / "third_paper_methodology.png", dpi=220, bbox_inches="tight")
+    plt.close(fig)
+
+
 def pct(value: int, total: int) -> float:
     return 100.0 * value / total if total else 0.0
 
@@ -145,11 +197,13 @@ def save_actor_segments(rows):
 
 def main():
     rows = parse_rows()
+    save_methodology_flow()
     save_aspects(rows)
     save_state_distribution(rows)
     save_feature_design(rows)
     save_actor_segments(rows)
     for name in [
+        "third_paper_methodology.png",
         "third_paper_key_aspects.png",
         "third_paper_state_distribution.png",
         "third_paper_design_features.png",
