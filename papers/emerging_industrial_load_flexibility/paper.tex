@@ -50,31 +50,30 @@ Figure~\ref{fig:methodology} shows the methodology used in this paper. The workf
 \resizebox{0.98\textwidth}{!}{%
 \begin{tikzpicture}[
     >=Latex,
-    node distance=10mm and 12mm,
+    node distance=9mm and 11mm,
     every node/.style={font=\small},
-    step/.style={draw, rounded corners=2pt, align=center, text width=30mm, minimum height=11mm, fill=blue!6},
+    step/.style={draw, rounded corners=2pt, align=center, text width=31mm, minimum height=11mm, fill=blue!6},
     analysis/.style={draw, rounded corners=2pt, align=center, text width=31mm, minimum height=11mm, fill=orange!12},
     output/.style={draw, rounded corners=2pt, align=center, text width=31mm, minimum height=11mm, fill=green!10},
-    review/.style={draw, rounded corners=2pt, align=center, text width=29mm, minimum height=11mm, fill=yellow!16},
-    arrow/.style={->, thick},
-    feedback/.style={->, thick, dashed, gray!70}
+    review/.style={draw, rounded corners=2pt, align=center, text width=31mm, minimum height=11mm, fill=yellow!16},
+    arrow/.style={->, thick}
 ]
 \node[step] (records) {DELTa records\\(n=77)};
 \node[step, right=of records] (schema) {Header detection\\and schema cleanup};
 \node[analysis, right=of schema] (coding) {Column-level\\feature coding};
 \node[analysis, right=of coding] (stats) {Counts, shares,\\and state groups};
 
-\node[output, below=14mm of coding] (figures) {Research-question\\figures};
-\node[output, left=of figures] (interpret) {Policy\\interpretation};
-\node[review, right=of figures] (audit) {Coding-rule\\audit};
+\node[review, below=14mm of schema] (audit) {Coding-rule\\audit};
+\node[output, right=of audit] (figures) {Research-question\\figures};
+\node[output, right=of figures] (interpret) {Policy\\interpretation};
 
 \draw[arrow] (records) -- (schema);
 \draw[arrow] (schema) -- (coding);
 \draw[arrow] (coding) -- (stats);
-\draw[arrow] (stats.south) -- (audit.north);
-\draw[arrow] (audit.west) -- (figures.east);
+\draw[arrow] (stats.south) -- (figures.north);
 \draw[arrow] (figures) -- (interpret);
-\draw[feedback] (audit.south) |- ++(0,-0.35) -| (coding.south);
+\draw[arrow] (figures) -- (audit);
+\draw[arrow, dashed, gray] (audit.north) -- (schema.south);
 \end{tikzpicture}
 }
 \caption{Descriptive methodology for identifying emerging industrial load flexibility practices from DELTa records. The analysis proceeds from source-column normalization to documented feature coding, grouped statistics, research-question figures, and policy interpretation.}
