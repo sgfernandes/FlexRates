@@ -1,0 +1,371 @@
+utility_characteristics_year,state,utility_number,utility_name,ba_code,photovoltaic_capacity_mw_type,photovoltaic_capacity_mw_residential,photovoltaic_capacity_mw_commercial,photovoltaic_capacity_mw_industrial,photovoltaic_capacity_mw_transportation,photovoltaic_capacity_mw_total,photovoltaic_installations_residential,photovoltaic_installations_commercial,photovoltaic_installations_industrial,photovoltaic_installations_transportation,photovoltaic_installations_total
+2024,AR,59579.0,Sunnova,MISO,DC,0.276,,,,0.276,30,,,,30
+2024,AR,59579.0,Sunnova,SWPP,DC,0.072,,,,0.072,8,,,,8
+2024,AR,60025.0,Greenbacker Renewable Energy Corporation,SPA,AC,0,2.22,0,0,2.22,0,3,0,0,3
+2024,AR,66036.0,"EverBright, LLC",MISO,AC,0.015,,,,0.015,2,,,,2
+2024,AR,99999.0,Adjustment 2024,MISO,,-0.048,,,,-0.048,,,,,
+2024,AR,99999.0,Adjustment 2024,SWPP,,-0.013,,,,-0.013,,,,,
+2024,AZ,57313.0,Tesla Inc.,AZPS,DC,184.877,25.764,,,210.641,24451,351,,,24802
+2024,AZ,57313.0,Tesla Inc.,SRP,DC,57.931,17.898,,,75.829,6754,47,,,6801
+2024,AZ,57313.0,Tesla Inc.,TEPC,DC,66.832,8.407,,,75.239,8858,416,,,9274
+2024,AZ,57313.0,Tesla Inc.,WALC,DC,1.203,0,,,1.203,166,0,,,166
+2024,AZ,59086.0,"Constellation Solar Holding, LLC",AZPS,DC,0,22.83,0,0,22.83,0,97,0,0,97
+2024,AZ,59086.0,"Constellation Solar Holding, LLC",TEPC,DC,0,13.14,0,0,13.14,0,52,0,0,52
+2024,AZ,59579.0,Sunnova,AZPS,DC,35.66,,,,35.66,4087,,,,4087
+2024,AZ,59579.0,Sunnova,PNM,DC,0.044,,,,0.044,5,,,,5
+2024,AZ,59579.0,Sunnova,SRP,DC,9.988,,,,9.988,1144,,,,1144
+2024,AZ,59579.0,Sunnova,TEPC,DC,12.69,,,,12.69,1455,,,,1455
+2024,AZ,59579.0,Sunnova,WALC,DC,1.769,,,,1.769,202,,,,202
+2024,AZ,59580.0,"SunPower Capital, LLC",AZPS,AC,79.05,,,,79.05,8166,,,,8166
+2024,AZ,59580.0,"SunPower Capital, LLC",CISO,AC,2.05,,,,2.05,212,,,,212
+2024,AZ,59580.0,"SunPower Capital, LLC",PSCO,AC,0.06,,,,0.06,6,,,,6
+2024,AZ,59580.0,"SunPower Capital, LLC",SRP,AC,4.48,,,,4.48,464,,,,464
+2024,AZ,59580.0,"SunPower Capital, LLC",TEPC,AC,23.26,,,,23.26,2403,,,,2403
+2024,AZ,59580.0,"SunPower Capital, LLC",WALC,AC,2.17,,,,2.17,224,,,,224
+2024,AZ,59647.0,Sunrun Inc.,AZPS,DC,311.793,,,,311.793,36059,,,,36059
+2024,AZ,59647.0,Sunrun Inc.,SRP,DC,10.04,,,,10.04,1009,,,,1009
+2024,AZ,59647.0,Sunrun Inc.,TEPC,DC,30.662,,,,30.662,4006,,,,4006
+2024,AZ,59647.0,Sunrun Inc.,WALC,DC,0.15,,,,0.15,20,,,,20
+2024,AZ,59943.0,Spruce Finance,AZPS,AC,27.852,0,0,0,27.852,3607,0,0,0,3607
+2024,AZ,60025.0,Greenbacker Renewable Energy Corporation,TEPC,AC,0,1.05,0,0,1.05,0,4,0,0,4
+2024,AZ,60981.0,"TerraForm US Energy Services, LLC",AZPS,AC,,8.36,,,8.36,,29,,,29
+2024,AZ,66026.0,"Palmetto Solar, LLC",AZPS,DC,18.812,,,,18.812,1759,,,,1759
+2024,AZ,66026.0,"Palmetto Solar, LLC",SRP,DC,4.059,,,,4.059,523,,,,523
+2024,AZ,66026.0,"Palmetto Solar, LLC",TEPC,DC,2.825,,,,2.825,322,,,,322
+2024,AZ,66026.0,"Palmetto Solar, LLC",WALC,DC,4.265,,,,4.265,490,,,,490
+2024,AZ,66036.0,"EverBright, LLC",AZPS,AC,12.885,,,,12.885,1725,,,,1725
+2024,AZ,99999.0,Adjustment 2024,AZPS,,-96.119,-8.475,0,0,-104.594,,,,,
+2024,AZ,99999.0,Adjustment 2024,PNM,,-0.008,,,,-0.008,,,,,
+2024,AZ,99999.0,Adjustment 2024,SRP,,-14.304,-3.121,,,-17.425,,,,,
+2024,AZ,99999.0,Adjustment 2024,TEPC,,-19.709,-3.758,0,0,-23.467,,,,,
+2024,AZ,99999.0,Adjustment 2024,WALC,,-1.288,0,,,-1.288,,,,,
+2024,CA,57313.0,Tesla Inc.,BANC,DC,56.076,8.863,,,64.939,9948,22,,,9970
+2024,CA,57313.0,Tesla Inc.,CISO,DC,708.731,276.608,,,985.339,126771,6233,,,133004
+2024,CA,57313.0,Tesla Inc.,IID,DC,10.554,0.589,,,11.143,1356,1,,,1357
+2024,CA,57313.0,Tesla Inc.,LDWP,DC,47.093,0.726,,,47.819,8959,71,,,9030
+2024,CA,57313.0,Tesla Inc.,PACW,DC,0.008,0.296,,,0.304,2,1,,,3
+2024,CA,57313.0,Tesla Inc.,TIDC,DC,2.695,0.413,,,3.108,404,1,,,405
+2024,CA,57313.0,Tesla Inc.,WALC,DC,0.011,0,,,0.011,1,0,,,1
+2024,CA,59086.0,"Constellation Solar Holding, LLC",CISO,DC,0,63.6,0.71,0,64.31,0,248,1,0,249
+2024,CA,59579.0,Sunnova,BANC,DC,1.461,,,,1.461,286,,,,286
+2024,CA,59579.0,Sunnova,CISO,DC,282.471,,,,282.471,55375,,,,55375
+2024,CA,59579.0,Sunnova,IID,DC,0.329,,,,0.329,64,,,,64
+2024,CA,59579.0,Sunnova,LDWP,DC,6.184,,,,6.184,1213,,,,1213
+2024,CA,59579.0,Sunnova,TIDC,DC,0.436,,,,0.436,86,,,,86
+2024,CA,59580.0,"SunPower Capital, LLC",BANC,AC,21.54,,,,21.54,3072,,,,3072
+2024,CA,59580.0,"SunPower Capital, LLC",CISO,AC,373.41,,,,373.41,61800,,,,61800
+2024,CA,59580.0,"SunPower Capital, LLC",IID,AC,8.33,,,,8.33,1070,,,,1070
+2024,CA,59580.0,"SunPower Capital, LLC",LDWP,AC,25.48,,,,25.48,3501,,,,3501
+2024,CA,59580.0,"SunPower Capital, LLC",NEVP,AC,0.05,,,,0.05,8,,,,8
+2024,CA,59580.0,"SunPower Capital, LLC",PACW,AC,0.27,,,,0.27,43,,,,43
+2024,CA,59580.0,"SunPower Capital, LLC",TIDC,AC,1.12,,,,1.12,177,,,,177
+2024,CA,59580.0,"SunPower Capital, LLC",WALC,AC,0.03,,,,0.03,4,,,,4
+2024,CA,59647.0,Sunrun Inc.,BANC,DC,54.177,,,,54.177,9350,,,,9350
+2024,CA,59647.0,Sunrun Inc.,CISO,DC,2051.204,,,,2051.204,329659,,,,329659
+2024,CA,59647.0,Sunrun Inc.,IID,DC,6.904,,,,6.904,1134,,,,1134
+2024,CA,59647.0,Sunrun Inc.,LDWP,DC,42.816,,,,42.816,6730,,,,6730
+2024,CA,59647.0,Sunrun Inc.,TIDC,DC,0.568,,,,0.568,116,,,,116
+2024,CA,59943.0,Spruce Finance,CISO,AC,155.226,0,0,0,155.226,25222,0,0,0,25222
+2024,CA,60025.0,Greenbacker Renewable Energy Corporation,CISO,AC,0,8.92,0,0,8.92,0,16,0,0,16
+2024,CA,60981.0,"TerraForm US Energy Services, LLC",CISO,AC,,22.792,,,22.792,,81,,,81
+2024,CA,61823.0,"Greenskies Renewable Energy, LLC",CISO,DC,,14.949,,,14.949,,14,,,14
+2024,CA,65242.0,"Scale Sustainable I, LLC",CISO,DC,,1.28,,,1.28,,2,,,2
+2024,CA,66026.0,"Palmetto Solar, LLC",CISO,DC,18.441,,,,18.441,2690,,,,2690
+2024,CA,66026.0,"Palmetto Solar, LLC",LDWP,DC,2.201,,,,2.201,291,,,,291
+2024,CA,66036.0,"EverBright, LLC",CISO,AC,98.945,,,,98.945,19777,,,,19777
+2024,CA,99999.0,Adjustment 2024,BANC,,-19.483,-1.546,,,-21.029,,,,,
+2024,CA,99999.0,Adjustment 2024,CISO,,-533.812,-62.163,-0.124,0,-596.098,,,,,
+2024,CA,99999.0,Adjustment 2024,IID,,-3.102,-0.103,,,-3.205,,,,,
+2024,CA,99999.0,Adjustment 2024,LDWP,,-17.142,-0.127,,,-17.269,,,,,
+2024,CA,99999.0,Adjustment 2024,PACW,,-0.001,-0.052,,,-0.053,,,,,
+2024,CA,99999.0,Adjustment 2024,TIDC,,-0.645,-0.072,,,-0.717,,,,,
+2024,CA,99999.0,Adjustment 2024,WALC,,-0.002,0,,,-0.002,,,,,
+2024,CO,57313.0,Tesla Inc.,PSCO,DC,76.445,9.405,,,85.85,12848,62,,,12910
+2024,CO,57313.0,Tesla Inc.,WACM,DC,0.1,6.407,,,6.507,19,939,,,958
+2024,CO,59579.0,Sunnova,PSCO,DC,24.463,,,,24.463,6008,,,,6008
+2024,CO,59579.0,Sunnova,WACM,DC,0.269,,,,0.269,66,,,,66
+2024,CO,59580.0,"SunPower Capital, LLC",PSCO,AC,8.59,,,,8.59,1242,,,,1242
+2024,CO,59580.0,"SunPower Capital, LLC",WACM,AC,0.56,,,,0.56,81,,,,81
+2024,CO,59647.0,Sunrun Inc.,PSCO,DC,60.797,,,,60.797,8961,,,,8961
+2024,CO,59647.0,Sunrun Inc.,WACM,DC,2.095,,,,2.095,271,,,,271
+2024,CO,59943.0,Spruce Finance,PACE,AC,6.923,0,0,0,6.923,1043,0,0,0,1043
+2024,CO,60025.0,Greenbacker Renewable Energy Corporation,PSCO,AC,0.06,4.26,0,0,4.32,10,29,0,0,39
+2024,CO,60981.0,"TerraForm US Energy Services, LLC",PSCO,AC,,1.218,,,1.218,,13,,,13
+2024,CO,61823.0,"Greenskies Renewable Energy, LLC",WACM,DC,,1.453,,,1.453,,3,,,3
+2024,CO,65242.0,"Scale Sustainable I, LLC",PSCO,DC,,2.24,,,2.24,,4,,,4
+2024,CO,66026.0,"Palmetto Solar, LLC",PSCO,DC,3.99,,,,3.99,595,,,,595
+2024,CO,66026.0,"Palmetto Solar, LLC",WACM,DC,0.767,,,,0.767,112,,,,112
+2024,CO,66036.0,"EverBright, LLC",PSCO,AC,2.848,,,,2.848,474,,,,474
+2024,CO,99999.0,Adjustment 2024,PSCO,,-28.897,-2.031,,,-30.928,,,,,
+2024,CO,99999.0,Adjustment 2024,WACM,,-0.563,-1.371,,,-1.934,,,,,
+2024,CT,57313.0,Tesla Inc.,ISNE,DC,62.808,17.778,,,80.586,8464,848,,,9312
+2024,CT,59086.0,"Constellation Solar Holding, LLC",ISNE,DC,0,0.48,0,0,0.48,0,1,0,0,1
+2024,CT,59579.0,Sunnova,ISNE,DC,184.2,,,,184.2,21782,,,,21782
+2024,CT,59580.0,"SunPower Capital, LLC",ISNE,AC,37.51,,,,37.51,3646,,,,3646
+2024,CT,59647.0,Sunrun Inc.,ISNE,DC,156.577,,,,156.577,18721,,,,18721
+2024,CT,59943.0,Spruce Finance,ISNE,AC,14.132,0,0,0,14.132,1842,0,0,0,1842
+2024,CT,60025.0,Greenbacker Renewable Energy Corporation,ISNE,AC,0,0.8,0,0,0.8,0,3,0,0,3
+2024,CT,60981.0,"TerraForm US Energy Services, LLC",ISNE,AC,,1.131,,,1.131,,6,,,6
+2024,CT,61823.0,"Greenskies Renewable Energy, LLC",ISNE,DC,,51.596,,,51.596,,68,,,68
+2024,CT,66026.0,"Palmetto Solar, LLC",ISNE,DC,5.507,,,,5.507,552,,,,552
+2024,CT,66036.0,"EverBright, LLC",ISNE,AC,5.426,,,,5.426,847,,,,847
+2024,CT,99999.0,Adjustment 2024,ISNE,,-71.346,-12.183,0,0,-83.528,,,,,
+2024,DC,57313.0,Tesla Inc.,PJM,DC,2.35,0,,,2.35,506,0,,,506
+2024,DC,59086.0,"Constellation Solar Holding, LLC",PJM,DC,0,1.02,0,0,1.02,0,2,0,0,2
+2024,DC,59647.0,Sunrun Inc.,PJM,DC,0.375,,,,0.375,57,,,,57
+2024,DC,99999.0,Adjustment 2024,PJM,,-0.475,-0.178,0,0,-0.653,,,,,
+2024,DE,57313.0,Tesla Inc.,PJM,DC,30.792,0.501,,,31.293,3327,1,,,3328
+2024,DE,59086.0,"Constellation Solar Holding, LLC",PJM,DC,0,0.82,1.06,0,1.88,0,1,1,0,2
+2024,DE,59579.0,Sunnova,PJM,DC,0.27,,,,0.27,28,,,,28
+2024,DE,59647.0,Sunrun Inc.,PJM,DC,3.11,,,,3.11,402,,,,402
+2024,DE,65242.0,"Scale Sustainable I, LLC",PJM,DC,,0.024,,,0.024,,1,,,1
+2024,DE,99999.0,Adjustment 2024,PJM,,-5.96,-0.235,-0.185,0,-6.379,,,,,
+2024,FL,57313.0,Tesla Inc.,FMPP,DC,0.059,0,,,0.059,12,0,,,12
+2024,FL,57313.0,Tesla Inc.,FPC,DC,2.658,0,,,2.658,436,0,,,436
+2024,FL,57313.0,Tesla Inc.,FPL,DC,0.039,0,,,0.039,10,0,,,10
+2024,FL,57313.0,Tesla Inc.,SEC,DC,0.582,0,,,0.582,245,0,,,245
+2024,FL,57313.0,Tesla Inc.,SOCO,DC,0,1.842,,,1.842,0,267,,,267
+2024,FL,59579.0,Sunnova,FMPP,DC,0.406,,,,0.406,42,,,,42
+2024,FL,59579.0,Sunnova,FPC,DC,59.953,,,,59.953,6319,,,,6319
+2024,FL,59579.0,Sunnova,FPL,DC,75.227,,,,75.227,7931,,,,7931
+2024,FL,59579.0,Sunnova,GVL,DC,0.112,,,,0.112,12,,,,12
+2024,FL,59579.0,Sunnova,HST,DC,5.398,,,,5.398,569,,,,569
+2024,FL,59579.0,Sunnova,JEA,DC,0.638,,,,0.638,67,,,,67
+2024,FL,59579.0,Sunnova,SEC,DC,4.287,,,,4.287,452,,,,452
+2024,FL,59579.0,Sunnova,TEC,DC,26.26,,,,26.26,2768,,,,2768
+2024,FL,59647.0,Sunrun Inc.,FPC,DC,129.017,,,,129.017,12067,,,,12067
+2024,FL,59647.0,Sunrun Inc.,FPL,DC,14.612,,,,14.612,1584,,,,1584
+2024,FL,59647.0,Sunrun Inc.,TEC,DC,27.741,,,,27.741,2509,,,,2509
+2024,FL,60025.0,Greenbacker Renewable Energy Corporation,GVL,AC,0,0.4,0,0,0.4,0,1,0,0,1
+2024,FL,60981.0,"TerraForm US Energy Services, LLC",FPC,AC,,0.995,,,0.995,,3,,,3
+2024,FL,61823.0,"Greenskies Renewable Energy, LLC",GVL,DC,,2.422,,,2.422,,6,,,6
+2024,FL,66026.0,"Palmetto Solar, LLC",FMPP,DC,3.983,,,,3.983,476,,,,476
+2024,FL,66026.0,"Palmetto Solar, LLC",FPC,DC,20.297,,,,20.297,1885,,,,1885
+2024,FL,66026.0,"Palmetto Solar, LLC",FPL,DC,14.27,,,,14.27,1369,,,,1369
+2024,FL,66026.0,"Palmetto Solar, LLC",TEC,DC,5.061,,,,5.061,436,,,,436
+2024,FL,99999.0,Adjustment 2024,FMPP,,-0.776,0,,,-0.776,,,,,
+2024,FL,99999.0,Adjustment 2024,FPC,,-36.96,0,,,-36.96,,,,,
+2024,FL,99999.0,Adjustment 2024,FPL,,-18.163,0,,,-18.163,,,,,
+2024,FL,99999.0,Adjustment 2024,GVL,,-0.02,-0.422,,,-0.442,,,,,
+2024,FL,99999.0,Adjustment 2024,HST,,-0.941,,,,-0.941,,,,,
+2024,FL,99999.0,Adjustment 2024,JEA,,-0.111,,,,-0.111,,,,,
+2024,FL,99999.0,Adjustment 2024,SEC,,-0.849,0,,,-0.849,,,,,
+2024,FL,99999.0,Adjustment 2024,SOCO,,0,-0.321,,,-0.321,,,,,
+2024,FL,99999.0,Adjustment 2024,TEC,,-10.3,,,,-10.3,,,,,
+2024,GA,59579.0,Sunnova,SOCO,DC,0.3,,,,0.3,37,,,,37
+2024,GA,60981.0,"TerraForm US Energy Services, LLC",SEPA,AC,,3.918,,,3.918,,5,,,5
+2024,GA,66026.0,"Palmetto Solar, LLC",SOCO,DC,3.375,,,,3.375,380,,,,380
+2024,GA,99999.0,Adjustment 2024,SOCO,,-0.641,,,,-0.641,,,,,
+2024,GU,59579.0,Sunnova,NA,DC,6.275,,,,6.275,577,,,,577
+2024,GU,99999.0,Adjustment 2024,NA,,-1.094,,,,-1.094,,,,,
+2024,HI,57313.0,Tesla Inc.,HECO,DC,14.035,32.342,,,46.377,1905,2353,,,4258
+2024,HI,57313.0,Tesla Inc.,NA,DC,3.084,1.329,,,4.413,466,18,,,484
+2024,HI,59579.0,Sunnova,HECO,DC,7.465,,,,7.465,874,,,,874
+2024,HI,59579.0,Sunnova,NA,DC,0.789,,,,0.789,93,,,,93
+2024,HI,59580.0,"SunPower Capital, LLC",HECO,AC,9.51,,,,9.51,1100,,,,1100
+2024,HI,59647.0,Sunrun Inc.,HECO,DC,114.848,,,,114.848,16561,,,,16561
+2024,HI,59943.0,Spruce Finance,NA,AC,3.703,0,0,0,3.703,481,0,0,0,481
+2024,HI,60025.0,Greenbacker Renewable Energy Corporation,NA,AC,0,0.3,0,0,0.3,0,1,0,0,1
+2024,HI,60981.0,"TerraForm US Energy Services, LLC",HECO,AC,,1.174,,,1.174,,6,,,6
+2024,HI,99999.0,Adjustment 2024,HECO,,-23.779,-5.64,,,-29.42,,,,,
+2024,HI,99999.0,Adjustment 2024,NA,,-0.675,-0.232,,,-0.907,,,,,
+2024,ID,59579.0,Sunnova,IPCO,DC,0.1,,,,0.1,10,,,,10
+2024,ID,99999.0,Adjustment 2024,IPCO,,-0.017,,,,-0.017,,,,,
+2024,IL,57313.0,Tesla Inc.,PJM,DC,0.027,0,,,0.027,3,0,,,3
+2024,IL,59579.0,Sunnova,GLHB,DC,0,,,,0.0,0,,,,0
+2024,IL,59579.0,Sunnova,MISO,DC,21.687,,,,21.687,2158,,,,2158
+2024,IL,59579.0,Sunnova,PJM,DC,8.787,,,,8.787,873,,,,873
+2024,IL,59647.0,Sunrun Inc.,PJM,DC,300.507,,,,300.507,36377,,,,36377
+2024,IL,66026.0,"Palmetto Solar, LLC",MISO,DC,5.608,,,,5.608,524,,,,524
+2024,IL,66026.0,"Palmetto Solar, LLC",PJM,DC,2.789,,,,2.789,274,,,,274
+2024,IL,66036.0,"EverBright, LLC",PJM,AC,58.715,,,,58.715,8272,,,,8272
+2024,IL,99999.0,Adjustment 2024,GLHB,,0,,,,0.0,,,,,
+2024,IL,99999.0,Adjustment 2024,MISO,,-4.76,,,,-4.76,,,,,
+2024,IL,99999.0,Adjustment 2024,PJM,,-54.432,0,,,-54.432,,,,,
+2024,IN,59579.0,Sunnova,MISO,DC,0.02,,,,0.02,2,,,,2
+2024,IN,60025.0,Greenbacker Renewable Energy Corporation,PJM,AC,0,1.35,0,0,1.35,0,4,0,0,4
+2024,IN,99999.0,Adjustment 2024,MISO,,-0.003,,,,-0.003,,,,,
+2024,KS,66026.0,"Palmetto Solar, LLC",SWPP,DC,0.673,,,,0.673,84,,,,84
+2024,KS,99999.0,Adjustment 2024,SWPP,,-0.117,,,,-0.117,,,,,
+2024,LA,59579.0,Sunnova,MISO,DC,0.075,,,,0.075,14,,,,14
+2024,LA,59579.0,Sunnova,SWPP,DC,0.058,,,,0.058,8,,,,8
+2024,LA,59943.0,Spruce Finance,MISO,AC,0.559,0,0,0,0.559,88,0,0,0,88
+2024,LA,99999.0,Adjustment 2024,MISO,,-0.013,,,,-0.013,,,,,
+2024,LA,99999.0,Adjustment 2024,SWPP,,-0.01,,,,-0.01,,,,,
+2024,MA,57313.0,Tesla Inc.,ISNE,DC,135.582,4.466,,,140.048,19248,25,,,19273
+2024,MA,59086.0,"Constellation Solar Holding, LLC",ISNE,DC,0,2.98,0,0,2.98,0,8,0,0,8
+2024,MA,59579.0,Sunnova,ISNE,DC,144.25,,,,144.25,18076,,,,18076
+2024,MA,59580.0,"SunPower Capital, LLC",ISNE,AC,12.2,,,,12.2,1425,,,,1425
+2024,MA,59622.0,"Ahana Renewables, LLC",ISNE,DC,0,28.312,0,0,28.312,0,12,0,0,12
+2024,MA,59647.0,Sunrun Inc.,ISNE,DC,492.579,,,,492.579,63011,,,,63011
+2024,MA,59943.0,Spruce Finance,ISNE,AC,23.208,0,0,0,23.208,3393,0,0,0,3393
+2024,MA,60025.0,Greenbacker Renewable Energy Corporation,ISNE,AC,0,10.88,0,0,10.88,0,20,0,0,20
+2024,MA,60981.0,"TerraForm US Energy Services, LLC",ISNE,AC,,13.6,,,13.6,,24,,,24
+2024,MA,61823.0,"Greenskies Renewable Energy, LLC",ISNE,DC,,22.724,,,22.724,,12,,,12
+2024,MA,66026.0,"Palmetto Solar, LLC",ISNE,DC,5.482,,,,5.482,618,,,,618
+2024,MA,66036.0,"EverBright, LLC",ISNE,AC,18.086,,,,18.086,2651,,,,2651
+2024,MA,99999.0,Adjustment 2024,ISNE,,-135.665,-10.199,0,0,-145.864,,,,,
+2024,MD,57313.0,Tesla Inc.,PJM,DC,246.083,22.51,,,268.593,26988,148,,,27136
+2024,MD,59086.0,"Constellation Solar Holding, LLC",PJM,DC,0,19.87,1.34,0,21.21,0,43,2,0,45
+2024,MD,59579.0,Sunnova,PJM,DC,52.95,,,,52.95,5028,,,,5028
+2024,MD,59647.0,Sunrun Inc.,PJM,DC,247.847,,,,247.847,25773,,,,25773
+2024,MD,59943.0,Spruce Finance,PJM,AC,4.995,0,0,0,4.995,577,0,0,0,577
+2024,MD,60025.0,Greenbacker Renewable Energy Corporation,PJM,AC,0,0.2,0,0,0.2,0,1,0,0,1
+2024,MD,60981.0,"TerraForm US Energy Services, LLC",PJM,AC,,2.499,,,2.499,,7,,,7
+2024,MD,66026.0,"Palmetto Solar, LLC",PJM,DC,0.854,,,,0.854,97,,,,97
+2024,MD,66036.0,"EverBright, LLC",PJM,AC,5.995,,,,5.995,699,,,,699
+2024,MD,99999.0,Adjustment 2024,PJM,,-95.525,-7.391,-0.234,0,-103.15,,,,,
+2024,ME,57313.0,Tesla Inc.,ISNE,DC,0,1.242,,,1.242,0,4,,,4
+2024,ME,59579.0,Sunnova,ISNE,DC,0.96,,,,0.96,107,,,,107
+2024,ME,59622.0,"Ahana Renewables, LLC",NA,DC,,7.02,,,7.02,,1,,,1
+2024,ME,66026.0,"Palmetto Solar, LLC",ISNE,DC,0.499,,,,0.499,61,,,,61
+2024,ME,66036.0,"EverBright, LLC",ISNE,AC,8.062,,,,8.062,1147,,,,1147
+2024,ME,99999.0,Adjustment 2024,ISNE,,-0.254,-0.217,,,-0.471,,,,,
+2024,ME,99999.0,Adjustment 2024,NA,,,-1.224,,,-1.224,,,,,
+2024,MI,66026.0,"Palmetto Solar, LLC",MISO,DC,0.325,,,,0.325,45,,,,45
+2024,MI,99999.0,Adjustment 2024,MISO,,-0.057,,,,-0.057,,,,,
+2024,MO,59579.0,Sunnova,SWPP,DC,0.007,,,,0.007,1,,,,1
+2024,MO,99999.0,Adjustment 2024,SWPP,,-0.001,,,,-0.001,,,,,
+2024,NC,60025.0,Greenbacker Renewable Energy Corporation,DUK,AC,0,1.56,0,0,1.56,0,3,0,0,3
+2024,NC,66026.0,"Palmetto Solar, LLC",CPLE,DC,0.628,,,,0.628,70,,,,70
+2024,NC,66026.0,"Palmetto Solar, LLC",DUK,DC,0.463,,,,0.463,50,,,,50
+2024,NC,99999.0,Adjustment 2024,CPLE,,-0.11,,,,-0.11,,,,,
+2024,NC,99999.0,Adjustment 2024,DUK,,-0.081,,,,-0.081,,,,,
+2024,NH,57313.0,Tesla Inc.,ISNE,DC,9.537,0,,,9.537,1205,0,,,1205
+2024,NH,59579.0,Sunnova,ISNE,DC,2.982,,,,2.982,321,,,,321
+2024,NH,59647.0,Sunrun Inc.,ISNE,DC,36.967,,,,36.967,3999,,,,3999
+2024,NH,60981.0,"TerraForm US Energy Services, LLC",ISNE,AC,,0.744,,,0.744,,1,,,1
+2024,NH,66026.0,"Palmetto Solar, LLC",ISNE,DC,0.374,,,,0.374,38,,,,38
+2024,NH,66036.0,"EverBright, LLC",ISNE,AC,1.493,,,,1.493,208,,,,208
+2024,NH,99999.0,Adjustment 2024,ISNE,,-8.696,0,,,-8.696,,,,,
+2024,NJ,57313.0,Tesla Inc.,PJM,DC,77.181,6.598,,,83.779,10055,76,,,10131
+2024,NJ,59579.0,Sunnova,PJM,DC,270.941,,,,270.941,32453,,,,32453
+2024,NJ,59580.0,"SunPower Capital, LLC",PJM,AC,59.68,,,,59.68,5747,,,,5747
+2024,NJ,59647.0,Sunrun Inc.,PJM,DC,364.694,,,,364.694,47733,,,,47733
+2024,NJ,59943.0,Spruce Finance,PJM,AC,47.995,0,0,0,47.995,6233,0,0,0,6233
+2024,NJ,60025.0,Greenbacker Renewable Energy Corporation,PJM,AC,0,3.64,0,0,3.64,0,12,0,0,12
+2024,NJ,60981.0,"TerraForm US Energy Services, LLC",PJM,AC,,39.791,,,39.791,,130,,,130
+2024,NJ,61823.0,"Greenskies Renewable Energy, LLC",PJM,DC,,33.27,,,33.27,,102,,,102
+2024,NJ,65242.0,"Scale Sustainable I, LLC",PJM,DC,,2.42,,,2.42,,1,,,1
+2024,NJ,66026.0,"Palmetto Solar, LLC",PJM,DC,0.948,,,,0.948,93,,,,93
+2024,NJ,66036.0,"EverBright, LLC",PJM,AC,2.745,,,,2.745,408,,,,408
+2024,NJ,99999.0,Adjustment 2024,PJM,,-124.48,-7.375,,,-131.855,,,,,
+2024,NM,57313.0,Tesla Inc.,EPE,DC,0.017,1.223,,,1.24,3,3,,,6
+2024,NM,57313.0,Tesla Inc.,PNM,DC,1.99,5.889,,,7.879,347,770,,,1117
+2024,NM,59579.0,Sunnova,EPE,DC,0.268,,,,0.268,45,,,,45
+2024,NM,59579.0,Sunnova,ERCO,DC,0,,,,0.0,0,,,,0
+2024,NM,59579.0,Sunnova,PNM,DC,4.492,,,,4.492,744,,,,744
+2024,NM,59579.0,Sunnova,SWPP,DC,0.638,,,,0.638,105,,,,105
+2024,NM,59647.0,Sunrun Inc.,PNM,DC,19.212,,,,19.212,3327,,,,3327
+2024,NM,66026.0,"Palmetto Solar, LLC",PNM,DC,0.837,,,,0.837,122,,,,122
+2024,NM,99999.0,Adjustment 2024,EPE,,-0.05,-0.213,,,-0.263,,,,,
+2024,NM,99999.0,Adjustment 2024,ERCO,,0,,,,0.0,,,,,
+2024,NM,99999.0,Adjustment 2024,PNM,,-4.627,-1.027,,,-5.654,,,,,
+2024,NM,99999.0,Adjustment 2024,SWPP,,-0.111,,,,-0.111,,,,,
+2024,NV,57313.0,Tesla Inc.,NEVP,DC,82.821,2.843,,,85.664,12391,7,,,12398
+2024,NV,59579.0,Sunnova,NEVP,DC,72.031,,,,72.031,9667,,,,9667
+2024,NV,59580.0,"SunPower Capital, LLC",NEVP,AC,15.03,,,,15.03,1478,,,,1478
+2024,NV,59647.0,Sunrun Inc.,NEVP,DC,196.408,,,,196.408,24202,,,,24202
+2024,NV,59943.0,Spruce Finance,NEVP,AC,1.105,0,0,0,1.105,148,0,0,0,148
+2024,NV,66026.0,"Palmetto Solar, LLC",NEVP,DC,6.106,,,,6.106,672,,,,672
+2024,NV,99999.0,Adjustment 2024,NEVP,,-62.325,-0.496,,,-62.82,,,,,
+2024,NY,57313.0,Tesla Inc.,NYIS,DC,129.922,17.978,,,147.9,16990,165,,,17155
+2024,NY,59579.0,Sunnova,NYIS,DC,45.895,,,,45.895,6255,,,,6255
+2024,NY,59580.0,"SunPower Capital, LLC",NYIS,AC,76.78,,,,76.78,9488,,,,9488
+2024,NY,59622.0,"Ahana Renewables, LLC",NYIS,DC,0,29.036,0,0,29.036,0,7,0,0,7
+2024,NY,59647.0,Sunrun Inc.,NYIS,DC,299.04,,,,299.04,41589,,,,41589
+2024,NY,59943.0,Spruce Finance,ISNE,AC,36.96,0,0,0,36.96,5636,0,0,0,5636
+2024,NY,59943.0,Spruce Finance,PJM,AC,15.84,0,0,0,15.84,2400,0,0,0,2400
+2024,NY,60025.0,Greenbacker Renewable Energy Corporation,NYIS,AC,0,1.87,0,0,1.87,0,6,0,0,6
+2024,NY,60981.0,"TerraForm US Energy Services, LLC",NYIS,AC,,1.225,,,1.225,,6,,,6
+2024,NY,66026.0,"Palmetto Solar, LLC",NYIS,DC,0.014,,,,0.014,15,,,,15
+2024,NY,99999.0,Adjustment 2024,NYIS,,-82.818,-8.199,0,0,-91.017,,,,,
+2024,OH,57313.0,Tesla Inc.,PJM,DC,,7.796,,,7.796,,18,,,18
+2024,OH,59579.0,Sunnova,PJM,DC,0.099,,,,0.099,10,,,,10
+2024,OH,66026.0,"Palmetto Solar, LLC",PJM,DC,2.464,,,,2.464,256,,,,256
+2024,OH,66036.0,"EverBright, LLC",PJM,AC,5.571,,,,5.571,777,,,,777
+2024,OH,99999.0,Adjustment 2024,PJM,,-0.447,-1.36,,,-1.807,,,,,
+2024,OK,59579.0,Sunnova,MISO,DC,0.1,,,,0.1,12,,,,12
+2024,OK,66026.0,"Palmetto Solar, LLC",SWPP,DC,1.967,,,,1.967,220,,,,220
+2024,OK,99999.0,Adjustment 2024,MISO,,-0.017,,,,-0.017,,,,,
+2024,OK,99999.0,Adjustment 2024,SWPP,,-0.343,,,,-0.343,,,,,
+2024,OR,57313.0,Tesla Inc.,BPAT,DC,0.094,1.242,,,1.336,17,2,,,19
+2024,OR,57313.0,Tesla Inc.,PACW,DC,2.747,3.582,,,6.329,475,27,,,502
+2024,OR,57313.0,Tesla Inc.,PGE,DC,18.784,3.779,,,22.563,3167,19,,,3186
+2024,OR,59579.0,Sunnova,PGE,DC,0.26,,,,0.26,30,,,,30
+2024,OR,59647.0,Sunrun Inc.,PGE,DC,0.389,,,,0.389,82,,,,82
+2024,OR,60981.0,"TerraForm US Energy Services, LLC",PACW,AC,,0.921,,,0.921,,3,,,3
+2024,OR,65242.0,"Scale Sustainable I, LLC",PACW,DC,,0.693,,,0.693,,7,,,7
+2024,OR,99999.0,Adjustment 2024,BPAT,,-0.016,-0.217,,,-0.233,,,,,
+2024,OR,99999.0,Adjustment 2024,PACW,,-0.479,-0.746,,,-1.225,,,,,
+2024,OR,99999.0,Adjustment 2024,PGE,,-3.389,-0.659,,,-4.048,,,,,
+2024,PA,57313.0,Tesla Inc.,PJM,DC,65.127,2.146,,,67.273,6956,8,,,6964
+2024,PA,59579.0,Sunnova,PJM,DC,134.249,,,,134.249,13118,,,,13118
+2024,PA,59580.0,"SunPower Capital, LLC",PJM,AC,0.66,,,,0.66,67,,,,67
+2024,PA,59647.0,Sunrun Inc.,PJM,DC,45.981,,,,45.981,5175,,,,5175
+2024,PA,60981.0,"TerraForm US Energy Services, LLC",PJM,AC,,4.755,,,4.755,,18,,,18
+2024,PA,61823.0,"Greenskies Renewable Energy, LLC",PJM,DC,,0.472,,,0.472,,1,,,1
+2024,PA,65242.0,"Scale Sustainable I, LLC",PJM,DC,,0.031,,,0.031,,1,,,1
+2024,PA,66026.0,"Palmetto Solar, LLC",PJM,DC,4.181,,,,4.181,521,,,,521
+2024,PA,99999.0,Adjustment 2024,PJM,,-43.519,-0.462,,,-43.981,,,,,
+2024,PR,57313.0,Tesla Inc.,NA,DC,,2.958,,,2.958,,13,,,13
+2024,PR,59579.0,Sunnova,NA,DC,312.098,,,,312.098,54177,,,,54177
+2024,PR,59647.0,Sunrun Inc.,NA,DC,259.05,,,,259.05,36221,,,,36221
+2024,PR,60981.0,"TerraForm US Energy Services, LLC",NA,AC,,1.012,,,1.012,,5,,,5
+2024,PR,99999.0,Adjustment 2024,NA,,-99.608,-0.516,,,-100.124,,,,,
+2024,RI,57313.0,Tesla Inc.,ISNE,DC,0.714,2.126,,,2.84,95,214,,,309
+2024,RI,59579.0,Sunnova,ISNE,DC,16.967,,,,16.967,2400,,,,2400
+2024,RI,59622.0,"Ahana Renewables, LLC",ISNE,DC,0,9.041,0,0,9.041,0,3,0,0,3
+2024,RI,59647.0,Sunrun Inc.,ISNE,DC,24.383,,,,24.383,3467,,,,3467
+2024,RI,60025.0,Greenbacker Renewable Energy Corporation,ISNE,AC,0,0.83,0,0,0.83,0,1,0,0,1
+2024,RI,66026.0,"Palmetto Solar, LLC",ISNE,DC,0.202,,,,0.202,25,,,,25
+2024,RI,66036.0,"EverBright, LLC",ISNE,AC,0.888,,,,0.888,158,,,,158
+2024,RI,99999.0,Adjustment 2024,ISNE,,-7.371,-1.948,0,0,-9.319,,,,,
+2024,SC,59579.0,Sunnova,CPLE,DC,0.029,,,,0.029,3,,,,3
+2024,SC,59579.0,Sunnova,DUK,DC,3.21,,,,3.21,349,,,,349
+2024,SC,59579.0,Sunnova,SC,DC,0.149,,,,0.149,19,,,,19
+2024,SC,59579.0,Sunnova,SCEG,DC,0.143,,,,0.143,13,,,,13
+2024,SC,59647.0,Sunrun Inc.,DUK,DC,40.054,,,,40.054,3786,,,,3786
+2024,SC,59647.0,Sunrun Inc.,SCEG,DC,34.747,,,,34.747,3902,,,,3902
+2024,SC,99999.0,Adjustment 2024,CPLE,,-0.005,,,,-0.005,,,,,
+2024,SC,99999.0,Adjustment 2024,DUK,,-7.545,,,,-7.545,,,,,
+2024,SC,99999.0,Adjustment 2024,SC,,-0.026,,,,-0.026,,,,,
+2024,SC,99999.0,Adjustment 2024,SCEG,,-6.085,,,,-6.085,,,,,
+2024,TN,60025.0,Greenbacker Renewable Energy Corporation,PJM,AC,0,4.31,0,0,4.31,0,15,0,0,15
+2024,TX,57313.0,Tesla Inc.,EPE,DC,5.935,0.644,,,6.579,1126,2,,,1128
+2024,TX,57313.0,Tesla Inc.,ERCO,DC,55.603,15.76,,,71.363,6138,1269,,,7407
+2024,TX,59579.0,Sunnova,EPE,DC,1.903,,,,1.903,242,,,,242
+2024,TX,59579.0,Sunnova,ERCO,DC,46.883,,,,46.883,5953,,,,5953
+2024,TX,59579.0,Sunnova,MISO,DC,1.982,,,,1.982,251,,,,251
+2024,TX,59579.0,Sunnova,SWPP,DC,4.127,,,,4.127,524,,,,524
+2024,TX,59647.0,Sunrun Inc.,ERCO,DC,114.086,,,,114.086,11851,,,,11851
+2024,TX,60981.0,"TerraForm US Energy Services, LLC",ERCO,AC,,0.7,,,0.7,,2,,,2
+2024,TX,66026.0,"Palmetto Solar, LLC",ERCO,DC,20.438,,,,20.438,1949,,,,1949
+2024,TX,66036.0,"EverBright, LLC",ERCO,AC,29.094,,,,29.094,4177,,,,4177
+2024,TX,99999.0,Adjustment 2024,EPE,,-1.367,-0.112,,,-1.479,,,,,
+2024,TX,99999.0,Adjustment 2024,ERCO,,-41.335,-2.749,,,-44.083,,,,,
+2024,TX,99999.0,Adjustment 2024,MISO,,-0.346,,,,-0.346,,,,,
+2024,TX,99999.0,Adjustment 2024,SWPP,,-0.72,,,,-0.72,,,,,
+2024,UT,57313.0,Tesla Inc.,PACE,DC,0.008,2.707,,,2.715,1,4,,,5
+2024,UT,59579.0,Sunnova,BPAT,DC,0.02,,,,0.02,2,,,,2
+2024,UT,59647.0,Sunrun Inc.,PACE,DC,4.694,,,,4.694,751,,,,751
+2024,UT,99999.0,Adjustment 2024,BPAT,,-0.003,,,,-0.003,,,,,
+2024,UT,99999.0,Adjustment 2024,PACE,,-0.82,-0.472,,,-1.292,,,,,
+2024,VA,57313.0,Tesla Inc.,PJM,DC,0.26,0.252,,,0.512,66,2,,,68
+2024,VA,59579.0,Sunnova,PJM,DC,0.043,,,,0.043,4,,,,4
+2024,VA,99999.0,Adjustment 2024,PJM,,-0.053,-0.044,,,-0.097,,,,,
+2024,VI,59579.0,Sunnova,NA,DC,0.76,,,,0.76,102,,,,102
+2024,VI,99999.0,Adjustment 2024,NA,,-0.133,,,,-0.133,,,,,
+2024,VT,57313.0,Tesla Inc.,ISNE,DC,10.786,0,,,10.786,1588,0,,,1588
+2024,VT,59580.0,"SunPower Capital, LLC",ISNE,AC,1.87,,,,1.87,331,,,,331
+2024,VT,59622.0,"Ahana Renewables, LLC",ISNE,DC,0,1.331,0,0,1.331,0,2,0,0,2
+2024,VT,59647.0,Sunrun Inc.,ISNE,DC,21.6,,,,21.6,2585,,,,2585
+2024,VT,60025.0,Greenbacker Renewable Energy Corporation,ISNE,AC,0,13.16,0,0,13.16,0,25,0,0,25
+2024,VT,60981.0,"TerraForm US Energy Services, LLC",ISNE,AC,,1.805,,,1.805,,2,,,2
+2024,VT,99999.0,Adjustment 2024,ISNE,,-5.648,-0.232,0,0,-5.88,,,,,
+2024,WA,57313.0,Tesla Inc.,PSEI,DC,0.628,0,,,0.628,99,0,,,99
+2024,WA,99999.0,Adjustment 2024,PSEI,,-0.11,0,,,-0.11,,,,,
+"Note: Capacity reported from TPOs are separated because their capacity is included at the utility level.
+Data is reported as collected.
+Adjustments remove capacity lost in conversion from DC to AC.
+Source: U.S. Energy Information Administration, Form EIA-861, 'Annual Electric Power Industry Report.'",,,,,,,,,,,,,,,
