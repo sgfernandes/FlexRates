@@ -1,0 +1,1355 @@
+data_year,utility_number,utility_name,state,distribution_circuits,circuits_with_voltage_optimization
+2024,55,City of Aberdeen - (MS),MS,8,8
+2024,84,A & N Electric Coop,MD,1,0
+2024,84,A & N Electric Coop,VA,45,0
+2024,108,Adams-Columbia Electric Coop,WI,99,0
+2024,155,Agralite Electric Coop,MN,63,0
+2024,162,Aiken Electric Coop Inc,SC,126,
+2024,176,Ajo Improvement Co,AZ,5,
+2024,195,Alabama Power Co,AL,2178,2178
+2024,207,Alameda Municipal Power,CA,24,24
+2024,213,Alaska Electric Light & Power Co.,AK,30,0
+2024,219,Alaska Power and Telephone Co,AK,39,0
+2024,221,"Alaska Village Elec Coop, Inc",AK,178,0
+2024,230,Albany Utility Board,GA,51,51
+2024,232,City of Albemarle - (NC),NC,14,14
+2024,240,Albemarle Electric Member Corp,NC,32,29
+2024,241,Albertville Municipal Utilities Board,AL,25,25
+2024,261,AGC Division of APGI Inc,IN,1,
+2024,276,Alcorn County Elec Power Assn,MS,33,0
+2024,295,City of Alexandria - (MN),MN,26,6
+2024,296,"Alfalfa Electric Coop, Inc",KS,3,
+2024,296,"Alfalfa Electric Coop, Inc",OK,48,
+2024,298,City of Alexandria - (LA),LA,61,
+2024,305,Alger-Delta Coop Electric Assn,MI,16,0
+2024,307,Algoma Utility Comm,WI,9,9
+2024,392,Alpena Power Co,MI,36,0
+2024,407,Altamaha Electric Member Corp,GA,58,58
+2024,416,City of Altus - (OK),OK,13,
+2024,471,Amana Society Service Co,IA,6,
+2024,554,City of Ames - (IA),IA,41,0
+2024,562,Amicalola Electric Member Corp,GA,65,0
+2024,571,City of Amory,MS,11,0
+2024,577,City of Alcoa Utilities,TN,34,0
+2024,590,City of Anaheim - (CA),CA,123,123
+2024,604,City of Andalusia,AL,14,
+2024,636,City of Anderson - (IN),IN,54,0
+2024,689,Connexus Energy,MN,205,205
+2024,691,City of Anoka,MN,25,0
+2024,719,Town of Apex- (NC),NC,18,16
+2024,727,Appalachian Electric Coop,TN,78,78
+2024,733,Appalachian Power Co,VA,613,6
+2024,733,Appalachian Power Co,WV,499,3
+2024,750,Arab Electric Coop Inc,AL,22,0
+2024,803,Arizona Public Service Co,AZ,1457,
+2024,814,Entergy Arkansas LLC,AR,967,
+2024,814,Entergy Arkansas LLC,TN,3,
+2024,817,Arkansas Valley Elec Coop Corp,AR,129,0
+2024,817,Arkansas Valley Elec Coop Corp,OK,13,0
+2024,944,City of Athens - (AL),AL,78,0
+2024,947,Athens Utility Board,TN,26,11
+2024,963,Atlantic City Electric Co,NJ,353,0
+2024,994,City of Auburn - (IN),IN,20,3
+2024,1009,City of Austin - (MN),MN,24,9
+2024,1015,Austin Energy,TX,439,113
+2024,1050,City of Azusa,CA,20,
+2024,1149,Baldwin County El Member Corp,AL,102,102
+2024,1167,Baltimore Gas & Electric Co,MD,1525,1089
+2024,1169,Bailey County Elec Coop Assn,TX,88,88
+2024,1175,"Bandera Electric Coop, Inc",TX,54,5
+2024,1179,Versant Power,ME,236,236
+2024,1196,Village of Baraga - (MI),MI,2,0
+2024,1251,Barron Electric Coop,WI,39,
+2024,1273,"Bartlett Electric Coop, Inc",TX,32,11
+2024,1283,Bartholomew County Rural E M C,IN,37,0
+2024,1300,City of Bartow - (FL),FL,18,0
+2024,1307,Basin Electric Power Coop,ND,1,1
+2024,1325,City of Batavia - (IL),IL,22,
+2024,1366,City of Bay City - (MI),MI,37,0
+2024,1458,"Beauregard Electric Coop, Inc",LA,63,63
+2024,1529,"Beltrami Electric Coop, Inc",MN,73,0
+2024,1572,Badger Power Marketing Authority,WI,2,
+2024,1578,Benton County,TN,14,0
+2024,1579,PUD No 1 of Benton County,WA,141,3
+2024,1581,City of Benton - (AR),AR,15,15
+2024,1582,City of Benton - (KY),KY,5,0
+2024,1586,City of Bentonville - (AR),AR,53,
+2024,1591,"Big Country Electric Coop, Inc",TX,56,0
+2024,1613,Berkeley Electric Coop Inc,SC,243,193
+2024,1625,Benton Rural Electric Assn,WA,67,
+2024,1640,City of Bessemer Utilities,AL,39,0
+2024,1708,Big Sandy Rural Elec Coop Corp,KY,36,
+2024,1723,"Big Bend Electric Coop, Inc",WA,66,0
+2024,1763,"Black River Electric Coop, Inc - (SC)",SC,110,87
+2024,1764,Black Diamond Power Co,WV,6,
+2024,1769,"Black Hills Electric Coop, Inc",SD,40,
+2024,1775,Black River Electric Coop - (MO),MO,62,
+2024,1776,City of Black River Falls,WI,14,0
+2024,1780,Black Warrior Elec Member Corp,AL,93,
+2024,1857,Block Island Utility District,RI,6,0
+2024,1884,BENCO Electric Cooperative,MN,115,97
+2024,1886,Blue Grass Energy Coop Corp,KY,145,39
+2024,1889,Blue Ridge Elec Member Corp - (NC),NC,105,64
+2024,1890,Blue Ridge Electric Coop Inc - (SC),SC,157,
+2024,1891,Blue Ridge Mountain EMC - (GA),GA,28,28
+2024,1891,Blue Ridge Mountain EMC - (GA),NC,13,13
+2024,1892,"Bluebonnet Electric Coop, Inc",TX,229,175
+2024,1896,City of Bluffton - (IN),IN,26,
+2024,1936,Bolivar Energy Authority,TN,22,20
+2024,1997,City of Boscobel - (WI),WI,6,0
+2024,2001,Boone Electric Coop,MO,62,0
+2024,2008,City of Boulder City - (NV),NV,31,
+2024,2010,City of Bountiful,UT,20,0
+2024,2049,"Bowie-Cass Electric Coop, Inc",TX,110,0
+2024,2054,City of Bowling Green - (OH),OH,32,15
+2024,2056,City of Bowling Green - (KY),KY,55,0
+2024,2089,Bozrah Light & Power Company,CT,4,
+2024,2138,Brainerd Public Utilities,MN,6,0
+2024,2144,Town of Braintree - (MA),MA,23,23
+2024,2194,City of Brenham - (TX),TX,11,11
+2024,2212,"Broad River Electric Coop, Inc",NC,1,1
+2024,2212,"Broad River Electric Coop, Inc",SC,58,58
+2024,2247,City of Bristol - (TN),TN,66,55
+2024,2248,Bristol Virginia Utilities,VA,36,0
+2024,2273,Brodhead Water & Lighting Comm,WI,8,0
+2024,2285,City of Brookings - (SD),SD,43,0
+2024,2394,Burke-Divide Electric Coop Inc,ND,45,45
+2024,2409,Brownsville Public Utilities Board,TX,60,0
+2024,2411,City of Brownsville,TN,15,0
+2024,2442,City of Bryan - (TX),TX,99,0
+2024,2487,City of Buford,GA,12,12
+2024,2502,"Buckeye Rural Elec Coop, Inc",OH,53,0
+2024,2507,City of Burbank Water and Power,CA,112,
+2024,2548,City of Burlington Electric - (VT),VT,16,16
+2024,2643,Butler Public Power District - (NE),NE,52,0
+2024,2651,Butler Rural Electric Coop Inc - (OH),OH,49,0
+2024,2652,Butler County Rural Elec Coop - (IA),IA,86,34
+2024,2678,C & L Electric Coop Corp,AR,58,
+2024,2774,CMS Electric Coop Inc,KS,40,40
+2024,2812,City of Calhoun - (GA),GA,24,17
+2024,2849,Central Electric Power Assn - (MS),MS,86,0
+2024,2903,Canoochee Electric Member Corp,GA,46,23
+2024,2911,"Canadian Valley Elec Coop, Inc",OK,77,77
+2024,2960,"Caney Fork Electric Coop, Inc",TN,27,0
+2024,2985,"Capital Electric Coop, Inc",ND,95,95
+2024,3046,Duke Energy Progress - (NC),NC,1182,1182
+2024,3046,Duke Energy Progress - (NC),SC,178,178
+2024,3075,Carroll County - (TN),TN,22,0
+2024,3081,Carroll Electric Member Corp - (GA),GA,89,81
+2024,3093,Carroll Electric Coop Corp - (AR),AR,191,
+2024,3093,Carroll Electric Coop Corp - (AR),MO,19,
+2024,3107,Carteret-Craven El Member Corp,NC,67,
+2024,3108,City of Cartersville - (GA),GA,28,0
+2024,3113,City of Carthage - (MO),MO,17,16
+2024,3203,Cedar Falls Utilities,IA,26,26
+2024,3205,Cedar-Knox Public Power Dist,NE,68,
+2024,3208,Cedarburg Light & Water Comm,WI,10,10
+2024,3216,City of Celina - (OH),OH,14,3
+2024,3222,Central Alabama Electric Coop,AL,76,76
+2024,3226,"Central Rural Electric Cooperative, Inc",OK,65,65
+2024,3236,"Central Electric Coop, Inc - (SD)",SD,70,
+2024,3240,Central Electric Coop Inc - (OR),OR,75,
+2024,3245,"Central Florida Elec Coop, Inc",FL,54,39
+2024,3248,Central Georgia El Member Corp,GA,88,88
+2024,3249,Central Hudson Gas & Elec Corp,NY,272,0
+2024,3250,Central Electric Membership Corp. - (NC),NC,30,
+2024,3264,Central Lincoln People's Ut Dt,OR,237,6
+2024,3265,Cleco Power LLC,LA,801,
+2024,3266,Central Maine Power Co,ME,494,0
+2024,3268,Central Missouri Elec Coop Inc,MO,44,0
+2024,3273,"Central New Mexico El Coop, Inc",NM,35,
+2024,3278,AEP Texas Central Company,TX,1032,
+2024,3282,"Central Texas Elec Coop, Inc",TX,74,
+2024,3287,"Central Valley Elec Coop, Inc",NM,95,95
+2024,3291,Central Virginia Electric Coop,VA,86,0
+2024,3295,City of Centralia - (WA),WA,36,36
+2024,3329,Borough of Chambersburg,PA,32,32
+2024,3355,City of Chanute,KS,7,7
+2024,3400,City of Chaska - (MN),MN,22,0
+2024,3408,City of Chattanooga - (TN),GA,1,0
+2024,3408,City of Chattanooga - (TN),TN,294,294
+2024,3413,PUD No 1 of Chelan County,WA,130,124
+2024,3426,Cherokee Electric Coop - (AL),AL,28,0
+2024,3436,Cherryland Electric Coop Inc,MI,54,0
+2024,3461,Cheyenne Light Fuel & Power,WY,77,0
+2024,3470,Cherokee County Elec Coop Assn - (TX),TX,35,
+2024,3475,City of Chickamauga,GA,1,0
+2024,3477,City of Chicopee - (MA),MA,16,0
+2024,3478,Cimarron Electric Coop,OK,72,40
+2024,3502,"Choctawhatche Elec Coop, Inc",FL,87,78
+2024,3503,"Choptank Electric Cooperative, Inc",MD,120,0
+2024,3522,Chugach Electric Assn Inc,AK,160,155
+2024,3527,Choctaw Electric Coop Inc,OK,61,61
+2024,3542,Duke Energy Ohio Inc,OH,803,519
+2024,3597,Citizens Electric Co - (PA),PA,9,9
+2024,3600,Citizens Electric Corporation - (MO),MO,106,0
+2024,3641,"Claiborne Electric Coop, Inc",LA,66,0
+2024,3644,PUD No 1 of Clallam County,WA,72,15
+2024,3647,City of Claremore,OK,24,
+2024,3660,PUD No 1 of Clark County - (WA),WA,203,19
+2024,3687,Clark Energy Coop Inc - (KY),KY,77,
+2024,3704,City of Clarksville - (TN),TN,78,78
+2024,3705,Clarksville Connected Utilities,AR,24,14
+2024,3712,Clay County Electric Coop Corp - (AR),AR,32,0
+2024,3712,Clay County Electric Coop Corp - (AR),MO,1,0
+2024,3755,Cleveland Electric Illum Co,OH,1088,998
+2024,3757,"Clay Electric Cooperative, Inc - (FL)",FL,178,0
+2024,3758,City of Cleveland - (TN),TN,56,56
+2024,3762,City of Cleveland - (OH),OH,276,
+2024,3812,City of Clinton - (TN),TN,47,47
+2024,3824,Clyde Light & Power,OH,4,
+2024,3828,Cloverland Electric Co-op,MI,93,0
+2024,3841,Coast Electric Power Assn - (MS),MS,129,0
+2024,3843,Coastal Electric Member Corp - (GA),GA,38,38
+2024,3855,Columbia Power System - (TN),TN,31,0
+2024,3892,City of Coffeyville - (KS),KS,24,0
+2024,3915,Coldwater Board of Public Util,MI,34,34
+2024,3916,Cobb Electric Membership Corp,GA,201,194
+2024,3931,Coles-Moultrie Electric Coop,IL,50,0
+2024,3939,City of College Park - (GA),GA,27,
+2024,3940,City of College Station - (TX),TX,59,0
+2024,3989,City of Colorado Springs - (CO),CO,243,190
+2024,4003,City of Colton - (CA),CA,30,
+2024,4041,"Columbia Rural Elec Assn, Inc",OR,2,0
+2024,4041,"Columbia Rural Elec Assn, Inc",WA,33,0
+2024,4045,City of Columbia - (MO),MO,62,62
+2024,4063,Co-Mo Electric Coop Inc,MO,74,74
+2024,4065,City of Columbus - (OH),OH,61,0
+2024,4068,City of Columbus - (MS),MS,31,0
+2024,4073,City of Columbus - (WI),WI,13,0
+2024,4110,Commonwealth Edison Co,IL,5639,2332
+2024,4146,Concho Valley Elec Coop Inc,TX,56,0
+2024,4150,City of Concord - (NC),NC,102,102
+2024,4153,"Concordia Electric Coop, Inc",LA,28,28
+2024,4160,Callaway Electric Cooperative,MO,37,
+2024,4176,Connecticut Light & Power Co,CT,1465,0
+2024,4226,Consolidated Edison Co-NY Inc,NY,2218,
+2024,4237,Consolidated Electric Coop,MO,45,0
+2024,4247,Consolidated Water Power Co,WI,28,28
+2024,4254,Consumers Energy Co - (MI),MI,2387,1052
+2024,4262,Cooke County Elec Coop Assn,TX,58,0
+2024,4265,Continental Divide El Coop Inc,NM,28,
+2024,4280,Conway Corporation,AR,44,
+2024,4294,City of Cookeville - (TN),TN,24,0
+2024,4295,Comanche County Elec Coop Assn,TX,50,
+2024,4296,"Cookson Hills Elec Coop, Inc",OK,45,
+2024,4317,"Coos-Curry Electric Coop, Inc",OR,42,
+2024,4327,Coosa Valley Electric Coop Inc,AL,41,
+2024,4356,Colorado River Comm of Nevada,NV,38,0
+2024,4362,Corn Belt Energy Corporation,IL,144,81
+2024,4373,Cornhusker Public Power Dist,NE,114,0
+2024,4390,City of Corona - (CA),CA,12,0
+2024,4401,"Cotton Electric Coop, Inc",OK,79,0
+2024,4430,"Covington Electric Coop, Inc",AL,57,0
+2024,4432,Coweta-Fayette El Member Corp,GA,89,0
+2024,4433,City of Covington - (GA),GA,21,1
+2024,4437,City of Covington - (TN),TN,12,0
+2024,4442,PUD No 1 of Cowlitz County,WA,114,
+2024,4508,"Crawfordsville Elec, Lgt & Pwr",IN,23,0
+2024,4509,Craighead Electric Coop Corp,AR,83,
+2024,4524,"Crawford Electric Coop, Inc",MO,42,0
+2024,4538,Crisp County Power Comm,GA,27,27
+2024,4577,Crow Wing Cooperative Power & Light Comp,MN,94,0
+2024,4604,City of Crystal Falls,MI,7,0
+2024,4607,City of Cuba City,WI,8,0
+2024,4617,Cullman Power Board,AL,15,0
+2024,4618,"Cullman Electric Coop, Inc",AL,79,0
+2024,4622,"Cumberland Valley Electric, Inc.",KY,57,
+2024,4622,"Cumberland Valley Electric, Inc.",TN,2,
+2024,4624,Cumberland Elec Member Corp,TN,125,96
+2024,4671,Custer Public Power District,NE,103,17
+2024,4675,Cuivre River Electric Coop Inc,MO,124,70
+2024,4683,City of Cuyahoga Falls - (OH),OH,37,2
+2024,4715,Dahlberg Light & Power Co,WI,36,
+2024,4717,Dakota Valley Elec Coop Inc,ND,81,0
+2024,4720,Dakota Energy Coop Inc,SD,12,0
+2024,4743,"Consumers Power, Inc",OR,74,0
+2024,4744,Dalton Utilities,GA,78,
+2024,4794,City of Danville - (VA),VA,73,
+2024,4848,Daviess Martin County R E M C,IN,22,12
+2024,4911,Dawson Power District,NE,183,
+2024,4920,City of Dayton - (TN),TN,14,0
+2024,4922,Dayton Power & Light Co,OH,545,
+2024,4939,"Deaf Smith Electric Coop, Inc",TX,101,15
+2024,4958,Decatur Utilities,AL,59,34
+2024,4960,Decatur County Rural E M C,IN,27,
+2024,4975,Deep East Texas Elec Coop Inc,TX,113,0
+2024,5027,Delmarva Power,DE,273,
+2024,5027,Delmarva Power,MD,198,
+2024,5063,City of Denton - (TX),TX,128,80
+2024,5070,Delaware Electric Cooperative,DE,91,76
+2024,5078,"Denton County Elec Coop, Inc",TX,194,194
+2024,5086,Delta Montrose Electric Assn,CO,51,51
+2024,5109,DTE Electric Company,MI,3518,6
+2024,5148,City of Dickson,TN,45,37
+2024,5175,Dixie Electric Power Assn - (MS),MS,97,0
+2024,5202,Dixie Electric Membership Corp - (LA),LA,138,130
+2024,5204,Dixie Electric Coop - (AL),AL,61,0
+2024,5309,City of Dothan - (AL),AL,46,44
+2024,5325,City of Douglas,GA,16,
+2024,5326,PUD No 1 of Douglas County,WA,69,
+2024,5335,City of Dover - (DE),DE,52,47
+2024,5336,City of Dover - (OH),OH,13,13
+2024,5394,Dubois Rural Electric Coop Inc,IN,35,17
+2024,5399,Duck River Elec Member Corp,TN,112,71
+2024,5416,"Duke Energy Carolinas, LLC",NC,2186,0
+2024,5416,"Duke Energy Carolinas, LLC",SC,748,0
+2024,5417,Dunn County Electric Coop,WI,40,0
+2024,5480,Town of Danvers,MA,36,0
+2024,5487,Duquesne Light Co,PA,634,
+2024,5509,City of Dyersburg,TN,36,34
+2024,5535,Egyptian Electric Coop Assn,IL,66,64
+2024,5551,City of Eagle River - (WI),WI,10,5
+2024,5574,East Central Energy,MN,114,108
+2024,5574,East Central Energy,WI,17,15
+2024,5578,East Mississippi Elec Pwr Assn,MS,37,0
+2024,5582,City of East Point - (GA),GA,20,
+2024,5585,Eastern Illinois Elec Coop,IL,76,76
+2024,5588,East-Central Iowa Rural Elec Coop,IA,72,72
+2024,5598,East Central Oklahoma Elec Coop Inc,OK,82,68
+2024,5605,Eastern Iowa Light & Power Coop,IA,175,0
+2024,5609,Eastern Maine Electric Coop,ME,20,0
+2024,5625,Easton Utilities Comm,MD,16,16
+2024,5644,"Edisto Electric Coop, Inc",SC,68,0
+2024,5656,Edgecombe-Martin County E M C,NC,38,34
+2024,5661,City of Edmond - (OK),OK,32,
+2024,5701,El Paso Electric Co,NM,65,43
+2024,5701,El Paso Electric Co,TX,317,297
+2024,5760,City of Elizabeth City - (NC),NC,26,
+2024,5763,City of Elizabethton - (TN),TN,35,35
+2024,5773,City of Elk River,MN,34,
+2024,5780,Elkhorn Rural Public Pwr Dist,NE,93,78
+2024,5832,Elmhurst Mutual Power & Light Co,WA,19,19
+2024,5860,Empire District Electric Co,AR,10,
+2024,5860,Empire District Electric Co,KS,21,
+2024,5860,Empire District Electric Co,MO,278,
+2024,5860,Empire District Electric Co,OK,13,
+2024,5862,"Empire Electric Assn, Inc",CO,71,63
+2024,5862,"Empire Electric Assn, Inc",UT,3,3
+2024,5905,Excelsior Electric Member Corp,GA,38,0
+2024,5929,"Fairfield Electric Coop, Inc",SC,65,
+2024,5930,Village of Fairport - (NY),NY,30,
+2024,5961,Town of Erwin - (TN),TN,9,9
+2024,5964,"Escambia River Elec Coop, Inc",FL,29,0
+2024,5969,City of Escondido - (CA),CA,1,
+2024,6008,City of Etowah,TN,7,0
+2024,6022,City of Eugene - (OR),OR,163,0
+2024,6043,City of Evansville,WI,9,0
+2024,6149,City of Ellensburg - (WA),WA,18,0
+2024,6169,Fall River Rural Elec Coop Inc,ID,64,0
+2024,6169,Fall River Rural Elec Coop Inc,MT,10,0
+2024,6169,Fall River Rural Elec Coop Inc,WY,5,0
+2024,6173,Fannin County Electric Coop,TX,15,0
+2024,6181,"Farmers Electric Coop, Inc - (MO)",MO,64,0
+2024,6182,"Farmers Electric Coop, Inc - (TX)",TX,89,0
+2024,6183,"Fayette Electric Coop, Inc",TX,27,0
+2024,6194,Farmers Rural Electric Coop Corp - (KY),KY,68,
+2024,6198,"Farmers Electric Coop, Inc - (NM)",NM,45,45
+2024,6204,City of Farmington - (NM),NM,65,
+2024,6205,City of Farmington - (MO),MO,27,0
+2024,6207,Farmington River Power Company,CT,1,
+2024,6234,City of Fayetteville,TN,39,0
+2024,6235,Fayetteville Public Works Commission,NC,156,143
+2024,6258,Federated Rural Electric Assn,IA,6,0
+2024,6258,Federated Rural Electric Assn,MN,65,0
+2024,6342,First Electric Coop Corp,AR,155,155
+2024,6369,Fishers Island Utility Co Inc,NY,3,0
+2024,6374,Fitchburg Gas & Elec Light Co,MA,38,10
+2024,6395,Flathead Electric Coop Inc,MT,89,0
+2024,6411,Flint Electric Membership Corp,GA,181,
+2024,6422,City of Florence - (AL),AL,138,0
+2024,6424,Florence Utility Comm,WI,6,0
+2024,6427,City of Floresville,TX,20,20
+2024,6442,Fleming-Mason Energy Coop Inc,KY,54,
+2024,6443,"Florida Keys El Coop Assn, Inc",FL,25,23
+2024,6452,Florida Power & Light Co,FL,3909,3158
+2024,6455,"Duke Energy Florida, LLC",FL,1366,1192
+2024,6457,Florida Public Utilities Co,FL,29,0
+2024,6491,Foley Board of Utilities,AL,68,68
+2024,6582,City of Forest Grove,OR,16,0
+2024,6604,City of Fort Collins - (CO),CO,87,
+2024,6608,Fort Loudoun Electric Coop,TN,61,51
+2024,6610,City of Fort Morgan,CO,21,21
+2024,6612,Fort Payne Improvement Authority,AL,34,34
+2024,6616,Fort Pierce Utilities Authority,FL,36,34
+2024,6638,City of Fountain,CO,10,10
+2024,6640,Four County Elec Member Corp,NC,104,0
+2024,6641,4-County Electric Power Assn,MS,102,0
+2024,6707,City of Frankfort - (IN),IN,10,6
+2024,6708,City of Frankfort - (KY),KY,49,
+2024,6709,Easley Combined Utility System,SC,25,0
+2024,6716,PUD No 1 of Franklin County,WA,102,0
+2024,6717,Franklin Electric Coop - (AL),AL,13,0
+2024,6718,City of Franklin - (KY),KY,12,0
+2024,6775,Village of Freeport - (NY),NY,25,
+2024,6779,City of Fremont - (NE),NE,30,0
+2024,6782,Freeborn Mower Electric Cooperative,IA,1,0
+2024,6782,Freeborn Mower Electric Cooperative,MN,83,32
+2024,6784,French Broad Elec Member Corp,NC,79,2
+2024,6784,French Broad Elec Member Corp,TN,2,
+2024,6840,City of Fulton - (KY),KY,7,7
+2024,6894,City of Gaffney - (SC),SC,14,14
+2024,6909,Gainesville Regional Utilities,FL,72,60
+2024,6923,City of Gallatin - (TN),TN,24,0
+2024,6941,City of Garden City,KS,47,14
+2024,6957,"Garkane Energy Coop, Inc",AZ,8,
+2024,6957,"Garkane Energy Coop, Inc",UT,48,
+2024,6958,City of Garland - (TX),TX,98,98
+2024,7024,Gascosage Electric Coop,MO,35,
+2024,7027,City of Gastonia - (NC),NC,58,
+2024,7090,GreyStone Power Corporation,GA,145,
+2024,7096,City of Geneva- (IL),IL,33,
+2024,7129,City of Georgetown - (TX),TX,39,24
+2024,7140,Georgia Power Co,GA,2796,2224
+2024,7174,Gibson Electric Members Corp,KY,6,0
+2024,7174,Gibson Electric Members Corp,TN,81,81
+2024,7222,City of Gillette - (WY),WY,29,0
+2024,7264,"Glades Electric Coop, Inc",FL,43,0
+2024,7265,City of Gladstone,MI,5,0
+2024,7270,City of Glasgow - (KY),KY,23,14
+2024,7292,Glencoe Light & Power Comm,MN,25,25
+2024,7294,City of Glendale - (CA),CA,102,40
+2024,7353,Golden Valley Elec Assn Inc,AK,72,0
+2024,7450,Grady Electric Membership Corp,GA,44,
+2024,7483,City of Grand Haven - (MI),MI,16,16
+2024,7490,Grand River Dam Authority,OK,24,0
+2024,7548,PUD No 1 of Grays Harbor County,WA,88,0
+2024,7558,Grayson Rural Electric Coop Corp,KY,43,0
+2024,7559,"Grayson-Collin Elec Coop, Inc",TX,99,
+2024,7561,"Greenbelt Electric Coop, Inc",TX,27,23
+2024,7563,Grand Valley Power,CO,29,
+2024,7601,Green Mountain Power Corp,VT,289,0
+2024,7625,City of Greeneville - (TN),TN,71,0
+2024,7627,City of Greenfield - (IN),IN,22,22
+2024,7634,City of Greenville - (TX),TX,40,40
+2024,7639,Greenville Utilities Comm,NC,115,86
+2024,7646,Greenwood CPW,SC,24,0
+2024,7651,Greenwood Utilities Comm,MS,19,18
+2024,7654,Greer Commission of Public Wks,SC,30,0
+2024,7679,City of Griffin - (GA),GA,26,
+2024,7716,Groton Dept of Utilities - (CT),CT,27,0
+2024,7752,Guadalupe Valley Elec Coop Inc,TX,153,153
+2024,7785,"Gulf Coast Electric Coop, Inc",FL,37,
+2024,7827,Guntersville Electric Board,AL,17,0
+2024,7887,Habersham Electric Membership Corp,GA,58,0
+2024,7891,Guernsey-Muskingum El Coop Inc,OH,38,0
+2024,7908,Hagerstown Light Department,MD,23,0
+2024,7977,City of Hamilton - (OH),OH,54,
+2024,7979,Hamilton County Elec Coop Assn,TX,29,
+2024,8000,NineStar Connect,IN,32,0
+2024,8034,Hancock-Wood Electric Coop Inc,OH,60,0
+2024,8055,City of Hannibal - (MO),MO,17,0
+2024,8147,City of Harriman - (TN),TN,16,0
+2024,8179,Harrison County Rural E M C,IN,53,53
+2024,8198,City of Harrisonburg - (VA),VA,28,
+2024,8210,Hart Electric Member Corp,GA,79,79
+2024,8212,Hartford Electric,WI,25,25
+2024,8226,City of Hartselle,AL,12,0
+2024,8245,City of Hastings - (NE),NE,42,28
+2024,8287,Hawaii Electric Light Co Inc,HI,167,0
+2024,8319,Heartland Power Coop,IA,60,1
+2024,8319,Heartland Power Coop,MN,7,0
+2024,8333,Haywood Electric Member Corp,GA,1,
+2024,8333,Haywood Electric Member Corp,NC,38,
+2024,8333,Haywood Electric Member Corp,SC,1,
+2024,8447,Hendricks County Rural E M C,IN,72,0
+2024,8449,Henderson City Utility Comm,KY,38,0
+2024,8548,City of Hickman,KY,3,0
+2024,8566,High Plains Power Inc,WY,99,0
+2024,8570,Highline Electric Assn,CO,67,67
+2024,8570,Highline Electric Assn,NE,20,20
+2024,8571,Town of High Point,NC,92,92
+2024,8620,"HILCO Electric Cooperative, Inc.",TX,44,0
+2024,8699,Inland Power & Light Company,ID,3,0
+2024,8699,Inland Power & Light Company,WA,99,0
+2024,8723,City of Holland,MI,74,0
+2024,8748,City of Holly Springs,MS,20,0
+2024,8761,Holmes-Wayne Electric Coop Inc,OH,50,34
+2024,8764,"Holston Electric Coop, Inc",TN,36,0
+2024,8773,"Holy Cross Electric Assn, Inc",CO,56,0
+2024,8774,City of Holyoke - (MA),MA,47,0
+2024,8786,Horry Electric Coop Inc,SC,128,0
+2024,8795,City of Homestead - (FL),FL,19,0
+2024,8840,City of Hope - (AR),AR,20,0
+2024,8846,City of Hopkinsville,KY,20,20
+2024,8883,Houlton Water Company,ME,1,0
+2024,8884,Terrebonne Parish Consol Gov't,LA,26,4
+2024,8898,Houston County Elec Coop Inc,TX,45,45
+2024,8901,CenterPoint Energy,TX,1862,
+2024,8934,"Howell-Oregon Elec Coop, Inc",MO,79,64
+2024,8973,Town of Hudson - (MA),MA,13,11
+2024,9023,City of Humboldt,TN,15,0
+2024,9087,Town of Huntersville - (NC),NC,16,0
+2024,9094,City of Huntsville - (AL),AL,282,0
+2024,9096,City of Lafayette - (LA),LA,91,
+2024,9124,Hustisford Utilities,WI,3,0
+2024,9130,Hutchinson Utilities Comm,MN,13,13
+2024,9187,City of Idaho Falls - (ID),ID,46,0
+2024,9191,Idaho Power Co,ID,655,453
+2024,9191,Idaho Power Co,OR,92,42
+2024,9216,Imperial Irrigation District,CA,330,0
+2024,9230,City of Independence - (IA),IA,8,8
+2024,9231,City of Independence - (MO),MO,69,34
+2024,9246,"Indian Electric Coop, Inc",OK,65,3
+2024,9273,AES Indiana,IN,375,370
+2024,9292,Inter County Energy Coop Corp - (KY),KY,48,
+2024,9324,Indiana Michigan Power Co,IN,678,126
+2024,9324,Indiana Michigan Power Co,MI,149,16
+2024,9331,Intercounty Electric Coop Assn - (MO),MO,99,0
+2024,9336,CORE Electric Cooperative,CO,278,
+2024,9417,Interstate Power and Light Co,IA,1497,0
+2024,9425,Iowa Lakes Electric Coop,IA,158,2
+2024,9475,Itasca-Mantrap Co-op Electrical Assn,MN,43,0
+2024,9575,Jackson Energy Coop Corp - (KY),KY,113,0
+2024,9576,Jackson County Rural E M C - (IN),IN,37,0
+2024,9590,"Jackson Electric Coop, Inc - (TX)",TX,36,
+2024,9601,Jackson Electric Member Corp - (GA),GA,258,0
+2024,9605,Jackson Purchase Energy Corporation,KY,93,0
+2024,9612,City of Jackson - (TN),TN,135,80
+2024,9613,City of Lebanon - (IN),IN,16,9
+2024,9616,Beaches Energy Services,FL,30,30
+2024,9617,JEA,FL,389,389
+2024,9645,Jamestown Board of Public Util,NY,51,51
+2024,9665,Jasper County Rural E M C,IN,37,37
+2024,9667,City of Jasper - (IN),IN,16,16
+2024,9668,"Jasper-Newton Elec Coop, Inc",TX,64,
+2024,9682,"Jefferson Davis Elec Coop, Inc",LA,43,0
+2024,9689,Jefferson Electric Member Corp,GA,58,0
+2024,9690,Jefferson Utilities,WI,4,0
+2024,9697,City of Jellico,KY,2,0
+2024,9697,City of Jellico,TN,4,0
+2024,9699,"Jemez Mountains Elec Coop, Inc",NM,56,
+2024,9726,Jersey Central Power & Lt Co,NJ,1368,1368
+2024,9739,Joe Wheeler Elec Member Corp,AL,94,75
+2024,9750,"Jo-Carroll Energy, Inc",IL,90,2
+2024,9777,Johnson City - (TN),TN,140,140
+2024,9778,Johnson County Rural E M C,IN,46,0
+2024,9837,Jones-Onslow Elec Member Corp,NC,153,131
+2024,9879,City Water and Light Plant,AR,94,
+2024,9936,Juneau Utility Comm,WI,10,0
+2024,9964,Kenergy Corp,KY,195,0
+2024,9996,City of Kansas City - (KS),KS,123,0
+2024,9999,Kankakee Valley Rural E M C,IN,34,34
+2024,10000,Evergy Metro,KS,378,0
+2024,10000,Evergy Metro,MO,489,0
+2024,10005,"Evergy Kansas South, Inc",KS,478,0
+2024,10009,Karnes Electric Coop Inc,TX,85,0
+2024,10012,Kay Electric Coop,OK,68,0
+2024,10019,FreeState Electric Coop,KS,75,
+2024,10056,City of Kaukauna,WI,36,0
+2024,10066,K C Electric Association,CO,42,
+2024,10071,Kauai Island Utility Cooperative,HI,44,44
+2024,10170,"Kiamichi Electric Coop, Inc",OK,48,29
+2024,10171,Kentucky Utilities Co,KY,1122,
+2024,10171,Kentucky Utilities Co,VA,92,
+2024,10210,Ketchikan Public Utilities,AK,15,9
+2024,10226,"Utility Board of the City of Key West, F",FL,36,0
+2024,10325,Kings River Conservation Dist,CA,1,0
+2024,10331,Kingsport Power Co,TN,67,0
+2024,10345,City of Kinston - (NC),NC,38,21
+2024,10370,City of Kirkwood - (MO),MO,34,
+2024,10376,Kissimmee Utility Authority,FL,90,34
+2024,10378,"Kit Carson Electric Coop, Inc",NM,36,35
+2024,10393,PUD No 1 of Klickitat County,WA,46,
+2024,10421,Knoxville Utilities Board,TN,292,2
+2024,10433,Kodiak Electric Assn Inc,AK,20,0
+2024,10448,Kosciusko County Rural E M C,IN,38,14
+2024,10451,Kotzebue Electric Assn Inc,AK,4,0
+2024,10454,Kootenai Electric Cooperative,ID,33,33
+2024,10454,Kootenai Electric Cooperative,WA,3,3
+2024,10508,Village of L'Anse - (MI),MI,2,0
+2024,10539,"La Plata Electric Assn, Inc",CO,86,0
+2024,10579,City of LaFollette,TN,37,37
+2024,10585,City of La Grange - (GA),GA,29,0
+2024,10596,City of Lake Crystal - (MN),MN,4,4
+2024,10599,"Lake Region Electric Coop, Inc - (OK)",OK,67,2
+2024,10603,"Laclede Electric Coop, Inc",MO,106,0
+2024,10605,Lake Mills Light & Water,WI,14,1
+2024,10618,Lake Region Electric Cooperative - (MN),MN,106,11
+2024,10620,City of Lake Worth Beach - (FL),FL,43,21
+2024,10623,City of Lakeland - (FL),FL,122,112
+2024,10624,Southern Rivers Energy,GA,52,0
+2024,10625,"Lamb County Electric Coop, Inc",TX,69,64
+2024,10627,Lakeview Light & Power,WA,15,
+2024,10649,Lamar County Elec Coop Assn,TX,13,
+2024,10668,Licking Rural Electric Inc,OH,65,
+2024,10681,Lane Electric Coop Inc,OR,35,35
+2024,10697,Lake Country Power,MN,145,0
+2024,10704,City of Lansing - (MI),MI,192,0
+2024,10768,"Laurens Electric Coop, Inc",SC,126,0
+2024,10799,City of Lawrenceburg,TN,33,0
+2024,10800,City of Lawrenceville - (GA),GA,16,
+2024,10817,"Lea County Electric Coop, Inc - (NM)",NM,59,
+2024,10817,"Lea County Electric Coop, Inc - (NM)",TX,36,
+2024,10830,City of Lebanon - (OH),OH,20,
+2024,10832,City of Lebanon - (MO),MO,32,0
+2024,10857,"Lee County Electric Coop, Inc - (FL)",FL,146,0
+2024,10868,City of Leesburg - (FL),FL,25,25
+2024,10879,Lehi City Corporation,UT,43,6
+2024,10906,City of Lenoir - (TN),TN,70,0
+2024,10944,PUD No 1 of Lewis County,WA,83,
+2024,10960,City of Lewisburg - (TN),TN,16,0
+2024,10966,City of Lexington - (NC),NC,39,36
+2024,10967,City of Lexington - (NE),NE,19,0
+2024,10968,City of Lexington - (TN),TN,35,29
+2024,11011,Licking Valley Rural E C C,KY,37,1
+2024,11014,"Lighthouse Electric Coop, Inc",TX,82,0
+2024,11018,Lincoln Electric System,NE,184,184
+2024,11053,Linn County REC,IA,41,1
+2024,11085,Town of Littleton - (MA),MA,6,
+2024,11118,Lockhart Power Co,SC,35,28
+2024,11124,City of Lodi - (CA),CA,29,29
+2024,11125,City of Lodi - (WI),WI,5,0
+2024,11135,City of Logan - (UT),UT,29,4
+2024,11142,City of Logansport - (IN),IN,24,0
+2024,11171,Long Island Power Authority,NY,1088,0
+2024,11187,City of Longmont,CO,50,0
+2024,11200,"Lorain-Medina R E C, Inc",OH,47,47
+2024,11204,Los Alamos County,NM,9,0
+2024,11208,Los Angeles Department of Water & Power,CA,2640,1667
+2024,11222,Loudon Utilities Board,TN,36,19
+2024,11241,Entergy Louisiana LLC,LA,1215,
+2024,11247,Louisville Electric System,MS,9,2
+2024,11249,Louisville Gas & Electric Co,KY,634,0
+2024,11251,Loup River Public Power Dist,NE,87,0
+2024,11256,City of Loveland - (CO),CO,63,0
+2024,11272,"Lower Yellowstone R E A, Inc",MT,42,
+2024,11272,"Lower Yellowstone R E A, Inc",ND,14,
+2024,11273,Lower Valley Energy Inc,ID,3,0
+2024,11273,Lower Valley Energy Inc,WY,63,0
+2024,11291,Lumbee River Elec Member Corp,NC,135,39
+2024,11292,City of Lubbock - (TX),TX,112,
+2024,11318,City of Lumberton - (NC),NC,12,
+2024,11355,"Lynches River Elec Coop, Inc",SC,60,
+2024,11364,"Lyntegar Electric Coop, Inc",TX,129,129
+2024,11458,City of Macon - (MS),MS,3,3
+2024,11463,Macon Electric Coop,MO,57,
+2024,11475,City of Madison - (SD),SD,12,12
+2024,11477,Town of Madison - (ME),ME,1,1
+2024,11479,Madison Gas & Electric Co,WI,285,0
+2024,11488,Madisonville Municipal Utils,KY,15,0
+2024,11501,Magic Valley Electric Coop Inc,TX,141,52
+2024,11519,Magnolia Electric Power Assn,MS,62,
+2024,11560,City of Manassas - (VA),VA,20,20
+2024,11571,Manitowoc Public Utilities,WI,26,0
+2024,11586,Town of Mansfield - (MA),MA,12,0
+2024,11611,City of Maquoketa - (IA),IA,16,0
+2024,11646,City of Marietta - (GA),GA,71,44
+2024,11701,City of Marquette - (MI),MI,14,14
+2024,11714,Marshall-De Kalb Electric Coop,AL,31,0
+2024,11731,City of Marshall - (MN),MN,30,30
+2024,11740,City of Marshfield - (WI),WI,15,0
+2024,11788,Consumers Energy Coop - (IA),IA,43,43
+2024,11789,Maryville Utilities,TN,28,0
+2024,11804,Massachusetts Electric Co,MA,1211,103
+2024,11811,Town of Massena - (NY),NY,12,12
+2024,11824,Matanuska Electric Assn Inc,AK,70,69
+2024,11843,Maui Electric Co Ltd,HI,122,0
+2024,11871,City of Mayfield Plant Board,KY,7,7
+2024,12087,McKenzie Electric Coop Inc,MT,4,
+2024,12087,McKenzie Electric Coop Inc,ND,206,
+2024,12090,"McLean Electric Coop, Inc",ND,39,
+2024,12186,McMinnville Electric System,TN,12,0
+2024,12187,City of McMinnville - (OR),OR,37,8
+2024,12199,Montana-Dakota Utilities Co,MT,152,
+2024,12199,Montana-Dakota Utilities Co,ND,358,
+2024,12199,Montana-Dakota Utilities Co,SD,52,
+2024,12199,Montana-Dakota Utilities Co,WY,44,
+2024,12208,City of McPherson - (KS),KS,42,42
+2024,12227,Meeker Coop Light & Power Assn,MN,49,0
+2024,12243,Meade County Rural E C C,KY,86,
+2024,12260,Mecklenburg Electric Cooperative,NC,4,0
+2024,12260,Mecklenburg Electric Cooperative,VA,62,
+2024,12268,"Medina Electric Coop, Inc",TX,111,0
+2024,12293,City of Memphis - (TN),TN,482,4
+2024,12298,City of Menasha - (WI),WI,16,16
+2024,12301,Nodak Electric Coop Inc,ND,190,11
+2024,12312,Merced Irrigation District,CA,20,20
+2024,12330,Meriwether Lewis Electric Coop,TN,43,0
+2024,12341,MidAmerican Energy Co,IA,1074,260
+2024,12341,MidAmerican Energy Co,IL,111,0
+2024,12341,MidAmerican Energy Co,SD,18,0
+2024,12351,City of Mesa - (AZ),AZ,30,0
+2024,12377,Midwest Energy Cooperative - (MI),IN,1,0
+2024,12377,Midwest Energy Cooperative - (MI),MI,101,0
+2024,12377,Midwest Energy Cooperative - (MI),OH,5,0
+2024,12395,Menard Electric Coop,IL,60,36
+2024,12439,"Midstate Electric Coop, Inc",OR,50,8
+2024,12450,Midland Power Coop,IA,164,0
+2024,12452,Mid-South Electric Coop Assn,TX,67,
+2024,12462,Mid-Carolina Electric Coop Inc,SC,83,
+2024,12470,Middle Tennessee E M C,TN,300,300
+2024,12473,Town of Middleborough - (MA),MA,12,12
+2024,12478,Town of Middletown - (DE),DE,9,9
+2024,12515,"Midwest Electric, Inc - (OH)",OH,41,0
+2024,12524,Midwest Energy Inc - (KS),KS,375,
+2024,12532,City of Milan - (TN),TN,19,19
+2024,12539,Midwest Electric Member Corp - (NE),NE,87,75
+2024,12540,City of Milford - (DE),DE,11,0
+2024,12546,Mille Lacs Energy Cooperative,MN,40,1
+2024,12642,Maquoketa Valley Rrl Elec Coop,IA,121,0
+2024,12647,"ALLETE, Inc.",MN,340,1
+2024,12651,Minnesota Valley Electric Coop,MN,108,14
+2024,12674,City of Mishawaka,IN,80,26
+2024,12681,Mississippi County Electric Co,AR,27,
+2024,12685,Entergy Mississippi LLC,MS,755,
+2024,12686,Mississippi Power Co,MS,291,63
+2024,12692,"Missoula Electric Coop, Inc",ID,1,0
+2024,12692,"Missoula Electric Coop, Inc",MT,40,0
+2024,12698,Evergy Missouri West,MO,557,0
+2024,12700,Missouri Rural Electric Coop,MO,28,9
+2024,12706,Mitchell Electric Member Corp,GA,73,
+2024,12744,Modern Electric Water Company,WA,9,0
+2024,12745,Modesto Irrigation District,CA,188,0
+2024,12782,City of Monett - (MO),MO,18,18
+2024,12796,Monongahela Power Co,WV,502,502
+2024,12801,City of Monroe - (NC),NC,30,4
+2024,12825,NorthWestern Energy LLC - (MT),MT,619,
+2024,12825,NorthWestern Energy LLC - (MT),WY,11,
+2024,12860,Morgan County Rural Elec Assn,CO,70,70
+2024,12866,Moon Lake Electric Assn Inc,CO,35,35
+2024,12866,Moon Lake Electric Assn Inc,UT,88,88
+2024,12894,City of Moorhead - (MN),MN,36,36
+2024,12919,Morenci Water and Electric,AZ,2,
+2024,12929,South Central Indiana REMC,IN,60,0
+2024,12944,City of Morganton - (NC),NC,24,0
+2024,12988,City of Morristown - (TN),TN,34,32
+2024,12990,Consolidated Cooperative,OH,44,
+2024,13027,"Mountain Electric Coop, Inc",NC,22,0
+2024,13027,"Mountain Electric Coop, Inc",TN,16,0
+2024,13032,Mt Carmel Public Utility Co,IL,15,6
+2024,13036,Village of Mt. Horeb - (WI),WI,9,9
+2024,13039,City of Mt Pleasant - (TN),TN,11,0
+2024,13050,"Mountain Parks Electric, Inc",CO,26,0
+2024,13058,"Mountain View Elec Assn, Inc",CO,109,0
+2024,13073,"Mt Wheeler Power, Inc",NV,24,
+2024,13073,"Mt Wheeler Power, Inc",UT,3,
+2024,13137,City of Murray - (UT),UT,28,28
+2024,13138,City of Murray - (KY),KY,19,0
+2024,13143,Board of Water Electric & Communications,IA,36,0
+2024,13144,City of Muscle Shoals,AL,15,0
+2024,13145,Village of Muscoda - (WI),WI,6,3
+2024,13196,Northern Plains Electric Coop,ND,139,0
+2024,13206,Nantucket Electric Co,MA,8,0
+2024,13208,City of Naperville - (IL),IL,116,116
+2024,13214,The Narragansett Electric Co,RI,408,30
+2024,13216,Nashville Electric Service,TN,512,0
+2024,13227,Natchez Trace Elec Power Assn,MS,22,0
+2024,13228,City of Natchitoches,LA,24,0
+2024,13292,Norris Electric Coop,IL,123,
+2024,13314,Navajo Tribal Utility Authority,AZ,60,44
+2024,13314,Navajo Tribal Utility Authority,NM,33,30
+2024,13314,Navajo Tribal Utility Authority,UT,14,10
+2024,13318,"Navopache Electric Coop, Inc",AZ,38,0
+2024,13318,"Navopache Electric Coop, Inc",NM,5,0
+2024,13332,"Navarro County Elec Coop, Inc",TX,55,55
+2024,13337,Nebraska Public Power District,NE,116,15
+2024,13337,Nebraska Public Power District,SD,5,3
+2024,13352,City of Negaunee,MI,4,0
+2024,13407,Nevada Power Co,NV,1045,34
+2024,13412,City of New Albany - (MS),MS,24,0
+2024,13416,City of New Bern - (NC),NC,14,0
+2024,13418,City of New Braunfels - (TX),TX,42,0
+2024,13437,City of Newbern,TN,9,0
+2024,13438,Village of New Glarus - (WI),WI,5,0
+2024,13441,New Hampshire Elec Coop Inc,NH,122,122
+2024,13448,City of New Holstein - (WI),WI,6,0
+2024,13467,New London Electric&Water Util,WI,38,38
+2024,13478,"Entergy New Orleans, LLC",LA,222,
+2024,13481,City of New Richmond,WI,10,10
+2024,13482,New River Light & Power Co,NC,23,
+2024,13485,New Smyrna Beach City of,FL,14,0
+2024,13511,New York State Elec & Gas Corp,NY,1264,0
+2024,13519,City of Newark - (DE),DE,34,0
+2024,13520,"New-Mac Electric Coop, Inc",MO,54,
+2024,13524,"Newberry Electric Coop, Inc",SC,64,38
+2024,13547,"Newnan Wtr, Sewer & Light Comm",GA,24,16
+2024,13550,City of Newport - (TN),TN,35,34
+2024,13573,Niagara Mohawk Power Corp.,NY,1997,41
+2024,13602,City of Niles - (OH),OH,39,
+2024,13640,Northern Virginia Elec Coop,VA,395,395
+2024,13647,Noble County R E M C,IN,29,23
+2024,13651,Nolin Rural Electric Coop Corp,KY,88,
+2024,13664,Norris Public Power District,NE,241,0
+2024,13669,North Alabama Electric Coop,AL,20,0
+2024,13676,"North Arkansas Elec Coop, Inc",AR,93,85
+2024,13679,Town of North Attleborough - (MA),MA,12,12
+2024,13693,"North Central Elec Coop, Inc - (OH)",OH,41,41
+2024,13694,"North Central Elec Coop, Inc - (ND)",ND,79,0
+2024,13697,North Central Power Co Inc,WI,12,
+2024,13716,North Georgia Elec Member Corp,GA,139,0
+2024,13718,City of North Little Rock - (AR),AR,49,43
+2024,13725,City of North Platte,NE,53,0
+2024,13734,Northeast Oklahoma Electric Co,OK,96,62
+2024,13735,Northcentral Mississippi E P A,MS,54,0
+2024,13739,Northeast Power,NE,68,
+2024,13750,"Northern Electric Coop, Inc",SD,67,67
+2024,13756,Northern Indiana Pub Serv Co,IN,134,
+2024,13757,North Plains Electric Coop Inc,TX,53,
+2024,13758,"Northern Lights, Inc",ID,28,28
+2024,13758,"Northern Lights, Inc",MT,8,8
+2024,13758,"Northern Lights, Inc",WA,1,1
+2024,13762,"Northern Neck Elec Coop, Inc",VA,49,0
+2024,13780,Northern States Power Co,MI,28,
+2024,13780,Northern States Power Co,WI,375,
+2024,13781,Northern States Power Co - Minnesota,MN,1086,60
+2024,13781,Northern States Power Co - Minnesota,ND,65,
+2024,13781,Northern States Power Co - Minnesota,SD,79,
+2024,13783,Northeast Louisiana Power Coop Inc.,LA,7,7
+2024,13788,Northern Wasco County PUD,OR,20,0
+2024,13799,Prairie Land Electric Coop Inc,KS,149,
+2024,13807,Northwestern Electric Coop Inc - (OK),OK,56,56
+2024,13809,NorthWestern Energy - (SD),SD,248,0
+2024,13815,Northwestern Wisconsin Elec Co,MN,2,
+2024,13815,Northwestern Wisconsin Elec Co,WI,41,
+2024,13826,City of Norway,MI,4,0
+2024,13830,Nueces Electric Cooperative,TX,50,32
+2024,13831,City of Norwich - (CT),CT,25,0
+2024,13839,City of Norwood - (MA),MA,30,19
+2024,13933,City of Oak Ridge,TN,40,40
+2024,13936,Oakdale Electric Coop,WI,76,0
+2024,13955,City of Ocala,FL,78,0
+2024,13962,Oconee Electric Member Corp,GA,46,
+2024,13963,Oconomowoc Utilities,WI,17,0
+2024,13965,Oconto Falls Water & Light Comm,WI,5,0
+2024,13998,Ohio Edison Co,OH,1156,1138
+2024,14006,Ohio Power Co,OH,1700,164
+2024,14055,PUD No 1 of Okanogan County,WA,57,
+2024,14062,Oklahoma Electric Coop Inc,OK,79,0
+2024,14063,Oklahoma Gas & Electric Co,AR,124,14
+2024,14063,Oklahoma Gas & Electric Co,OK,1306,389
+2024,14078,City of Okolona,MS,9,0
+2024,14109,"Oregon Trail El Cons Coop, Inc",OR,77,
+2024,14127,Omaha Public Power District,NE,495,29
+2024,14146,City of Opelika - (AL),AL,26,26
+2024,14154,Orange & Rockland Utils Inc,NY,259,0
+2024,14164,City of Orangeburg - (SC),SC,61,61
+2024,14170,Orcas Power & Light Coop,WA,30,0
+2024,14175,"Tri-County Electric Coop, Inc (SC)",SC,59,
+2024,14192,Osage Valley Elec Coop Assn,MO,53,53
+2024,14194,City of Orrville - (OH),OH,11,0
+2024,14224,Otero County Electric Coop Inc,NM,34,0
+2024,14232,Otter Tail Power Co,MN,292,0
+2024,14232,Otter Tail Power Co,ND,360,0
+2024,14232,Otter Tail Power Co,SD,93,0
+2024,14238,Ouachita Electric Coop Corp,AR,40,
+2024,14245,Overton Power District No 5,NV,50,50
+2024,14246,City of Owatonna - (MN),MN,28,0
+2024,14251,Owen Electric Coop Inc,KY,127,
+2024,14268,City of Owensboro - (KY),KY,60,0
+2024,14275,City of Oxford - (MS),MS,16,0
+2024,14285,Ozark Border Electric Coop,MO,133,
+2024,14288,Ozark Electric Coop Inc - (MO),MO,93,15
+2024,14289,Ozarks Electric Coop Corp - (AR),AR,98,
+2024,14289,Ozarks Electric Coop Corp - (AR),OK,26,
+2024,14324,PUD No 2 of Pacific County,WA,33,0
+2024,14328,Pacific Gas & Electric Co.,CA,3422,0
+2024,14354,PacifiCorp,CA,76,0
+2024,14354,PacifiCorp,ID,167,0
+2024,14354,PacifiCorp,OR,510,0
+2024,14354,PacifiCorp,UT,988,0
+2024,14354,PacifiCorp,WA,128,0
+2024,14354,PacifiCorp,WY,212,0
+2024,14371,City of Paducah - (KY),KY,52,52
+2024,14381,City of Painesville,OH,15,
+2024,14398,Palmetto Electric Coop Inc,SC,137,0
+2024,14401,City of Palo Alto - (CA),CA,64,0
+2024,14424,"Panola-Harrison Elec Coop, Inc",LA,28,28
+2024,14424,"Panola-Harrison Elec Coop, Inc",TX,29,29
+2024,14446,Paragould Municipal Utilities,AR,35,
+2024,14455,City of Paris - (TN),TN,46,43
+2024,14468,People's Cooperative Services,MN,77,0
+2024,14534,City of Pasadena - (CA),CA,119,0
+2024,14537,Pascoag Utility District,RI,5,
+2024,14563,Pearl River Valley El Pwr Assn,MS,100,0
+2024,14599,"Paulding-Putman Elec Coop, Inc",IN,17,0
+2024,14599,"Paulding-Putman Elec Coop, Inc",OH,49,0
+2024,14602,Pea River Electric Coop,AL,50,
+2024,14605,City of Peabody - (MA),MA,22,
+2024,14606,"Peace River Electric Coop, Inc",FL,65,13
+2024,14610,Orlando Utilities Comm,FL,311,311
+2024,14624,PUD No 2 of Grant County,WA,250,0
+2024,14626,"Pedernales Electric Coop, Inc",TX,323,0
+2024,14649,Planters Electric Member Corp,GA,36,
+2024,14653,PUD No 1 of Pend Oreille County,WA,23,
+2024,14668,Peninsula Light Company,WA,33,
+2024,14715,PPL Electric Utilities Corp,PA,1285,1285
+2024,14717,Pee Dee Electric Member Corp,NC,26,16
+2024,14724,Pennyrile Rural Electric Coop,KY,85,20
+2024,14775,People's Electric Cooperative,OK,73,0
+2024,14839,City of Peru - (IN),IN,18,0
+2024,14840,City of Peru - (IL),IL,20,13
+2024,14864,Petit Jean Electric Coop Corp,AR,45,0
+2024,14940,PECO Energy Co,PA,2172,0
+2024,14947,City of Philadelphia - (MS),MS,9,0
+2024,15016,Pickwick Electric Coop,TN,39,39
+2024,15023,Piedmont Electric Member Corp,NC,71,0
+2024,15040,City of Pierre - (SD),SD,20,0
+2024,15045,Pike County Light & Power Co,PA,1,0
+2024,15048,Electrical Dist No2 Pinal County,AZ,25,25
+2024,15054,"Pioneer Rural Elec Coop, Inc - (OH)",OH,52,0
+2024,15073,"Pioneer Electric Coop, Inc - (KS)",KS,77,77
+2024,15086,Pioneer Power and Light Co,WI,1,
+2024,15095,City of Piqua - (OH),OH,15,
+2024,15138,"Platte-Clay Electric Coop, Inc",MO,64,
+2024,15141,Plateau Electric Cooperative,TN,26,0
+2024,15145,City of Plattsburgh - (NY),NY,95,10
+2024,15159,City of Plymouth - (WI),WI,23,0
+2024,15175,Pointe Coupee Elec Member Corp,LA,31,0
+2024,15202,City of Ponca City - (OK),OK,30,0
+2024,15211,Pontotoc Electric Power Assn,MS,50,0
+2024,15229,City of Poplar Bluff - (MO),MO,25,0
+2024,15231,City of Port Angeles - (WA),WA,24,3
+2024,15248,Portland General Electric Co,OR,710,35
+2024,15257,"Poudre Valley REA, Inc",CO,139,
+2024,15263,The Potomac Edison Company,MD,355,355
+2024,15263,The Potomac Edison Company,WV,181,181
+2024,15270,Potomac Electric Power Co,DC,761,
+2024,15270,Potomac Electric Power Co,MD,724,
+2024,15291,Prairie Energy Coop,IA,80,0
+2024,15293,Powell Valley Electric Coop,TN,21,0
+2024,15293,Powell Valley Electric Coop,VA,11,0
+2024,15312,Village of Prairie Du Sac - (WI),WI,10,1
+2024,15334,Prentiss County Elec Pwr Assn,MS,30,29
+2024,15340,Presque Isle Elec & Gas Coop,MI,70,0
+2024,15344,Polk-Burnett Electric Coop,WI,54,0
+2024,15349,City of Preston,IA,4,4
+2024,15410,Prince George Electric Coop,VA,33,
+2024,15419,PUD No 3 of Mason County,WA,46,0
+2024,15444,Provo City Corp,UT,44,0
+2024,15466,Public Service Co of Colorado,CO,827,423
+2024,15470,"Duke Energy Indiana, LLC",IN,1319,467
+2024,15472,Public Service Co of NH,NH,815,0
+2024,15473,Public Service Co of NM,NM,606,393
+2024,15474,Public Service Co of Oklahoma,OK,782,264
+2024,15477,Public Service Elec & Gas Co,NJ,2909,0
+2024,15500,Puget Sound Energy Inc,WA,1134,138
+2024,15507,City of Pulaski - (TN),TN,33,0
+2024,15671,Randolph Electric Member Corp,NC,67,66
+2024,15700,Rayle Electric Membership Corp,GA,51,0
+2024,15746,Red River Valley Rrl Elec Assn,OK,52,52
+2024,15748,Town of Reading - (MA),MA,28,20
+2024,15776,Central Florida Tourism Oversight District,FL,98,98
+2024,15783,City of Redding - (CA),CA,68,0
+2024,15804,Reedsburg Utility Comm,WI,22,0
+2024,15978,City of Richland Center - (WI),WI,12,0
+2024,15979,City of Richland - (WA),WA,82,
+2024,15989,City of Richmond - (IN),IN,72,0
+2024,16057,"Rio Grande Electric Coop, Inc",NM,5,
+2024,16057,"Rio Grande Electric Coop, Inc",TX,67,
+2024,16060,Riverland Energy Cooperative,WI,87,
+2024,16063,"Rita Blanca Electric Coop, Inc",TX,76,
+2024,16082,City of River Falls,WI,20,2
+2024,16088,City of Riverside - (CA),CA,129,0
+2024,16101,Roanoke Electric Member Corp,NC,42,39
+2024,16146,"Navasota Valley Elec Coop, Inc",TX,57,52
+2024,16179,Rochelle Municipal Utilities,IL,22,6
+2024,16181,Rochester Public Utilities,MN,90,44
+2024,16183,Rochester Gas & Electric Corp,NY,576,
+2024,16195,City of Rock Hill - (SC),SC,37,
+2024,16196,Rock Energy Cooperative,IL,23,19
+2024,16196,Rock Energy Cooperative,WI,36,15
+2024,16213,Rockland Electric Co,NJ,89,0
+2024,16223,City of Rockwood - (TN),TN,19,19
+2024,16226,City of Rocky Mount - (NC),NC,50,50
+2024,16259,City of Rolla - (MO),MO,50,
+2024,16286,Rosebud Electric Coop Inc,SD,25,25
+2024,16295,City of Roseville - (CA),CA,106,
+2024,16368,Runestone Electric Assn,MN,63,0
+2024,16382,"Rural Electric Coop, Inc - (OK)",OK,57,0
+2024,16458,City of Russellville - (AL),AL,15,13
+2024,16459,City of Russellville - (KY),KY,8,3
+2024,16461,"Rusk County Electric Coop, Inc",TX,44,
+2024,16463,City of Ruston - (LA),LA,19,19
+2024,16496,Rutherford Elec Member Corp,NC,211,0
+2024,16534,Sacramento Municipal Util Dist,CA,783,130
+2024,16555,Salem Electric - (OR),OR,23,
+2024,16558,City of Salem - (VA),VA,45,
+2024,16565,Salmon River Electric Coop Inc,ID,6,6
+2024,16572,Salt River Project,AZ,1450,0
+2024,16587,Salt River Electric Coop Corp,KY,107,55
+2024,16603,"San Luis Valley R E C, Inc",CO,54,
+2024,16604,City of San Antonio - (TX),TX,697,55
+2024,16606,"Santee Electric Coop, Inc",SC,149,0
+2024,16609,San Diego Gas & Electric Co,CA,1058,0
+2024,16611,Access Energy Coop,IA,64,31
+2024,16612,City & County of San Francisco,CA,38,2
+2024,16613,Sam Houston Electric Coop Inc,TX,132,
+2024,16616,"San Isabel Electric Assn, Inc",CO,73,0
+2024,16622,"San Miguel Power Assn, Inc",CO,44,0
+2024,16627,San Patricio Electric Coop Inc,TX,39,38
+2024,16629,Sand Mountain Electric Coop,AL,55,0
+2024,16637,City of Sandersville - (GA),GA,9,0
+2024,16638,"San Bernard Electric Coop, Inc",TX,58,0
+2024,16655,City of Santa Clara - (CA),CA,190,0
+2024,16674,Satilla Rural Elec Member Corporation,GA,82,0
+2024,16740,Scenic Rivers Energy Coop,IL,4,
+2024,16740,Scenic Rivers Energy Coop,WI,75,
+2024,16751,Three Rivers Electric Coop,MO,71,0
+2024,16805,SEMO Electric Cooperative,MO,64,0
+2024,16829,City of Scottsboro - (AL),AL,16,16
+2024,16865,Sawnee Electric Membership Corporation,GA,249,220
+2024,16868,City of Seattle - (WA),WA,250,
+2024,16900,City of Seguin - (TX),TX,22,22
+2024,16930,Sequachee Valley Electric Coop,TN,45,11
+2024,16949,Sevier County Electric System,TN,80,0
+2024,16971,Shakopee Public Utilities Comm,MN,39,
+2024,17011,Shawano Municipal Utilities,WI,11,
+2024,17033,Sheffield Utilities,AL,57,0
+2024,17038,RushShelby Energy,IN,42,0
+2024,17040,"Shelby Electric Coop, Inc - (IL)",IL,62,0
+2024,17044,"Shelby Energy Coop, Inc - (KY)",KY,48,
+2024,17047,City of Shelbyville - (TN),TN,18,0
+2024,17066,Shenandoah Valley Elec Coop,VA,133,0
+2024,17127,Town of Shrewsbury - (MA),MA,25,15
+2024,17166,Sierra Pacific Power Co,NV,324,
+2024,17177,City of Sikeston - (MO),MO,24,16
+2024,17184,City of Siloam Springs - (AR),AR,18,
+2024,17252,Singing River Elec Cooperative,AL,10,7
+2024,17252,Singing River Elec Cooperative,MS,168,100
+2024,17260,North West Rural Electric Coop,IA,128,
+2024,17261,Slope Electric Coop Inc,ND,55,
+2024,17267,Sioux Valley SW Elec Coop,MN,32,
+2024,17267,Sioux Valley SW Elec Coop,SD,135,
+2024,17324,Slinger Utilities,WI,1,1
+2024,17452,City of Smithville - (TN),TN,8,8
+2024,17470,PUD No 1 of Snohomish County,WA,391,292
+2024,17512,Village of Solvay - (NY),NY,15,0
+2024,17534,"South Alabama Elec Coop, Inc",AL,50,0
+2024,17539,"Dominion Energy South Carolina, Inc",SC,893,0
+2024,17540,"South Central Ark El Coop, Inc",AR,23,23
+2024,17543,South Carolina Public Service Authority,SC,302,254
+2024,17548,South Central Public Pwr Dist,NE,79,0
+2024,17550,South Central Electric Assn,MN,75,0
+2024,17561,South Plains Electric Coop Inc,TX,175,154
+2024,17564,South Kentucky Rural E C C,KY,143,0
+2024,17564,South Kentucky Rural E C C,TN,6,0
+2024,17565,South Louisiana Elec Coop Assn,LA,38,0
+2024,17572,South River Elec Member Corp,NC,122,122
+2024,17577,City of South Sioux City,NE,19,11
+2024,17585,"Southeastern IL Elec Coop, Inc",IL,131,1
+2024,17592,Southeast Colorado Power Assn,CO,59,
+2024,17599,Southeastern Indiana R E M C,IN,20,
+2024,17603,Southeastern Electric Coop Inc - (OK),OK,33,31
+2024,17609,Southern California Edison Co,CA,4323,3245
+2024,17612,Bear Valley Electric Service,CA,26,0
+2024,17633,Southern Indiana Gas & Elec Co,IN,227,12
+2024,17637,Southern Maryland Elec Coop Inc,MD,245,0
+2024,17642,Southern Public Power District,NE,235,
+2024,17646,"Southern Pine Elec Coop, Inc",AL,37,0
+2024,17647,Southern Pine Electric Cooperative,MS,130,
+2024,17671,Southwest Arkansas E C C,AR,93,93
+2024,17671,Southwest Arkansas E C C,OK,2,2
+2024,17671,Southwest Arkansas E C C,TX,5,5
+2024,17683,Southwest Mississippi E P A,MS,71,0
+2024,17684,Southwest Louisiana E M C,LA,169,169
+2024,17692,Southwest Public Power Dist,NE,75,0
+2024,17693,"Southwest Texas Elec Coop, Inc",TX,64,64
+2024,17694,Southwest Tennessee E M C,TN,89,0
+2024,17697,Southwestern Electric Coop Inc - (IL),IL,90,0
+2024,17698,Southwestern Electric Power Co,AR,149,0
+2024,17698,Southwestern Electric Power Co,LA,331,
+2024,17698,Southwestern Electric Power Co,TX,295,
+2024,17715,Southwestern Electric Coop Inc - (NM),CO,1,
+2024,17715,Southwestern Electric Coop Inc - (NM),NM,9,
+2024,17715,Southwestern Electric Coop Inc - (NM),OK,1,
+2024,17715,Southwestern Electric Coop Inc - (NM),TX,2,
+2024,17718,Southwestern Public Service Co,NM,217,
+2024,17718,Southwestern Public Service Co,TX,427,
+2024,17732,Spanish Fork City Corporation,UT,27,
+2024,17740,City of Sparta,TN,3,0
+2024,17826,"Springer Electric Coop, Inc",NM,16,0
+2024,17828,City of Springfield - (IL),IL,117,117
+2024,17829,City of Springfield - (TN),TN,12,12
+2024,17832,Snapping Shoals El Member Corp,GA,105,99
+2024,17833,City Utilities of Springfield - (MO),MO,163,0
+2024,17839,City of Springfield - (OR),OR,37,
+2024,17845,City of Springville - (UT),UT,22,0
+2024,17860,City of St Charles - (IL),IL,52,0
+2024,17874,City of St George,UT,70,70
+2024,17896,City of Shasta Lake - (CA),CA,8,6
+2024,18006,City of Starkville,MS,21,0
+2024,18019,Stearns Cooperative Elec Assn,MN,121,121
+2024,18022,City of Statesville - (NC),NC,29,29
+2024,18047,Steele-Waseca Cooperative Electric,MN,66,45
+2024,18085,South Central Power Company,OH,236,0
+2024,18125,Stillwater Utilities Authority,OK,33,
+2024,18181,City of Stoughton - (WI),WI,20,0
+2024,18203,Tallapoosa River Elec Coop Inc,AL,83,2
+2024,18206,Strawberry Electric Serv Dist,UT,17,6
+2024,18249,City of Sturgeon Bay - (WI),WI,18,0
+2024,18252,City of Sturgis - (MI),MI,19,0
+2024,18260,Surprise Valley Electrification,CA,34,0
+2024,18260,Surprise Valley Electrification,NV,1,0
+2024,18260,Surprise Valley Electrification,OR,15,0
+2024,18280,Sulphur Springs Valley E C Inc,AZ,85,0
+2024,18304,"Sumter Electric Coop, Inc",FL,212,0
+2024,18305,Sumter Electric Member Corp,GA,64,50
+2024,18312,Sun Prairie Utilities,WI,28,0
+2024,18336,Superior Water and Light Co,WI,14,0
+2024,18339,Surry-Yadkin Elec Member Corp,NC,73,73
+2024,18360,Suwannee Valley Elec Coop Inc,FL,42,0
+2024,18384,City of Sweetwater,TN,13,0
+2024,18397,City of Sylvania - (GA),GA,6,1
+2024,18429,City of Tacoma - (WA),WA,194,52
+2024,18445,City of Tallahassee - (FL),FL,262,0
+2024,18447,Tallahatchie Valley E P A,MS,58,0
+2024,18449,"Talquin Electric Coop, Inc",FL,84,0
+2024,18454,Tampa Electric Co,FL,821,0
+2024,18466,Town of Tarboro - (NC),NC,27,
+2024,18472,City of Tarrant,AL,9,0
+2024,18488,City of Taunton,MA,45,36
+2024,18498,Taylor County Rural E C C,KY,67,0
+2024,18499,Three Notch Elec Member Corp,GA,41,
+2024,18642,Tennessee Valley Authority,GA,1,0
+2024,18642,Tennessee Valley Authority,KY,6,0
+2024,18642,Tennessee Valley Authority,NC,1,0
+2024,18643,Tennessee Valley Electric Coop,TN,26,0
+2024,18848,City of Thomasville - (GA),GA,41,
+2024,18917,Tillamook Peoples Utility Dist,OR,31,0
+2024,18940,Tipmont Rural Elec Member Corp,IN,62,0
+2024,18943,Tippah Electric Power Assn,MS,21,0
+2024,18951,Tishomingo County E P A,MS,29,25
+2024,18955,"Tri-County Electric Coop, Inc (IL)",IL,86,86
+2024,18956,Tri-County Elec Member Corp (GA),GA,38,35
+2024,18957,Tri-County Elec Member Corp (NC),NC,56,0
+2024,18976,Trinity Valley Elec Coop Inc,TX,117,0
+2024,18997,The Toledo Edison Co,OH,242,225
+2024,19007,Tombigbee Electric Power Assn,MS,81,0
+2024,19108,Tideland Electric Member Corp,NC,42,3
+2024,19125,City of Traverse City - (MI),MI,32,23
+2024,19149,City of Trenton - (TN),TN,7,0
+2024,19154,Tri-State Electric Member Corp,GA,14,0
+2024,19154,Tri-State Electric Member Corp,NC,2,0
+2024,19154,Tri-State Electric Member Corp,TN,5,0
+2024,19156,Powder River Energy Corp,MT,2,0
+2024,19156,Powder River Energy Corp,WY,123,0
+2024,19157,MiEnergy Cooperative,IA,74,0
+2024,19157,MiEnergy Cooperative,MN,92,0
+2024,19159,"Tri-County Electric Coop, Inc (TX)",TX,160,0
+2024,19160,"Tri-County Electric Coop, Inc (OK)",CO,2,2
+2024,19160,"Tri-County Electric Coop, Inc (OK)",KS,9,9
+2024,19160,"Tri-County Electric Coop, Inc (OK)",NM,1,1
+2024,19160,"Tri-County Electric Coop, Inc (OK)",OK,121,121
+2024,19160,"Tri-County Electric Coop, Inc (OK)",TX,10,10
+2024,19161,"Tri-County Electric Coop, Inc (FL)",FL,53,50
+2024,19162,Tri-County Elec Member Corp (TN),KY,41,0
+2024,19162,Tri-County Elec Member Corp (TN),TN,41,0
+2024,19189,Trico Electric Cooperative Inc,AZ,66,34
+2024,19219,Diverse Power Incorporated,AL,2,2
+2024,19219,Diverse Power Incorporated,GA,70,70
+2024,19225,City of Troy - (AL),AL,22,
+2024,19266,Tullahoma Board-Public Utils,TN,12,11
+2024,19273,City of Tupelo - (MS),MS,45,35
+2024,19277,TDX North Slope Generating Co,AK,7,0
+2024,19281,Turlock Irrigation District,CA,118,0
+2024,19293,Southeastern Electric Coop Inc - (SD),SD,143,0
+2024,19307,City of Tuscumbia,AL,3,3
+2024,19324,Two Rivers Water & Light,WI,5,4
+2024,19325,Umatilla Electric Coop Assn,OR,242,0
+2024,19390,"UGI Utilities, Inc",PA,55,0
+2024,19396,Tri-County Electric Coop (MI),MI,62,0
+2024,19430,City of Union City,TN,23,13
+2024,19435,Union Electric Membership Corp - (NC),NC,136,101
+2024,19436,Union Electric Co - (MO),MO,2310,0
+2024,19445,"Southern Indiana R E C, Inc",IN,27,
+2024,19446,Duke Energy Kentucky,KY,155,
+2024,19490,United Electric Coop Service Inc - (TX),TX,198,0
+2024,19497,United Illuminating Co,CT,344,0
+2024,19499,"United Power, Inc",CO,196,
+2024,19501,"Union Rural Electric Coop, Inc",OH,18,
+2024,19502,"United Electric Co-op, Inc - (ID)",ID,18,
+2024,19545,"Black Hills Power, Inc.",MT,4,0
+2024,19545,"Black Hills Power, Inc.",SD,173,0
+2024,19545,"Black Hills Power, Inc.",WY,19,0
+2024,19547,Hawaiian Electric Co Inc,HI,456,0
+2024,19558,Homer Electric Assn Inc,AK,34,0
+2024,19574,Upper Cumberland E M C,TN,61,0
+2024,19578,Upper Peninsula Power Company,MI,85,0
+2024,19579,Upshur Rural Elec Coop Corp,TX,123,0
+2024,19603,USBIA-Mission Valley Power,MT,52,0
+2024,19604,USBIA-San Carlos Project,AZ,42,
+2024,19667,Utilities Dist-Western IN REMC,IN,45,14
+2024,19728,"UNS Electric, Inc",AZ,114,0
+2024,19784,Vera Irrigation District #15,WA,14,0
+2024,19785,Verdigris Valley Elec Coop Inc,OK,74,0
+2024,19790,Verendrye Electric Coop Inc,ND,109,109
+2024,19791,"Vermont Electric Cooperative, Inc",VT,73,0
+2024,19798,City of Vernon,CA,60,51
+2024,19806,"Victoria Electric Coop, Inc",TX,61,0
+2024,19820,Victory Electric Coop Assn Inc,KS,103,100
+2024,19840,"Valley Electric Assn, Inc",CA,5,5
+2024,19840,"Valley Electric Assn, Inc",NV,29,29
+2024,19856,City of Vineland - (NJ),NJ,36,
+2024,19869,Vinton Public Power Authority,LA,4,
+2024,19876,Virginia Electric & Power Co,NC,123,0
+2024,19876,Virginia Electric & Power Co,VA,2172,0
+2024,19882,Virginia Tech Electric Service,VA,33,0
+2024,19896,City of Volga - (SD),SD,7,0
+2024,19898,Volunteer Electric Coop,TN,117,0
+2024,19951,City of Wadsworth - (OH),OH,17,17
+2024,19981,Wake Electric Membership Corp,NC,76,76
+2024,20038,Town of Wallingford - (CT),CT,26,
+2024,20065,Walton Electric Member Corp,GA,93,0
+2024,20130,Warren Rural Elec Coop Corp,KY,143,0
+2024,20140,City of Washington - (GA),GA,3,0
+2024,20142,City of Washington - (NC),NC,29,0
+2024,20146,Washington Elec Member Corp,GA,40,40
+2024,20169,Avista Corp,ID,133,4
+2024,20169,Avista Corp,MT,1,0
+2024,20169,Avista Corp,WA,249,118
+2024,20176,City of Water Valley - (MS),MS,1,0
+2024,20182,Waterloo Light & Water Comm,WI,10,0
+2024,20187,Watertown Municipal Utilities,SD,25,
+2024,20211,Village of Waunakee - (WI),WI,17,0
+2024,20213,Waupun Utilities,WI,18,0
+2024,20216,Whitewater Valley Rural EMC,IN,41,
+2024,20222,Wayne-White Counties Elec Coop,IL,65,0
+2024,20228,Weakley County Mun Elec Sys,TN,35,10
+2024,20230,Weatherford Mun Utility System,TX,36,
+2024,20310,Town of Wellesley - (MA),MA,34,12
+2024,20318,Webster Electric Coop,MO,46,12
+2024,20332,Wells Rural Electric Co,NV,35,
+2024,20332,Wells Rural Electric Co,UT,1,
+2024,20334,Wellsborough Electric Co,PA,8,0
+2024,20363,West Central Electric Coop Inc - (MO),MO,54,37
+2024,20371,"West Florida El Coop Assn, Inc",FL,34,34
+2024,20377,West Kentucky Rural E C C,KY,57,0
+2024,20382,City of West Memphis - (AR),AR,16,0
+2024,20394,City of West Point - (MS),MS,9,9
+2024,20401,West River Electric Assn Inc,SD,52,0
+2024,20404,AEP Texas North Company,TX,571,0
+2024,20413,Mountrail-Williams Elec Coop,ND,267,0
+2024,20434,City of Westby,WI,4,0
+2024,20472,"Wharton County Elec Coop, Inc",TX,37,
+2024,20476,Western Coop Electric Assn Inc,KS,93,
+2024,20477,City of Westerville - (OH),OH,29,0
+2024,20481,City of Westfield - (MA),MA,14,0
+2024,20510,"Wheatland Electric Coop, Inc",CO,3,
+2024,20510,"Wheatland Electric Coop, Inc",KS,115,
+2024,20521,Wheeling Power Co,WV,53,
+2024,20574,White River Valley El Coop Inc,MO,110,8
+2024,20576,"White River Electric Assn, Inc",CO,26,0
+2024,20583,Whitehall Electric Utility,WI,7,0
+2024,20603,Northeastern Rural E M C,IN,75,0
+2024,20639,"Wild Rice Electric Coop, Inc",MN,60,
+2024,20737,Willmar Municipal Utilities,MN,18,10
+2024,20785,City of Wilson - (NC),NC,85,85
+2024,20793,City of Winchester - (TN),TN,11,0
+2024,20813,City of Winfield - (KS),KS,21,0
+2024,20841,"Wiregrass Electric Coop, Inc",AL,51,38
+2024,20847,Wisconsin Electric Power Co,WI,1591,0
+2024,20856,Wisconsin Power & Light Co,WI,1290,344
+2024,20860,Wisconsin Public Service Corp,WI,242,0
+2024,20862,Wisconsin Rapids W W & L Comm,WI,21,21
+2024,20885,Withlacoochee River Elec Coop,FL,228,86
+2024,20910,Wolverine Power Supply Coop,MI,2,0
+2024,20927,"Wood County Electric Coop, Inc",TX,93,0
+2024,20948,Wise Electric Coop Inc,TX,56,56
+2024,20963,Woodruff Electric Coop Corp,AR,86,0
+2024,20996,Wright-Hennepin Coop Elec Assn,MN,130,0
+2024,20997,Yellowstone Valley Elec Co-op,MT,80,80
+2024,21002,York Electric Coop Inc,SC,107,
+2024,21013,City of Worthington - (MN),MN,13,0
+2024,21048,Wyandotte Municipal Serv Comm,MI,21,0
+2024,21075,Y-W Electric Assn Inc,CO,89,
+2024,21075,Y-W Electric Assn Inc,NE,1,
+2024,21081,Yampa Valley Electric Assn Inc,CO,54,
+2024,21081,Yampa Valley Electric Assn Inc,WY,3,
+2024,21111,Perennial Public Power Dist,NE,72,34
+2024,21114,Yazoo Valley Elec Power Assn,MS,22,
+2024,21158,City of Zeeland - (MI),MI,31,9
+2024,21244,"Southside Electric Coop, Inc",VA,126,0
+2024,21513,"Fergus Electric Coop, Inc",MT,79,0
+2024,21538,"Mohave Electric Cooperative, Inc.",AZ,51,0
+2024,21567,"Washington-St Tammany E C, Inc",LA,103,0
+2024,21632,EnergyUnited Elec Member Corp,NC,248,0
+2024,22053,Kentucky Power Co,KY,227,30
+2024,22500,"Evergy Kansas Central, Inc",KS,813,0
+2024,22690,Roosevelt County Elec Coop Inc,NM,43,43
+2024,22814,Raft Rural Elec Coop Inc,ID,30,
+2024,22814,Raft Rural Elec Coop Inc,NV,5,
+2024,22814,Raft Rural Elec Coop Inc,UT,9,
+2024,22815,Delta Electric Power Assn,MS,72,0
+2024,22822,Clark County Rural E M C - (IN),IN,44,0
+2024,24211,Tucson Electric Power Co,AZ,410,0
+2024,24590,Unitil Energy Systems,NH,87,0
+2024,24753,Boone County Rural EMC,IN,64,
+2024,24889,Brunswick Electric Member Corp,NC,119,0
+2024,24949,Cass County Elec Coop Inc,ND,42,11
+2024,25177,Dakota Electric Association,MN,181,0
+2024,25295,Western Indiana Energy REMC,IN,71,0
+2024,25866,Ak-Chin Electric Utility Authority,AZ,4,0
+2024,26510,Liberty Utilities (Granite State Electri,NH,47,0
+2024,27000,WAPA-- Western Area Power Administration,AZ,6,
+2024,27000,WAPA-- Western Area Power Administration,CA,5,
+2024,27000,WAPA-- Western Area Power Administration,CO,6,
+2024,27000,WAPA-- Western Area Power Administration,MT,5,
+2024,27000,WAPA-- Western Area Power Administration,ND,1,
+2024,27000,WAPA-- Western Area Power Administration,NE,2,
+2024,27000,WAPA-- Western Area Power Administration,SD,1,
+2024,27000,WAPA-- Western Area Power Administration,WY,18,
+2024,27058,"High West Energy, Inc",CO,26,0
+2024,27058,"High West Energy, Inc",NE,34,0
+2024,27058,"High West Energy, Inc",WY,30,0
+2024,27222,City of Ripley - (TN),TN,9,5
+2024,27238,"Southwest Electric Coop, Inc",MO,98,
+2024,27369,Taylor Electric Coop Inc - (TX),TX,82,70
+2024,27599,Carroll-White REMC,IN,53,
+2024,28541,Clatskanie Peoples Util Dist,OR,10,0
+2024,28604,Kerrville Public Utility Board,TX,30,20
+2024,28978,City of San Marcos - (TX),TX,26,
+2024,30518,Electrical Dist No3 Pinal County,AZ,66,0
+2024,31833,Okefenoke Rural El Member Corp,FL,8,6
+2024,31833,Okefenoke Rural El Member Corp,GA,46,28
+2024,38084,Great Lakes Energy Coop,MI,246,0
+2024,40036,Westfield Electric Company,WI,1,0
+2024,40051,Texas-New Mexico Power Co,TX,362,0
+2024,40127,Clarke-Washington E M C,AL,41,
+2024,40165,"Dixie Escalante R E A, Inc",AZ,7,
+2024,40165,"Dixie Escalante R E A, Inc",UT,86,
+2024,40166,"Chickasaw Electric Coop, Inc",TN,55,0
+2024,40167,"Somerset Rural Elec Coop, Inc",PA,35,
+2024,40212,Colquitt Electric Membership Corp,GA,113,0
+2024,40220,Adams Electric Cooperative Inc,PA,66,
+2024,40221,"Bedford Rural Elec Coop, Inc",PA,25,25
+2024,40222,Valley Rural Electric Coop Inc,PA,56,56
+2024,40224,"Central Electric Coop, Inc - (PA)",PA,45,45
+2024,40228,Rappahannock Electric Coop,VA,392,25
+2024,40236,"Forked Deer Electric Coop, Inc",TN,23,0
+2024,40289,Claverack Rural Elec Coop Inc,PA,47,
+2024,40290,Tri-County Rural Elec Coop Inc (PA),PA,47,42
+2024,40292,REA Energy Coop Inc,PA,70,
+2024,40293,"Northwestern Rural E C A, Inc - (PA)",PA,40,40
+2024,40302,North East Mississippi EPA,MS,49,0
+2024,40303,Monroe County Elec Power Assn,MS,24,0
+2024,40304,Minnesota Valley Coop L&P Assn,MN,58,0
+2024,40364,City of Courtland,AL,2,0
+2024,40437,Emerald People's Utility Dist,OR,20,
+2024,40438,Columbia River Peoples Ut Dist,OR,27,0
+2024,40441,Town of Murphy - (NC),NC,10,0
+2024,40456,PUD No 1 of Whatcom County,WA,1,1
+2024,40606,City of Grand Island - (NE),NE,56,0
+2024,44372,Oncor Electric Delivery Company LLC,TX,3757,3432
+2024,49998,City of Berea Municipal Utility,KY,9,0
+2024,54913,NSTAR Electric Company,MA,1643,448
+2024,55787,City of Moreno Valley - (CA),CA,20,0
+2024,55937,Entergy Texas Inc.,TX,493,
+2024,55959,Roughrider Electric Cooperativ,ND,148,
+2024,55982,Heart of Texas Electric Coop,TX,64,
+2024,56146,"Black Hills Colorado Electric, LLC",CO,159,0
+2024,56697,Ameren Illinois Company,IL,2740,913
+2024,57483,Liberty Utilities,CA,44,0
+2024,58113,"Texas A&M, Utilities & Energy Services",TX,7,0
+2024,58124,City of Winter Park - (FL),FL,17,0
+2024,59013,PUD No 1 of Jefferson County,WA,20,20
+2024,59505,Heartland REMC,IN,72,
+2024,60482,CKenergy Electric Cooperative,OK,95,0
+2024,60631,Upper Michigan Energy Resources Corp.,MI,62,0
+2024,60839,Southern Pioneer Electric Company,KS,60,0
+2024,61353,Philadelphia Authority for Industrial Development,PA,54,0
+2024,65261,Gila River Indian Utility Authority (GRICUA),AZ,32,0
+2024,66073,MPD Electric Cooperative,SC,154,109
+2024,66101,FirstEnergy Pennsylvania Electric Co,NY,12,8
+2024,66101,FirstEnergy Pennsylvania Electric Co,PA,3060,2598
+2024,66866,University of Massachusetts Amherst,MA,24,4

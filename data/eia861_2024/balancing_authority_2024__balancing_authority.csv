@@ -1,0 +1,190 @@
+data_year,ba_id,ba_code,state,balancing_authority_name
+2024.0,317.0,YAD,NC,"Alcoa Power Generating, Inc. - Yadkin Division"
+2024.0,599.0,AMPL,AK,Anchorage Municipal Light & Power
+2024.0,803.0,AZPS,AZ,Arizona Public Service Company
+2024.0,803.0,AZPS,NM,Arizona Public Service Company
+2024.0,56812.0,DEAA,AZ,"Arlington Valley, LLC - AVBA"
+2024.0,924.0,AECI,AR,"Associated Electric Cooperative, Inc."
+2024.0,924.0,AECI,IA,"Associated Electric Cooperative, Inc."
+2024.0,924.0,AECI,MO,"Associated Electric Cooperative, Inc."
+2024.0,924.0,AECI,OK,"Associated Electric Cooperative, Inc."
+2024.0,15399.0,AVRN,OR,Avangrid Renewables LLC
+2024.0,20169.0,AVA,ID,Avista Corporation
+2024.0,20169.0,AVA,MT,Avista Corporation
+2024.0,20169.0,AVA,WA,Avista Corporation
+2024.0,65289.0,BANC,CA,Balancing Authority of Northern California
+2024.0,1738.0,BPAT,ID,Bonneville Power Administration
+2024.0,1738.0,BPAT,MT,Bonneville Power Administration
+2024.0,1738.0,BPAT,NV,Bonneville Power Administration
+2024.0,1738.0,BPAT,OR,Bonneville Power Administration
+2024.0,1738.0,BPAT,UT,Bonneville Power Administration
+2024.0,1738.0,BPAT,WA,Bonneville Power Administration
+2024.0,1738.0,BPAT,WY,Bonneville Power Administration
+2024.0,2775.0,CISO,AZ,California Independent System Operator
+2024.0,2775.0,CISO,CA,California Independent System Operator
+2024.0,2775.0,CISO,NV,California Independent System Operator
+2024.0,3522.0,CEA,AK,Chugach Electric Assn Inc
+2024.0,8795.0,HST,FL,City of Homestead
+2024.0,18429.0,TPWR,WA,"City of Tacoma, Department of Public Utilities, Light Division"
+2024.0,18445.0,TAL,FL,City of Tallahassee
+2024.0,17539.0,SCEG,GA,Dominion Energy South Carolina
+2024.0,17539.0,SCEG,SC,Dominion Energy South Carolina
+2024.0,5416.0,DUK,GA,Duke Energy Carolinas
+2024.0,5416.0,DUK,NC,Duke Energy Carolinas
+2024.0,5416.0,DUK,SC,Duke Energy Carolinas
+2024.0,6455.0,FPC,FL,Duke Energy Florida Inc
+2024.0,3046.0,CPLE,NC,Duke Energy Progress East
+2024.0,3046.0,CPLE,SC,Duke Energy Progress East
+2024.0,58786.0,CPLW,NC,Duke Energy Progress West
+2024.0,5701.0,EPE,NM,El Paso Electric Company
+2024.0,5701.0,EPE,TX,El Paso Electric Company
+2024.0,5723.0,ERCO,NM,"Electric Reliability Council of Texas, Inc."
+2024.0,5723.0,ERCO,TX,"Electric Reliability Council of Texas, Inc."
+2024.0,65277.0,FMPP,FL,Florida Municipal Power Pool
+2024.0,6452.0,FPL,FL,Florida Power & Light Company
+2024.0,6909.0,GVL,FL,Gainesville Regional Utilities
+2024.0,64898.0,GLHB,IL,GridLiance
+2024.0,56545.0,GRIS,NM,Gridforce South
+2024.0,56090.0,GRIF,AZ,"Griffith Energy, LLC"
+2024.0,19547.0,HECO,HI,Hawaiian Electric Co Inc
+2024.0,13434.0,ISNE,CT,ISO New England Inc.
+2024.0,13434.0,ISNE,MA,ISO New England Inc.
+2024.0,13434.0,ISNE,ME,ISO New England Inc.
+2024.0,13434.0,ISNE,NH,ISO New England Inc.
+2024.0,13434.0,ISNE,NY,ISO New England Inc.
+2024.0,13434.0,ISNE,RI,ISO New England Inc.
+2024.0,13434.0,ISNE,VT,ISO New England Inc.
+2024.0,9191.0,IPCO,ID,Idaho Power Company
+2024.0,9191.0,IPCO,OR,Idaho Power Company
+2024.0,9216.0,IID,CA,Imperial Irrigation District
+2024.0,9617.0,JEA,FL,JEA
+2024.0,11208.0,LDWP,CA,Los Angeles Department of Water and Power
+2024.0,11208.0,LDWP,UT,Los Angeles Department of Water and Power
+2024.0,11249.0,LGEE,KY,Louisville Gas and Electric Company and Kentucky Utilities Company
+2024.0,11249.0,LGEE,VA,Louisville Gas and Electric Company and Kentucky Utilities Company
+2024.0,56669.0,MISO,AR,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,IA,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,IL,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,IN,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,KS,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,KY,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,LA,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,MI,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,MN,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,MO,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,MS,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,ND,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,OK,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,SD,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,TN,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,TX,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56669.0,MISO,WI,"Midcontinent Independent Transmission System Operator, Inc.."
+2024.0,56365.0,GWA,MT,"NaturEner Power Watch, LLC (GWA)"
+2024.0,58791.0,WWA,MT,"NaturEner Wind Watch, LLC"
+2024.0,13407.0,NEVP,CA,Nevada Power Company
+2024.0,13407.0,NEVP,NV,Nevada Power Company
+2024.0,13407.0,NEVP,UT,Nevada Power Company
+2024.0,1.0,NBSO,ME,New Brunswick System Operator
+2024.0,32790.0,HGMA,AZ,"New Harquahala Generating Company, LLC - HGBA"
+2024.0,13501.0,NYIS,NJ,New York Independent System Operator
+2024.0,13501.0,NYIS,NY,New York Independent System Operator
+2024.0,13501.0,NYIS,PA,New York Independent System Operator
+2024.0,12825.0,NWMT,ID,NorthWestern Energy (NWMT)
+2024.0,12825.0,NWMT,MT,NorthWestern Energy (NWMT)
+2024.0,12825.0,NWMT,WY,NorthWestern Energy (NWMT)
+2024.0,14725.0,PJM,DC,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,DE,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,IL,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,IN,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,KY,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,MD,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,MI,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,NC,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,NJ,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,NY,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,OH,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,PA,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,TN,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,VA,"PJM Interconnection, LLC"
+2024.0,14725.0,PJM,WV,"PJM Interconnection, LLC"
+2024.0,5326.0,DOPD,WA,PUD No. 1 of Douglas County
+2024.0,14379.0,PACE,AZ,PacifiCorp - East
+2024.0,14379.0,PACE,CO,PacifiCorp - East
+2024.0,14379.0,PACE,ID,PacifiCorp - East
+2024.0,14379.0,PACE,MT,PacifiCorp - East
+2024.0,14379.0,PACE,NM,PacifiCorp - East
+2024.0,14379.0,PACE,UT,PacifiCorp - East
+2024.0,14379.0,PACE,WY,PacifiCorp - East
+2024.0,14378.0,PACW,CA,PacifiCorp - West
+2024.0,14378.0,PACW,NV,PacifiCorp - West
+2024.0,14378.0,PACW,OR,PacifiCorp - West
+2024.0,14378.0,PACW,WA,PacifiCorp - West
+2024.0,15248.0,PGE,OR,Portland General Electric Company
+2024.0,15466.0,PSCO,AZ,Public Service Company of Colorado
+2024.0,15466.0,PSCO,CO,Public Service Company of Colorado
+2024.0,15466.0,PSCO,NM,Public Service Company of Colorado
+2024.0,15466.0,PSCO,WY,Public Service Company of Colorado
+2024.0,15473.0,PNM,AZ,Public Service Company of New Mexico
+2024.0,15473.0,PNM,CO,Public Service Company of New Mexico
+2024.0,15473.0,PNM,NM,Public Service Company of New Mexico
+2024.0,15473.0,PNM,OK,Public Service Company of New Mexico
+2024.0,15473.0,PNM,TX,Public Service Company of New Mexico
+2024.0,3413.0,CHPD,WA,Public Utility District No. 1 of Chelan County
+2024.0,14624.0,GCPD,WA,"Public Utility District No. 2 of Grant County, Washington"
+2024.0,15500.0,PSEI,WA,Puget Sound Energy
+2024.0,16572.0,SRP,AZ,Salt River Project
+2024.0,16868.0,SCL,WA,Seattle City Light
+2024.0,21554.0,SEC,FL,Seminole Electric Cooperative
+2024.0,17543.0,SC,SC,South Carolina Public Service Authority
+2024.0,29304.0,SEPA,GA,Southeastern Power Administration
+2024.0,29304.0,SEPA,NC,Southeastern Power Administration
+2024.0,29304.0,SEPA,SC,Southeastern Power Administration
+2024.0,18195.0,SOCO,AL,"Southern Company Services, Inc. - Trans"
+2024.0,18195.0,SOCO,FL,"Southern Company Services, Inc. - Trans"
+2024.0,18195.0,SOCO,GA,"Southern Company Services, Inc. - Trans"
+2024.0,18195.0,SOCO,MS,"Southern Company Services, Inc. - Trans"
+2024.0,59504.0,SWPP,AR,Southwest Power Pool
+2024.0,59504.0,SWPP,CO,Southwest Power Pool
+2024.0,59504.0,SWPP,IA,Southwest Power Pool
+2024.0,59504.0,SWPP,KS,Southwest Power Pool
+2024.0,59504.0,SWPP,LA,Southwest Power Pool
+2024.0,59504.0,SWPP,MN,Southwest Power Pool
+2024.0,59504.0,SWPP,MO,Southwest Power Pool
+2024.0,59504.0,SWPP,MT,Southwest Power Pool
+2024.0,59504.0,SWPP,ND,Southwest Power Pool
+2024.0,59504.0,SWPP,NE,Southwest Power Pool
+2024.0,59504.0,SWPP,NM,Southwest Power Pool
+2024.0,59504.0,SWPP,OK,Southwest Power Pool
+2024.0,59504.0,SWPP,SD,Southwest Power Pool
+2024.0,59504.0,SWPP,TX,Southwest Power Pool
+2024.0,17716.0,SPA,AR,Southwestern Power Administration
+2024.0,17716.0,SPA,MO,Southwestern Power Administration
+2024.0,17716.0,SPA,OK,Southwestern Power Administration
+2024.0,18454.0,TEC,FL,Tampa Electric Company
+2024.0,18642.0,TVA,AL,Tennessee Valley Authority
+2024.0,18642.0,TVA,GA,Tennessee Valley Authority
+2024.0,18642.0,TVA,KY,Tennessee Valley Authority
+2024.0,18642.0,TVA,MS,Tennessee Valley Authority
+2024.0,18642.0,TVA,NC,Tennessee Valley Authority
+2024.0,18642.0,TVA,TN,Tennessee Valley Authority
+2024.0,18642.0,TVA,VA,Tennessee Valley Authority
+2024.0,24211.0,TEPC,AZ,Tucson Electric Power Company
+2024.0,24211.0,TEPC,NM,Tucson Electric Power Company
+2024.0,19281.0,TIDC,CA,Turlock Irrigation District
+2024.0,25471.0,WALC,AZ,Western Area Power Administration - Desert Southwest Region
+2024.0,25471.0,WALC,CA,Western Area Power Administration - Desert Southwest Region
+2024.0,25471.0,WALC,NM,Western Area Power Administration - Desert Southwest Region
+2024.0,25471.0,WALC,NV,Western Area Power Administration - Desert Southwest Region
+2024.0,25471.0,WALC,UT,Western Area Power Administration - Desert Southwest Region
+2024.0,28503.0,WACM,CO,Western Area Power Administration - Rocky Mountain Region
+2024.0,28503.0,WACM,KS,Western Area Power Administration - Rocky Mountain Region
+2024.0,28503.0,WACM,MT,Western Area Power Administration - Rocky Mountain Region
+2024.0,28503.0,WACM,ND,Western Area Power Administration - Rocky Mountain Region
+2024.0,28503.0,WACM,NE,Western Area Power Administration - Rocky Mountain Region
+2024.0,28503.0,WACM,NM,Western Area Power Administration - Rocky Mountain Region
+2024.0,28503.0,WACM,SD,Western Area Power Administration - Rocky Mountain Region
+2024.0,28503.0,WACM,UT,Western Area Power Administration - Rocky Mountain Region
+2024.0,28503.0,WACM,WY,Western Area Power Administration - Rocky Mountain Region
+2024.0,19610.0,WAUW,MT,Western Area Power Administration UGP West
+2024.0,19610.0,WAUW,UT,Western Area Power Administration UGP West
+2024.0,19610.0,WAUW,WY,Western Area Power Administration UGP West

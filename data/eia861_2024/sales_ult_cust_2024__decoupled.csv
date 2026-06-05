@@ -1,0 +1,95 @@
+data_year,utility_number,utility_name,ownership,state,ba_code,decoupled_residential,decoupled_commercial,decoupled_industrial,decoupled_transportation,revenue_adjustment_method_residential,revenue_adjustment_method_commercial,revenue_adjustment_method_industrial,revenue_adjustment_method_transportation
+2024,963,Atlantic City Electric Co,Investor Owned,NJ,PJM,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,1167,Baltimore Gas & Electric Co,Investor Owned,MD,PJM,Yes,Yes,No,No,Proceeding,Proceeding,,
+2024,1179,Versant Power,Investor Owned,ME,NBSO,Yes,Yes,Yes,,Proceeding,Proceeding,Proceeding,
+2024,1179,Versant Power,Investor Owned,ME,ISNE,Yes,Yes,Yes,,Proceeding,Proceeding,Proceeding,
+2024,2651,Butler Rural Electric Coop Inc - (OH),Cooperative,OH,PJM,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,2812,City of Calhoun - (GA),Municipal,GA,SOCO,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,3046,Duke Energy Progress - (NC),Investor Owned,NC,CPLE,Yes,No,No,No,Proceeding,,,
+2024,3240,Central Electric Coop Inc - (OR),Cooperative,OR,BPAT,No,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,3249,Central Hudson Gas & Elec Corp,Investor Owned,NY,NYIS,Yes,Yes,Yes,,Automatic,Automatic,Automatic,
+2024,3542,Duke Energy Ohio Inc,Investor Owned,OH,PJM,Yes,No,No,No,Proceeding,,,
+2024,3989,City of Colorado Springs - (CO),Municipal,CO,WACM,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,4003,City of Colton - (CA),Municipal,CA,CISO,Yes,Yes,Yes,,Proceeding,Proceeding,Proceeding,
+2024,4065,City of Columbus - (OH),Municipal,OH,PJM,Yes,Yes,Yes,,Proceeding,Proceeding,Proceeding,
+2024,4110,Commonwealth Edison Co,Investor Owned,IL,PJM,Yes,Yes,Yes,Yes,Automatic,Automatic,Automatic,Automatic
+2024,4176,Connecticut Light & Power Co,Investor Owned,CT,ISNE,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,4226,Consolidated Edison Co-NY Inc,Investor Owned,NY,NYIS,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,4296,"Cookson Hills Elec Coop, Inc",Cooperative,OK,AECI,Yes,Yes,Yes,No,Automatic,Automatic,Automatic,
+2024,4671,Custer Public Power District,Political Subdivision,NE,SWPP,No,Yes,No,No,,Automatic,,
+2024,5027,Delmarva Power,Investor Owned,MD,PJM,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,5336,City of Dover - (OH),Municipal,OH,PJM,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,5416,"Duke Energy Carolinas, LLC",Investor Owned,NC,DUK,Yes,No,No,No,Proceeding,,,
+2024,6374,Fitchburg Gas & Elec Light Co,Investor Owned,MA,ISNE,Yes,Yes,,,Proceeding,Proceeding,,
+2024,7294,City of Glendale - (CA),Municipal,CA,LDWP,Yes,Yes,Yes,,Automatic,Automatic,Automatic,
+2024,7563,Grand Valley Power,Cooperative,CO,PSCO,Yes,Yes,Yes,No,Automatic,Automatic,Automatic,
+2024,8287,Hawaii Electric Light Co Inc,Investor Owned,HI,NA,Yes,Yes,Yes,,Automatic,Automatic,Automatic,
+2024,9191,Idaho Power Co,Investor Owned,ID,IPCO,Yes,Yes,No,No,Proceeding,Proceeding,,
+2024,9645,Jamestown Board of Public Util,Municipal,NY,NYIS,Yes,Yes,Yes,Yes,Automatic,Automatic,Automatic,Automatic
+2024,10451,Kotzebue Electric Assn Inc,Cooperative,AK,NA,Yes,Yes,Yes,Yes,Automatic,Automatic,Automatic,Automatic
+2024,10668,Licking Rural Electric Inc,Cooperative,OH,PJM,Yes,Yes,Yes,No,Automatic,Automatic,Automatic,Automatic
+2024,10879,Lehi City Corporation,Municipal,UT,PACE,Yes,Yes,,,Automatic,Automatic,,
+2024,11171,Long Island Power Authority,State,NY,NYIS,Yes,Yes,No,Yes,Automatic,Automatic,,Automatic
+2024,11200,"Lorain-Medina R E C, Inc",Cooperative,OH,PJM,Yes,Yes,Yes,,Automatic,Automatic,Automatic,
+2024,11804,Massachusetts Electric Co,Investor Owned,MA,ISNE,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,11843,Maui Electric Co Ltd,Investor Owned,HI,NA,Yes,Yes,Yes,,Automatic,Automatic,Automatic,
+2024,12268,"Medina Electric Coop, Inc",Cooperative,TX,ERCO,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,Proceeding
+2024,12351,City of Mesa - (AZ),Municipal,AZ,WALC,Yes,Yes,,,Automatic,Automatic,,
+2024,12515,"Midwest Electric, Inc - (OH)",Cooperative,OH,PJM,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,12539,Midwest Electric Member Corp - (NE),Cooperative,NE,WACM,No,No,Yes,,,,Automatic,
+2024,13206,Nantucket Electric Co,Investor Owned,MA,ISNE,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,13214,The Narragansett Electric Co,Investor Owned,RI,ISNE,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,13314,Navajo Tribal Utility Authority,State,UT,PACE,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,13314,Navajo Tribal Utility Authority,State,NM,PACE,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,13314,Navajo Tribal Utility Authority,State,AZ,PACE,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,13511,New York State Elec & Gas Corp,Investor Owned,NY,NYIS,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,13573,Niagara Mohawk Power Corp.,Investor Owned,NY,NYIS,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,13640,Northern Virginia Elec Coop,Cooperative,VA,PJM,Yes,Yes,No,,Proceeding,Proceeding,,
+2024,13679,Town of North Attleborough - (MA),Municipal,MA,ISNE,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,13693,"North Central Elec Coop, Inc - (OH)",Cooperative,OH,PJM,Yes,Yes,Yes,,Automatic,Automatic,Automatic,
+2024,13781,Northern States Power Co - Minnesota,Investor Owned,MN,MISO,Yes,Yes,Yes,Yes,Automatic,Automatic,Automatic,Automatic
+2024,14232,Otter Tail Power Co,Investor Owned,MN,MISO,Yes,Yes,No,No,Proceeding,Proceeding,,
+2024,14328,Pacific Gas & Electric Co.,Investor Owned,CA,CISO,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,14354,PacifiCorp,Investor Owned,WA,PACW,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,14401,City of Palo Alto - (CA),Municipal,CA,CISO,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,14534,City of Pasadena - (CA),Municipal,CA,CISO,Yes,Yes,Yes,Yes,Automatic,Automatic,Automatic,Automatic
+2024,14537,Pascoag Utility District,Municipal,RI,ISNE,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,14626,"Pedernales Electric Coop, Inc",Cooperative,TX,ERCO,Yes,Yes,Yes,,Automatic,Automatic,Automatic,
+2024,14839,City of Peru - (IN),Municipal,IN,MISO,Yes,Yes,Yes,,Proceeding,Proceeding,Proceeding,
+2024,15270,Potomac Electric Power Co,Investor Owned,MD,PJM,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,15270,Potomac Electric Power Co,Investor Owned,DC,PJM,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,15410,Prince George Electric Coop,Cooperative,VA,PJM,No,Yes,Yes,Yes,,Automatic,Automatic,Automatic
+2024,15466,Public Service Co of Colorado,Investor Owned,CO,PSCO,Yes,Yes,Yes,No,Proceeding,Proceeding,Proceeding,
+2024,15477,Public Service Elec & Gas Co,Investor Owned,NJ,PJM,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,15500,Puget Sound Energy Inc,Investor Owned,WA,PSEI,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,16183,Rochester Gas & Electric Corp,Investor Owned,NY,NYIS,Yes,Yes,Yes,,Proceeding,Proceeding,Proceeding,
+2024,16572,Salt River Project,Political Subdivision,AZ,SRP,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,16609,San Diego Gas & Electric Co,Investor Owned,CA,CISO,Yes,Yes,Yes,Yes,Automatic,Automatic,Automatic,Automatic
+2024,17127,Town of Shrewsbury - (MA),Municipal,MA,ISNE,Yes,Yes,Yes,,Proceeding,Proceeding,Proceeding,
+2024,17609,Southern California Edison Co,Investor Owned,CA,CISO,Yes,Yes,Yes,,Automatic,Automatic,Automatic,
+2024,17612,Bear Valley Electric Service,Investor Owned,CA,CISO,Yes,Yes,Yes,,Proceeding,Proceeding,Proceeding,
+2024,17637,Southern Maryland Elec Coop Inc,Cooperative,MD,PJM,Yes,Yes,,,Automatic,Automatic,,
+2024,19497,United Illuminating Co,Investor Owned,CT,ISNE,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,19547,Hawaiian Electric Co Inc,Investor Owned,HI,HECO,Yes,Yes,Yes,No,Automatic,Automatic,Automatic,
+2024,19896,City of Volga - (SD),Municipal,SD,SWPP,Yes,Yes,Yes,Yes,Automatic,Automatic,Automatic,Automatic
+2024,20169,Avista Corp,Investor Owned,WA,AVA,Yes,Yes,No,No,Proceeding,Proceeding,,
+2024,20169,Avista Corp,Investor Owned,ID,AVA,Yes,Yes,No,No,Proceeding,Proceeding,,
+2024,24590,Unitil Energy Systems,Investor Owned,NH,ISNE,Yes,Yes,Yes,,Proceeding,Proceeding,Proceeding,
+2024,26510,Liberty Utilities (Granite State Electri,Investor Owned,NH,ISNE,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,54913,NSTAR Electric Company,Investor Owned,MA,ISNE,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,56697,Ameren Illinois Company,Investor Owned,IL,MISO,Yes,Yes,Yes,Yes,Proceeding,Proceeding,Proceeding,Proceeding
+2024,57483,Liberty Utilities,Investor Owned,CA,CISO,Yes,Yes,,,Proceeding,Proceeding,,
+2024,66036,"EverBright, LLC",Behind the Meter,MA,ISNE,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,NJ,PJM,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,MD,PJM,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,IL,PJM,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,CA,CISO,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,CT,ISNE,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,AR,MISO,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,AZ,AZPS,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,TX,ERCO,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,RI,ISNE,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,CO,PSCO,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,NH,ISNE,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,ME,ISNE,Yes,,,,Automatic,,,
+2024,66036,"EverBright, LLC",Behind the Meter,OH,PJM,Yes,,,,Automatic,,,

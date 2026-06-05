@@ -1,0 +1,17 @@
+data_year,utility_number,utility_name,part,service_type,data_type,state,ownership,ba_code,residential_revenues_thousand_dollars,residential_sales_megawatthours,residential_customers_count,commercial_revenues_thousand_dollars,commercial_sales_megawatthours,commercial_customers_count,industrial_revenues_thousand_dollars,industrial_sales_megawatthours,industrial_customers_count,transportation_revenues_thousand_dollars,transportation_sales_megawatthours,transportation_customers_count,total_revenues_thousand_dollars,total_sales_megawatthours,total_customers_count
+2024,15497.0,Puerto Rico Electric Pwr Authority,A,Bundled,O,PR,State,NA,1642120.0,7305682.0,1383774.0,2055975,8365287,127490,368709,1558835,583,0,0,0,4066804.0,17229804.0,1511847.0
+2024,19879.0,Virgin Islands Water & Power Authority,A,Bundled,O,VI,State,NA,88317.1,266483.0,44256.0,64489.2,148381,7915,87197.2,209582,2286,,,,240003.5,624446.0,54457.0
+2024,40428.0,Guam Power Authority,A,Bundled,O,GU,State,NA,187362.1,537878.0,45808.0,355415.7,1018473,7751,,,,,,,542777.8,1556351.0,53559.0
+2024,40429.0,American Samoa Power Authority,A,Bundled,O,AS,State,NA,26519.0,62505.0,10998.0,30482,74799,1674,12099,30763,12,,,,69100.0,168067.0,12684.0
+2024,57105.0,Commonwealth Utility Corporation - (MP),A,Bundled,O,MP,State,NA,27591.5,95199.0,13052.0,31061.5,180702,4503,,,,,,,58653.0,275901.0,17555.0
+2024,57313.0,Tesla Inc.,A,Bundled,O,PR,Behind the Meter,NA,0.0,0.0,0.0,260,2956,13,0,0,0,0,0,0,260.0,2956.0,13.0
+2024,59579.0,Sunnova,A,Bundled,O,GU,Behind the Meter,NA,5146.9,11938.0,1286.0,,,,,,,,,,5146.9,11938.0,1286.0
+2024,59579.0,Sunnova,A,Bundled,O,PR,Behind the Meter,NA,129850.0,348635.0,54177.0,,,,,,,,,,129850.0,348635.0,54177.0
+2024,59579.0,Sunnova,A,Bundled,O,VI,Behind the Meter,NA,307.3,580.0,63.0,,,,,,,,,,307.3,580.0,63.0
+2024,59647.0,Sunrun Inc.,A,Bundled,O,PR,Behind the Meter,NA,87225.8,198697.0,28277.0,,,,,,,,,,87225.8,198697.0,28277.0
+2024,60981.0,"TerraForm US Energy Services, LLC",A,Bundled,O,PR,Behind the Meter,NA,0.0,0.0,0.0,24,72,5,0,0,0,0,0,0,24.0,72.0,5.0
+2024,99999.0,Adjustment 2024,A,Bundled,I,GU,,NA,0.0,0.0,-1286.0,0,0,0,0,0,0,0,0,0,0.0,0.0,-1286.0
+2024,99999.0,Adjustment 2024,A,Bundled,I,PR,,NA,0.0,0.0,-82454.0,282,978,-17,0,0,0,0,0,0,282.0,978.0,-82471.0
+"To calculate a state or the US total, sum Parts (A,B,C & D) for Revenue, but only Parts (A,B & D) for Sales and Customers.
+To avoid double counting of customers, the aggregated customer counts for the states and US do not include the customer count for respondents with ownership code 'Behind the Meter'.
+This group consists of Third Party Owners of rooftop solar systems.",,,,,,,,,,,,,,,,,,,,,,,
